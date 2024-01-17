@@ -5,7 +5,7 @@
 common_year = [31, 59, 90, 120, 151, 181, 212, 243, 273, 304, 334, 365]
 leap_year = [31, 60, 91, 121, 152, 182, 213, 244, 274, 305, 335, 366]
 
-#Create day_of_year(D,M,Y) funbction
+#Create day_of_year(D,M,Y) function
 def day_of_year(D,M,Y):
     #Convert from BE to AD
     Y = Y-543
