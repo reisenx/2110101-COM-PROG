@@ -26,6 +26,7 @@ def diff(xn,a):
 a, x0 = 127, 100
 
 #Calulate until n = 30
+
 x1 = x_n(x0,a)
 diff1 = diff(x1,a)
 print("x1 =",x1)
@@ -175,3 +176,6 @@ x30 = x_n(x29,a)
 diff30 = diff(x30,a)
 print("x30 =",x30)
 print("diff30 =",diff30,"\n")
+
+# Output n=30
+print(30)
