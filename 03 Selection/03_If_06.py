@@ -1,7 +1,7 @@
-#Input weight as an integer
+# Input weight as an integer
 weight = int(input())
 
-#Transportation fee
+# Transportation fee
 # 1.) no more than 100 g = 18 baht
 # 2.) more than 100 g but no more than 250 g = 22 baht
 # 3.) more than 250 g but no more than 500 g = 28 baht

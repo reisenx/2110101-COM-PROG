@@ -1,7 +1,7 @@
-#Input Score
+# Input Score
 S = float(input())
 
-#Output the grade
+# Output the grade
 if(S>=80):
     print("A")
 elif(S>=70):
