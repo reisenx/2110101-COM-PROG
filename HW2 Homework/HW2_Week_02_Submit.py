@@ -16,17 +16,16 @@
 # Example: x27 = 2.002995624189019
 #          Difference = |(2.002995624189019**7) - 127| = 2.3480850827803295
 
-#Create the function
+# Create the function
 def x_n(x0,a):
     return x0 - ((x0**7) - a)/(7*(x0**6))
 def diff(xn,a):
     return abs(xn**7 - a)
 
-#Setup Initial value
+# Setup Initial value
 a, x0 = 127, 100
 
-#Calulate until n = 30
-
+# Calulate until n = 30
 x1 = x_n(x0,a)
 diff1 = diff(x1,a)
 print("x1 =",x1)
