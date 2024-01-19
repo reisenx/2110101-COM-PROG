@@ -3,7 +3,7 @@ D = int(input())
 M = int(input())
 Y = int(input())
 
-# Convert from BE to AD
+# Convert year from BE to AD
 Y = Y-543
 
 # Create a list with a sum of the day in each month
