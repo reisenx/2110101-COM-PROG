@@ -3,10 +3,10 @@ word = str(input())
 sentence = str(input())
 
 # Replace symbol from the string to " "
-symbol = ["\"", "(", ")", ",", ".", "\""]
+symbol = ["\"", "(", ")", ",", ".", "\'"]
 for i in range (0,len(sentence)):
-    if(sentence[i] in symbol):
-        sentence = sentence[:i] + " " + sentence[i+1:]
+    for item in symbol:
+        sentence = sentence.replace(item," ")
 
 # Split a sentences into a list
 list_word = sentence.split()

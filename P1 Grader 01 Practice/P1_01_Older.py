@@ -36,7 +36,7 @@ if(year1 == year2):
         elif(day1 < day2):
             print(name1)
         elif(day2 < day1):
-            print(day2)
+            print(name2)
     elif(month1 < month2):
         print(name1)
     elif(month2 < month1):
@@ -45,15 +45,3 @@ elif(year1 < year2):
     print(name1)
 elif(year2 < year1):
     print(name2)
-
-
-
-
-
-
-
-
-
-
-
-

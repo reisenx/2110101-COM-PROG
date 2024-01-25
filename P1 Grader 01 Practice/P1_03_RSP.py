@@ -38,6 +38,7 @@ for i in range(0,3*win_score+1):
     
         # In case that player 1 have reached the required score
         elif(player1_score == win_score):
+            print(player1_score, player2_score)
             print("Player 1 wins")
             break
     
