@@ -1,4 +1,4 @@
-# Import a string
+# Input a string
 person1 = str(input())
 person2 = str(input())
 
