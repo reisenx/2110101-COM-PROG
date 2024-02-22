@@ -8,7 +8,7 @@ if(len(X) == 9):
     win = "-"
     i = 0
     while(i < 3):
-        if(X[3*i] == X[3*i + 1] and X[3*i] == X[3*i +2]):
+        if(X[3*i] == X[3*i + 1] and X[3*i] == X[3*i + 2]):
             win = X[3*i]
             break
         elif(X[i] == X[i+3] and X[i] == X[i+6]):
