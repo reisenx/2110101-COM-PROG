@@ -1,3 +1,5 @@
+# Solution 1: Repetition Cases Checking
+
 # Input number of input data and pattern
 pattern = str(input())
 n = int(input())
