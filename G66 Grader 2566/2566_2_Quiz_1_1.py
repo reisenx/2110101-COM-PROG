@@ -21,7 +21,7 @@ pattern = []
 # Straight Flush: The set of cards that both flush and straight
 # Example: "|5H|4H|3H|2H|AH|"
 # Flush: All the symbol are the same no matter what the number is
-# Example: "|KH|10H|8H|6H|4H|"
+# Example: "|KH|XH|8H|6H|4H|"
 # Straight: All number are in the order no matter what the symbol is
 # Example: "|5H|4D|3C|2S|AH|"
 
