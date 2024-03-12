@@ -32,4 +32,4 @@ else:
     min = min(score_in_year_list)
     average = sum(score_in_year_list) / len(score_in_year_list)
     # Output
-    print("{:.1f} {:.1f} {:.1f}".format(min,max,average))
+    print(min,max,average)

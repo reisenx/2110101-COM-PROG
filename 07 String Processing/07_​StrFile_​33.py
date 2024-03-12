@@ -1,52 +1,50 @@
-# Input 2 filenames
-name1,name2 = input().split()
-# Create an empty list for contain unique faculty code and student year
-# Example: 66322002[21]
-unique_faculty = []
+# Create function to read 1 line in a text file
+# If it there no data in that line, return 2 empty string
+# data[0] is ID and data[1] is GPA
+def read_next(filename):
+    while True:
+        line = filename.readline()
+        if(len(line) == 0):
+            break
+        data = line.strip().split()
+        if(len(data) == 2):
+            return data[0],data[1]
+    return "",""
 
-# Read the first file
-file1 = open(name1, "r")
+# Input 2 filenames then open 2 files
+filename01, filename02 = input().strip().split()
+file01 = open(filename01,"r")
+file02 = open(filename02,"r")
 
-# Import data from the first file and put them in a list
-# Example: [["6232222228", "3.54"], ["6632200221", "4.00"]]
-i = 0
-student_data = []
-for line in file1:
-    student_data.append(line.split())
-    # Check unique faculty (Example: 66322002[21])
-    if(student_data[i][0][-2:] not in unique_faculty):
-        unique_faculty.append(student_data[i][0][-2:])
-    i += 1
-# Close the first file
-file1.close()
+# Output
+# Since data in both files are in order already, so we can compare each line in both files
+# 1.) Compare faculty (Example: 66322002[21])
+# 2.) Compare ID
+ID01, GPA01 = read_next(file01)
+ID02, GPA02 = read_next(file02)
+while True:
+    if(ID01 == "" and ID02 == ""):
+        break
+    elif(ID02 == ""):
+        print(ID01,GPA01)
+        ID01, GPA01 = read_next(file01)
+    elif(ID01 == ""):
+        print(ID02,GPA02)
+        ID02, GPA02 = read_next(file02)
+    elif(ID01[-2:] < ID02[-2:]):
+        print(ID01,GPA01)
+        ID01, GPA01 = read_next(file01)
+    elif(ID02[-2:] < ID01[-2:]):
+        print(ID02,GPA02)
+        ID02, GPA02 = read_next(file02)
+    elif(ID01[-2:] == ID02[-2:]):
+        if(ID01 < ID02):
+            print(ID01,GPA01)
+            ID01, GPA01 = read_next(file01)
+        elif(ID02 < ID01):
+            print(ID02,GPA02)
+            ID02, GPA02 = read_next(file02)
 
-# Read the second file
-file2 = open(name2, "r")
-
-# Import data from the second file and put them in a list
-i = 0
-for line in file2:
-    student_data.append(line.split())
-    # Check unique faculty (Example: 66322002[21])
-    if(student_data[i][0][-2:] not in unique_faculty):
-        unique_faculty.append(student_data[i][0][-2:])
-    i += 1
-
-# Close the second file
-file2.close()
-# Sorting code in unique_faculty
-unique_faculty.sort()
-
-# Sorting and Output the data
-# Loop output using unique faculty
-for code in unique_faculty:
-    student_data_in_year = []
-    # Find a student in each faculty code
-    for sublist in student_data:
-        if(sublist[0][-2:] == code):
-            student_data_in_year.append(sublist)
-    # Sorting student ID in each faculty
-    student_data_in_year.sort()
-    # Output student data in each faculty
-    for id,GPA in student_data_in_year:
-        print(id, GPA)
+# Close files
+file01.close()
+file02.close()
