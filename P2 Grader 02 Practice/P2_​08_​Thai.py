@@ -33,7 +33,7 @@ def to_Thai(N):
             num_read += thai_num[N[1]]
     
     # Case 3: 100-999
-    # 5.) If tens is 0, don't read '0' (Example: '208' --> 'song roi paet')
+    # 5.) If tens is 0, don't read '0' and 'sip' (Example: '208' --> 'song roi paet')
     elif(len(N) == 3):
         # Read hundreds
         num_read += thai_num[N[0]] + " roi "
@@ -57,7 +57,7 @@ def to_Thai(N):
             num_read += thai_num[N[2]]
     
     # Case 4: 1000-9999
-    # 6.) If hundreds is 0, don't read '0' (Example: '1024' --> 'neung pun yi sip si')
+    # 6.) If hundreds is 0, don't read '0' and 'roi' (Example: '1024' --> 'neung pun yi sip si')
     elif(len(N) == 4):
         # Read thousands
         num_read += thai_num[N[0]] + " pun "

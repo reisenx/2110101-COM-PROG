@@ -1,3 +1,5 @@
+# Solution 1: List processing
+
 # Input number of card set
 n = int(input())
 
