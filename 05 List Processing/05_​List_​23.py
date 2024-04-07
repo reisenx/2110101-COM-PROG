@@ -8,15 +8,14 @@ X = []
 Y = []
 distance = []
 distance_sort = []
-for i in range(0,n):
-    data = input().split()
-    X.append(float(data[0]))
-    Y.append(float(data[1]))
+for i in range(n):
+    x,y = input().split()
+    X.append(float(x))
+    Y.append(float(y))
     distance.append(((X[i]**2) + (Y[i]**2))**0.5)
-    distance_sort.append(((X[i]**2) + (Y[i]**2))**0.5)
 
 # Sorting a distance
-distance_sort.sort()
+distance_sort = sorted(distance)
 
 # Output coordinate (x,y) of the 3rd longest distance from (0,0)
 index = distance.index(distance_sort[2])

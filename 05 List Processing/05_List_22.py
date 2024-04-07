@@ -1,32 +1,31 @@
-# Input id and a grade
-id = []
-id_sort = []
-grade = []
-grade_sort = []
+# Input ID and grade of each student
+# Put the data in a 'students' list in the format
+# [[ID01,grade01], [ID02,grade02], ...]
+students = []
 while(True):
-    data = input()
-    if(data != "q"):
-        data = data.split()
-        id.append(data[0])
-        id_sort.append(data[0])
-        grade.append(data[1])
+    data = input().strip().split()
+    if(data[0] != "q"):
+        students.append(data)
     else:
         break
 
-# Input id that need to upgrade
-upgrade_id = input().split()
+# Input ID that need to upgrade
+upgrade_ID = input().split()
 
 # Upgrade B+ to A, B to B+, C+ to B and so on
 old_grade = ["A", "B+", "B", "C+", "C", "D+", "D", "F"]
 new_grade = ["A", "A", "B+", "B", "C+", "C", "D+", "D"]
-for item in upgrade_id:
-    grade[id.index(item)] = new_grade[old_grade.index(grade[id.index(item)])]
+for details in students:
+    ID, grade = details[0], details[1]
+    if(ID in upgrade_ID):
+        index = old_grade.index(grade)
+        details[1] = new_grade[index]
 
-# Sorting a data
-id_sort.sort()
-for item in id_sort:
-    grade_sort.append(grade[id.index(item)])
+# Sorting a data in ascending order
+# Example: [['44444','A'], ['22222','D'], ['11111','B+'], ['66666','C'], ['55555','B+'], ['33333','C']]
+# After sorting: [['11111','B+'], ['22222','D'], ['33333','C'], ['44444','A'], ['55555','B+'], ['66666','C']]
+students.sort()
 
 # Output
-for i in range(0,len(id)):
-    print(id_sort[i], grade_sort[i])
+for ID, grade in students:
+    print(ID,grade)

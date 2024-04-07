@@ -1,7 +1,7 @@
 # Input a first set of data
 n = int(input())
 list_01 = []
-for i in range(0,n):
+for i in range(n):
     number = int(input())
     list_01.append(number)
 
@@ -30,7 +30,7 @@ merge_list = list_01 + list_02 + list_03
 # - Do the previous 2 step reapeatly until all data are added
 # Example: [1,2,3,4,5,6] --> [6,4,2,1,3,5]
 backfront_list = []
-for i in range(0,len(merge_list)):
+for i in range(len(merge_list)):
     if(i%2 == 0):
         backfront_list.append(merge_list[i])
     else:
