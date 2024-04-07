@@ -3,9 +3,9 @@ import math
 
 # Find root of the equation ax^2 + bx + c
 # Input a,b and c as float variable
-a=float(input())
-b=float(input())
-c=float(input())
+a = float(input())
+b = float(input())
+c = float(input())
 
 # Calculate first root of equation ax^2 + bx + c and round into 3 decimal digits
 x1 = (-1*b - math.sqrt(b**2 - 4*a*c))/(2*a)
