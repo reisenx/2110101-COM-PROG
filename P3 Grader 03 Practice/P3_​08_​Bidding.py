@@ -21,13 +21,26 @@ for i in range(n):
     line = input().strip().split()
     # Command: Bid (B)
     # This function add tuple (Bidder,Price) to the dictionary 'products_details'
+    # NOTE: If that 'bidder' bid on the same 'product' again,
+    #       delete all previous bid details and overwrite with the new one
     if(line[0] == "B"):
         bidder, product, price = line[1], line[2], int(line[3])
+        # If that 'bidder' bid on the same 'product' again, delete all previous bid details first
+        if(product in products_details and bidder in bidder_name):
+            # Create new list of tuples which don't have 'bidder' name in each tuple
+            new_details = []
+            for t_bidder, t_price in products_details[product]:
+                if(t_bidder != bidder):
+                    new_details.append((t_bidder, t_price))
+            # Change value in the 'products_details' dictionary
+            products_details[product] = new_details
+        
         # Add bidding details in a dictionary
         if(product not in products_details):
             products_details[product] = [(bidder, price)]
         else:
             products_details[product].append((bidder,price))
+        
         # Add bidder details
         if(bidder not in bidder_name):
             bidder_name.append(bidder)
