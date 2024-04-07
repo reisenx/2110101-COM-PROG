@@ -1,68 +1,30 @@
-# Input score string then split the string to get the score
-txt = str(input())
-score = txt.split()
-a,b,c,d = float(score[0]), float(score[1]), float(score[2]), float(score[3])
+# Input score and convert to float
+a,b,c,d = [float(e) for e in input().split()]
 
-# Find maximum score then find minimum score then reset them both to 0
-# Case 1: if a is a maximum score
-if(a>=b and a>=c and a>=d):
-    # Case 1.1 if b is a minimum score
-    if(b<=a and b<=c and b<=d):
-        a=0
-        b=0
-    # Case 1.2 if c is a minimum score
-    elif(c<=a and c<=b and c<=d):
-        a=0
-        c=0
-    # Case 1.3 if d is a minimum score
-    elif(d<=a and d<=b and d<=c):
-        a=0
-        d=0
+# Find sum of all score
+sum = a + b + c + d
 
-# Case 2: if b is a maximum score
-elif(b>=a and b>=c and b>=d):
-    # Case 2.1 if a is a minimum score
-    if(a<=b and a<=c and a<=d):
-        b=0
-        a=0
-    # Case 2.2 if c is a minimum score
-    elif(c<=a and c<=b and c<=d):
-        b=0
-        c=0
-    # Case 2.3 if d is a minimum score
-    elif(d<=a and d<=b and d<=c):
-        b=0
-        d=0
+# Find minimum score
+minimum = a
+if(b < minimum):
+    minimum = b
+if(c < minimum):
+    minimum = c
+if(d < minimum):
+    minimum = d
 
-# Case 3: if c is a maximum score
-elif(c>=a and c>=b and c>=d):
-    # Case 3.1 if a is a minimum score
-    if(a<=b and a<=c and a<=d):
-        c=0
-        a=0
-    # Case 3.2 if b is a minimum score
-    elif(b<=a and b<=c and b<=d):
-        c=0
-        b=0
-    # Case 3.3 if d is a minimum score
-    elif(d<=a and d<=b and d<=c):
-        c=0
-        d=0
+# Find maximum score
+maximum = a
+if(b > maximum):
+    maximum = b
+if(c > maximum):
+    maximum = c
+if(d > maximum):
+    maximum = d
 
-# Case 4: if d is a maximum score
-elif(d>=a and d>=b and d>=c):
-    # Case 4.1 if a is a minimum score
-    if(a<=b and a<=c and a<=d):
-        d=0
-        a=0
-    # Case 4.1 if b is a minimum score
-    elif(b<=a and b<=c and b<=d):
-        d=0
-        b=0
-    # Case 4.1 if c is a minimum score
-    elif(c<=a and c<=b and c<=d):
-        d=0
-        c=0
+# Subtract minimum score and maximum score from 'sum'
+sum -= minimum + maximum
 
-# Calculuate and output the average score of 2 referees 
-print(round((a+b+c+d)/2,2))
+# Find average score
+average = round(sum/2, 2)
+print(average)

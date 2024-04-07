@@ -1,9 +1,11 @@
+# Flowchart
+
 # Input a,b,c,d and e as integers
-a=int(input())
-b=int(input())
-c=int(input())
-d=int(input())
-e=int(input())
+a = int(input())
+b = int(input())
+c = int(input())
+d = int(input())
+e = int(input())
 
 # Condition: a>b 
 # If true, swap a,b value
