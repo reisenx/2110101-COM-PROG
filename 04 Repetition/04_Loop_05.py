@@ -4,9 +4,8 @@ sentence = str(input())
 
 # Replace symbol from the string to " "
 symbol = ["\"", "(", ")", ",", ".", "\'"]
-for i in range (0,len(sentence)):
-    for item in symbol:
-        sentence = sentence.replace(item," ")
+for item in symbol:
+    sentence = sentence.replace(item," ")
 
 # Split a sentences into a list
 list_word = sentence.split()
@@ -17,7 +16,7 @@ count = 0
 # Check how many word in a list is the same to input word 
 for i in range(0,len(list_word)):
     if(word == list_word[i]):
-        count = count+1
+        count += 1
 
 # Output the word count
 print(count)

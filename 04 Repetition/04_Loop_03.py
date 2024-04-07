@@ -5,14 +5,15 @@ answer = str(input())
 score = 0
 
 # Check if the answer is incomplete answer
-# Incomplete answer is the length of the string is not equal
+# Incomplete answer is the length of the 'answer' is not equal to 'key'
 if(len(key) != len(answer)):
     print("Incomplete answer")
+
 # Complete answer
 else:
-    # If the answer string and key string in index i is the same, add score by 1
+    # Add a score by 1, if the 'answer' and 'key' in in each index is the same
     for i in range(0,len(key)):
         if(answer[i] == key[i]):
-            score = score+1
+            score += 1
     # Output the score
     print(score)
