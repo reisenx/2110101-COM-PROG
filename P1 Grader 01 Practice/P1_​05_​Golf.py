@@ -2,40 +2,31 @@
 import math
 
 # Create and empty list and necessary variable
-par = []
-stroke = []
-select = []
-mod_stroke = []
-sum_par = 0
-sum_stroke = 0
-sum_mod_stroke = 0
+par_list = []
+stroke_list = []
+mod_stroke_list = []
 
 # Input a string of each hole, split them, then put them in the list
-# Each hole: [par, stroke, select]
-for i in range(0,9):
-    hole = [int(e) for e in input().split()]
-    par.append(hole[0])
-    stroke.append(hole[1])
-    select.append(hole[2])
+# Each line contains [Par] [Stroke] [Select]
 
-# Calculate the modified stroke
-# Calculate the sum of par, sum of stroke and sum of modified stroke
-# Modified stroke = min(stroke, par+2)
-# If select = 0, modified stroke = 0
-for i in range(0,9):
-    if(select[i]==1):
-        mod_stroke.append(min(stroke[i], par[i]+2))
-    elif(select[i]==0):
-        mod_stroke.append(0)
-    sum_par = sum_par + par[i]
-    sum_stroke = sum_stroke + stroke[i]
-    sum_mod_stroke = sum_mod_stroke + mod_stroke[i]
+# == Modified stroke ==
+# - If select = 1, mod_stroke = min(stroke, par+2)
+# - If select = 0, mod_stroke = 0
+for i in range(9):
+    par,stroke,select = [int(e) for e in input().split()]
+    if(select == 1):
+        mod_stroke = min(stroke, par+2)
+    else:
+        mod_stroke = 0
+    par_list.append(par)
+    stroke_list.append(stroke)
+    mod_stroke_list.append(mod_stroke)
 
-# Calculate a score
-handicap = math.floor(0.8*(1.5*sum_mod_stroke - sum_par))
-score = sum_stroke - handicap
+# Calculate a handicap and score
+handicap = math.floor(0.8*(1.5*sum(mod_stroke_list) - sum(par_list)))
+score = sum(stroke_list) - handicap
 
 # Output a sum of stroke, handicap and score
-print(sum_stroke)
+print(sum(stroke_list))
 print(handicap)
 print(score)

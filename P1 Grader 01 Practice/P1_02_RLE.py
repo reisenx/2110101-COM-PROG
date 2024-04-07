@@ -1,58 +1,63 @@
-# Input a string
-func = str(input())
+# Input a command
+command = str(input())
 
-# str2RLE - Convert a string into a RLE Code
-if(func == "str2RLE"):
+# Command: "str2RLE"
+# Convert a string into a RLE code
+if(command == "str2RLE"):
     # Input string
-    txt = str(input())
+    string = str(input())
 
     # Create empty RLE string
     RLE = ""
 
     # Convert string into RLE
     # Example: ABBA --> A 1 B 2 A 1
-    for i in range(0,len(txt)):
+    for i in range(0,len(string)):
         # Setup a matching character = character in index 0 and starts counting
-        if(i==0):
-            character = txt[0]
+        if(i == 0):
+            character = string[0]
             count = 1
         # If the current character doesn't match anymore
         # Note it in to RLE, setup a new character then reset the variable
-        elif(txt[i] != character):
+        elif(string[i] != character):
             RLE = RLE + character + " " + str(count) + " "
-            character = txt[i]
+            character = string[i]
             count = 1
         # If the current character matches, then count them
-        elif(txt[i] == character):
-            count = count + 1
+        elif(string[i] == character):
+            count += 1
     # Don't forget note the last one into RLE
-    RLE = RLE + character + " " + str(count) + " "
+    RLE += character + " " + str(count) + " "
 
     # Output RLE
     print(RLE)
 
-# RLE2str - Convert RLE Code into a string
-elif(func == "RLE2str"):
-    #Input RLE Code
+# Command: "RLE2str"
+# Convert RLE Code into a string
+elif(command == "RLE2str"):
+    # Input RLE Code
     RLE = str(input())
 
     # Create an empty string
-    txt = ""
+    string = ""
 
     # Split a RLE string into a list
-    # Example: "A 2 B 3 C 1" --> ["A","2","B","3","C","1"]
-    data = RLE.split()
+    # Example: "A 2 B 3 C 1" --> ['A','2','B','3','C','1']
+    RLE = RLE.split()
+
 
     # Convert RLE into a string
-    # Example: data = ["A","2","B","3","C","1"]
-    # Index 0,2,4,..., len(data)-2 is a character
-    # Index 1,3,5,...., len(data)-1 is a number
-    for i in range(0,int(len(data)/2)):
-        txt = txt + data[2*i]*int(data[2*i + 1])
-    
-    # Output a string
-    print(txt)
+    # Example: RLE = ['A','2','B','3','C','1']
+    # Index 0,2,4,..., len(RLE)-2 is a character
+    # Index 1,3,5,...., len(RLE)-1 is a number
+    for i in range(len(RLE)//2):
+        char = RLE[2*i]
+        num = int(RLE[2*i + 1])
+        string += char*num
 
-# Invalid function
+    # Output a string
+    print(string)
+
+# Invalid command
 else:
     print("Error")

@@ -1,32 +1,32 @@
 # Input a operation and number of row
-func = str(input().strip())
+command = str(input().strip())
 row = int(input().strip())
 
 # Input a string, strip() it then put it in a list
 # Example:
-# ABCD
-# 1234
-# WXYZ
+# "ABCD"
+# "1234"
+# "WXYZ"
 # string = [['A','B','C','D'], ['1','2','3','4'], ['W','X','Y','Z']]
 # string[0] = ['A','B','C','D']
 # string[0][0] = 'A'
 string = []
-for i in range(0,row):
-    txt = str(input())
-    string.append(list(txt.strip()))
+for i in range(row):
+    line = list(input().strip())
+    string.append(line)
 
 # Check the length of the string
 # If all line have the same length then SizeValid = True
 # If there's a line that has a different length then SizeValid = False
 SizeValid = True
 column = len(string[0])
-for i in range(1,row):
-    if(len(string[i]) != column):
+for line in string:
+    if(len(line) != column):
         SizeValid = False
         break
 
 # Invalid Size
-if(SizeValid == False):
+if(not SizeValid):
     print("Invalid size")
 
 # Rotate 90 degrees clockwise
@@ -43,13 +43,11 @@ if(SizeValid == False):
 # [i3]...[33][23][13]
 # ...    ... ... ...
 # [ij]...[3j][2j][1j]
-elif(func == "90"):
-    for j in range (0,column):
+elif(command == "90"):
+    for j in range(column):
         line = ""
-        i = row - 1
-        while(i >= 0):
-            line = line + string[i][j]
-            i = i-1
+        for i in range(row-1, -1, -1):
+            line += string[i][j]
         print(line)
 
 # Rotate 180 degrees
@@ -66,16 +64,12 @@ elif(func == "90"):
 # [3j]...[33][32][31]
 # [2j]...[23][22][21]
 # [1j]...[13][12][11]
-elif(func == "180"):
-    i = row - 1
-    while(i >= 0):
+elif(command == "180"):
+    for i in range(row-1, -1, -1):
         line = ""
-        j = column - 1
-        while(j >= 0):
-            line = line + string[i][j]
-            j = j-1
+        for j in range(column-1, -1, -1):
+            line += string[i][j]
         print(line)
-        i = i-1
 
 # Flip
 # Orginal String
@@ -91,11 +85,9 @@ elif(func == "180"):
 # [3j]...[33][32][31]
 # ...    ... ... ...
 # [ij]...[i3][i2][i1]
-elif(func == "flip"):
-    for i in range(0,row):
+elif(command == "flip"):
+    for i in range(row):
         line = ""
-        j = column - 1
-        while(j >= 0):
-            line = line + string[i][j]
-            j = j-1
+        for j in range(column-1, -1, -1):
+            line += string[i][j]
         print(line)

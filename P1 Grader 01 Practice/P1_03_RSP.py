@@ -1,61 +1,42 @@
 # Input reqiured score and setup initial score to 0
 win_score = int(input())
-player1_score = 0
-player2_score = 0
+player01 = 0
+player02 = 0
 
-# Input game and count a score for thrice of require score times
+# Create a list of winning and losing scenario
+# Given that index 0 is player1 and index 1 is player2 
+# Example: 'R' wins 'S' --> Put ['R','S'] as 'winning' sublist
+# Example: 'R' lose 'P' --> Put ['R','P'] as 'losing' sublist
+winning = [['R','S'], ['S','P'], ['P','R']]
+losing = [['S','R'], ['P','S'], ['R','P']]
 
-for i in range(0,3*win_score+1):
-    # In the first 3n loop, input the game, count the score and declared the result if someone winning during the process
-    if(i in range(0,3*win_score)):
-        if(player1_score != win_score and player2_score != win_score):
-            # Input a string in each line (Ex. "R P")
-            game = str(input())
-            # Split it to a list (Ex. "R P" --> ["R", "P"])
-            RSP = game.split()
-
-            # Count the score
-            # Index 0 of the list is player 1 and Index 1 of the list is player 2
-            # If win, add the winner score by 1
-            # Scissors (S) wins Paper (P)
-            if(RSP[0]=='S' and RSP[1]=='P'):
-                player1_score = player1_score + 1
-            elif(RSP[1]=='S' and RSP[0]=='P'):
-                player2_score = player2_score + 1
-            # Paper (P) wins Rock (R)
-            elif(RSP[0]=='P' and RSP[1]=='R'):
-                player1_score = player1_score + 1
-            elif(RSP[1]=='P' and RSP[0]=='R'):
-                player2_score = player2_score + 1
-            # Rock (R) wins Scissors (S)
-            elif(RSP[0]=='R' and RSP[1]=='S'):
-                player1_score = player1_score + 1
-            elif(RSP[1]=='R' and RSP[0]=='S'):
-                player2_score = player2_score + 1
-            # Else, do not count the score (Tie)
-            else:
-                pass
+# Input game for 3*win_score times
+# If any player wins, then break the loop
+IsWinning = False
+for i in range(3*win_score):
+    # Input each game
+    # Example: "R P" --> ['R','P']
+    game = input().strip().split()
     
-        # In case that player 1 have reached the required score
-        elif(player1_score == win_score):
-            print(player1_score, player2_score)
-            print("Player 1 wins")
-            break
-    
-        # In case that player 2 have reached the required score
-        elif(player2_score == win_score):
-            print(player1_score, player2_score)
-            print("Player 2 wins")
-            break
+    # Count player score
+    if(game in winning):
+        player01 += 1
+    elif(game in losing):
+        player02 += 1
 
-    # Last loop (3n+1 loop) just check the result in case you just win, lose or tie in the last game
-    else:
-        if(player1_score != win_score and player2_score != win_score):
-            print(player1_score, player2_score)
-            print("Tie")
-        elif(player1_score == win_score):
-            print(player1_score, player2_score)
-            print("Player 1 wins")
-        elif(player2_score == win_score):
-            print(player1_score, player2_score)
-            print("Player 2 wins")
+    # Check if any player wins the game
+    if(player01 == win_score):
+        IsWinning = True
+        print(player01, player02)
+        print("Player 1 wins")
+        break
+    elif(player02 == win_score):
+        IsWinning = True
+        print(player01, player02)
+        print("Player 2 wins")
+        break
+
+# In case that there's nobody wins tha game yet
+if(not IsWinning):
+    print(player01, player02)
+    print("Tie")
