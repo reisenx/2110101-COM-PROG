@@ -10,7 +10,7 @@ def RLE(code):
         # Example: ABBA --> A 1 B 2 A 1
         for i in range(0,len(code)):
             # Setup a matching character = character in index 0 and starts counting
-            if(i==0):
+            if(i == 0):
                 character = code[0]
                 count = 1
             # If the current character doesn't match anymore
@@ -22,7 +22,7 @@ def RLE(code):
                 count = 1
             # If the current character matches, then count them
             elif(code[i] == character):
-                count = count + 1
+                count += 1
         # Don't forget note the last one into RLE
         character_count = [character,count]
         RLE.append(character_count)

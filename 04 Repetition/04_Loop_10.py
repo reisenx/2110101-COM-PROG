@@ -10,7 +10,7 @@ U = 0
 temp = a
 while(temp != 0):
     temp = temp//10
-    U = U+1
+    U += 1
 x = (L+U)/2
 
 # Using bisection algorithm until |a-10^x| <= 10^(-10) * max(a,10^x)

@@ -11,8 +11,8 @@ def grade_mcq(sol,ans):
     else:
         # If the answer string and key string in index i is the same, add score by 1
         for i in range(0,len(sol)):
-         if(ans[i] == sol[i]):
-             score = score+1
+            if(ans[i] == sol[i]):
+                score += 1
         return score
 
 # Execute input string

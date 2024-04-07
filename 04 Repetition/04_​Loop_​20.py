@@ -29,7 +29,7 @@ while(True):
         max_02 = data[1]
         
         # Add the line count by 1
-        N = N+1
+        N += 1
     
     # Input data in line N >= 1
     elif(N >= 1):
@@ -51,4 +51,4 @@ while(True):
             max_02 = max(max_02, data[1])
         
         # Add the line count by 1
-        N = N+1
+        N += 1
