@@ -17,7 +17,7 @@ step3 = str(step3)
 
 # Step 4: Pick only a number from thousands, hundreds and tens from a number from Step 3
 # then put them together to be a 3-digit number
-step4 = step3[-4:-1:1]
+step4 = step3[-4:-1]
 
 # Step 5: Pick ones from a sum of digits of 3-digit number then add 1
 # Example: 813 --> 8 + 1 + 3 --> 12 --> 2 --> 2 + 1 --> 3
@@ -26,8 +26,8 @@ step5 = step5%10 + 1
 
 # Step 6: Convert a number from step 5 to an alphabet
 # Example: 1-->A, 2-->B, 3-->C and so on
-alphabet = ["A","B","C","D","E","F","G","H","I","J"]
-step6 = alphabet[step5-1]
+alphabet = "ABCDEFGHIJ"
+step6 = alphabet[step5 - 1]
 
 # Step 7: Output a number from Step 4 with an alphabet from Step 6 together
-print(step4+step6) 
+print(step4 + step6) 
