@@ -1,15 +1,15 @@
 # This function can return a dictionary that swap keys and values
 def reverse(dict):
     new_dict = {}
-    for key in dict:
-        new_dict[dict[key]] = key
+    for key,value in dict.items():
+        new_dict[value] = key
     return new_dict
 
 # This function can a list that contains a key that have the input value
-def keys(dict,value):
+def keys(dict,v):
     keys_list = []
-    for key in dict:
-        if(dict[key] == value):
+    for key,value in dict.items():
+        if(value == v):
             keys_list.append(key)
     return keys_list
 

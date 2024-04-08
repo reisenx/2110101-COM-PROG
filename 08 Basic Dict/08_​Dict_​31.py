@@ -5,19 +5,19 @@
 # Therefore, total(pocket) returns (100*5)+(50*2)+(10*5)+(1*15) = 665
 def total(pocket):
     total_money = 0
-    for money in pocket:
-        total_money += money*pocket[money]
+    for money,num in pocket.items():
+        total_money += money*num
     return total_money
 
 # This function can return dictionary "pocket" after take more money
 # The "money_in" parameter is also a dictionary
 # Example: take({100:5}, {100:2, 50:0, 1:3}) returns {100:7, 50:0, 1:3}
 def take(pocket, money_in):
-    for money in money_in:
+    for money,num in money_in.items():
         if(money in pocket):
-            pocket[money] += money_in[money]
+            pocket[money] += num
         else:
-            pocket[money] = money_in[money]
+            pocket[money] = num
     return pocket
 
 # This function can return a dictionary of money that used for paying
@@ -53,20 +53,21 @@ def pay(pocket, amt):
         return {}
     else:
         money_pay = {}
-        for money in pocket:
-            number_used = min(amt//money, pocket[money])
-            amt -= money*number_used
-            if(number_used > 0):
-                money_pay[money] = number_used
+        for money,num in pocket.items():
+            num_used = min(amt//money, num)
+            amt -= money*num_used
+            if(num_used > 0):
+                money_pay[money] = num_used
+        
         # - If it is possible to pay, amt will be 0
-        # - If it is impossible to pay, amt will be greater than 0
         if(amt == 0):
             # Subtract "pocket" with "money_pay"
-            for money in pocket:
-                if(money in money_pay):
-                    pocket[money] -= money_pay[money]
+            for money,num_used in money_pay.items():
+                pocket[money] -= num_used
             # Returns "money_pay"
             return money_pay
+        
+        # - If it is impossible to pay, amt will be greater than 0
         elif(amt > 0):
             return {}
 

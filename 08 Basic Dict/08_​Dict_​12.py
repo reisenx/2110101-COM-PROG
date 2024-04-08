@@ -3,28 +3,23 @@ n = int(input())
 
 # Input name and nickname and contains it in a dict
 # Example: "Robert Dick"
-# nickname["Robert"] = "Dick" and name["Dick"] = "Robert"
-name = {}
-nickname = {}
+# name_to_nick["Robert"] = "Dick" and nick_to_name["Dick"] = "Robert"
+nick_to_name = {}
+name_to_nick = {}
 for i in range(n):
-    temp_name, temp_nickname = input().split()
-    name[temp_nickname] = temp_name
-    nickname[temp_name] = temp_nickname
-
-# Input number of output name
-n = int(input())
-
-# Convert name <--> nickname and put them in a list
-output_name = []
-for i in range(n):
-    temp_name = input()
-    if(temp_name in name):
-        output_name.append(name[temp_name])
-    elif(temp_name in nickname):
-        output_name.append(nickname[temp_name])
-    else:
-        output_name.append("Not found")
+    name, nickname = input().split()
+    nick_to_name[nickname] = name
+    name_to_nick[name] = nickname
 
 # Output
+n = int(input())
 for i in range(n):
-    print(output_name[i])
+    search = input()
+    if(search in nick_to_name):
+        print(nick_to_name[search])
+
+    elif(search in name_to_nick):
+        print(name_to_nick[search])
+
+    else:
+        print("Not found")

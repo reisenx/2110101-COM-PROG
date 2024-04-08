@@ -37,16 +37,16 @@ for i in range(n):
 # Calulate top sales and total sales
 top_sales = 0
 total_sales = 0
-for item in sales:
-    total_sales += sales[item]
-    if(sales[item] > top_sales):
-        top_sales = sales[item]
+for icecream,money in sales.items():
+    total_sales += money
+    if(money > top_sales):
+        top_sales = money
 
 # Put top sales products into a list and sort it in alphabetical order
 top_products = []
-for item in sales:
-    if(sales[item] == top_sales):
-        top_products.append(item)
+for icecream,money in sales.items():
+    if(money == top_sales):
+        top_products.append(icecream)
 top_products.sort()
 
 # Output
