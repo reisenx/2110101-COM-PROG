@@ -1,0 +1,1 @@
+print(to_sec(1,0,0), to_sec(0,1,0), to_sec(0,0,1), to_sec(23,59,59))
