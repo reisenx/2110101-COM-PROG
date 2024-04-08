@@ -61,4 +61,64 @@ while(score < 100):
 - `x` (Runtime Error) คือ มีการใช้งานคำสั่งที่ไม่ถูกต้อง
 - `T` (Time Limit Exceed) คือ Code ของเราใช้เวลา Run นานเกินเวลาที่โจทย์กำหนด
 
-**ตัวอย่างคะแนน Error ที่มีข้อผิดพลาดชนิดต่างๆ**
+**ตัวอย่างคะแนน Grader ที่มีข้อผิดพลาดชนิดต่างๆ**
+
+![Grader Error](https://raw.githubusercontent.com/reisenx/COM-PROG/main/SM%20Study%20Materials/99%20OTHERS/Grader%20Error.png)
+
+ซึ่งถ้าเกิดเหตุการณ์แบบนี้ขึ้น ~~(เกิดขึ้นบ่อยเลยแหละ)~~ หน้าที่ของเราก็คือแก้ Code ของเราไปเรื่อยๆจนกว่าจะได้คะแนน 100 เต็มแบบภาพข้างล่างนี้นั่นเอง
+
+![Grader Perfect](https://raw.githubusercontent.com/reisenx/COM-PROG/main/SM%20Study%20Materials/99%20OTHERS/Grader%20Perfect.png)
+
+---
+
+# Grader Solution
+### Download โจทย์ทั้งหมดได้ที่ [LINK](https://github.com/reisenx/COM-PROG/tree/main/SM%20Study%20Materials/01%20Grader%20Problems)
+หลังจากที่เราได้พูดถึงการใช้งาน Grader ไปแล้วนั้น ในส่วนนี้ก็จะเป็นเฉลยโจทย์ Grader นั่นเอง
+### เฉลยบทที่ 00: Python Intro
+[GitHub Code](https://github.com/reisenx/COM-PROG/tree/main/00%20Python%20Intro)
+### เฉลยบทที่ 01: Data Type & Expression
+[VDO อาจารย์](https://youtube.com/playlist?list=PL0ROnaCzUGB6GmsZkqCjI12aasgFXiIDS&si=TgqosLueW4wevKLW) || [GitHub Code](https://github.com/reisenx/COM-PROG/tree/main/01%20Data%20Type%20%26%20Expression)
+### เฉลยบทที่ 02: Basic String & List
+[VDO อาจารย์](https://youtube.com/playlist?list=PL0ROnaCzUGB6GmsZkqCjI12aasgFXiIDS&si=TgqosLueW4wevKLW) || [GitHub Code](https://github.com/reisenx/COM-PROG/tree/main/02%20Basic%20String%20%26%20List)
+### เฉลยบทที่ 03: Selection
+[VDO อาจารย์](https://youtube.com/playlist?list=PL0ROnaCzUGB6GmsZkqCjI12aasgFXiIDS&si=TgqosLueW4wevKLW) || [GitHub Code](https://github.com/reisenx/COM-PROG/tree/main/03%20Selection)
+### เฉลยบทที่ 04: Repetition
+[VDO อาจารย์](https://youtube.com/playlist?list=PL0ROnaCzUGB6GmsZkqCjI12aasgFXiIDS&si=TgqosLueW4wevKLW) || [GitHub Code](https://github.com/reisenx/COM-PROG/tree/main/04%20Repetition)
+### เฉลยบทที่ 05: List Processing
+[VDO อาจารย์](https://youtube.com/playlist?list=PL0ROnaCzUGB6GmsZkqCjI12aasgFXiIDS&si=TgqosLueW4wevKLW) || [GitHub Code](https://github.com/reisenx/COM-PROG/tree/main/05%20List%20Processing)
+### เฉลยบทที่ 06: Function
+[VDO อาจารย์](https://youtube.com/playlist?list=PL0ROnaCzUGB6GmsZkqCjI12aasgFXiIDS&si=TgqosLueW4wevKLW) || [GitHub Code](https://github.com/reisenx/COM-PROG/tree/main/06%20Function)
+### เฉลยบทที่ 07: String Processing
+[VDO อาจารย์](https://youtube.com/playlist?list=PL0ROnaCzUGB6GmsZkqCjI12aasgFXiIDS&si=TgqosLueW4wevKLW) || [GitHub Code](https://github.com/reisenx/COM-PROG/tree/main/07%20String%20Processing)
+### เฉลยบทที่ 08: Basic Dict
+[VDO อาจารย์](https://youtube.com/playlist?list=PL0ROnaCzUGB6GmsZkqCjI12aasgFXiIDS&si=TgqosLueW4wevKLW) || [GitHub Code](https://github.com/reisenx/COM-PROG/tree/main/08%20Basic%20Dict)
+### เฉลยบทที่ 09: Nested Structure
+[VDO อาจารย์](https://youtube.com/playlist?list=PL0ROnaCzUGB6GmsZkqCjI12aasgFXiIDS&si=TgqosLueW4wevKLW) || [GitHub Code](https://github.com/reisenx/COM-PROG/tree/main/09%20Nested%20Structure)
+### เฉลยบทที่ 10: Tuple, Set, Dict
+[VDO อาจารย์](https://youtube.com/playlist?list=PL0ROnaCzUGB6GmsZkqCjI12aasgFXiIDS&si=TgqosLueW4wevKLW) || [GitHub Code](https://github.com/reisenx/COM-PROG/tree/main/10%20Tuple%2C%20Set%2C%20Dict)
+### เฉลยบทที่ 11: NumPy
+[VDO อาจารย์](https://youtube.com/playlist?list=PL0ROnaCzUGB6GmsZkqCjI12aasgFXiIDS&si=TgqosLueW4wevKLW) || [GitHub Code](https://github.com/reisenx/COM-PROG/tree/main/11%20NumPy)
+### เฉลยบทที่ 12: Class & Object
+[VDO อาจารย์](https://youtube.com/playlist?list=PL0ROnaCzUGB6GmsZkqCjI12aasgFXiIDS&si=TgqosLueW4wevKLW) || [GitHub Code](https://github.com/reisenx/COM-PROG/tree/main/12%20Class%20%26%20Object)
+### เฉลยโจทย์ Part-I: Grader Quiz 01 Practice
+[VDO อาจารย์](https://youtube.com/playlist?list=PL0ROnaCzUGB6GmsZkqCjI12aasgFXiIDS&si=TgqosLueW4wevKLW) || [GitHub Code](https://github.com/reisenx/COM-PROG/tree/main/P1%20Grader%2001%20Practice)
+### เฉลยโจทย์ Part-II: Grader Quiz 02 Practice
+[GitHub Code](https://github.com/reisenx/COM-PROG/tree/main/P2%20Grader%2002%20Practice)
+### เฉลยโจทย์ Part-III: Grader Quiz 03 Practice
+[GitHub Code](https://github.com/reisenx/COM-PROG/tree/main/P3%20Grader%2003%20Practice)
+### เฉลยการบ้าน (HW1-HW5) ปีการศึกษา 2566 เทอม 2
+**Coming soon**
+### เฉลยงานในคาบเรียน ตอนเรียนที่ 5 ปีการศึกษา 2566 เทอม 2
+[GitHub Code](https://github.com/reisenx/COM-PROG/tree/main/IC%20In-class%20Assignment)
+### เฉลยข้อสอบ Grader Quiz ปีการศึกษา 2565 เทอม 1
+[GitHub Code](https://github.com/reisenx/COM-PROG/tree/main/G65%20Grader%202565)
+### เฉลยข้อสอบ Grader Quiz ปีการศึกษา 2566
+[GitHub Code](https://github.com/reisenx/COM-PROG/tree/main/G66%20Grader%202566)
+
+---
+# Author Contact
+### Worralop Srichainont (CU Intania 107 | OSK141)
+### Facebook: [Worralop Srichainont](https://www.facebook.com/bloom.nakrub/)
+### Instagram: [bloom.wrls](https://www.instagram.com/bloom.wrls/)
+### Discord: reisenx3395
+### GitHub: [reisenx](https://github.com/reisenx)
