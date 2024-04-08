@@ -1,4 +1,4 @@
-# 2110101 COMPUTER PROGRAMMING
+![IMG_7607](https://github.com/reisenx/COM-PROG/assets/56445756/670a13cf-8293-4f72-a3a3-2c44a9d1bf5a)# 2110101 COMPUTER PROGRAMMING
 ## Welcome to The Ultimate Guide to COM PROG
 ![Banner](https://raw.githubusercontent.com/reisenx/COM-PROG/main/SM%20Study%20Materials/99%20OTHERS/COM%20PROG%20Banner.png)
 
@@ -117,7 +117,8 @@ while(score < 100):
 
 ---
 # Author Contact
-### Worralop Srichainont (CU Intania 107 | OSK141)
+![Me](https://github.com/reisenx/COM-PROG/blob/main/SM%20Study%20Materials/99%20OTHERS/IMG_7607.jpg?raw=true)
+## Author: Worralop Srichainont (CU Intania 107 | OSK141)
 ### Facebook: [Worralop Srichainont](https://www.facebook.com/bloom.nakrub/)
 ### Instagram: [bloom.wrls](https://www.instagram.com/bloom.wrls/)
 ### Discord: reisenx3395
