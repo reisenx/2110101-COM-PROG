@@ -48,4 +48,4 @@ while(score < 100):
 ซึ่งสิ่งที่บ่งบอกว่าเราแก้โจทย์แต่ละข้อได้หรือไม่นั้น ในรายวิชา 2110101 COMPUTER PROGRAMMING จะใช้สิ่งที่เรียกว่า **Grader**
 ### ลักษณะของ Grader
 **Grader** คือสิ่งที่ตรวจสอบว่า Code ที่เราเขียนนั้นทำงานได้ในกรณี (Testcases) ต่างๆได้ถูกต้องตามที่โจทย์ต้องการหรือไม่ ซึ่งถ้าถูกต้องทุก Testcases ก็จะได้ 100 คะแนนเต็มไป แต่ถ้า Code เราไม่สามารถทำงานได้ในบาง Testcases นั้น คะแนนก็จะลดหลั่นลงไปตาม Testcases ที่ผิด
-ลักษณะการใช้งานก็จะประมาณนี้เลยจ้า
+![Grader](https://raw.githubusercontent.com/reisenx/COM-PROG/main/SM%20Study%20Materials/99%20OTHERS/How%20to%20Grader%20GIF.gif)
