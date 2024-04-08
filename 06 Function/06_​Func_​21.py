@@ -1,9 +1,9 @@
 # read_answers() function description
 # This function convert input into a list
 
-# N is a number of students
-# sid is a student id
-# ans is a student answer
+# 'N' is a number of students
+# 'sid' is a student id
+# 'ans' is a student answer
 
 # Example Input:
 # 3
@@ -30,7 +30,7 @@ def read_answers():
 def marking(answer, solution):
     score = 0
     for i in range(len(answer)):
-        if answer[i] == solution[i]:
+        if(answer[i] == solution[i]):
             score += 1
     return score
 
@@ -40,10 +40,10 @@ def marking(answer, solution):
 # Example: 81
 # This function return "A"
 def grading(score):
-    g = [[80,"A"], [70,"B"], [60,"C"], [50,"D"]]
-    for a,b in g:
-        if score >= a:
-            return b
+    grades = [[80,"A"], [70,"B"], [60,"C"], [50,"D"]]
+    for g_score,g_letter in grades:
+        if score >= g_score:
+            return g_letter
     return "F"
 
 # scoring(answer, solution) function description
@@ -94,11 +94,11 @@ def sort(scores):
     x = []
     for sid,score,grade in scores:
         x.append([score, sid, grade])
-        x.sort(reverse = True)
+    x.sort(reverse = True)
     for i in range(len(x)):
         scores[i] = [x[i][1], x[i][0], x[i][2]]
 
-# -- The solution of this problem starts here --
+# == The solution of this problem starts here ==
 # Input a solution string
 solution = str(input())
 

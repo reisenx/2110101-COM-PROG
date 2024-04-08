@@ -33,9 +33,7 @@ def zodiac(d,m):
 # 3.) Else, it is a common year (365 days)
 # Example: days_in_feb(2016) = 29
 def days_in_feb(y):
-    if(y%400 == 0):
-        return 29
-    elif(y%4 == 0 and y%100 != 0):
+    if((y%400 == 0) or (y%4 == 0 and y%100 != 0)):
         return 29
     else:
         return 28

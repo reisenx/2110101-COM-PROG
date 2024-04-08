@@ -14,7 +14,7 @@ def next_prime(N):
     # Set an initial number that greater than N
     N += 1
     # Increase a value by 1 until N is a prime number
-    while(is_prime(N) == False):
+    while(not is_prime(N)):
         N += 1
     return N
 

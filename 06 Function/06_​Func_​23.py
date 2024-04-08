@@ -18,7 +18,7 @@ def is_odd(e):
 def odd_list(alist):
     odd = []
     for item in alist:
-        if(is_odd(item) == True):
+        if(is_odd(item)):
             odd.append(item)
     return odd
 
