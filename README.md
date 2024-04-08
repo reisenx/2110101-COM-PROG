@@ -1,4 +1,4 @@
-![IMG_7607](https://github.com/reisenx/COM-PROG/assets/56445756/670a13cf-8293-4f72-a3a3-2c44a9d1bf5a)# 2110101 COMPUTER PROGRAMMING
+# 2110101 COMPUTER PROGRAMMING
 ## Welcome to The Ultimate Guide to COM PROG
 ![Banner](https://raw.githubusercontent.com/reisenx/COM-PROG/main/SM%20Study%20Materials/99%20OTHERS/COM%20PROG%20Banner.png)
 
