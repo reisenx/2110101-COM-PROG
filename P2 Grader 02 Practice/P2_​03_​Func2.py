@@ -1,4 +1,4 @@
-# Reminder
+# == Reminder ==
 # All function must not change the value of parameters
 
 # This function can find an area of a polygon
@@ -37,17 +37,14 @@ def is_heterogram(s):
     alphabet = "ABCDEFGHIJKLMNOPQRSTUVWXYZ"
     # Count a letter and put them in a dictionary 'letter_count'
     letter_count = {}
-    for letter in text:
-        if(letter in alphabet):
-            if(letter not in letter_count):
-                letter_count[letter] = 1
-            elif(letter in letter_count):
-                letter_count[letter] += 1
-    # If the string 's' is heterogram, maximum value of 'count_list' must be 1
-    if(max(letter_count.values()) == 1):
-        return True
-    else:
-        return False
+    for char in text:
+        if(char in alphabet):
+            if(char not in letter_count):
+                letter_count[char] = 1
+            elif(char in letter_count):
+                letter_count[char] += 1
+    # If the string 's' is heterogram, maximum value of 'letter_count' must be 1
+    return max(letter_count.values()) == 1
 
 # This function can replace a substring 'a' with substring 'b' in string 's'
 # Consider lowercase and uppercase are the same letter
@@ -55,86 +52,62 @@ def is_heterogram(s):
 # In this case, we will see a string "Hard" here "Python is [hard]". Replace it with "easy"
 # and you got a new string which is "Python is easy"
 
+# == Algorithm ==
+# Create a new string 'replaced'
+# Check if s[start:end] is 'b' until the end of the string 's' 
+# - If yes, replace with substring 'b' and increase start and end by len(a)
+# - If no, add s[start] to 'replaced' and increase start and end by 1
+
 # Example 2: replace_ignorecase("AAabaAA", "Aa", "Aaa")
-# Algorithm
-# Convert string 's' and substring 'a' to uppercase
-# a = 'Aa' --> check = 'AA', check_s = "AAABAAA"
-# Use function find() to indicate the index of the 'check' in 'check_s' then put all the index in the list
-# Since find() can indicate only substring that has the smallest index, so we need to delete a substring after find()
-
-# Repeat the process until we can't find it anymore (check_s.find(check) == -1)
-# Loop 1: "AAABAAA".find('AA') = 0 --> index = 0 --> index_list = [0]
-# Delete "[AA]ABAAA" --> "ABAAA"
-# Loop 2: "ABAAA".find('AA') = 2 --> index = 0+2+2 --> index_list = [0,4]
-# Delete "[ABAA]A" --> "A"
-# Loop 3: "A".find('AA') = -1 --> Break loop
-
-# Modify a new string
-# len("AAABAAA") = 7 --> loop from i=0 to i=6
-# len("Aa") = 2 --> increase i by 2 when i in index_list
-# Loop i=0: i=0 in index_list --> Add substring b --> new_s = "Aaa" --> i += 2
-# Loop i=2: i=2 not in index_list --> Add s[2] = 'a' --> new_s = "Aaaa" --> i += 1
-# Loop i=3: i=3 not in index_list --> Add s[3] = 'b' --> new_s = "Aaaab" --> i += 1
-# Loop i=4: i=4 in index_list --> Add substring b --> new_s = "AaaabAaa" --> i += 2
-# Loop i=6: i=6 not in index_list --> Add s[6] = 'A' --> new_s = "AaaabAaaA" --> i += 1
-# Loop i=7: i>6 --> Break loop
-# The function returns "AaaabAaaA"
+# Loop 1: t[0:2] = "[AA]abaAA" --> replaced = "Aaa"         <-- Add b = "Aaa"
+# Loop 2: t[2:4] = "AA[ab]aAA" --> replaced = "Aaaa"   
+# Loop 3: t[3:5] = "AAa[ba]AA" --> replaced = "Aaaab"  
+# Loop 4: t[4:6] = "AAab[aA]A" --> replaced = "AaaabAaa"    <-- Add b = "Aaa"
+# Loop 5: t[7:9] = "AAabaA[A]" --> replaced = "AaaabAaaA"  
+# Loop 6: t[8:10] --> break (start = 8 and len(s) = 8)
 def replace_ignorecase(s,a,b):
-    check = a.upper()
-    check_s = s.upper()
-    # Create and find an index list
-    index_list = []
-    while(check_s.find(check) != -1):
-        index = check_s.find(check)
-        if(len(index_list) == 0):
-            index_list.append(index)
-            check_s = check_s[index + len(a):]
+    replaced = ""
+    start = 0
+    end = len(a)
+    while(start < len(s)):
+        if(s[start:end].lower() == a.lower()):
+            replaced += b
+            start += len(a)
+            end += len(a)
         else:
-            index_list.append(index_list[-1] + len(a) + index)
-            check_s = check_s[index + len(a):]
-    # Modify a new string
-    new_s = ""
-    i = 0
-    while(i < len(s)):
-        if(i in index_list):
-            new_s += b
-            i += len(a)
-        else:
-            new_s += s[i]
-            i += 1
-    return new_s
+            replaced += s[start]
+            start += 1
+            end += 1
+    return replaced
 
 # This function can return a list contains top 3 names
 # 'votes' parameter is a dictionary
 # If there are people with same score, sort them in alphabetical order
 # Example: top3({"A": 8888, "B": 6666, "C": 7777, "X":6666}) returns ['A','C','B']
 def top3(votes):
-    # Create and find a list of votes and sort it in descending order
-    # {"A": 8888, "B": 6666, "C": 7777, "X":6666} --> [8888,7777,6666]
-    vote_list = []
-    for name in votes:
-        if(votes[name] not in vote_list):
-            vote_list.append(votes[name])
-    vote_list.sort(reverse = True)
+    # Find unique top 3 scores
+    # Example: {"A":8888, "B":6666, "C":7777, "X":6666} --> [8888,7777,6666]
+    top3_scores = []
+    for name,score in votes.items():
+        if(score not in top3_scores):
+            top3_scores.append(score)
+    top3_scores.sort(reverse = True)
+    top3_scores = top3_scores[0:3]
 
-    # Find rank 1,2 and 3 names
-    rank1_name = []
-    rank2_name = []
-    rank3_name = []
-    for name in votes:
-        if(votes[name] == vote_list[0]):
-            rank1_name.append(name)
-        elif(votes[name] == vote_list[1]):
-            rank2_name.append(name)
-        elif(votes[name] == vote_list[2]):
-            rank3_name.append(name)
+    # Find all top3 names
+    top3_names = []
+    for t_score in top3_scores:
+        # Find a score of each rank, sort them and put all of them in 'top3_names' 
+        temp = []
+        for name,score in votes.items():
+            if(score == t_score):
+                temp.append(name)
+        temp.sort()
+        for item in temp:
+            top3_names.append(item)    
     
-    # Sort and select the first 3 person
-    rank1_name.sort()
-    rank2_name.sort()
-    rank3_name.sort()
-    top3_name = rank1_name + rank2_name + rank3_name
-    return top3_name[0:3]
+    # Return first 3 names in 'top3_names'
+    return top3_names[0:3]
 
 # Execute an input string 2 times
 for k in range(2):
