@@ -25,22 +25,28 @@ ID02, GPA02 = read_next(file02)
 while True:
     if(ID01 == "" and ID02 == ""):
         break
+
     elif(ID02 == ""):
         print(ID01,GPA01)
         ID01, GPA01 = read_next(file01)
+
     elif(ID01 == ""):
         print(ID02,GPA02)
         ID02, GPA02 = read_next(file02)
+
     elif(ID01[-2:] < ID02[-2:]):
         print(ID01,GPA01)
         ID01, GPA01 = read_next(file01)
+
     elif(ID02[-2:] < ID01[-2:]):
         print(ID02,GPA02)
         ID02, GPA02 = read_next(file02)
+
     elif(ID01[-2:] == ID02[-2:]):
         if(ID01 < ID02):
             print(ID01,GPA01)
             ID01, GPA01 = read_next(file01)
+            
         elif(ID02 < ID01):
             print(ID02,GPA02)
             ID02, GPA02 = read_next(file02)

@@ -10,11 +10,11 @@ text = input().strip()
 # word_list = ["power", "of", "love", "555"]
 text = text.lower()
 new_text = ""
-for i in range(len(text)):
-    if("a" <= text[i] <= "z"):
-        new_text += text[i]
-    elif("0" <= text[i] <= "9"):
-        new_text += text[i]
+for char in text:
+    if("a" <= char <= "z"):
+        new_text += char
+    elif("0" <= char <= "9"):
+        new_text += char
     else:
         new_text += " "
 word_list = new_text.split()

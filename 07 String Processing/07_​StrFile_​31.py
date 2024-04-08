@@ -36,17 +36,11 @@ else:
     # Just count how many A, T, G, C in a DNA
     # Example: "AAAACCCGGT" --> "A=4, T=1, G=2, C=3"
     elif(operation == 'F'):
-        count = [0,0,0,0]
-        for char in DNA:
-            if(char == "A"):
-                count[0] += 1
-            elif(char == "T"):
-                count[1] += 1
-            elif(char == "G"):
-                count[2] += 1
-            elif(char == "C"):
-                count[3] += 1
-        print("A=" + str(count[0]) + ", T=" + str(count[1]) + ", G=" + str(count[2]) + ", C=" + str(count[3]))
+        A = DNA.count('A')
+        T = DNA.count('T')
+        G = DNA.count('G')
+        C = DNA.count('C')
+        print("A=" + str(A) + ", T=" + str(T) + ", G=" + str(G) + ", C=" + str(C))
     
     # Operation D
     # Count a repetition of a pair of letter that occurs in a DNA
