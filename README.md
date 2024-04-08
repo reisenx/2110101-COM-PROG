@@ -73,7 +73,9 @@ while(score < 100):
 
 # Grader Solution
 ### Download โจทย์ทั้งหมดได้ที่ [LINK](https://github.com/reisenx/COM-PROG/tree/main/SM%20Study%20Materials/01%20Grader%20Problems)
-หลังจากที่เราได้พูดถึงการใช้งาน Grader ไปแล้วนั้น ในส่วนนี้ก็จะเป็นเฉลยโจทย์ Grader นั่นเอง
+หลังจากที่เราได้พูดถึงการใช้งาน Grader ไปแล้วนั้น ในส่วนนี้ก็จะเป็นส่วนที่รวบรวมเฉลยโจทย์ Grader นั่นเอง โดยทางผู้เขียนได้เขียน Code เฉลยโจทย์ในรายวิชานี้ไปกว่า 200 ข้อ พร้อมแนบ Comment อย่างละเอียดเพื่อแสดงแนวคิดในแต่ละขั้นตอน
+
+ทางผู้เขียนได้แนบทั้ง VDO ของอาจารย์ และ Code ของตนเอง สามารถใช้งานประกอบกันได้ตามความเหมาะสม 
 ### เฉลยบทที่ 00: Python Intro
 [GitHub Code](https://github.com/reisenx/COM-PROG/tree/main/00%20Python%20Intro)
 ### เฉลยบทที่ 01: Data Type & Expression
