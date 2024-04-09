@@ -5,7 +5,7 @@
 ---
 # About this Repository
 - Repository นี้สร้างขึ้นเพื่อจัดเก็บ Code ของผู้สร้าง และเอกสารการเรียนการสอนในรายวิชา **2110101 COMPUTER PROGRAMMING (เทอม 2/2566)**
-- Repository นี้สร้างขึ้นโดยมีจุดประสงค์คือ การสร้างแหล่งรวบรวม Resources ต่างๆของรายวิชา **2110101 COMPUTER PROGRAMMING** ไว้ในที่เดียว เพื่อนิสิตคณะวิศวกรรมศาสตร์ จุฬาลงกรณ์มหาวิทยาลัยทุกคน
+- Repository นี้สร้างขึ้นโดยมีจุดประสงค์คือ การสร้างแหล่งรวบรวม Resources ต่างๆของรายวิชา **2110101 COMPUTER PROGRAMMING** ไว้ในที่เดียว เพื่อนิสิตคณะวิศวกรรมศาสตร์ จุฬาลงกรณ์มหาวิทยาลัย
 - Repository นี้เหมาะสำหรับนิสิตคณะวิศวกรรมศาสตร์ จุฬาลงกรณ์มหาวิทยาลัย และผู้ที่สนใจในการเขียนโปรแกรมภาษา Python
 - Repository นี้สร้างโดย **นายวรลภย์ ศรีชัยนนท์**
 
@@ -24,21 +24,21 @@ print("Hello World!")
 ```
 หลังจากที่เรา Download โปรแกรมที่ต้องใช้ในวิชานี้เสร็จสิ้น ก็ถึงเวลาที่จะเริ่มเรียนสักที โดยสามารถรับชมคลิป VDO การเรียนการสอนของอาจารย์ภาควิชาวิศวกรรมคอมพิวเตอร์ จุฬาลงกรณ์มหาวิทยาลัย กันได้เลย
 ## 2110101 COMPUTER PROGRAMMING Website
-![Website]()
+![Website](https://raw.githubusercontent.com/reisenx/COM-PROG/main/SM%20Study%20Materials/99%20OTHERS/Website.png)
 #### Download เอกสารประกอบการเรียนการสอนได้ที่ [LINK](https://github.com/reisenx/COM-PROG/tree/main/SM%20Study%20Materials/00%20Python%20Study%20Materials)
-### บทที่ 00: [Python Intro](https://www.cp.eng.chula.ac.th/~somchai/python101/00-01.html)
-### บทที่ 01: [Data Type & Expression](https://www.cp.eng.chula.ac.th/~somchai/python101/01-01.html)
-### บทที่ 02: [Basic String & List](https://www.cp.eng.chula.ac.th/~somchai/python101/02-01.html)
-### บทที่ 03: [Selection](https://www.cp.eng.chula.ac.th/~somchai/python101/03-01.html)
-### บทที่ 04: [Repetition](https://www.cp.eng.chula.ac.th/~somchai/python101/04-01.html)
-### บทที่ 05: [List Processing](https://www.cp.eng.chula.ac.th/~somchai/python101/05-01.html)
-### บทที่ 06: [Function](https://www.cp.eng.chula.ac.th/~somchai/python101/06-01.html)
-### บทที่ 07: [String Processing](https://www.cp.eng.chula.ac.th/~somchai/python101/07-01.html)
-### บทที่ 08: [Basic Dict](https://www.cp.eng.chula.ac.th/~somchai/python101/08-01.html)
-### บทที่ 09: [Nested Structure](https://www.cp.eng.chula.ac.th/~somchai/python101/09-01.html)
-### บทที่ 10: [Tuple, Set, Dict](https://www.cp.eng.chula.ac.th/~somchai/python101/10-01.html)
-### บทที่ 11: [NumPy](https://www.cp.eng.chula.ac.th/~somchai/python101/11-01.html)
-### บทที่ 12: [Class & Object](https://www.cp.eng.chula.ac.th/~somchai/python101/12-01.html)
+### เนื้อหาบทที่ 00: [Python Intro](https://www.cp.eng.chula.ac.th/~somchai/python101/00-01.html)
+### เนื้อหาบทที่ 01: [Data Type & Expression](https://www.cp.eng.chula.ac.th/~somchai/python101/01-01.html)
+### เนื้อหาบทที่ 02: [Basic String & List](https://www.cp.eng.chula.ac.th/~somchai/python101/02-01.html)
+### เนื้อหาบทที่ 03: [Selection](https://www.cp.eng.chula.ac.th/~somchai/python101/03-01.html)
+### เนื้อหาบทที่ 04: [Repetition](https://www.cp.eng.chula.ac.th/~somchai/python101/04-01.html)
+### เนื้อหาบทที่ 05: [List Processing](https://www.cp.eng.chula.ac.th/~somchai/python101/05-01.html)
+### เนื้อหาบทที่ 06: [Function](https://www.cp.eng.chula.ac.th/~somchai/python101/06-01.html)
+### เนื้อหาบทที่ 07: [String Processing](https://www.cp.eng.chula.ac.th/~somchai/python101/07-01.html)
+### เนื้อหาบทที่ 08: [Basic Dict](https://www.cp.eng.chula.ac.th/~somchai/python101/08-01.html)
+### เนื้อหาบทที่ 09: [Nested Structure](https://www.cp.eng.chula.ac.th/~somchai/python101/09-01.html)
+### เนื้อหาบทที่ 10: [Tuple, Set, Dict](https://www.cp.eng.chula.ac.th/~somchai/python101/10-01.html)
+### เนื้อหาบทที่ 11: [NumPy](https://www.cp.eng.chula.ac.th/~somchai/python101/11-01.html)
+### เนื้อหาบทที่ 12: [Class & Object](https://www.cp.eng.chula.ac.th/~somchai/python101/12-01.html)
 
 ---
 # Introduction to Grader
@@ -74,51 +74,67 @@ while(score < 100):
 
 ---
 
-# Grader Solution
-### Download โจทย์ทั้งหมดได้ที่ [LINK](https://github.com/reisenx/COM-PROG/tree/main/SM%20Study%20Materials/01%20Grader%20Problems)
-หลังจากที่เราได้พูดถึงการใช้งาน Grader ไปแล้วนั้น ในส่วนนี้ก็จะเป็นส่วนที่รวบรวมเฉลยโจทย์ Grader นั่นเอง โดยทางผู้เขียนได้เขียน Code เฉลยโจทย์ในรายวิชานี้ไปกว่า 200 ข้อ พร้อมแนบ Comment อย่างละเอียดเพื่อแสดงแนวคิดในแต่ละขั้นตอน
-
-ทางผู้เขียนได้แนบทั้ง VDO ของอาจารย์ และ Code ของตนเอง สามารถใช้งานประกอบกันได้ตามความเหมาะสม 
-### เฉลยบทที่ 00: Python Intro
-[GitHub Code](https://github.com/reisenx/COM-PROG/tree/main/00%20Python%20Intro)
-### เฉลยบทที่ 01: Data Type & Expression
-[VDO อาจารย์](https://youtube.com/playlist?list=PL0ROnaCzUGB6GmsZkqCjI12aasgFXiIDS&si=TgqosLueW4wevKLW) || [GitHub Code](https://github.com/reisenx/COM-PROG/tree/main/01%20Data%20Type%20%26%20Expression)
-### เฉลยบทที่ 02: Basic String & List
-[VDO อาจารย์](https://youtube.com/playlist?list=PL0ROnaCzUGB6GmsZkqCjI12aasgFXiIDS&si=TgqosLueW4wevKLW) || [GitHub Code](https://github.com/reisenx/COM-PROG/tree/main/02%20Basic%20String%20%26%20List)
-### เฉลยบทที่ 03: Selection
-[VDO อาจารย์](https://youtube.com/playlist?list=PL0ROnaCzUGB6GmsZkqCjI12aasgFXiIDS&si=TgqosLueW4wevKLW) || [GitHub Code](https://github.com/reisenx/COM-PROG/tree/main/03%20Selection)
-### เฉลยบทที่ 04: Repetition
-[VDO อาจารย์](https://youtube.com/playlist?list=PL0ROnaCzUGB6GmsZkqCjI12aasgFXiIDS&si=TgqosLueW4wevKLW) || [GitHub Code](https://github.com/reisenx/COM-PROG/tree/main/04%20Repetition)
-### เฉลยบทที่ 05: List Processing
-[VDO อาจารย์](https://youtube.com/playlist?list=PL0ROnaCzUGB6GmsZkqCjI12aasgFXiIDS&si=TgqosLueW4wevKLW) || [GitHub Code](https://github.com/reisenx/COM-PROG/tree/main/05%20List%20Processing)
-### เฉลยบทที่ 06: Function
-[VDO อาจารย์](https://youtube.com/playlist?list=PL0ROnaCzUGB6GmsZkqCjI12aasgFXiIDS&si=TgqosLueW4wevKLW) || [GitHub Code](https://github.com/reisenx/COM-PROG/tree/main/06%20Function)
-### เฉลยบทที่ 07: String Processing
-[VDO อาจารย์](https://youtube.com/playlist?list=PL0ROnaCzUGB6GmsZkqCjI12aasgFXiIDS&si=TgqosLueW4wevKLW) || [GitHub Code](https://github.com/reisenx/COM-PROG/tree/main/07%20String%20Processing)
-### เฉลยบทที่ 08: Basic Dict
-[VDO อาจารย์](https://youtube.com/playlist?list=PL0ROnaCzUGB6GmsZkqCjI12aasgFXiIDS&si=TgqosLueW4wevKLW) || [GitHub Code](https://github.com/reisenx/COM-PROG/tree/main/08%20Basic%20Dict)
-### เฉลยบทที่ 09: Nested Structure
-[VDO อาจารย์](https://youtube.com/playlist?list=PL0ROnaCzUGB6GmsZkqCjI12aasgFXiIDS&si=TgqosLueW4wevKLW) || [GitHub Code](https://github.com/reisenx/COM-PROG/tree/main/09%20Nested%20Structure)
-### เฉลยบทที่ 10: Tuple, Set, Dict
-[VDO อาจารย์](https://youtube.com/playlist?list=PL0ROnaCzUGB6GmsZkqCjI12aasgFXiIDS&si=TgqosLueW4wevKLW) || [GitHub Code](https://github.com/reisenx/COM-PROG/tree/main/10%20Tuple%2C%20Set%2C%20Dict)
-### เฉลยบทที่ 11: NumPy
-[VDO อาจารย์](https://youtube.com/playlist?list=PL0ROnaCzUGB6GmsZkqCjI12aasgFXiIDS&si=TgqosLueW4wevKLW) || [GitHub Code](https://github.com/reisenx/COM-PROG/tree/main/11%20NumPy)
-### เฉลยบทที่ 12: Class & Object
-[VDO อาจารย์](https://youtube.com/playlist?list=PL0ROnaCzUGB6GmsZkqCjI12aasgFXiIDS&si=TgqosLueW4wevKLW) || [GitHub Code](https://github.com/reisenx/COM-PROG/tree/main/12%20Class%20%26%20Object)
-### เฉลยโจทย์ Part-I: Grader Quiz 01 Practice
-[VDO อาจารย์](https://youtube.com/playlist?list=PL0ROnaCzUGB6GmsZkqCjI12aasgFXiIDS&si=TgqosLueW4wevKLW) || [GitHub Code](https://github.com/reisenx/COM-PROG/tree/main/P1%20Grader%2001%20Practice)
-### เฉลยโจทย์ Part-II: Grader Quiz 02 Practice
-[GitHub Code](https://github.com/reisenx/COM-PROG/tree/main/P2%20Grader%2002%20Practice)
-### เฉลยโจทย์ Part-III: Grader Quiz 03 Practice
-[GitHub Code](https://github.com/reisenx/COM-PROG/tree/main/P3%20Grader%2003%20Practice)
-### เฉลยการบ้าน (HW1-HW5) ปีการศึกษา 2566 เทอม 2
+# Grader Problems and Solutions
+หลังจากที่เราได้พูดถึงการใช้งาน Grader ไปแล้วนั้น ในส่วนนี้ก็จะเป็นส่วนที่รวบรวมโจทย์ Grader พร้อมเฉลยอย่างละเอียดนั่นเอง ในส่วนนี้จะมี VDO ที่เฉลยโดยอาจารย์ และ Code ที่เขียนโดยผู้เขียนเอง ทุกคนสามารถเลือกใช้ประกอบกันได้ตามความเหมาะสม
+### โจทย์พร้อมเฉลยบทที่ 00: Python Intro
+* **โจทย์:**
+* **เฉลย:** [GitHub Code](https://github.com/reisenx/COM-PROG/tree/main/00%20Python%20Intro)
+### โจทย์พร้อมเฉลยบทที่ 01: Data Type & Expression
+* **โจทย์:**
+* **เฉลย:** [VDO อาจารย์](https://youtube.com/playlist?list=PL0ROnaCzUGB6GmsZkqCjI12aasgFXiIDS&si=TgqosLueW4wevKLW) | [GitHub Code](https://github.com/reisenx/COM-PROG/tree/main/01%20Data%20Type%20%26%20Expression)
+### โจทย์พร้อมเฉลยบทที่ 02: Basic String & List
+* **โจทย์:**
+* **เฉลย:** [VDO อาจารย์](https://youtube.com/playlist?list=PL0ROnaCzUGB6GmsZkqCjI12aasgFXiIDS&si=TgqosLueW4wevKLW) | [GitHub Code](https://github.com/reisenx/COM-PROG/tree/main/02%20Basic%20String%20%26%20List)
+### โจทย์พร้อมเฉลยบทที่ 03: Selection
+* **โจทย์:**
+* **เฉลย:** [VDO อาจารย์](https://youtube.com/playlist?list=PL0ROnaCzUGB6GmsZkqCjI12aasgFXiIDS&si=TgqosLueW4wevKLW) | [GitHub Code](https://github.com/reisenx/COM-PROG/tree/main/03%20Selection)
+### โจทย์พร้อมเฉลยบทที่ 04: Repetition
+* **โจทย์:**
+* **เฉลย:** [VDO อาจารย์](https://youtube.com/playlist?list=PL0ROnaCzUGB6GmsZkqCjI12aasgFXiIDS&si=TgqosLueW4wevKLW) | [GitHub Code](https://github.com/reisenx/COM-PROG/tree/main/04%20Repetition)
+### โจทย์พร้อมเฉลยบทที่ 05: List Processing
+* **โจทย์:**
+* **เฉลย:** [VDO อาจารย์](https://youtube.com/playlist?list=PL0ROnaCzUGB6GmsZkqCjI12aasgFXiIDS&si=TgqosLueW4wevKLW) | [GitHub Code](https://github.com/reisenx/COM-PROG/tree/main/05%20List%20Processing)
+### โจทย์พร้อมเฉลยบทที่ 06: Function
+* **โจทย์:**
+* **เฉลย:** [VDO อาจารย์](https://youtube.com/playlist?list=PL0ROnaCzUGB6GmsZkqCjI12aasgFXiIDS&si=TgqosLueW4wevKLW) | [GitHub Code](https://github.com/reisenx/COM-PROG/tree/main/06%20Function)
+### โจทย์พร้อมเฉลยบทที่ 07: String Processing
+* **โจทย์:**
+* **เฉลย:** [VDO อาจารย์](https://youtube.com/playlist?list=PL0ROnaCzUGB6GmsZkqCjI12aasgFXiIDS&si=TgqosLueW4wevKLW) | [GitHub Code](https://github.com/reisenx/COM-PROG/tree/main/07%20String%20Processing)
+### โจทย์พร้อมเฉลยบทที่ 08: Basic Dict
+* **โจทย์:**
+* **เฉลย:** [VDO อาจารย์](https://youtube.com/playlist?list=PL0ROnaCzUGB6GmsZkqCjI12aasgFXiIDS&si=TgqosLueW4wevKLW) | [GitHub Code](https://github.com/reisenx/COM-PROG/tree/main/08%20Basic%20Dict)
+### โจทย์พร้อมเฉลยบทที่ 09: Nested Structure
+* **โจทย์:**
+* **เฉลย:** [VDO อาจารย์](https://youtube.com/playlist?list=PL0ROnaCzUGB6GmsZkqCjI12aasgFXiIDS&si=TgqosLueW4wevKLW) | [GitHub Code](https://github.com/reisenx/COM-PROG/tree/main/09%20Nested%20Structure)
+### โจทย์พร้อมเฉลยบทที่ 10: Tuple, Set, Dict
+* **โจทย์:**
+* **เฉลย:** [VDO อาจารย์](https://youtube.com/playlist?list=PL0ROnaCzUGB6GmsZkqCjI12aasgFXiIDS&si=TgqosLueW4wevKLW) | [GitHub Code](https://github.com/reisenx/COM-PROG/tree/main/10%20Tuple%2C%20Set%2C%20Dict)
+### โจทย์พร้อมเฉลยบทที่ 11: NumPy
+* **โจทย์:**
+* **เฉลย:** [VDO อาจารย์](https://youtube.com/playlist?list=PL0ROnaCzUGB6GmsZkqCjI12aasgFXiIDS&si=TgqosLueW4wevKLW) | [GitHub Code](https://github.com/reisenx/COM-PROG/tree/main/11%20NumPy)
+### โจทย์พร้อมเฉลยบทที่ 12: Class & Object
+* **โจทย์:**
+* **เฉลย:** [VDO อาจารย์](https://youtube.com/playlist?list=PL0ROnaCzUGB6GmsZkqCjI12aasgFXiIDS&si=TgqosLueW4wevKLW) | [GitHub Code](https://github.com/reisenx/COM-PROG/tree/main/12%20Class%20%26%20Object)
+### โจทย์พร้อมเฉลยโจทย์ Part-I: Grader Quiz 01 Practice
+* **โจทย์:**
+* **เฉลย:** [VDO อาจารย์](https://youtube.com/playlist?list=PL0ROnaCzUGB6GmsZkqCjI12aasgFXiIDS&si=TgqosLueW4wevKLW) | [GitHub Code](https://github.com/reisenx/COM-PROG/tree/main/P1%20Grader%2001%20Practice)
+### โจทย์พร้อมเฉลยโจทย์ Part-II: Grader Quiz 02 Practice
+* **โจทย์:**
+* **เฉลย:** [GitHub Code](https://github.com/reisenx/COM-PROG/tree/main/P2%20Grader%2002%20Practice)
+### โจทย์พร้อมเฉลยโจทย์ Part-III: Grader Quiz 03 Practice
+* **โจทย์:**
+* **เฉลย:** [GitHub Code](https://github.com/reisenx/COM-PROG/tree/main/P3%20Grader%2003%20Practice)
+### โจทย์พร้อมเฉลยการบ้าน (HW1-HW5) ปีการศึกษา 2566 เทอม 2
 **Coming soon**
-### เฉลยงานในคาบเรียน ตอนเรียนที่ 5 ปีการศึกษา 2566 เทอม 2
-[GitHub Code](https://github.com/reisenx/COM-PROG/tree/main/IC%20In-class%20Assignment)
-### เฉลยข้อสอบ Grader Quiz ปีการศึกษา 2565 เทอม 1
-[GitHub Code](https://github.com/reisenx/COM-PROG/tree/main/G65%20Grader%202565)
-### เฉลยข้อสอบ Grader Quiz ปีการศึกษา 2566
-[GitHub Code](https://github.com/reisenx/COM-PROG/tree/main/G66%20Grader%202566)
+### โจทย์พร้อมเฉลยงานในคาบเรียน ตอนเรียนที่ 5 ปีการศึกษา 2566 เทอม 2
+* **โจทย์:**
+* **เฉลย:** [GitHub Code](https://github.com/reisenx/COM-PROG/tree/main/IC%20In-class%20Assignment)
+### โจทย์พร้อมเฉลยข้อสอบ Grader Quiz ปีการศึกษา 2565 เทอม 1
+* **โจทย์:**
+* **เฉลย:** [GitHub Code](https://github.com/reisenx/COM-PROG/tree/main/G65%20Grader%202565)
+### โจทย์พร้อมเฉลยข้อสอบ Grader Quiz ปีการศึกษา 2566
+* **โจทย์:**
+* **เฉลย:** [GitHub Code](https://github.com/reisenx/COM-PROG/tree/main/G66%20Grader%202566)
 
 ---
 # Author Contact
