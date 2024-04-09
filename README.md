@@ -46,9 +46,7 @@ print("Hello World!")
 while(score < 100):
   StopCoding = False
 ```
-หลังจากที่เราได้เรียน Python ในบทต่างๆแล้วนั้น ก็ได้เวลาฝึกทำโจทย์ Coding ในภาษา Python กันสักที ซึ่งโจทย์ในรายวิชานี้นั้นจะเน้นไปที่การเขียน Code แก้ปัญหาโดยใช้ความรู้เรื่องบทต่างๆ
-### Download โจทย์ทั้งหมดได้ที่ [LINK](https://github.com/reisenx/COM-PROG/tree/main/SM%20Study%20Materials/01%20Grader%20Problems)
-ซึ่งสิ่งที่บ่งบอกว่าเราแก้โจทย์แต่ละข้อได้หรือไม่นั้น ในรายวิชา 2110101 COMPUTER PROGRAMMING จะใช้สิ่งที่เรียกว่า **Grader**
+หลังจากที่เราได้เรียน Python ในบทต่างๆแล้วนั้น ก็ได้เวลาฝึกทำโจทย์ Coding ในภาษา Python กันสักที ซึ่งโจทย์ในรายวิชานี้นั้นจะเน้นไปที่การเขียน Code แก้ปัญหาโดยใช้ความรู้ Python ในบทต่างๆ ซึ่งสิ่งที่บ่งบอกว่าเราแก้โจทย์แต่ละข้อได้หรือไม่นั้น ในรายวิชา 2110101 COMPUTER PROGRAMMING จะใช้สิ่งที่เรียกว่า **Grader**
 ### ลักษณะของ Grader
 **Grader** คือสิ่งที่ตรวจสอบว่า Code ที่เราเขียนนั้นทำงานได้ในกรณี (Testcases) ต่างๆได้ถูกต้องตามที่โจทย์ต้องการหรือไม่ ซึ่งถ้าถูกต้องทุก Testcases ก็จะได้ 100 คะแนนเต็มไป แต่ถ้า Code เราไม่สามารถทำงานได้ในบาง Testcases นั้น คะแนนก็จะลดหลั่นลงไปตาม Testcases ที่ผิด
 
@@ -76,64 +74,64 @@ while(score < 100):
 
 # Grader Problems and Solutions
 หลังจากที่เราได้พูดถึงการใช้งาน Grader ไปแล้วนั้น ในส่วนนี้ก็จะเป็นส่วนที่รวบรวมโจทย์ Grader พร้อมเฉลยอย่างละเอียดนั่นเอง ในส่วนนี้จะมี VDO ที่เฉลยโดยอาจารย์ และ Code ที่เขียนโดยผู้เขียนเอง ทุกคนสามารถเลือกใช้ประกอบกันได้ตามความเหมาะสม
-### โจทย์พร้อมเฉลยบทที่ 00: Python Intro
-* **โจทย์:**
+### บทที่ 00: Python Intro
+* **โจทย์:** [Problems](https://github.com/reisenx/COM-PROG/tree/main/SM%20Study%20Materials/01%20Grader%20Problems/00%20Python%20Intro)
 * **เฉลย:** [GitHub Code](https://github.com/reisenx/COM-PROG/tree/main/00%20Python%20Intro)
-### โจทย์พร้อมเฉลยบทที่ 01: Data Type & Expression
-* **โจทย์:**
+### บทที่ 01: Data Type & Expression
+* **โจทย์:** [Problems](https://github.com/reisenx/COM-PROG/tree/main/SM%20Study%20Materials/01%20Grader%20Problems/01%20Data%20Type%20%26%20Expression)
 * **เฉลย:** [VDO อาจารย์](https://youtube.com/playlist?list=PL0ROnaCzUGB6GmsZkqCjI12aasgFXiIDS&si=TgqosLueW4wevKLW) | [GitHub Code](https://github.com/reisenx/COM-PROG/tree/main/01%20Data%20Type%20%26%20Expression)
-### โจทย์พร้อมเฉลยบทที่ 02: Basic String & List
-* **โจทย์:**
+### บทที่ 02: Basic String & List
+* **โจทย์:** [Problems](https://github.com/reisenx/COM-PROG/tree/main/SM%20Study%20Materials/01%20Grader%20Problems/02%20Basic%20String%20%26%20List)
 * **เฉลย:** [VDO อาจารย์](https://youtube.com/playlist?list=PL0ROnaCzUGB6GmsZkqCjI12aasgFXiIDS&si=TgqosLueW4wevKLW) | [GitHub Code](https://github.com/reisenx/COM-PROG/tree/main/02%20Basic%20String%20%26%20List)
-### โจทย์พร้อมเฉลยบทที่ 03: Selection
-* **โจทย์:**
+### บทที่ 03: Selection
+* **โจทย์:** [Problems](https://github.com/reisenx/COM-PROG/tree/main/SM%20Study%20Materials/01%20Grader%20Problems/03%20Selection)
 * **เฉลย:** [VDO อาจารย์](https://youtube.com/playlist?list=PL0ROnaCzUGB6GmsZkqCjI12aasgFXiIDS&si=TgqosLueW4wevKLW) | [GitHub Code](https://github.com/reisenx/COM-PROG/tree/main/03%20Selection)
-### โจทย์พร้อมเฉลยบทที่ 04: Repetition
-* **โจทย์:**
+### บทที่ 04: Repetition
+* **โจทย์:** [Problems](https://github.com/reisenx/COM-PROG/tree/main/SM%20Study%20Materials/01%20Grader%20Problems/04%20Repetition)
 * **เฉลย:** [VDO อาจารย์](https://youtube.com/playlist?list=PL0ROnaCzUGB6GmsZkqCjI12aasgFXiIDS&si=TgqosLueW4wevKLW) | [GitHub Code](https://github.com/reisenx/COM-PROG/tree/main/04%20Repetition)
-### โจทย์พร้อมเฉลยบทที่ 05: List Processing
-* **โจทย์:**
+### บทที่ 05: List Processing
+* **โจทย์:** [Problems](https://github.com/reisenx/COM-PROG/tree/main/SM%20Study%20Materials/01%20Grader%20Problems/05%20List%20Processing)
 * **เฉลย:** [VDO อาจารย์](https://youtube.com/playlist?list=PL0ROnaCzUGB6GmsZkqCjI12aasgFXiIDS&si=TgqosLueW4wevKLW) | [GitHub Code](https://github.com/reisenx/COM-PROG/tree/main/05%20List%20Processing)
-### โจทย์พร้อมเฉลยบทที่ 06: Function
-* **โจทย์:**
+### บทที่ 06: Function
+* **โจทย์:** [Problems](https://github.com/reisenx/COM-PROG/tree/main/SM%20Study%20Materials/01%20Grader%20Problems/06%20Function)
 * **เฉลย:** [VDO อาจารย์](https://youtube.com/playlist?list=PL0ROnaCzUGB6GmsZkqCjI12aasgFXiIDS&si=TgqosLueW4wevKLW) | [GitHub Code](https://github.com/reisenx/COM-PROG/tree/main/06%20Function)
-### โจทย์พร้อมเฉลยบทที่ 07: String Processing
-* **โจทย์:**
+### บทที่ 07: String Processing
+* **โจทย์:** [Problems](https://github.com/reisenx/COM-PROG/tree/main/SM%20Study%20Materials/01%20Grader%20Problems/07%20String%20Processing)
 * **เฉลย:** [VDO อาจารย์](https://youtube.com/playlist?list=PL0ROnaCzUGB6GmsZkqCjI12aasgFXiIDS&si=TgqosLueW4wevKLW) | [GitHub Code](https://github.com/reisenx/COM-PROG/tree/main/07%20String%20Processing)
-### โจทย์พร้อมเฉลยบทที่ 08: Basic Dict
-* **โจทย์:**
+### บทที่ 08: Basic Dict
+* **โจทย์:** [Problems](https://github.com/reisenx/COM-PROG/tree/main/SM%20Study%20Materials/01%20Grader%20Problems/08%20Basic%20Dict)
 * **เฉลย:** [VDO อาจารย์](https://youtube.com/playlist?list=PL0ROnaCzUGB6GmsZkqCjI12aasgFXiIDS&si=TgqosLueW4wevKLW) | [GitHub Code](https://github.com/reisenx/COM-PROG/tree/main/08%20Basic%20Dict)
-### โจทย์พร้อมเฉลยบทที่ 09: Nested Structure
-* **โจทย์:**
+### บทที่ 09: Nested Structure
+* **โจทย์:** [Problems](https://github.com/reisenx/COM-PROG/tree/main/SM%20Study%20Materials/01%20Grader%20Problems/09%20Nested%20Structure)
 * **เฉลย:** [VDO อาจารย์](https://youtube.com/playlist?list=PL0ROnaCzUGB6GmsZkqCjI12aasgFXiIDS&si=TgqosLueW4wevKLW) | [GitHub Code](https://github.com/reisenx/COM-PROG/tree/main/09%20Nested%20Structure)
-### โจทย์พร้อมเฉลยบทที่ 10: Tuple, Set, Dict
-* **โจทย์:**
+### บทที่ 10: Tuple, Set, Dict
+* **โจทย์:** [Problems](https://github.com/reisenx/COM-PROG/tree/main/SM%20Study%20Materials/01%20Grader%20Problems/10%20Tuple%2C%20Set%2C%20Dict)
 * **เฉลย:** [VDO อาจารย์](https://youtube.com/playlist?list=PL0ROnaCzUGB6GmsZkqCjI12aasgFXiIDS&si=TgqosLueW4wevKLW) | [GitHub Code](https://github.com/reisenx/COM-PROG/tree/main/10%20Tuple%2C%20Set%2C%20Dict)
-### โจทย์พร้อมเฉลยบทที่ 11: NumPy
-* **โจทย์:**
+### บทที่ 11: NumPy
+* **โจทย์:** [Problems](https://github.com/reisenx/COM-PROG/tree/main/SM%20Study%20Materials/01%20Grader%20Problems/11%20NumPy)
 * **เฉลย:** [VDO อาจารย์](https://youtube.com/playlist?list=PL0ROnaCzUGB6GmsZkqCjI12aasgFXiIDS&si=TgqosLueW4wevKLW) | [GitHub Code](https://github.com/reisenx/COM-PROG/tree/main/11%20NumPy)
-### โจทย์พร้อมเฉลยบทที่ 12: Class & Object
-* **โจทย์:**
+### บทที่ 12: Class & Object
+* **โจทย์:** [Problems](https://github.com/reisenx/COM-PROG/tree/main/SM%20Study%20Materials/01%20Grader%20Problems/12%20Class%20%26%20Object)
 * **เฉลย:** [VDO อาจารย์](https://youtube.com/playlist?list=PL0ROnaCzUGB6GmsZkqCjI12aasgFXiIDS&si=TgqosLueW4wevKLW) | [GitHub Code](https://github.com/reisenx/COM-PROG/tree/main/12%20Class%20%26%20Object)
-### โจทย์พร้อมเฉลยโจทย์ Part-I: Grader Quiz 01 Practice
-* **โจทย์:**
+### Part-I: Grader Quiz 01 Practice
+* **โจทย์:** [Problems](https://github.com/reisenx/COM-PROG/tree/main/SM%20Study%20Materials/01%20Grader%20Problems/P1%20Grader%2001%20Practice)
 * **เฉลย:** [VDO อาจารย์](https://youtube.com/playlist?list=PL0ROnaCzUGB6GmsZkqCjI12aasgFXiIDS&si=TgqosLueW4wevKLW) | [GitHub Code](https://github.com/reisenx/COM-PROG/tree/main/P1%20Grader%2001%20Practice)
-### โจทย์พร้อมเฉลยโจทย์ Part-II: Grader Quiz 02 Practice
-* **โจทย์:**
+### Part-II: Grader Quiz 02 Practice
+* **โจทย์:** [Problems](https://github.com/reisenx/COM-PROG/tree/main/SM%20Study%20Materials/01%20Grader%20Problems/P2%20Grader%2002%20Practice)
 * **เฉลย:** [GitHub Code](https://github.com/reisenx/COM-PROG/tree/main/P2%20Grader%2002%20Practice)
-### โจทย์พร้อมเฉลยโจทย์ Part-III: Grader Quiz 03 Practice
-* **โจทย์:**
+### Part-III: Grader Quiz 03 Practice
+* **โจทย์:** [Problems](https://github.com/reisenx/COM-PROG/tree/main/SM%20Study%20Materials/01%20Grader%20Problems/P3%20Grader%2003%20Practice)
 * **เฉลย:** [GitHub Code](https://github.com/reisenx/COM-PROG/tree/main/P3%20Grader%2003%20Practice)
-### โจทย์พร้อมเฉลยการบ้าน (HW1-HW5) ปีการศึกษา 2566 เทอม 2
+### การบ้าน (HW1-HW5) ปีการศึกษา 2566 เทอม 2
 **Coming soon**
-### โจทย์พร้อมเฉลยงานในคาบเรียน ตอนเรียนที่ 5 ปีการศึกษา 2566 เทอม 2
-* **โจทย์:**
+### งานในคาบเรียน ตอนเรียนที่ 5 ปีการศึกษา 2566 เทอม 2
+* **โจทย์:** [Problems](https://github.com/reisenx/COM-PROG/tree/main/SM%20Study%20Materials/01%20Grader%20Problems/IC%20In-class%20Assignment)
 * **เฉลย:** [GitHub Code](https://github.com/reisenx/COM-PROG/tree/main/IC%20In-class%20Assignment)
-### โจทย์พร้อมเฉลยข้อสอบ Grader Quiz ปีการศึกษา 2565 เทอม 1
-* **โจทย์:**
+### ข้อสอบ Grader Quiz ปีการศึกษา 2565
+* **โจทย์:** [Problems](https://github.com/reisenx/COM-PROG/tree/main/SM%20Study%20Materials/01%20Grader%20Problems/G65%20Grader%202565)
 * **เฉลย:** [GitHub Code](https://github.com/reisenx/COM-PROG/tree/main/G65%20Grader%202565)
-### โจทย์พร้อมเฉลยข้อสอบ Grader Quiz ปีการศึกษา 2566
-* **โจทย์:**
+### ข้อสอบ Grader Quiz ปีการศึกษา 2566
+* **โจทย์:** [Problems](https://github.com/reisenx/COM-PROG/tree/main/SM%20Study%20Materials/01%20Grader%20Problems/G66%20Grader%202566)
 * **เฉลย:** [GitHub Code](https://github.com/reisenx/COM-PROG/tree/main/G66%20Grader%202566)
 
 ---
