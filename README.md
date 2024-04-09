@@ -5,6 +5,7 @@
 ---
 # About this Repository
 - Repository นี้สร้างขึ้นเพื่อจัดเก็บ Code ของผู้สร้าง และเอกสารการเรียนการสอนในรายวิชา **2110101 COMPUTER PROGRAMMING (เทอม 2/2566)**
+- Repository นี้สร้างขึ้นโดยมีจุดประสงค์คือ การสร้างแหล่งรวบรวม Resources ต่างๆของรายวิชา **2110101 COMPUTER PROGRAMMING** ไว้ในที่เดียว เพื่อนิสิตคณะวิศวกรรมศาสตร์ จุฬาลงกรณ์มหาวิทยาลัยทุกคน
 - Repository นี้เหมาะสำหรับนิสิตคณะวิศวกรรมศาสตร์ จุฬาลงกรณ์มหาวิทยาลัย และผู้ที่สนใจในการเขียนโปรแกรมภาษา Python
 - Repository นี้สร้างโดย **นายวรลภย์ ศรีชัยนนท์**
 
@@ -22,6 +23,8 @@
 print("Hello World!")
 ```
 หลังจากที่เรา Download โปรแกรมที่ต้องใช้ในวิชานี้เสร็จสิ้น ก็ถึงเวลาที่จะเริ่มเรียนสักที โดยสามารถรับชมคลิป VDO การเรียนการสอนของอาจารย์ภาควิชาวิศวกรรมคอมพิวเตอร์ จุฬาลงกรณ์มหาวิทยาลัย กันได้เลย
+## 2110101 COMPUTER PROGRAMMING Website
+![Website]()
 #### Download เอกสารประกอบการเรียนการสอนได้ที่ [LINK](https://github.com/reisenx/COM-PROG/tree/main/SM%20Study%20Materials/00%20Python%20Study%20Materials)
 ### บทที่ 00: [Python Intro](https://www.cp.eng.chula.ac.th/~somchai/python101/00-01.html)
 ### บทที่ 01: [Data Type & Expression](https://www.cp.eng.chula.ac.th/~somchai/python101/01-01.html)
