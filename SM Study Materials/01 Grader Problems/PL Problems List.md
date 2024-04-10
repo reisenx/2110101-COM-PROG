@@ -1,37 +1,37 @@
-# Problem List
+# Problems List
 ## บทที่ 00: Python Intro
 | Problem Code | Name | Difficulty | Solution |
 | :--- | :--- | :--- | :--- |
 | [`00_​Intro_​01`](https://github.com/reisenx/COM-PROG/blob/main/SM%20Study%20Materials/01%20Grader%20Problems/00%20Python%20Intro/00_Intro_01.pdf) | `00_​Hello` | ⭐ | [Solution](https://github.com/reisenx/COM-PROG/blob/main/00%20Python%20Intro/00_Intro_01.py)
-| [`00_​Intro_​01`]() | `00_​Hello` | ⭐ | [Solution]()
-| [`00_​Intro_​01`]() | `00_​Hello` | ⭐ | [Solution]()
+| [`00_​Intro_​02`]() | `00_​Big_​Numbers` | ⭐ | [Solution]()
+| [`00_​Intro_​03`]() | `00_​Mountain_​Valley` | ⭐ | [Solution]()
 
 ## บทที่ 01: Data Type & Expression
 | Problem Code | Name | Difficulty | Solution |
 | :--- | :--- | :--- | :--- |
-| [`00_​Intro_​01`]() | `00_​Hello` | ⭐ | [Solution]()
-| [`00_​Intro_​01`]() | `00_​Hello` | ⭐ | [Solution]()
-| [`00_​Intro_​01`]() | `00_​Hello` | ⭐ | [Solution]()
-| [`00_​Intro_​01`]() | `00_​Hello` | ⭐ | [Solution]()
-| [`00_​Intro_​01`]() | `00_​Hello` | ⭐ | [Solution]()
-| [`00_​Intro_​01`]() | `00_​Hello` | ⭐ | [Solution]()
-| [`00_​Intro_​01`]() | `00_​Hello` | ⭐ | [Solution]()
-| [`00_​Intro_​01`]() | `00_​Hello` | ⭐ | [Solution]()
+| [`01_​Expr_​01`]() | `01_​Stirling_​Factorial` | ⭐ | [Solution]()
+| [`01_​Expr_​02`]() | `01_​Quadratic_​Root` | ⭐ | [Solution]()
+| [`01_​Expr_​03`]() | `01_​An_​Expression` | ⭐⭐ | [Solution]()
+| [`01_​Expr_​04`]() | `01_​Body_​Surface_​Area` | ⭐⭐ | [Solution]()
+| [`01_​Expr_​06`]() | `01_​Duration` | ⭐⭐⭐ | [Solution]()
+| [`01_​Expr_​07`]() | `01_​Body_​Surface_​Area (Function)` | ⭐ | [Solution]()
+| [`01_​Expr_​08`]() | `01_​Cube_​Root (Function)` | ⭐⭐ | [Solution]()
+| [`01_​Expr_​09`]() | `01_​Duration (Function)` | ⭐⭐ | [Solution]()
 
 ## บทที่ 02: Basic String & List
 | Problem Code | Name | Difficulty | Solution |
 | :--- | :--- | :--- | :--- |
-| [`00_​Intro_​01`]() | `00_​Hello` | ⭐ | [Solution]()
-| [`00_​Intro_​01`]() | `00_​Hello` | ⭐ | [Solution]()
-| [`00_​Intro_​01`]() | `00_​Hello` | ⭐ | [Solution]()
-| [`00_​Intro_​01`]() | `00_​Hello` | ⭐ | [Solution]()
-| [`00_​Intro_​01`]() | `00_​Hello` | ⭐ | [Solution]()
-| [`00_​Intro_​01`]() | `00_​Hello` | ⭐ | [Solution]()
-| [`00_​Intro_​01`]() | `00_​Hello` | ⭐ | [Solution]()
-| [`00_​Intro_​01`]() | `00_​Hello` | ⭐ | [Solution]()
-| [`00_​Intro_​01`]() | `00_​Hello` | ⭐ | [Solution]()
-| [`00_​Intro_​01`]() | `00_​Hello` | ⭐ | [Solution]()
-| [`00_​Intro_​01`]() | `00_​Hello` | ⭐ | [Solution]()
+| [`02_​StrList_​01`]() | `02_​CitizenID` | ⭐ | [Solution]()
+| [`02_​StrList_​02`]() | `02_​Arabic_​Numerals` | ⭐ | [Solution]()
+| [`02_​StrList_​03`]() | `02_​USDate` | ⭐ | [Solution]()
+| [`02_​StrList_​04`]() | `02_​NDigits` | ⭐ | [Solution]()
+| [`02_​StrList_​05`]() | `02_​WeeklySales` | ⭐ | [Solution]()
+| [`02_​StrList_​06`]() | `02_​AddVector` | ⭐⭐ | [Solution]()
+| [`02_​StrList_​07`]() | `02_​Decryption` | ⭐⭐⭐ | [Solution]()
+| [`02_​StrList_​08`]() | `02_​Decimal2Fraction` | ⭐⭐⭐ | [Solution]()
+| [`02_​StrList_​F01`]() | `02_​CitizenID (Function)` | ⭐ | [Solution]()
+| [`02_​StrList_​F02`]() | `02_​Arabic_​Numerals (Function) ` | ⭐ | [Solution]()
+| [`02_​StrList_​F06`]() | `02_​AddVector (Function)` | ⭐⭐ | [Solution]()
 
 ## บทที่ 03: Selection
 | Problem Code | Name | Difficulty | Solution |
