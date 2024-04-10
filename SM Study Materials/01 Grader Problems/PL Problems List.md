@@ -36,21 +36,22 @@
 ## บทที่ 03: Selection
 | Problem Code | Name | Difficulty | Solution |
 | :--- | :--- | :--- | :--- |
-| [`00_​Intro_​01`]() | `00_​Hello` | ⭐ | [Solution]()
-| [`00_​Intro_​01`]() | `00_​Hello` | ⭐ | [Solution]()
-| [`00_​Intro_​01`]() | `00_​Hello` | ⭐ | [Solution]()
-| [`00_​Intro_​01`]() | `00_​Hello` | ⭐ | [Solution]()
-| [`00_​Intro_​01`]() | `00_​Hello` | ⭐ | [Solution]()
-| [`00_​Intro_​01`]() | `00_​Hello` | ⭐ | [Solution]()
-| [`00_​Intro_​01`]() | `00_​Hello` | ⭐ | [Solution]()
-| [`00_​Intro_​01`]() | `00_​Hello` | ⭐ | [Solution]()
-| [`00_​Intro_​01`]() | `00_​Hello` | ⭐ | [Solution]()
-| [`00_​Intro_​01`]() | `00_​Hello` | ⭐ | [Solution]()
-| [`00_​Intro_​01`]() | `00_​Hello` | ⭐ | [Solution]()
-| [`00_​Intro_​01`]() | `00_​Hello` | ⭐ | [Solution]()
-| [`00_​Intro_​01`]() | `00_​Hello` | ⭐ | [Solution]()
-| [`00_​Intro_​01`]() | `00_​Hello` | ⭐ | [Solution]()
-| [`00_​Intro_​01`]() | `00_​Hello` | ⭐ | [Solution]()
+| [`03_​If_​001`]() | `03_​Median5 (flowchart)` | ⭐ | [Solution]()
+| [`03_​If_​002`]() | `03_​Next15Days (flowchart)` | ⭐⭐ | [Solution]()
+| [`03_​If_​003`]() | `03_​Flowchart01` | ⭐⭐ | [Solution]()
+| [`03_​If_​004`]() | `03_​Grading (flowchart)` | ⭐ | [Solution]()
+| [`03_​If_​01`]() | `03_​FacultyCode` | ⭐ | [Solution]()
+| [`03_​If_​02`]() | `03_​Change_​of_​Major` | ⭐⭐ | [Solution]()
+| [`03_​If_​03`]() | `03_​Gymnastic_​Score` | ⭐ | [Solution]()
+| [`03_​If_​04`]() | `03_​MobileNumber` | ⭐ | [Solution]()
+| [`03_​If_​05`]() | `03_​Positive_​Negative` | ⭐ | [Solution]()
+| [`03_​If_​06`]() | `03_​RegisteredMail` | ⭐ | [Solution]()
+| [`03_​If_​07`]() | `03_​AbbrevNum` | ⭐⭐ | [Solution]()
+| [`03_​If_​08`]() | `03_​DayOfYear` | ⭐⭐ | [Solution]()
+| [`03_​If_​F02`]() | `03_​Change_​of_​Major (Function)` | ⭐⭐ | [Solution]()
+| [`03_​If_​F04`]() | `03_​MobileNumber (Function)` | ⭐ | [Solution]()
+| [`03_​If_​F08`]() | `03_​DayOfYear (Function)` | ⭐⭐ | [Solution]()
+| [`P1_​07_​Biorhythm`]() | `03_​Biorhythm` | ⭐⭐⭐ | [Solution]()
 
 ## บทที่ 04: Repetition
 | Problem Code | Name | Difficulty | Solution |
