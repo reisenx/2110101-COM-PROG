@@ -1,5 +1,5 @@
 # 2110101 COMPUTER PROGRAMMING
-## Welcome to The Ultimate Guide to COM PROG (80% Done)
+## Welcome to The Ultimate Guide to COM PROG
 ![Banner](https://raw.githubusercontent.com/reisenx/COM-PROG/main/SM%20Study%20Materials/99%20OTHERS/COM%20PROG%20Banner.png)
 
 ---
