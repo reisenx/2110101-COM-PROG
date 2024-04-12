@@ -32,9 +32,9 @@ class roman:
                         'C':100, 'CC':200, 'CCC':300, 'CD':400, 'D':500, 'DC':600, 'DCC':700, 'DCCC':800, 'CM':900,
                         'M':1000, 'MM':2000, 'MMM':3000, 'MMMM':4000}
         roman_name = {'I':('III','IX','IV','II','I'), 'V':('VIII','VII','VI','V'),
-                      'X':('XXX','XC','XL','XX','X'), 'L': ('LXXX','LXX','LX','L'),
-                      'C':('CCC','CM','CD','CC','C'), 'D': ('DCCC','DCC','DC','D'), 
-                      'M':('MMMM','MMM','MM','M')}
+                        'X':('XXX','XC','XL','XX','X'), 'L': ('LXXX','LXX','LX','L'),
+                        'C':('CCC','CM','CD','CC','C'), 'D': ('DCCC','DCC','DC','D'), 
+                        'M':('MMMM','MMM','MM','M')}
         
         # == Algorithm ==
         # Convert Roman number to arabic number

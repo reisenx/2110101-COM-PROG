@@ -14,9 +14,9 @@ class piggybank:
         # Total coins not exceed 100 coins
         if(self.total_coins() + n <= 100):
             if(v not in self.coins):
-                self.coins[v] = n
+                self.coins[float(v)] = n
             else:
-                self.coins[v] += n
+                self.coins[float(v)] += n
             return True
         # total coins exceed 100 coins
         else:

@@ -46,14 +46,14 @@ class Complex:
         elif(a != 0 and b == -1):
             complex_str = str(a) + "-i"
         
-        # Case 5: Imaginary part > 1 and real part isn't 0 (a != 0, b > 1)
+        # Case 5: Imaginary part > 0 and real part isn't 0 (a != 0, b > 0)
         # Example: Complex(5,8) = 5+8i
-        elif(a != 0 and b > 1):
+        elif(a != 0 and b > 0):
             complex_str = str(a) + "+" + str(b) + "i"
         
-        # Case 6: Imaginary part < 1 and real part isn't 0 (a != 0, b < 1)
+        # Case 6: Imaginary part < 0 and real part isn't 0 (a != 0, b < 0)
         # Example: Complex(7,-9) = 7-9i
-        elif(a != 0 and b < 1):
+        elif(a != 0 and b < 0):
             complex_str = str(a) + str(b) + "i"
         
         # Retrun complex number as a string
