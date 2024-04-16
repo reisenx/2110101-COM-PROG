@@ -19,7 +19,7 @@
 
 ---
 # Guide to COM PROG
-หลังจากที่ Download ไฟล์กันแล้ว มาอ่านกันสักนิดนึงดีกว่า ว่าวิชานี้เรียนกันอย่างไร
+หลังจากที่ Download โปรแกรมกันแล้ว มาอ่านกันสักนิดนึงดีกว่า ว่าวิชานี้เรียนกันอย่างไร
 #### **DISCLAIMER:** รายละเอียดต่อไปนี้อ้างอิงจาก [Course Syllabus เทอม 2 ปีการศึกษา 2566](https://github.com/reisenx/COM-PROG/blob/main/SM%20Study%20Materials/00%20Python%20Study%20Materials/Course%20Syllabus%20(2-66).pdf)
 ## **การตัดเกรด**
 ในรายวิชานี้จะตัดเกรด A-F โดยเป็นการตัดเกรดแบบอิงเกณฑ์ ดังตาราง
@@ -50,10 +50,10 @@
 
 **การบ้านเขียนโปรแกรม** คืองานที่ได้รับมอบหมายโดยอาจารย์ ให้แก้ปัญหาโดยใช้ความรู้ภาษา Python ในแต่ละบท ซึ่งจะทำผ่าน Google Colab
 ## How to Study
-1. เรียนวิธีการเขียน Python จาก [How to Python 101](https://github.com/reisenx/COM-PROG/tree/main?tab=readme-ov-file#how-to-python-101)
+1. สำหรับผู้ที่ยังไม่มีพื้นฐานในการเขียนโปรแกรมภาษา Python ให้เรียนวิธีการเขียน Python จาก [How to Python 101](https://github.com/reisenx/COM-PROG/tree/main?tab=readme-ov-file#how-to-python-101)
 2. ฝึกเขียน Code แก้โจทย์ปัญหาของแต่ละบทที่ [Grader Problems and Solutions](https://github.com/reisenx/COM-PROG/tree/main?tab=readme-ov-file#grader-problems-and-solutions)
 3. หากติดปัญหาในข้อไหนๆ ให้พยายามแก้เองจนกว่าจะได้
-4. ถ้าหากไม่สามารถแก้ได้จริงๆ ก็สามารถถามเพื่อน ถามอาจารย์ หรือไปอ่านเฉลยจาก [Grader Problems and Solutions](https://github.com/reisenx/COM-PROG/tree/main?tab=readme-ov-file#grader-problems-and-solutions) ก็ได้เช่นกัน
+4. ถ้าหากไม่สามารถแก้ได้จริงๆ ก็สามารถถามเพื่อน ถาม TA ถามอาจารย์ หรือไปอ่านเฉลยจาก [Grader Problems and Solutions](https://github.com/reisenx/COM-PROG/tree/main?tab=readme-ov-file#grader-problems-and-solutions) ก็ได้เช่นกัน
 5. วิชานี้เก็บคะแนนจากการสอบ Grader เยอะมาก และโจทย์ที่ใช้สอบก็ถือว่าค่อนข้างยากเลยทีเดียว ดังนั้นต้องฝึกทำโจทย์เยอะๆ ทำโจทย์ให้ได้ 100/100 เต็มทุกข้อ
 
 ---
@@ -61,7 +61,7 @@
 ```python
 print("Hello World!")
 ```
-หลังจากที่เรา Download โปรแกรมที่ต้องใช้ในวิชานี้เสร็จสิ้น ก็ถึงเวลาที่จะเริ่มเรียนสักที โดยสามารถรับชมคลิป VDO การเรียนการสอนของอาจารย์ภาควิชาวิศวกรรมคอมพิวเตอร์ จุฬาลงกรณ์มหาวิทยาลัย กันได้เลย
+หลังจากที่เราได้อ่านรายละเอียดของรายวิชานี้เสร็จสิ้นแล้ว ก็ถึงเวลาที่เราจะได้เริ่มเรียนกันสักที โดยสามารถ Download เอกสารประกอบการเรียนการสอน และรับชมคลิป VDO การเรียนการสอนของอาจารย์ภาควิชาวิศวกรรมคอมพิวเตอร์ จุฬาลงกรณ์มหาวิทยาลัย กันได้เลย
 ## 2110101 COMPUTER PROGRAMMING Website
 ![Website](https://raw.githubusercontent.com/reisenx/COM-PROG/main/SM%20Study%20Materials/99%20OTHERS/Website.png)
 #### Download เอกสารประกอบการเรียนการสอนได้ที่ [LINK](https://github.com/reisenx/COM-PROG/tree/main/SM%20Study%20Materials/00%20Python%20Study%20Materials)
@@ -112,7 +112,8 @@ while(score < 100):
 ---
 
 # Grader Problems and Solutions
-หลังจากที่เราได้พูดถึงการใช้งาน Grader ไปแล้วนั้น ในส่วนนี้ก็จะเป็นส่วนที่รวบรวมโจทย์ Grader พร้อมเฉลยอย่างละเอียดนั่นเอง ในส่วนนี้จะมี VDO ที่เฉลยโดยอาจารย์ และ Code ที่เขียนโดยผู้เขียนเอง ทุกคนสามารถเลือกใช้ประกอบกันได้ตามความเหมาะสม
+หลังจากที่เราได้พูดถึงการใช้งาน Grader ไปแล้วนั้น ในส่วนนี้ก็จะเป็นส่วนที่รวบรวมโจทย์ Grader พร้อมเฉลยอย่างละเอียดนั่นเอง ในส่วนนี้จะมี VDO ที่เฉลยโดยอาจารย์ และ Code ที่เขียนโดยผู้เขียนเอง ผู้อ่านสามารถเลือกใช้ประกอบกันได้ตามความเหมาะสม
+> หมายเหตุ: Code ที่เขียนโดยผู้เขียนนั้น จะจำกัดคำสั่งที่ปรากฏในเนื้อหาบทที่ 1 ถึงบทปัจจุบันเท่านั้น
 ### บทที่ 00: Python Intro
 * **โจทย์:** [Problems](https://github.com/reisenx/COM-PROG/tree/main/SM%20Study%20Materials/01%20Grader%20Problems/00%20Python%20Intro)
 * **เฉลย:** [GitHub Code](https://github.com/reisenx/COM-PROG/tree/main/00%20Python%20Intro)
