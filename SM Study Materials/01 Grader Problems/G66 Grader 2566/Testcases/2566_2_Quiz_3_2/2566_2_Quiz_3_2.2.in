@@ -1,0 +1,22 @@
+dat=read_friends();print(count_friends(dat,['X5','D1d','C6','D1']), count_friends([('A','B'),('C','D')],['K']), count_friends([('A','B'),('C','D')],['B','C','J']))
+20
+B8 C6
+C6 B8
+C6 B8
+D1 A9
+D1 E0
+C6 D1
+X5 C6
+X5 C6
+X5 C6
+X5 C6
+X5 C6
+X5 C6
+B8 A9
+A9 C6
+B8 C6
+C6 D1
+E0 A9
+B8 C6
+E0 B8
+B8 D1d
