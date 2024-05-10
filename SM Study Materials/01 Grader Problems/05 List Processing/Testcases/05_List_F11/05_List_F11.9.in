@@ -1,0 +1,1 @@
+print(missing_digits("7777ABC.,:222ABC.,:000ABC.,:9999ABC.,:444ABC.,:8888ABC.,:555555ABC.,:22222ABC.,:000ABC.,:"))

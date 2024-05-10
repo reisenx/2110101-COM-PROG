@@ -1,0 +1,8 @@
+7
+reset 10
+new 100
+new 102
+new 106
+next
+order 115
+avg_qtime
