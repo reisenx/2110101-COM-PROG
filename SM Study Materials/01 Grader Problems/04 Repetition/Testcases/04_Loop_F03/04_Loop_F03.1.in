@@ -1,0 +1,1 @@
+print(grade_mcq("ABABABABABABAB", "ABABABABABABAB"), grade_mcq("AAAAAA", "AAAA"), grade_mcq("AAAA", "BBBB"))

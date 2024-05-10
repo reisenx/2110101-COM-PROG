@@ -1,0 +1,1 @@
+print(is_mobile_number("0691187362"), is_mobile_number("069118736"),type(is_mobile_number("0691187362")), type(is_mobile_number("069118736")))

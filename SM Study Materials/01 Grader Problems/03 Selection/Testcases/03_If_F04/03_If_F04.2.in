@@ -1,0 +1,1 @@
+print(is_mobile_number("0811112929"), is_mobile_number("091111292"),type(is_mobile_number("0811112929")), type(is_mobile_number("091111292")))

@@ -1,0 +1,12 @@
+pp01A
+oo92R
+ii83T
+ku74E
+jy65R
+ot56Y
+pr47U
+le38O
+kw29U
+iq10Y
+na01F
+ms92S
