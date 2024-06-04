@@ -1,4 +1,0 @@
-William
-James
-John
-Margaret

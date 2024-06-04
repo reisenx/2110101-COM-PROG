@@ -1,2 +1,0 @@
-negative
-odd

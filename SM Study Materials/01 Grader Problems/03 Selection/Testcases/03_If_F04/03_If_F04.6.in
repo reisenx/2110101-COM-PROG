@@ -1,1 +1,0 @@
-print(is_mobile_number("0991187362"), is_mobile_number("0761106908"),type(is_mobile_number("0991187362")), type(is_mobile_number("0761106908")))

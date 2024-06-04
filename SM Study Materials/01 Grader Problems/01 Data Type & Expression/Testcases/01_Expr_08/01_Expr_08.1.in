@@ -1,1 +1,0 @@
-print(round(sqrt_n_times(10**6, 3),8))

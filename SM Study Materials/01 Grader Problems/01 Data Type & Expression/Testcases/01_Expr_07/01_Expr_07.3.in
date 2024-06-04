@@ -1,1 +1,0 @@
-print(round(fujimoto(60,165),6))

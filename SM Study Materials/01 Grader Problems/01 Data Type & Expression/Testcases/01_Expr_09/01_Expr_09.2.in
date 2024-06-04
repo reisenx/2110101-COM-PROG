@@ -1,1 +1,0 @@
-print(to_hms(1), to_hms(60), to_hms(3600), to_hms(86399))
