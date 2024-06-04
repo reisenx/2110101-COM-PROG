@@ -1,5 +1,6 @@
 # Unit 00: Python Intro Grader Solutions
 ## 00 Hello ⭐ (`00_Intro_01`)
+### Problem [อ่านโจทย์ได้ที่นี่](https://github.com/reisenx/2110101-COM-PROG/blob/main/SM%20Study%20Materials/01%20Grader%20Problems/00%20Python%20Intro/00_Intro_01.pdf)
 ### Solution
 ```python
 print("Hello Python.")
@@ -11,6 +12,7 @@ print("We're using Python 3.")
 ---
 
 ## 00 ​Big ​Numbers ⭐ (`00_Intro_02`)
+### Problem [อ่านโจทย์ได้ที่นี่](https://github.com/reisenx/2110101-COM-PROG/blob/main/SM%20Study%20Materials/01%20Grader%20Problems/00%20Python%20Intro/00_Intro_02.pdf)
 ### Solution
 ```python
 print(2938402734091273094162387451928736401926340971234)
@@ -37,6 +39,7 @@ print(2938402734091273094162387451928736401926340971234 + 9208209384928743098273
 ---
 
 ## 00 ​Mountain Valley ⭐ (`00_Intro_03`)
+### Problem [อ่านโจทย์ได้ที่นี่](https://github.com/reisenx/2110101-COM-PROG/blob/main/SM%20Study%20Materials/01%20Grader%20Problems/00%20Python%20Intro/00_Intro_03.pdf)
 ### Solution 01
 ```python
 print("+------------------------------------------+")
