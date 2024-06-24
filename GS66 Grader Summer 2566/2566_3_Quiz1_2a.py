@@ -19,14 +19,14 @@ def f(d):
     for i in range(len(process)):
         team, time = process[i]
         # Special Case 1
-        # Example: [..., '01A10', '03H14', ...]
+        # Example: [..., ['A', 10], ['H', 14], ...]
         if(team == 'H' and away > 0):
             possession.append([away, 'Away'])
             away = 0
             home += time
             
         # Special Case 2
-        # Example: [..., '02H10', '01A10', ...]
+        # Example: [..., ['H', 10], ['A', 10], ...]
         elif(team == 'A' and home > 0):
             possession.append([home, 'Home'])
             home = 0
