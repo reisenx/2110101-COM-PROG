@@ -50,4 +50,9 @@ def f(d):
     # Return a value
     return possession[-1][::-1]
 
-print(f(['01H10', '02H10', '01A10', '03H14', '04H12']))
+# Execute an input string
+# DON'T FORGET THIS LINE
+exec(input())
+
+# Testcases
+# print(f(['01H10', '02H10', '01H10', '03H14', '04H12']))
