@@ -16,8 +16,7 @@ def f(d):
     # Calculate football possesion time
     home,away = 0,0
     possession = []
-    for i in range(len(process)):
-        team, time = process[i]
+    for team, time in process:
         # Special Case 1
         # Example: [..., ['A', 10], ['H', 14], ...]
         if(team == 'H' and away > 0):
@@ -47,7 +46,7 @@ def f(d):
     # Sort a value (Maximum time will be at the last one)
     # Example: [[10, 'Away'], [20, 'Home'], [26, 'Home']]
     possession.sort()
-
+    
     # Return a value
     return possession[-1][::-1]
 
