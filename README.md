@@ -1,5 +1,5 @@
 # 2110101 COMPUTER PROGRAMMING
-## ถ้าหากต้องการทำโจทย์ หรือดูเฉลย [กรุณากดที่นี่](https://drive.google.com/file/d/1vfBFT_iwobJCLeCFH-7SCpvW8BMyI6bX/view?usp=drive_link)
+## ถ้าหากต้องการทำโจทย์ หรือดูเฉลย [กรุณากดที่นี่](https://github.com/reisenx/2110101-COM-PROG?tab=readme-ov-file#problem-and-solution)
 ![Banner](https://raw.githubusercontent.com/reisenx/2110101-COM-PROG/main/Z99%20OTHERS/Banner%20PICS/00%20COM%20PROG%20Banner.png)
 # About this Repository
 - Repository นี้สร้างขึ้นเพื่อจัดเก็บ Code ของผู้เขียน และเอกสารการเรียนการสอนในรายวิชา **2110101 COMPUTER PROGRAMMING (เทอม 2/2566)**
