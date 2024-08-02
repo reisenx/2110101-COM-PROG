@@ -22,6 +22,23 @@
 # Resources
 ![Banner](https://raw.githubusercontent.com/reisenx/2110101-COM-PROG/main/Z99%20OTHERS/Banner%20PICS/03%20Resources%20Banner.png)
 
+## โปรแกรมที่จำเป็นในวิชาเรียน
+| Program | Download | Note |
+| :---: | :---: | :---: |
+| Python | [Download](https://www.python.org/downloads/) | - |
+| Thonny | [Download](https://thonny.org/) | - |
+| VS Code | [Download](https://code.visualstudio.com/) | เฉพาะภาคคอม (CP) |
+
+## สื่อการเรียนการสอนของรายวิชา
+| Program | Link | Note |
+| :---: | :---: | :---: |
+| COM PROG Website | [Link](https://www.cp.eng.chula.ac.th/~somchai/python101/) | เว็บไซต์ของรายวิชา 2110101 COM PROG |
+| COM PROG Slides | [Download](https://drive.google.com/file/d/1vbKJwltZGBzav11Aw6qv-714nUcLbXuQ/view?usp=drive_link) | สไลด์ของรายวิชาทั้งหมดอยู่ในไฟล์ `.zip` |
+| Grader Exercise Solution Playlist | [Link](https://youtube.com/playlist?list=PL0ROnaCzUGB6GmsZkqCjI12aasgFXiIDS&si=nhORsvzQSTAQWF4X) | คลิปเฉลยแบบฝึกหัดใน Grader โดย อ.สมชาย |
+| Python 101 Workbook | [Dpwnload](https://drive.google.com/file/d/1oNT230-fdWgMSA5qh3lLFnDqCyLbseuN/view?usp=drive_link) | คู่มือการเขียนโปรแกรมภาษา Python โดย อ.สมชาย |
+| Python 101 Labbook | [Download](https://drive.google.com/file/d/1vfBFT_iwobJCLeCFH-7SCpvW8BMyI6bX/view?usp=drive_link) | หนังสือรวบรวมแบบฝึกหัดภาษา Python โดย อ.สมชาย |
+
+
 ---
 # Problem and Solution
 ![Banner](https://raw.githubusercontent.com/reisenx/2110101-COM-PROG/main/Z99%20OTHERS/Banner%20PICS/04%20Grader%20Banner.png)
