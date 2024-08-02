@@ -1,4 +1,4 @@
-# Problems List
+# Grader Exercise
 ## บทที่ 00: Python Intro
 | No. | Problem Code | Name | Difficulty | Solution |
 | :---: | :--- | :--- | :--- | :--- |
