@@ -31,5 +31,4 @@
 ![Banner](https://raw.githubusercontent.com/reisenx/2110101-COM-PROG/main/SM%20Study%20Materials/99%20OTHERS/Grader%20Banner.png)
 
 ---
-# Author
 ![Banner](https://raw.githubusercontent.com/reisenx/2110101-COM-PROG/main/Z99%20OTHERS/Banner%20PICS/05%20Author.png)
