@@ -4,7 +4,7 @@
 ---
 ## Grader Problem and Solution [Click Here!](https://github.com/reisenx/2110101-COM-PROG/blob/f213fb8ce6e77164a3f9da06da52984481d87715/PL%20Problems%20List.md)
 
-![Banner]()
+![Banner](https://raw.githubusercontent.com/reisenx/2110101-COM-PROG/main/SM%20Study%20Materials/99%20OTHERS/Grader%20Banner.png)
 
 ---
 # About this Repository
