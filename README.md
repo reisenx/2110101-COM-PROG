@@ -48,6 +48,7 @@ class ThisRepo:
 # Problem and Solution
 ![Banner](https://raw.githubusercontent.com/reisenx/2110101-COM-PROG/main/Z99%20OTHERS/Banner%20PICS/04%20Grader%20Banner.png)
 
+## แหล่งรวมโจทย์และเฉลยของรายวิชา
 | Resources | Link | Note |
 | :---: | :---: | :---: |
 | แบบฝึกหัดใน Grader | [Link]() | แบบฝึกหัดทั้งหมดของรายวิชา |
