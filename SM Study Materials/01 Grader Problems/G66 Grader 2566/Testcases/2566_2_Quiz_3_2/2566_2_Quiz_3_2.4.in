@@ -1,5 +1,0 @@
-dat=read_friends();print(count_friends(dat,['W','Z','X']), count_friends([('A','B'),('C','D')],['K']), count_friends([('A','B'),('C','D')],['B','C','J']))
-3
-Aa Bb
-Aa Cc
-Bb Cc
