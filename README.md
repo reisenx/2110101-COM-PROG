@@ -1,11 +1,17 @@
 # 2110101 COMPUTER PROGRAMMING
+## ถ้าหากต้องการทำโจทย์ หรือดูเฉลย [กรุณากดที่นี่](https://drive.google.com/file/d/1vfBFT_iwobJCLeCFH-7SCpvW8BMyI6bX/view?usp=drive_link)
 ![Banner](https://raw.githubusercontent.com/reisenx/2110101-COM-PROG/main/Z99%20OTHERS/Banner%20PICS/00%20COM%20PROG%20Banner.png)
 # About this Repository
 - Repository นี้สร้างขึ้นเพื่อจัดเก็บ Code ของผู้เขียน และเอกสารการเรียนการสอนในรายวิชา **2110101 COMPUTER PROGRAMMING (เทอม 2/2566)**
 - Repository นี้สร้างขึ้นโดยมีจุดประสงค์คือ การสร้างแหล่งรวบรวม Resources ต่างๆของรายวิชา **2110101 COMPUTER PROGRAMMING** ไว้ในที่เดียว เพื่อนิสิตคณะวิศวกรรมศาสตร์ จุฬาลงกรณ์มหาวิทยาลัย
 - Repository นี้เหมาะสำหรับนิสิตคณะวิศวกรรมศาสตร์ จุฬาลงกรณ์มหาวิทยาลัย และผู้ที่สนใจในการเขียนโปรแกรมภาษา Python
 - Repository นี้สร้างโดย **นายวรลภย์ ศรีชัยนนท์**
-
+```python
+class ThisRepo:
+    def __init__(self) -> None:
+        self.Version = "1.0.0"
+        self.LastUpdated = "02 August 2024"
+```
 ---
 # COM PROG Study Guide
 ![Banner](https://raw.githubusercontent.com/reisenx/2110101-COM-PROG/main/Z99%20OTHERS/Banner%20PICS/01%20Study%20Guide%20Banner.png)
@@ -30,7 +36,7 @@
 | VS Code | [Download](https://code.visualstudio.com/) | เฉพาะภาคคอม (CP) |
 
 ## สื่อการเรียนการสอนของรายวิชา
-| Program | Link | Note |
+| Resources | Link | Note |
 | :---: | :---: | :---: |
 | COM PROG Website | [Link](https://www.cp.eng.chula.ac.th/~somchai/python101/) | เว็บไซต์ของรายวิชา 2110101 COM PROG |
 | COM PROG Slides | [Download](https://drive.google.com/file/d/1vbKJwltZGBzav11Aw6qv-714nUcLbXuQ/view?usp=drive_link) | สไลด์ของรายวิชาทั้งหมดอยู่ในไฟล์ `.zip` |
@@ -38,12 +44,17 @@
 | Python 101 Workbook | [Dpwnload](https://drive.google.com/file/d/1oNT230-fdWgMSA5qh3lLFnDqCyLbseuN/view?usp=drive_link) | คู่มือการเขียนโปรแกรมภาษา Python โดย อ.สมชาย |
 | Python 101 Labbook | [Download](https://drive.google.com/file/d/1vfBFT_iwobJCLeCFH-7SCpvW8BMyI6bX/view?usp=drive_link) | หนังสือรวบรวมแบบฝึกหัดภาษา Python โดย อ.สมชาย |
 
-
 ---
 # Problem and Solution
 ![Banner](https://raw.githubusercontent.com/reisenx/2110101-COM-PROG/main/Z99%20OTHERS/Banner%20PICS/04%20Grader%20Banner.png)
 
-## Grader Exercise Problem and Solution [Click Here!](https://github.com/reisenx/2110101-COM-PROG/blob/f213fb8ce6e77164a3f9da06da52984481d87715/PL%20Problems%20List.md)
+| Resources | Link | Note |
+| :---: | :---: | :---: |
+| แบบฝึกหัดใน Grader | [Link]() | แบบฝึกหัดทั้งหมดของรายวิชา |
+| ข้อสอบเก่า Grader | [Link]() | ข้อสอบเก่าปี 65-66 |
+| Cheat Sheet เพื่อสอบ Grader | [Link]() | COMING SOON | 
+| ข้อสอบ Midterm + Final | [Link]() | COMING SOON |
+| การบ้านเขียนโปรแกรม | [Link]() | COMING SOON |
 
 ---
 ![Banner](https://raw.githubusercontent.com/reisenx/2110101-COM-PROG/main/Z99%20OTHERS/Banner%20PICS/05%20Author.png)
