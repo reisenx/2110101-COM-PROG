@@ -8,15 +8,15 @@
 - Repository นี้สร้างโดย **นายวรลภย์ ศรีชัยนนท์**
 ```python
 class ThisRepo:
-    def __init__(self) -> None:
+    def __init__(self):
         self.Version = "1.0.0"
-        self.LastUpdated = "02 August 2024"
+        self.LastUpdated = "10 August 2024"
 ```
 ---
 # COM PROG Study Guide
 ![Banner](https://raw.githubusercontent.com/reisenx/2110101-COM-PROG/main/Z99%20OTHERS/Banner%20PICS/01%20Study%20Guide%20Banner.png)
 
-**INSERT VIDEO HERE**
+[![COM PROG Get Ready Freshy 2024](https://www.online-station.net/wp-content/uploads/2022/12/bocchi_featured.jpg)](https://drive.google.com/file/d/1MobiIMdO5ejGxo801d9RZENZJnBddpBg/view?usp=drive_link)
 
 ---
 # How to use this GitHub
@@ -55,7 +55,7 @@ class ThisRepo:
 | ข้อสอบเก่า Grader | [Link]() | ข้อสอบเก่าปี 65-66 |
 | Cheat Sheet เพื่อสอบ Grader | [Link]() | COMING SOON | 
 | ข้อสอบ Midterm + Final | [Link]() | COMING SOON |
-| การบ้านเขียนโปรแกรม | [Link]() | COMING SOON |
+| Intania Starter Kit 2024 | [Link]() | COM PROG Starter Kit |
 
 ---
 ![Banner](https://raw.githubusercontent.com/reisenx/2110101-COM-PROG/main/Z99%20OTHERS/Banner%20PICS/05%20Author.png)
