@@ -1,4 +1,4 @@
-# Grader Exercise
+# Grader Exercise (Unfinished)
 ## บทที่ 00: Python Intro
 | No. | Problem Code | Name | Difficulty | Solution |
 | :---: | :--- | :--- | :--- | :--- |
