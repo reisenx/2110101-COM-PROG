@@ -64,8 +64,8 @@ class ThisRepo:
 ## แหล่งรวมโจทย์และเฉลยของรายวิชา
 | Resources | Link | Note |
 | :---: | :---: | :---: |
-| แบบฝึกหัดใน Grader | [Link](https://drive.google.com/drive/folders/13NSm0-15i0DUPTQ3o3bJJ1o4I4cg90y3?usp=drive_link) | แบบฝึกหัดทั้งหมดของรายวิชา |
-| ข้อสอบเก่า Grader | [Link](https://drive.google.com/drive/folders/1AbvJLhBL5jODnJTkwiBCcWRLHuD8j3WP?usp=drive_link) | ข้อสอบเก่าปี 65-66 |
+| แบบฝึกหัดใน Grader | [Link](https://github.com/reisenx/2110101-COM-PROG/blob/main/PL%20Problem%20List/01%20Grader%20Exercise.md) | แบบฝึกหัดทั้งหมดของรายวิชา |
+| ข้อสอบเก่า Grader | [Link](https://github.com/reisenx/2110101-COM-PROG/blob/main/PL%20Problem%20List/02%20Grader%20Examination.md) | ข้อสอบเก่าปี 65-66 |
 | Cheat Sheet เพื่อสอบ Grader | [Link]() | COMING SOON | 
 | ข้อสอบ Midterm + Final | [Link](https://drive.google.com/drive/folders/1rhd6NiDNIuwJ2tYQ21UVqUfxJr4DpxoK?usp=sharing) | ข้อสอบพร้อมเฉลย |
 | Intania Starter Kit 2024 | [Link](https://drive.google.com/drive/folders/14brjzl8lX5lZvZNOC85Bw6nyOgGIzeTY?usp=sharing) | ครบจบทุกวิชาในที่เดียว |
