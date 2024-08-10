@@ -47,7 +47,7 @@ class ThisRepo:
 | Grader Exercise Solution Playlist | [Link](https://youtube.com/playlist?list=PL0ROnaCzUGB6GmsZkqCjI12aasgFXiIDS&si=nhORsvzQSTAQWF4X) | คลิปเฉลยแบบฝึกหัดใน Grader โดย อ.สมชาย |
 | Python 101 Workbook | [Dpwnload](https://drive.google.com/file/d/1oNT230-fdWgMSA5qh3lLFnDqCyLbseuN/view?usp=drive_link) | คู่มือการเขียนโปรแกรมภาษา Python โดย อ.สมชาย |
 | Python 101 Labbook | [Download](https://drive.google.com/file/d/1vfBFT_iwobJCLeCFH-7SCpvW8BMyI6bX/view?usp=drive_link) | หนังสือรวบรวมแบบฝึกหัดภาษา Python โดย อ.สมชาย |
-| Intania Starter Kit 2024 | [Link](https://drive.google.com/drive/folders/14brjzl8lX5lZvZNOC85Bw6nyOgGIzeTY?usp=sharing) | ครบจบทุกวิชาในที่เดียว |
+| Intania Starter Kit 2024 | [Link](https://drive.google.com/drive/folders/14brjzl8lX5lZvZNOC85Bw6nyOgGIzeTY?usp=sharing) | ครบจบทุกวิชาในที่เดียว (ต้องใช้เมลจุฬาเปิด) |
 
 ## Course Syllabus
 | Resources | Link | Note |
@@ -68,7 +68,7 @@ class ThisRepo:
 | ข้อสอบเก่า Grader | [Link](https://github.com/reisenx/2110101-COM-PROG/blob/main/PL%20Problem%20List/02%20Grader%20Examination.md) | ข้อสอบเก่าปี 65-66 |
 | Cheat Sheet เพื่อสอบ Grader | [Link]() | COMING SOON | 
 | ข้อสอบ Midterm + Final | [Link](https://drive.google.com/drive/folders/1rhd6NiDNIuwJ2tYQ21UVqUfxJr4DpxoK?usp=sharing) | ข้อสอบพร้อมเฉลย |
-| Intania Starter Kit 2024 | [Link](https://drive.google.com/drive/folders/14brjzl8lX5lZvZNOC85Bw6nyOgGIzeTY?usp=sharing) | ครบจบทุกวิชาในที่เดียว |
+| Intania Starter Kit 2024 | [Link](https://drive.google.com/drive/folders/14brjzl8lX5lZvZNOC85Bw6nyOgGIzeTY?usp=sharing) | ครบจบทุกวิชาในที่เดียว (ต้องใช้เมลจุฬาเปิด) |
 
 ---
 ![Banner](https://raw.githubusercontent.com/reisenx/2110101-COM-PROG/main/Z99%20OTHERS/Banner%20PICS/05%20Author.png)
