@@ -16,7 +16,11 @@ class ThisRepo:
 # COM PROG Study Guide
 ![Banner](https://raw.githubusercontent.com/reisenx/2110101-COM-PROG/main/Z99%20OTHERS/Banner%20PICS/01%20Study%20Guide%20Banner.png)
 
-[![COM PROG Get Ready Freshy 2024](https://www.online-station.net/wp-content/uploads/2022/12/bocchi_featured.jpg)](https://drive.google.com/file/d/1MobiIMdO5ejGxo801d9RZENZJnBddpBg/view?usp=drive_link)
+## COM PROG Study Guide Slides โครงการ Get Ready, Freshy! 2024 (กรุณาคลิกที่ภาพ)
+[![COM PROG Get Ready Freshy 2024](https://raw.githubusercontent.com/reisenx/2110101-COM-PROG/main/Z99%20OTHERS/COM%20PROG%20Get%20Ready%20Freshy%20COVER.png)](https://drive.google.com/file/d/1MobiIMdO5ejGxo801d9RZENZJnBddpBg/view?usp=drive_link)
+
+จัดทำโดย นายวรลภย์ ศรีชัยนนท์
+อ้างอิงเนื้อหาจาก Course Syllabus ปีการศึกษา 2567 ภาคการเรียนที่ 1
 
 ---
 # How to use this GitHub
@@ -39,10 +43,19 @@ class ThisRepo:
 | Resources | Link | Note |
 | :---: | :---: | :---: |
 | COM PROG Website | [Link](https://www.cp.eng.chula.ac.th/~somchai/python101/) | เว็บไซต์ของรายวิชา 2110101 COM PROG |
-| COM PROG Slides | [Download](https://drive.google.com/file/d/1vbKJwltZGBzav11Aw6qv-714nUcLbXuQ/view?usp=drive_link) | สไลด์ของรายวิชาทั้งหมดอยู่ในไฟล์ `.zip` |
+| COM PROG Slides | [Download](https://drive.google.com/file/d/1TJVT2TMNS5xePlJPq6A2aAxRlyxf8tUD/view?usp=drive_link) | สไลด์ของรายวิชาทั้งหมดอยู่ในไฟล์ `.zip` |
 | Grader Exercise Solution Playlist | [Link](https://youtube.com/playlist?list=PL0ROnaCzUGB6GmsZkqCjI12aasgFXiIDS&si=nhORsvzQSTAQWF4X) | คลิปเฉลยแบบฝึกหัดใน Grader โดย อ.สมชาย |
 | Python 101 Workbook | [Dpwnload](https://drive.google.com/file/d/1oNT230-fdWgMSA5qh3lLFnDqCyLbseuN/view?usp=drive_link) | คู่มือการเขียนโปรแกรมภาษา Python โดย อ.สมชาย |
 | Python 101 Labbook | [Download](https://drive.google.com/file/d/1vfBFT_iwobJCLeCFH-7SCpvW8BMyI6bX/view?usp=drive_link) | หนังสือรวบรวมแบบฝึกหัดภาษา Python โดย อ.สมชาย |
+| Intania Starter Kit 2024 | [Link](https://drive.google.com/drive/folders/14brjzl8lX5lZvZNOC85Bw6nyOgGIzeTY?usp=sharing) | ครบจบทุกวิชาในที่เดียว |
+
+## Course Syllabus
+| Resources | Link | Note |
+| :---: | :---: | :---: |
+| ปีการศึกษา 2567 เทอม 1 | [Link]() | Course Syllabus ภาครวม |
+| ปีการศึกษา 2566 เทอม 2 | [Link]() | Course Syllabus ภาครวม |
+| ปีการศึกษา 2566 เทอม 1 | [Link]() | Course Syllabus ภาคคอม |
+| ปีการศึกษา 2566 เทอม 1 | [Link]() | Course Syllabus ภาครวม |
 
 ---
 # Problem and Solution
@@ -51,11 +64,11 @@ class ThisRepo:
 ## แหล่งรวมโจทย์และเฉลยของรายวิชา
 | Resources | Link | Note |
 | :---: | :---: | :---: |
-| แบบฝึกหัดใน Grader | [Link]() | แบบฝึกหัดทั้งหมดของรายวิชา |
-| ข้อสอบเก่า Grader | [Link]() | ข้อสอบเก่าปี 65-66 |
+| แบบฝึกหัดใน Grader | [Link](https://drive.google.com/drive/folders/13NSm0-15i0DUPTQ3o3bJJ1o4I4cg90y3?usp=drive_link) | แบบฝึกหัดทั้งหมดของรายวิชา |
+| ข้อสอบเก่า Grader | [Link](https://drive.google.com/drive/folders/1AbvJLhBL5jODnJTkwiBCcWRLHuD8j3WP?usp=drive_link) | ข้อสอบเก่าปี 65-66 |
 | Cheat Sheet เพื่อสอบ Grader | [Link]() | COMING SOON | 
-| ข้อสอบ Midterm + Final | [Link]() | COMING SOON |
-| Intania Starter Kit 2024 | [Link]() | COM PROG Starter Kit |
+| ข้อสอบ Midterm + Final | [Link](https://drive.google.com/drive/folders/1rhd6NiDNIuwJ2tYQ21UVqUfxJr4DpxoK?usp=sharing) | ข้อสอบพร้อมเฉลย |
+| Intania Starter Kit 2024 | [Link](https://drive.google.com/drive/folders/14brjzl8lX5lZvZNOC85Bw6nyOgGIzeTY?usp=sharing) | ครบจบทุกวิชาในที่เดียว |
 
 ---
 ![Banner](https://raw.githubusercontent.com/reisenx/2110101-COM-PROG/main/Z99%20OTHERS/Banner%20PICS/05%20Author.png)
