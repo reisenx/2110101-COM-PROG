@@ -1,22 +1,23 @@
 # Grader Exercise (Unfinished)
 ## บทที่ 00: Python Intro
-| No. | Problem Code | Name | Difficulty | Solution |
-| :---: | :--- | :--- | :--- | :--- |
-| 1 | [`00_​Intro_​01`](https://github.com/reisenx/COM-PROG/blob/main/SM%20Study%20Materials/01%20Grader%20Problems/00%20Python%20Intro/00_Intro_01.pdf) | `00_​Hello` | ⭐ | [Solution](https://github.com/reisenx/COM-PROG/blob/main/00%20Python%20Intro/00_Intro_01.py)
-| 2 | [`00_​Intro_​02`]() | `00_​Big_​Numbers` | ⭐ | [Solution]()
-| 3 | [`00_​Intro_​03`]() | `00_​Mountain_​Valley` | ⭐ | [Solution]()
+| No. | Problem Code | Name | Difficulty | Solution | VDO |
+| :---: | :--- | :--- | :--- | :--- | :---: |
+| 1 | [`00_​Intro_​01`](https://drive.google.com/file/d/1LooX4xYr5swo88tpu6WPhk9kpe5rve3P/view?usp=drive_link) | **Hello** | ⭐ | [Solution](https://github.com/reisenx/2110101-COM-PROG/blob/main/00%20Python%20Intro/00_Intro_01/00_Intro_01.py) | - |
+| 2 | [`00_​Intro_​02`](https://drive.google.com/file/d/1rUiALubEeJpcf76W2BIn7cKPWXcJ0leY/view?usp=drive_link) | **Big Numbers** | ⭐ | [Solution](https://github.com/reisenx/2110101-COM-PROG/blob/main/00%20Python%20Intro/00_Intro_02/00_Intro_02.py) | - |
+| 3 | [`00_​Intro_​03`](https://drive.google.com/file/d/1BeTPqhRMhZ22Pi1kzLaa6jcd9gWSPu2B/view?usp=drive_link) | **​Mountain Valley** | ⭐ | [Solution](https://github.com/reisenx/2110101-COM-PROG/blob/main/00%20Python%20Intro/00_Intro_03/00_Intro_03.py) | - |
 
 ## บทที่ 01: Data Type & Expression
-| No. | Problem Code | Name | Difficulty | Solution |
-| :---: | :--- | :--- | :--- | :--- |
-| 4 | [`01_​Expr_​01`]() | `01_​Stirling_​Factorial` | ⭐ | [Solution]()
-| 5 | [`01_​Expr_​02`]() | `01_​Quadratic_​Root` | ⭐ | [Solution]()
-| 6 | [`01_​Expr_​03`]() | `01_​An_​Expression` | ⭐⭐ | [Solution]()
-| 7 | [`01_​Expr_​04`]() | `01_​Body_​Surface_​Area` | ⭐⭐ | [Solution]()
-| 8 | [`01_​Expr_​06`]() | `01_​Duration` | ⭐⭐⭐ | [Solution]()
-| 9 | [`01_​Expr_​07`]() | `01_​Body_​Surface_​Area (Function)` | ⭐ | [Solution]()
-| 10 | [`01_​Expr_​08`]() | `01_​Cube_​Root (Function)` | ⭐⭐ | [Solution]()
-| 11 | [`01_​Expr_​09`]() | `01_​Duration (Function)` | ⭐⭐ | [Solution]()
+| No. | Problem Code | Name | Difficulty | Solution | VDO |
+| :---: | :--- | :--- | :--- | :--- | :---: |
+| 1 | [`01_​Expr_​01`](https://drive.google.com/file/d/1JGonX9kOjN0ZN4jhTAQGCoG1ho8o5mCO/view?usp=drive_link) | **Stirling Factorial** | ⭐ | [Solution](https://github.com/reisenx/2110101-COM-PROG/blob/main/01%20Data%20Type%20%26%20Expression/01_Expr_01/01_Expr_01.py) | [Video](https://youtu.be/ACLCFpMAmoc?si=l7L8YXJrRlN6Ki48) |
+| 2 | [`01_​Expr_​02`](https://drive.google.com/file/d/1gwD0YpKvGu5o0zEqOtqhO9UTXkEv_3-_/view?usp=drive_link) | **Quadratic Root** | ⭐ | [Solution](https://github.com/reisenx/2110101-COM-PROG/blob/main/01%20Data%20Type%20%26%20Expression/01_Expr_02/01_Expr_02.py) | [Video](https://youtu.be/h6vKjO-gdWo?si=d17-VVPArxuBvmQn) |
+| 3 | [`01_​Expr_​03`](https://drive.google.com/file/d/1qVuUpRhBBnJF5vYscKQsoEZtHP-gVgPi/view?usp=drive_link) | **An Expression** | ⭐⭐ | [Solution](https://github.com/reisenx/2110101-COM-PROG/blob/main/01%20Data%20Type%20%26%20Expression/01_Expr_03/01_Expr_03.py) | [Video](https://youtu.be/tWyOc7diP9c?si=YGoduazeam93VVQ5) |
+| 4 | [`01_​Expr_​04`](https://drive.google.com/file/d/1W3U2C-Tod8QRF77NaIMAgMi18wb3LRrX/view?usp=drive_link) | **​Body ​Surface ​Area** | ⭐⭐ | [Solution](https://github.com/reisenx/2110101-COM-PROG/blob/main/01%20Data%20Type%20%26%20Expression/01_Expr_04/01_Expr_04.py) | [Video](https://youtu.be/cBpW98SsQLU?si=kIko0yMFVFCqjgeR) |
+| 5 | [`01_​Expr_​06`](https://drive.google.com/file/d/1LddxTxNze4Y2XJ44lVxW_z-Qd7Yi7Gz9/view?usp=drive_link) | **​Duration** | ⭐⭐⭐ | [Solution](https://github.com/reisenx/2110101-COM-PROG/blob/main/01%20Data%20Type%20%26%20Expression/01_Expr_06/01_Expr_06.py) | [Video](https://youtu.be/WS5xawStLfY?si=p3Xj4d68lmlkhGH2) |
+| 6 | [`01_​Expr_​07`](https://drive.google.com/file/d/19ulGxvKdzEEK7XWF18LK-Z5J1jkFlgAi/view?usp=drive_link) | **Body ​Surface ​Area (Function)** | ⭐ | [Solution](https://github.com/reisenx/2110101-COM-PROG/blob/main/01%20Data%20Type%20%26%20Expression/01_Expr_07/01_Expr_07.py) | - |
+| 7 | [`01_​Expr_​08`](https://drive.google.com/file/d/1ZBQPqBRPGkJSB27hACBYOWzIwBM13ffM/view?usp=drive_link) | **Cube ​Root (Function)** | ⭐⭐ | [Solution](https://github.com/reisenx/2110101-COM-PROG/blob/main/01%20Data%20Type%20%26%20Expression/01_Expr_08/01_Expr_08.py) | - |
+| 8 | [`01_​Expr_​09`](https://drive.google.com/file/d/16T3vdgXqiwtiHT3C7ICoIZ07GgkuR-yR/view?usp=drive_link) | **​Duration (Function)** | ⭐⭐ | [Solution](https://github.com/reisenx/2110101-COM-PROG/blob/main/01%20Data%20Type%20%26%20Expression/01_Expr_09/01_Expr_09.py) | - |
+
 
 ## บทที่ 02: Basic String & List
 | No. | Problem Code | Name | Difficulty | Solution |
@@ -54,172 +55,248 @@
 | 38 | [`P1_​07_​Biorhythm`]() | `03_​Biorhythm` | ⭐⭐⭐ | [Solution]()
 
 ## บทที่ 04: Repetition
-| No. | Problem Code | Name | Difficulty | Solution |
-| :---: | :--- | :--- | :--- | :--- |
-| 0 | [``]() | `` | ⭐ | [Solution]()
-| 0 | [``]() | `` | ⭐ | [Solution]()
-| 0 | [``]() | `` | ⭐ | [Solution]()
-| 0 | [``]() | `` | ⭐ | [Solution]()
-| 0 | [``]() | `` | ⭐ | [Solution]()
-| 0 | [``]() | `` | ⭐ | [Solution]()
-| 0 | [``]() | `` | ⭐ | [Solution]()
-| 0 | [``]() | `` | ⭐ | [Solution]()
-| 0 | [``]() | `` | ⭐ | [Solution]()
-| 0 | [``]() | `` | ⭐ | [Solution]()
-| 0 | [``]() | `` | ⭐ | [Solution]()
-| 0 | [``]() | `` | ⭐ | [Solution]()
-| 0 | [``]() | `` | ⭐ | [Solution]()
-| 0 | [``]() | `` | ⭐ | [Solution]()
-| 0 | [``]() | `` | ⭐ | [Solution]()
+| No. | Problem Code | Name | Difficulty | Solution | VDO |
+| :---: | :--- | :--- | :--- | :--- | :---: |
+| 0 | [``]() | **** | ⭐ | [Solution]() | [Video]() |
+| 0 | [``]() | **** | ⭐ | [Solution]() | [Video]() |
+| 0 | [``]() | **** | ⭐ | [Solution]() | [Video]() |
+| 0 | [``]() | **** | ⭐ | [Solution]() | [Video]() |
+| 0 | [``]() | **** | ⭐ | [Solution]() | [Video]() |
+| 0 | [``]() | **** | ⭐ | [Solution]() | [Video]() |
+| 0 | [``]() | **** | ⭐ | [Solution]() | [Video]() |
+| 0 | [``]() | **** | ⭐ | [Solution]() | [Video]() |
+| 0 | [``]() | **** | ⭐ | [Solution]() | [Video]() |
+| 0 | [``]() | **** | ⭐ | [Solution]() | [Video]() |
+| 0 | [``]() | **** | ⭐ | [Solution]() | [Video]() |
+| 0 | [``]() | **** | ⭐ | [Solution]() | [Video]() |
+| 0 | [``]() | **** | ⭐ | [Solution]() | [Video]() |
+| 0 | [``]() | **** | ⭐ | [Solution]() | [Video]() |
+| 0 | [``]() | **** | ⭐ | [Solution]() | [Video]() |
 
 ## บทที่ 05: List Processing
-| No. | Problem Code | Name | Difficulty | Solution |
-| :---: | :--- | :--- | :--- | :--- |
-| 0 | [``]() | `` | ⭐ | [Solution]()
-| 0 | [``]() | `` | ⭐ | [Solution]()
-| 0 | [``]() | `` | ⭐ | [Solution]()
-| 0 | [``]() | `` | ⭐ | [Solution]()
-| 0 | [``]() | `` | ⭐ | [Solution]()
-| 0 | [``]() | `` | ⭐ | [Solution]()
-| 0 | [``]() | `` | ⭐ | [Solution]()
-| 0 | [``]() | `` | ⭐ | [Solution]()
-| 0 | [``]() | `` | ⭐ | [Solution]()
-| 0 | [``]() | `` | ⭐ | [Solution]()
-| 0 | [``]() | `` | ⭐ | [Solution]()
-| 0 | [``]() | `` | ⭐ | [Solution]()
-| 0 | [``]() | `` | ⭐ | [Solution]()
-| 0 | [``]() | `` | ⭐ | [Solution]()
-| 0 | [``]() | `` | ⭐ | [Solution]()
+| No. | Problem Code | Name | Difficulty | Solution | VDO |
+| :---: | :--- | :--- | :--- | :--- | :---: |
+| 0 | [``]() | **** | ⭐ | [Solution]() | [Video]() |
+| 0 | [``]() | **** | ⭐ | [Solution]() | [Video]() |
+| 0 | [``]() | **** | ⭐ | [Solution]() | [Video]() |
+| 0 | [``]() | **** | ⭐ | [Solution]() | [Video]() |
+| 0 | [``]() | **** | ⭐ | [Solution]() | [Video]() |
+| 0 | [``]() | **** | ⭐ | [Solution]() | [Video]() |
+| 0 | [``]() | **** | ⭐ | [Solution]() | [Video]() |
+| 0 | [``]() | **** | ⭐ | [Solution]() | [Video]() |
+| 0 | [``]() | **** | ⭐ | [Solution]() | [Video]() |
+| 0 | [``]() | **** | ⭐ | [Solution]() | [Video]() |
+| 0 | [``]() | **** | ⭐ | [Solution]() | [Video]() |
+| 0 | [``]() | **** | ⭐ | [Solution]() | [Video]() |
+| 0 | [``]() | **** | ⭐ | [Solution]() | [Video]() |
+| 0 | [``]() | **** | ⭐ | [Solution]() | [Video]() |
+| 0 | [``]() | **** | ⭐ | [Solution]() | [Video]() |
 
 ## บทที่ 06: Function
-| No. | Problem Code | Name | Difficulty | Solution |
-| :---: | :--- | :--- | :--- | :--- |
-| 0 | [``]() | `` | ⭐ | [Solution]()
-| 0 | [``]() | `` | ⭐ | [Solution]()
-| 0 | [``]() | `` | ⭐ | [Solution]()
-| 0 | [``]() | `` | ⭐ | [Solution]()
-| 0 | [``]() | `` | ⭐ | [Solution]()
-| 0 | [``]() | `` | ⭐ | [Solution]()
-| 0 | [``]() | `` | ⭐ | [Solution]()
-| 0 | [``]() | `` | ⭐ | [Solution]()
-| 0 | [``]() | `` | ⭐ | [Solution]()
-| 0 | [``]() | `` | ⭐ | [Solution]()
-| 0 | [``]() | `` | ⭐ | [Solution]()
-| 0 | [``]() | `` | ⭐ | [Solution]()
-| 0 | [``]() | `` | ⭐ | [Solution]()
-| 0 | [``]() | `` | ⭐ | [Solution]()
-| 0 | [``]() | `` | ⭐ | [Solution]()
+| No. | Problem Code | Name | Difficulty | Solution | VDO |
+| :---: | :--- | :--- | :--- | :--- | :---: |
+| 0 | [``]() | **** | ⭐ | [Solution]() | [Video]() |
+| 0 | [``]() | **** | ⭐ | [Solution]() | [Video]() |
+| 0 | [``]() | **** | ⭐ | [Solution]() | [Video]() |
+| 0 | [``]() | **** | ⭐ | [Solution]() | [Video]() |
+| 0 | [``]() | **** | ⭐ | [Solution]() | [Video]() |
+| 0 | [``]() | **** | ⭐ | [Solution]() | [Video]() |
+| 0 | [``]() | **** | ⭐ | [Solution]() | [Video]() |
+| 0 | [``]() | **** | ⭐ | [Solution]() | [Video]() |
+| 0 | [``]() | **** | ⭐ | [Solution]() | [Video]() |
+| 0 | [``]() | **** | ⭐ | [Solution]() | [Video]() |
+| 0 | [``]() | **** | ⭐ | [Solution]() | [Video]() |
+| 0 | [``]() | **** | ⭐ | [Solution]() | [Video]() |
+| 0 | [``]() | **** | ⭐ | [Solution]() | [Video]() |
+| 0 | [``]() | **** | ⭐ | [Solution]() | [Video]() |
+| 0 | [``]() | **** | ⭐ | [Solution]() | [Video]() |
 
 ## บทที่ 07: String Processing
-| No. | Problem Code | Name | Difficulty | Solution |
-| :---: | :--- | :--- | :--- | :--- |
-| 0 | [``]() | `` | ⭐ | [Solution]()
-| 0 | [``]() | `` | ⭐ | [Solution]()
-| 0 | [``]() | `` | ⭐ | [Solution]()
-| 0 | [``]() | `` | ⭐ | [Solution]()
-| 0 | [``]() | `` | ⭐ | [Solution]()
-| 0 | [``]() | `` | ⭐ | [Solution]()
-| 0 | [``]() | `` | ⭐ | [Solution]()
-| 0 | [``]() | `` | ⭐ | [Solution]()
-| 0 | [``]() | `` | ⭐ | [Solution]()
-| 0 | [``]() | `` | ⭐ | [Solution]()
-| 0 | [``]() | `` | ⭐ | [Solution]()
-| 0 | [``]() | `` | ⭐ | [Solution]()
-| 0 | [``]() | `` | ⭐ | [Solution]()
-| 0 | [``]() | `` | ⭐ | [Solution]()
-| 0 | [``]() | `` | ⭐ | [Solution]()
+| No. | Problem Code | Name | Difficulty | Solution | VDO |
+| :---: | :--- | :--- | :--- | :--- | :---: |
+| 0 | [``]() | **** | ⭐ | [Solution]() | [Video]() |
+| 0 | [``]() | **** | ⭐ | [Solution]() | [Video]() |
+| 0 | [``]() | **** | ⭐ | [Solution]() | [Video]() |
+| 0 | [``]() | **** | ⭐ | [Solution]() | [Video]() |
+| 0 | [``]() | **** | ⭐ | [Solution]() | [Video]() |
+| 0 | [``]() | **** | ⭐ | [Solution]() | [Video]() |
+| 0 | [``]() | **** | ⭐ | [Solution]() | [Video]() |
+| 0 | [``]() | **** | ⭐ | [Solution]() | [Video]() |
+| 0 | [``]() | **** | ⭐ | [Solution]() | [Video]() |
+| 0 | [``]() | **** | ⭐ | [Solution]() | [Video]() |
+| 0 | [``]() | **** | ⭐ | [Solution]() | [Video]() |
+| 0 | [``]() | **** | ⭐ | [Solution]() | [Video]() |
+| 0 | [``]() | **** | ⭐ | [Solution]() | [Video]() |
+| 0 | [``]() | **** | ⭐ | [Solution]() | [Video]() |
+| 0 | [``]() | **** | ⭐ | [Solution]() | [Video]() |
 
 ## บทที่ 08: Basic Dict
-| No. | Problem Code | Name | Difficulty | Solution |
-| :---: | :--- | :--- | :--- | :--- |
-| 0 | [``]() | `` | ⭐ | [Solution]()
-| 0 | [``]() | `` | ⭐ | [Solution]()
-| 0 | [``]() | `` | ⭐ | [Solution]()
-| 0 | [``]() | `` | ⭐ | [Solution]()
-| 0 | [``]() | `` | ⭐ | [Solution]()
-| 0 | [``]() | `` | ⭐ | [Solution]()
-| 0 | [``]() | `` | ⭐ | [Solution]()
-| 0 | [``]() | `` | ⭐ | [Solution]()
-| 0 | [``]() | `` | ⭐ | [Solution]()
-| 0 | [``]() | `` | ⭐ | [Solution]()
-| 0 | [``]() | `` | ⭐ | [Solution]()
-| 0 | [``]() | `` | ⭐ | [Solution]()
-| 0 | [``]() | `` | ⭐ | [Solution]()
-| 0 | [``]() | `` | ⭐ | [Solution]()
-| 0 | [``]() | `` | ⭐ | [Solution]()
+| No. | Problem Code | Name | Difficulty | Solution | VDO |
+| :---: | :--- | :--- | :--- | :--- | :---: |
+| 0 | [``]() | **** | ⭐ | [Solution]() | [Video]() |
+| 0 | [``]() | **** | ⭐ | [Solution]() | [Video]() |
+| 0 | [``]() | **** | ⭐ | [Solution]() | [Video]() |
+| 0 | [``]() | **** | ⭐ | [Solution]() | [Video]() |
+| 0 | [``]() | **** | ⭐ | [Solution]() | [Video]() |
+| 0 | [``]() | **** | ⭐ | [Solution]() | [Video]() |
+| 0 | [``]() | **** | ⭐ | [Solution]() | [Video]() |
+| 0 | [``]() | **** | ⭐ | [Solution]() | [Video]() |
+| 0 | [``]() | **** | ⭐ | [Solution]() | [Video]() |
+| 0 | [``]() | **** | ⭐ | [Solution]() | [Video]() |
+| 0 | [``]() | **** | ⭐ | [Solution]() | [Video]() |
+| 0 | [``]() | **** | ⭐ | [Solution]() | [Video]() |
+| 0 | [``]() | **** | ⭐ | [Solution]() | [Video]() |
+| 0 | [``]() | **** | ⭐ | [Solution]() | [Video]() |
+| 0 | [``]() | **** | ⭐ | [Solution]() | [Video]() |
 
 ## บทที่ 09: Nested Structure
-| No. | Problem Code | Name | Difficulty | Solution |
-| :---: | :--- | :--- | :--- | :--- |
-| 0 | [``]() | `` | ⭐ | [Solution]()
-| 0 | [``]() | `` | ⭐ | [Solution]()
-| 0 | [``]() | `` | ⭐ | [Solution]()
-| 0 | [``]() | `` | ⭐ | [Solution]()
-| 0 | [``]() | `` | ⭐ | [Solution]()
-| 0 | [``]() | `` | ⭐ | [Solution]()
-| 0 | [``]() | `` | ⭐ | [Solution]()
-| 0 | [``]() | `` | ⭐ | [Solution]()
-| 0 | [``]() | `` | ⭐ | [Solution]()
-| 0 | [``]() | `` | ⭐ | [Solution]()
-| 0 | [``]() | `` | ⭐ | [Solution]()
-| 0 | [``]() | `` | ⭐ | [Solution]()
-| 0 | [``]() | `` | ⭐ | [Solution]()
-| 0 | [``]() | `` | ⭐ | [Solution]()
-| 0 | [``]() | `` | ⭐ | [Solution]()
+| No. | Problem Code | Name | Difficulty | Solution | VDO |
+| :---: | :--- | :--- | :--- | :--- | :---: |
+| 0 | [``]() | **** | ⭐ | [Solution]() | [Video]() |
+| 0 | [``]() | **** | ⭐ | [Solution]() | [Video]() |
+| 0 | [``]() | **** | ⭐ | [Solution]() | [Video]() |
+| 0 | [``]() | **** | ⭐ | [Solution]() | [Video]() |
+| 0 | [``]() | **** | ⭐ | [Solution]() | [Video]() |
+| 0 | [``]() | **** | ⭐ | [Solution]() | [Video]() |
+| 0 | [``]() | **** | ⭐ | [Solution]() | [Video]() |
+| 0 | [``]() | **** | ⭐ | [Solution]() | [Video]() |
+| 0 | [``]() | **** | ⭐ | [Solution]() | [Video]() |
+| 0 | [``]() | **** | ⭐ | [Solution]() | [Video]() |
+| 0 | [``]() | **** | ⭐ | [Solution]() | [Video]() |
+| 0 | [``]() | **** | ⭐ | [Solution]() | [Video]() |
+| 0 | [``]() | **** | ⭐ | [Solution]() | [Video]() |
+| 0 | [``]() | **** | ⭐ | [Solution]() | [Video]() |
+| 0 | [``]() | **** | ⭐ | [Solution]() | [Video]() |
 
 ## บทที่ 10: Tuple, Set, Dict
-| No. | Problem Code | Name | Difficulty | Solution |
-| :---: | :--- | :--- | :--- | :--- |
-| 0 | [``]() | `` | ⭐ | [Solution]()
-| 0 | [``]() | `` | ⭐ | [Solution]()
-| 0 | [``]() | `` | ⭐ | [Solution]()
-| 0 | [``]() | `` | ⭐ | [Solution]()
-| 0 | [``]() | `` | ⭐ | [Solution]()
-| 0 | [``]() | `` | ⭐ | [Solution]()
-| 0 | [``]() | `` | ⭐ | [Solution]()
-| 0 | [``]() | `` | ⭐ | [Solution]()
-| 0 | [``]() | `` | ⭐ | [Solution]()
-| 0 | [``]() | `` | ⭐ | [Solution]()
-| 0 | [``]() | `` | ⭐ | [Solution]()
-| 0 | [``]() | `` | ⭐ | [Solution]()
-| 0 | [``]() | `` | ⭐ | [Solution]()
-| 0 | [``]() | `` | ⭐ | [Solution]()
-| 0 | [``]() | `` | ⭐ | [Solution]()
+| No. | Problem Code | Name | Difficulty | Solution | VDO |
+| :---: | :--- | :--- | :--- | :--- | :---: |
+| 0 | [``]() | **** | ⭐ | [Solution]() | [Video]() |
+| 0 | [``]() | **** | ⭐ | [Solution]() | [Video]() |
+| 0 | [``]() | **** | ⭐ | [Solution]() | [Video]() |
+| 0 | [``]() | **** | ⭐ | [Solution]() | [Video]() |
+| 0 | [``]() | **** | ⭐ | [Solution]() | [Video]() |
+| 0 | [``]() | **** | ⭐ | [Solution]() | [Video]() |
+| 0 | [``]() | **** | ⭐ | [Solution]() | [Video]() |
+| 0 | [``]() | **** | ⭐ | [Solution]() | [Video]() |
+| 0 | [``]() | **** | ⭐ | [Solution]() | [Video]() |
+| 0 | [``]() | **** | ⭐ | [Solution]() | [Video]() |
+| 0 | [``]() | **** | ⭐ | [Solution]() | [Video]() |
+| 0 | [``]() | **** | ⭐ | [Solution]() | [Video]() |
+| 0 | [``]() | **** | ⭐ | [Solution]() | [Video]() |
+| 0 | [``]() | **** | ⭐ | [Solution]() | [Video]() |
+| 0 | [``]() | **** | ⭐ | [Solution]() | [Video]() |
 
 ## บทที่ 11: NumPy
-| No. | Problem Code | Name | Difficulty | Solution |
-| :---: | :--- | :--- | :--- | :--- |
-| 0 | [``]() | `` | ⭐ | [Solution]()
-| 0 | [``]() | `` | ⭐ | [Solution]()
-| 0 | [``]() | `` | ⭐ | [Solution]()
-| 0 | [``]() | `` | ⭐ | [Solution]()
-| 0 | [``]() | `` | ⭐ | [Solution]()
-| 0 | [``]() | `` | ⭐ | [Solution]()
-| 0 | [``]() | `` | ⭐ | [Solution]()
-| 0 | [``]() | `` | ⭐ | [Solution]()
-| 0 | [``]() | `` | ⭐ | [Solution]()
-| 0 | [``]() | `` | ⭐ | [Solution]()
-| 0 | [``]() | `` | ⭐ | [Solution]()
-| 0 | [``]() | `` | ⭐ | [Solution]()
-| 0 | [``]() | `` | ⭐ | [Solution]()
-| 0 | [``]() | `` | ⭐ | [Solution]()
-| 0 | [``]() | `` | ⭐ | [Solution]()
+| No. | Problem Code | Name | Difficulty | Solution | VDO |
+| :---: | :--- | :--- | :--- | :--- | :---: |
+| 0 | [``]() | **** | ⭐ | [Solution]() | [Video]() |
+| 0 | [``]() | **** | ⭐ | [Solution]() | [Video]() |
+| 0 | [``]() | **** | ⭐ | [Solution]() | [Video]() |
+| 0 | [``]() | **** | ⭐ | [Solution]() | [Video]() |
+| 0 | [``]() | **** | ⭐ | [Solution]() | [Video]() |
+| 0 | [``]() | **** | ⭐ | [Solution]() | [Video]() |
+| 0 | [``]() | **** | ⭐ | [Solution]() | [Video]() |
+| 0 | [``]() | **** | ⭐ | [Solution]() | [Video]() |
+| 0 | [``]() | **** | ⭐ | [Solution]() | [Video]() |
+| 0 | [``]() | **** | ⭐ | [Solution]() | [Video]() |
+| 0 | [``]() | **** | ⭐ | [Solution]() | [Video]() |
+| 0 | [``]() | **** | ⭐ | [Solution]() | [Video]() |
+| 0 | [``]() | **** | ⭐ | [Solution]() | [Video]() |
+| 0 | [``]() | **** | ⭐ | [Solution]() | [Video]() |
+| 0 | [``]() | **** | ⭐ | [Solution]() | [Video]() |
 
 ## บทที่ 12: Class & Object
-| No. | Problem Code | Name | Difficulty | Solution |
-| :---: | :--- | :--- | :--- | :--- |
-| 0 | [``]() | `` | ⭐ | [Solution]()
-| 0 | [``]() | `` | ⭐ | [Solution]()
-| 0 | [``]() | `` | ⭐ | [Solution]()
-| 0 | [``]() | `` | ⭐ | [Solution]()
-| 0 | [``]() | `` | ⭐ | [Solution]()
-| 0 | [``]() | `` | ⭐ | [Solution]()
-| 0 | [``]() | `` | ⭐ | [Solution]()
-| 0 | [``]() | `` | ⭐ | [Solution]()
-| 0 | [``]() | `` | ⭐ | [Solution]()
-| 0 | [``]() | `` | ⭐ | [Solution]()
-| 0 | [``]() | `` | ⭐ | [Solution]()
-| 0 | [``]() | `` | ⭐ | [Solution]()
-| 0 | [``]() | `` | ⭐ | [Solution]()
-| 0 | [``]() | `` | ⭐ | [Solution]()
-| 0 | [``]() | `` | ⭐ | [Solution]()
+| No. | Problem Code | Name | Difficulty | Solution | VDO |
+| :---: | :--- | :--- | :--- | :--- | :---: |
+| 0 | [``]() | **** | ⭐ | [Solution]() | [Video]() |
+| 0 | [``]() | **** | ⭐ | [Solution]() | [Video]() |
+| 0 | [``]() | **** | ⭐ | [Solution]() | [Video]() |
+| 0 | [``]() | **** | ⭐ | [Solution]() | [Video]() |
+| 0 | [``]() | **** | ⭐ | [Solution]() | [Video]() |
+| 0 | [``]() | **** | ⭐ | [Solution]() | [Video]() |
+| 0 | [``]() | **** | ⭐ | [Solution]() | [Video]() |
+| 0 | [``]() | **** | ⭐ | [Solution]() | [Video]() |
+| 0 | [``]() | **** | ⭐ | [Solution]() | [Video]() |
+| 0 | [``]() | **** | ⭐ | [Solution]() | [Video]() |
+| 0 | [``]() | **** | ⭐ | [Solution]() | [Video]() |
+| 0 | [``]() | **** | ⭐ | [Solution]() | [Video]() |
+| 0 | [``]() | **** | ⭐ | [Solution]() | [Video]() |
+| 0 | [``]() | **** | ⭐ | [Solution]() | [Video]() |
+| 0 | [``]() | **** | ⭐ | [Solution]() | [Video]() |
+
+## Grader Practice: Part-I
+| No. | Problem Code | Name | Difficulty | Solution | VDO |
+| :---: | :--- | :--- | :--- | :--- | :---: |
+| 0 | [``]() | **** | ⭐ | [Solution]() | [Video]() |
+| 0 | [``]() | **** | ⭐ | [Solution]() | [Video]() |
+| 0 | [``]() | **** | ⭐ | [Solution]() | [Video]() |
+| 0 | [``]() | **** | ⭐ | [Solution]() | [Video]() |
+| 0 | [``]() | **** | ⭐ | [Solution]() | [Video]() |
+| 0 | [``]() | **** | ⭐ | [Solution]() | [Video]() |
+| 0 | [``]() | **** | ⭐ | [Solution]() | [Video]() |
+| 0 | [``]() | **** | ⭐ | [Solution]() | [Video]() |
+| 0 | [``]() | **** | ⭐ | [Solution]() | [Video]() |
+| 0 | [``]() | **** | ⭐ | [Solution]() | [Video]() |
+| 0 | [``]() | **** | ⭐ | [Solution]() | [Video]() |
+| 0 | [``]() | **** | ⭐ | [Solution]() | [Video]() |
+| 0 | [``]() | **** | ⭐ | [Solution]() | [Video]() |
+| 0 | [``]() | **** | ⭐ | [Solution]() | [Video]() |
+| 0 | [``]() | **** | ⭐ | [Solution]() | [Video]() |
+
+## Grader Practice: Part-II
+| No. | Problem Code | Name | Difficulty | Solution | VDO |
+| :---: | :--- | :--- | :--- | :--- | :---: |
+| 0 | [``]() | **** | ⭐ | [Solution]() | [Video]() |
+| 0 | [``]() | **** | ⭐ | [Solution]() | [Video]() |
+| 0 | [``]() | **** | ⭐ | [Solution]() | [Video]() |
+| 0 | [``]() | **** | ⭐ | [Solution]() | [Video]() |
+| 0 | [``]() | **** | ⭐ | [Solution]() | [Video]() |
+| 0 | [``]() | **** | ⭐ | [Solution]() | [Video]() |
+| 0 | [``]() | **** | ⭐ | [Solution]() | [Video]() |
+| 0 | [``]() | **** | ⭐ | [Solution]() | [Video]() |
+| 0 | [``]() | **** | ⭐ | [Solution]() | [Video]() |
+| 0 | [``]() | **** | ⭐ | [Solution]() | [Video]() |
+| 0 | [``]() | **** | ⭐ | [Solution]() | [Video]() |
+| 0 | [``]() | **** | ⭐ | [Solution]() | [Video]() |
+| 0 | [``]() | **** | ⭐ | [Solution]() | [Video]() |
+| 0 | [``]() | **** | ⭐ | [Solution]() | [Video]() |
+| 0 | [``]() | **** | ⭐ | [Solution]() | [Video]() |
+
+## Grader Practice: Part-III
+| No. | Problem Code | Name | Difficulty | Solution | VDO |
+| :---: | :--- | :--- | :--- | :--- | :---: |
+| 0 | [``]() | **** | ⭐ | [Solution]() | [Video]() |
+| 0 | [``]() | **** | ⭐ | [Solution]() | [Video]() |
+| 0 | [``]() | **** | ⭐ | [Solution]() | [Video]() |
+| 0 | [``]() | **** | ⭐ | [Solution]() | [Video]() |
+| 0 | [``]() | **** | ⭐ | [Solution]() | [Video]() |
+| 0 | [``]() | **** | ⭐ | [Solution]() | [Video]() |
+| 0 | [``]() | **** | ⭐ | [Solution]() | [Video]() |
+| 0 | [``]() | **** | ⭐ | [Solution]() | [Video]() |
+| 0 | [``]() | **** | ⭐ | [Solution]() | [Video]() |
+| 0 | [``]() | **** | ⭐ | [Solution]() | [Video]() |
+| 0 | [``]() | **** | ⭐ | [Solution]() | [Video]() |
+| 0 | [``]() | **** | ⭐ | [Solution]() | [Video]() |
+| 0 | [``]() | **** | ⭐ | [Solution]() | [Video]() |
+| 0 | [``]() | **** | ⭐ | [Solution]() | [Video]() |
+| 0 | [``]() | **** | ⭐ | [Solution]() | [Video]() |
+
+## In-class Assignment (Year 2566 Semester 2 Section 5)
+| No. | Problem Code | Name | Difficulty | Solution | VDO |
+| :---: | :--- | :--- | :--- | :--- | :---: |
+| 0 | [``]() | **** | ⭐ | [Solution]() | [Video]() |
+| 0 | [``]() | **** | ⭐ | [Solution]() | [Video]() |
+| 0 | [``]() | **** | ⭐ | [Solution]() | [Video]() |
+| 0 | [``]() | **** | ⭐ | [Solution]() | [Video]() |
+| 0 | [``]() | **** | ⭐ | [Solution]() | [Video]() |
+| 0 | [``]() | **** | ⭐ | [Solution]() | [Video]() |
+| 0 | [``]() | **** | ⭐ | [Solution]() | [Video]() |
+| 0 | [``]() | **** | ⭐ | [Solution]() | [Video]() |
+| 0 | [``]() | **** | ⭐ | [Solution]() | [Video]() |
+| 0 | [``]() | **** | ⭐ | [Solution]() | [Video]() |
+| 0 | [``]() | **** | ⭐ | [Solution]() | [Video]() |
+| 0 | [``]() | **** | ⭐ | [Solution]() | [Video]() |
+| 0 | [``]() | **** | ⭐ | [Solution]() | [Video]() |
+| 0 | [``]() | **** | ⭐ | [Solution]() | [Video]() |
+| 0 | [``]() | **** | ⭐ | [Solution]() | [Video]() |
