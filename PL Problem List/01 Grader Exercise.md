@@ -36,22 +36,21 @@
 ## บทที่ 03: Selection
 | No. | Problem Code | Name | Difficulty | Solution | VDO |
 | :---: | :--- | :--- | :--- | :--- | :---: |
-| 23 | [`03_​If_​001`]() | `03_​Median5 (flowchart)` | ⭐ | [`Solution`]() | [`Video`]() |
-| 24 | [`03_​If_​002`]() | `03_​Next15Days (flowchart)` | ⭐⭐ | [`Solution`]() | [`Video`]() |
-| 25 | [`03_​If_​003`]() | `03_​Flowchart01` | ⭐⭐ | [`Solution`]() | [`Video`]() |
-| 26 | [`03_​If_​004`]() | `03_​Grading (flowchart)` | ⭐ | [`Solution`]() | [`Video`]() |
-| 27 | [`03_​If_​01`]() | `03_​FacultyCode` | ⭐ | [`Solution`]() | [`Video`]() |
-| 28 | [`03_​If_​02`]() | `03_​Change_​of_​Major` | ⭐⭐ | [`Solution`]() | [`Video`]() |
-| 29 | [`03_​If_​03`]() | `03_​Gymnastic_​Score` | ⭐ | [`Solution`]() | [`Video`]() |
-| 30 | [`03_​If_​04`]() | `03_​MobileNumber` | ⭐ | [`Solution`]() | [`Video`]() |
-| 31 | [`03_​If_​05`]() | `03_​Positive_​Negative` | ⭐ | [`Solution`]() | [`Video`]() |
-| 32 | [`03_​If_​06`]() | `03_​RegisteredMail` | ⭐ | [`Solution`]() | [`Video`]() |
-| 33 | [`03_​If_​07`]() | `03_​AbbrevNum` | ⭐⭐ | [`Solution`]() | [`Video`]() |
-| 34 | [`03_​If_​08`]() | `03_​DayOfYear` | ⭐⭐ | [`Solution`]() | [`Video`]() |
-| 35 | [`03_​If_​F02`]() | `03_​Change_​of_​Major (Function)` | ⭐⭐ | [`Solution`]() | [`Video`]() |
-| 36 | [`03_​If_​F04`]() | `03_​MobileNumber (Function)` | ⭐ | [`Solution`]() | [`Video`]() |
-| 37 | [`03_​If_​F08`]() | `03_​DayOfYear (Function)` | ⭐⭐ | [`Solution`]() | [`Video`]() |
-| 38 | [`P1_​07_​Biorhythm`]() | `03_​Biorhythm` | ⭐⭐⭐ | [`Solution`]() | [`Video`]() |
+| 1 | [`03_​If_​001`](https://drive.google.com/file/d/1-FgvMgeSbmMdmuoXhWq14VSP9PQgDg8M/view?usp=drive_link) | **Median5 (Flowchart)** | ⭐ | [`Solution`](https://github.com/reisenx/2110101-COM-PROG/blob/main/03%20Selection/03_If_001/03_If_001.py) | [`Video`](https://youtu.be/1GM89VXYvyo?si=SI6twYWTFXw1R0Ok) |
+| 2 | [`03_​If_​002`](https://drive.google.com/file/d/1PZEMIBTUNmGQYP3032q55CRRd0AxKs0V/view?usp=drive_link) | ​**Next15Days (Flowchart)** | ⭐⭐ | [`Solution`](https://github.com/reisenx/2110101-COM-PROG/blob/main/03%20Selection/03_If_002/03_If_002.py) | [`Video`](https://youtu.be/OWwWTZ6Xk8I?si=FqgdWbBQw2VCkxKP) |
+| 3 | [`03_​If_​003`](https://drive.google.com/file/d/1a-kHmNUQbP_5aLP0BWenTJDKYaVMkWvz/view?usp=drive_link) | **Flowchart01** | ⭐⭐ | [`Solution`](https://github.com/reisenx/2110101-COM-PROG/blob/main/03%20Selection/03_If_003/03_If_003.py) | [`Video`](https://youtu.be/GS5EA5OZcYM?si=KSgQMjOcpbOATz6J) |
+| 4 | [`03_​If_​004`](https://drive.google.com/file/d/1c1aS9SXkdoZO8ol98XQYRGGadzMnkrj_/view?usp=drive_link) | ​**Grading (Flowchart)** | ⭐ | [`Solution`](https://github.com/reisenx/2110101-COM-PROG/blob/main/03%20Selection/03_if_004/03_if_004.py) | [`Video`](https://youtu.be/pvJI70XVJ1M?si=1eLiF_Z8dFzubS3C) |
+| 5 | [`03_​If_​01`](https://drive.google.com/file/d/1x2QRj3gusHpN8Uw8RwNIOLpQi2YLuQ4S/view?usp=drive_link) | ​**FacultyCode** | ⭐ | [`Solution`](https://github.com/reisenx/2110101-COM-PROG/blob/main/03%20Selection/03_If_01/03_If_01.py) | [`Video`](https://youtu.be/Y3V3ar07A6c?si=C86eWpBAvngJPKbL) |
+| 6 | [`03_​If_​02`](https://drive.google.com/file/d/1xxrR-_-jF2WVU1qGW2Uduscr8QlFmUq0/view?usp=drive_link) | ​**Change of Major** | ⭐⭐ | [`Solution`](https://github.com/reisenx/2110101-COM-PROG/blob/main/03%20Selection/03_If_02/03_If_02.py) | [`Video`](https://youtu.be/9sx1IIL0slY?si=ejpnOTmwlhgwX-au) |
+| 7 | [`03_​If_​03`](https://drive.google.com/file/d/1djfNFqDeMXgp8AADCjlkmKOQcjn4FXfo/view?usp=drive_link) | **Gymnastic ​Score** | ⭐ | [`Solution`](https://github.com/reisenx/2110101-COM-PROG/blob/main/03%20Selection/03_If_03/03_If_03.py) | [`Video`](https://youtu.be/qsdERDJgzFg?si=kenN3bnJ_drBJscx) |
+| 8 | [`03_​If_​04`](https://drive.google.com/file/d/1tpafXeIDXP4YojFJK7YPlmwkDoq3m-n0/view?usp=drive_link) | ​**MobileNumber** | ⭐ | [`Solution`](https://github.com/reisenx/2110101-COM-PROG/blob/main/03%20Selection/03_If_04/03_If_04.py) | [`Video`](https://youtu.be/17pTXOqGDyM?si=bLH21Fm1Ej1VXoRH) |
+| 9 | [`03_​If_​05`](https://drive.google.com/file/d/1bcjosJ4tfZskS58okiwLbOlGW60I2FVA/view?usp=drive_link) | ​**Positive ​Negative** | ⭐ | [`Solution`](https://github.com/reisenx/2110101-COM-PROG/blob/main/03%20Selection/03_If_05/03_If_05.py) | [`Video`](https://youtu.be/v0XO-KiWoc0?si=wG3wPswKJDhmRfHV) |
+| 10 | [`03_​If_​06`](https://drive.google.com/file/d/13J3iKrgPFORkh4Cd8ZuK3n_hQhcMN-2a/view?usp=drive_link) | ​**RegisteredMail** | ⭐ | [`Solution`](https://github.com/reisenx/2110101-COM-PROG/blob/main/03%20Selection/03_If_06/03_If_06.py) | [`Video`](https://youtu.be/D_Mxk4sjPiA?si=qDhVZLEqrUYtzabx) |
+| 11 | [`03_​If_​07`](https://drive.google.com/file/d/1qvbhJOV_4GzWDBk1I9nWnla8Dns8tZYW/view?usp=drive_link) | ​**AbbrevNum** | ⭐⭐ | [`Solution`](https://github.com/reisenx/2110101-COM-PROG/blob/main/03%20Selection/03_If_07/03_If_07.py) | [`Video`](https://youtu.be/C_jrl7-HqMc?si=7M77eonq4CuGW98y) |
+| 12 | [`03_​If_​08`](https://drive.google.com/file/d/1yP3fXkih1_ZegF1biTD715nKIQ2XFk7_/view?usp=drive_link) | **​DayOfYear** | ⭐⭐ | [`Solution`](https://github.com/reisenx/2110101-COM-PROG/blob/main/03%20Selection/03_If_08/03_If_08.py) | [`Video`](https://youtu.be/iqE5bRaJnoo?si=6oBKMJT3-Q8CD_9i) |
+| 13 | [`03_​If_​F02`](https://drive.google.com/file/d/1wmBYNZufAZAAbCVTh2iYsNMVD-f3nFP6/view?usp=drive_link) | ​**Change of ​Major (Function)** | ⭐⭐ | [`Solution`](https://github.com/reisenx/2110101-COM-PROG/blob/main/03%20Selection/03_If_F02/03_If_F02.py) | - |
+| 14 | [`03_​If_​F04`](https://drive.google.com/file/d/1WNIAthwX9e-2VAQ3xLIzXJsacOeR_gg8/view?usp=drive_link) | ​**MobileNumber (Function)** | ⭐ | [`Solution`](https://github.com/reisenx/2110101-COM-PROG/blob/main/03%20Selection/03_If_F04/03_If_F04.py) | - |
+| 15 | [`03_​If_​F08`](https://drive.google.com/file/d/1LsNTk_ggYANBz5y8pTHBNk099-VYHvn2/view?usp=drive_link) | ​**DayOfYear (Function)** | ⭐⭐ | [`Solution`](https://github.com/reisenx/2110101-COM-PROG/blob/main/03%20Selection/03_If_F08/03_If_F08.py) | - |
 
 ## บทที่ 04: Repetition
 | No. | Problem Code | Name | Difficulty | Solution | VDO |
