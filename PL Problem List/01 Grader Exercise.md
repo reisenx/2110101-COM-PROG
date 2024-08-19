@@ -21,37 +21,37 @@
 ## บทที่ 02: Basic String & List
 | No. | Problem Code | Name | Difficulty | Solution | VDO |
 | :---: | :--- | :--- | :--- | :--- | :---: |
-| 0 | [`02_​StrList_​01`]() | **CitizenID** | ⭐ | [`Solution`]() | [`Video`]() |
-| 0 | [`02_​StrList_​02`]() | **​Arabic ​Numerals** | ⭐ | [`Solution`]() | [`Video`]() |
-| 0 | [`02_​StrList_​03`]() | **USDate** | ⭐ | [`Solution`]() | [`Video`]() |
-| 0 | [`02_​StrList_​04`]() | **NDigits** | ⭐ | [`Solution`]() | [`Video`]() |
-| 0 | [`02_​StrList_​05`]() | **WeeklySales** | ⭐ | [`Solution`]() | [`Video`]() |
-| 0 | [`02_​StrList_​06`]() | **AddVector** | ⭐⭐ | [`Solution`]() | [`Video`]() |
-| 0 | [`02_​StrList_​07`]() | **Decryption** | ⭐⭐⭐ | [`Solution`]() | [`Video`]() |
-| 0 | [`02_​StrList_​08`]() | **Decimal2Fraction** | ⭐⭐⭐ | [`Solution`]() | [`Video`]() |
-| 0 | [`02_​StrList_​F01`]() | **CitizenID (Function)** | ⭐ | [`Solution`]() | [`Video`]() |
-| 0 | [`02_​StrList_​F02`]() | **Arabic Numerals (Function)** | ⭐ | [`Solution`]() | [`Video`]() |
-| 0 | [`02_​StrList_​F06`]() | **AddVector (Function)** | ⭐⭐ | [`Solution`]() | [`Video`]() |
+| 1 | [`02_​StrList_​01`](https://drive.google.com/file/d/1gAkYLC1B1nULlFEXVkMTAVpve4Q39qVv/view?usp=drive_link) | **CitizenID** | ⭐ | [`Solution`](https://github.com/reisenx/2110101-COM-PROG/blob/main/02%20Basic%20String%20%26%20List/02_StrList_01/02_StrList_01.py) | [`Video`](https://youtu.be/wNJKL56YOxs?si=T_CEpbfRO_GpNXwN) |
+| 2 | [`02_​StrList_​02`](https://drive.google.com/file/d/1bWLV-E1NVwhCykZEEw5Ki5GpOb8MYLVr/view?usp=drive_link) | **​Arabic ​Numerals** | ⭐ | [`Solution`](https://github.com/reisenx/2110101-COM-PROG/blob/main/02%20Basic%20String%20%26%20List/02_StrList_02/02_StrList_02.py) | [`Video`](https://youtu.be/Bu51sQKfjOs?si=Rfgi6dMzdyqH2zgy) |
+| 3 | [`02_​StrList_​03`](https://drive.google.com/file/d/1R8Z4C-Ue5RNcX9Zw3Kk2PVHG_kjyIWYN/view?usp=drive_link) | **USDate** | ⭐ | [`Solution`](https://github.com/reisenx/2110101-COM-PROG/blob/main/02%20Basic%20String%20%26%20List/02_StrList_03/02_StrList_03.py) | [`Video`](https://youtu.be/fFSEU36hnIE?si=NRDgU-yHTc3BYDAU) |
+| 4 | [`02_​StrList_​04`](https://drive.google.com/file/d/1WwYtYB-upsq7hSny_pqqYX-tQ5jYjUWu/view?usp=drive_link) | **NDigits** | ⭐ | [`Solution`](https://github.com/reisenx/2110101-COM-PROG/blob/main/02%20Basic%20String%20%26%20List/02_StrList_04/02_StrList_04.py) | [`Video`](https://youtu.be/1PrGjpEwyb4?si=XMuNklc37F90dkVY) |
+| 5 | [`02_​StrList_​05`](https://drive.google.com/file/d/1oTAwAO2Z6f7dPzWnXRMenX4OU3iXDOS_/view?usp=drive_link) | **WeeklySales** | ⭐ | [`Solution`](https://github.com/reisenx/2110101-COM-PROG/blob/main/02%20Basic%20String%20%26%20List/02_StrList_05/02_StrList_05.py) | [`Video`](https://youtu.be/2hIysMMtYIc?si=8HOxReIi5-FPjkI3) |
+| 6 | [`02_​StrList_​06`](https://drive.google.com/file/d/1B_0SJ1j1T1kWLRd1Q8i_6lHuDWn2UNAi/view?usp=drive_link) | **AddVector** | ⭐⭐ | [`Solution`](https://github.com/reisenx/2110101-COM-PROG/blob/main/02%20Basic%20String%20%26%20List/02_StrList_06/02_StrList_06.py) | [`Video`](https://youtu.be/3axBb7LWqYM?si=uiMgA-0p1QBPeIru) |
+| 7 | [`02_​StrList_​07`](https://drive.google.com/file/d/1mVTuqRDoKxXLeVK_5CfC798q-1lHa9ML/view?usp=drive_link) | **Decryption** | ⭐⭐⭐ | [`Solution`](https://github.com/reisenx/2110101-COM-PROG/blob/main/02%20Basic%20String%20%26%20List/02_StrList_07/02_StrList_07.py) | [`Video`](https://youtu.be/1YekJDQClAs?si=ursOWTEap6wr-0Q4) |
+| 8 | [`02_​StrList_​08`](https://drive.google.com/file/d/1VeZUQgag6-KFgsYGqu3JENQj6jn8wl05/view?usp=drive_link) | **Decimal2Fraction** | ⭐⭐⭐ | [`Solution`](https://github.com/reisenx/2110101-COM-PROG/blob/main/02%20Basic%20String%20%26%20List/02_StrList_08/02_StrList_08.py) | [`Video`](https://youtu.be/kMELOmxDi4g?si=qFnPxd7kAZiyL4CT) |
+| 9 | [`02_​StrList_​F01`](https://drive.google.com/file/d/1KzULHcwD8Sp9kTZzUah_R9dRsvgNIb1M/view?usp=drive_link) | **CitizenID (Function)** | ⭐ | [`Solution`](https://github.com/reisenx/2110101-COM-PROG/blob/main/02%20Basic%20String%20%26%20List/02_StrList_F01/02_StrList_F01.py) | - |
+| 10 | [`02_​StrList_​F02`](https://drive.google.com/file/d/1Ovn5_aZzQnz7kFeuYIyiMD2ndhkCNm6U/view?usp=drive_link) | **Arabic Numerals (Function)** | ⭐ | [`Solution`](https://github.com/reisenx/2110101-COM-PROG/tree/main/02%20Basic%20String%20%26%20List/02_StrList_F02) | - |
+| 11 | [`02_​StrList_​F06`](https://drive.google.com/file/d/1_Pq8NGbwkvwBfqRkZetUVM8ggDYvYnDI/view?usp=drive_link) | **AddVector (Function)** | ⭐⭐ | [`Solution`](https://github.com/reisenx/2110101-COM-PROG/blob/main/02%20Basic%20String%20%26%20List/02_StrList_F06/02_StrList_F06.py) | - |
 
 ## บทที่ 03: Selection
-| No. | Problem Code | Name | Difficulty | Solution |
-| :---: | :--- | :--- | :--- | :--- |
-| 23 | [`03_​If_​001`]() | `03_​Median5 (flowchart)` | ⭐ | [Solution]()
-| 24 | [`03_​If_​002`]() | `03_​Next15Days (flowchart)` | ⭐⭐ | [Solution]()
-| 25 | [`03_​If_​003`]() | `03_​Flowchart01` | ⭐⭐ | [Solution]()
-| 26 | [`03_​If_​004`]() | `03_​Grading (flowchart)` | ⭐ | [Solution]()
-| 27 | [`03_​If_​01`]() | `03_​FacultyCode` | ⭐ | [Solution]()
-| 28 | [`03_​If_​02`]() | `03_​Change_​of_​Major` | ⭐⭐ | [Solution]()
-| 29 | [`03_​If_​03`]() | `03_​Gymnastic_​Score` | ⭐ | [Solution]()
-| 30 | [`03_​If_​04`]() | `03_​MobileNumber` | ⭐ | [Solution]()
-| 31 | [`03_​If_​05`]() | `03_​Positive_​Negative` | ⭐ | [Solution]()
-| 32 | [`03_​If_​06`]() | `03_​RegisteredMail` | ⭐ | [Solution]()
-| 33 | [`03_​If_​07`]() | `03_​AbbrevNum` | ⭐⭐ | [Solution]()
-| 34 | [`03_​If_​08`]() | `03_​DayOfYear` | ⭐⭐ | [Solution]()
-| 35 | [`03_​If_​F02`]() | `03_​Change_​of_​Major (Function)` | ⭐⭐ | [Solution]()
-| 36 | [`03_​If_​F04`]() | `03_​MobileNumber (Function)` | ⭐ | [Solution]()
-| 37 | [`03_​If_​F08`]() | `03_​DayOfYear (Function)` | ⭐⭐ | [Solution]()
-| 38 | [`P1_​07_​Biorhythm`]() | `03_​Biorhythm` | ⭐⭐⭐ | [Solution]()
+| No. | Problem Code | Name | Difficulty | Solution | VDO |
+| :---: | :--- | :--- | :--- | :--- | :---: |
+| 23 | [`03_​If_​001`]() | `03_​Median5 (flowchart)` | ⭐ | [`Solution`]() | [`Video`]() |
+| 24 | [`03_​If_​002`]() | `03_​Next15Days (flowchart)` | ⭐⭐ | [`Solution`]() | [`Video`]() |
+| 25 | [`03_​If_​003`]() | `03_​Flowchart01` | ⭐⭐ | [`Solution`]() | [`Video`]() |
+| 26 | [`03_​If_​004`]() | `03_​Grading (flowchart)` | ⭐ | [`Solution`]() | [`Video`]() |
+| 27 | [`03_​If_​01`]() | `03_​FacultyCode` | ⭐ | [`Solution`]() | [`Video`]() |
+| 28 | [`03_​If_​02`]() | `03_​Change_​of_​Major` | ⭐⭐ | [`Solution`]() | [`Video`]() |
+| 29 | [`03_​If_​03`]() | `03_​Gymnastic_​Score` | ⭐ | [`Solution`]() | [`Video`]() |
+| 30 | [`03_​If_​04`]() | `03_​MobileNumber` | ⭐ | [`Solution`]() | [`Video`]() |
+| 31 | [`03_​If_​05`]() | `03_​Positive_​Negative` | ⭐ | [`Solution`]() | [`Video`]() |
+| 32 | [`03_​If_​06`]() | `03_​RegisteredMail` | ⭐ | [`Solution`]() | [`Video`]() |
+| 33 | [`03_​If_​07`]() | `03_​AbbrevNum` | ⭐⭐ | [`Solution`]() | [`Video`]() |
+| 34 | [`03_​If_​08`]() | `03_​DayOfYear` | ⭐⭐ | [`Solution`]() | [`Video`]() |
+| 35 | [`03_​If_​F02`]() | `03_​Change_​of_​Major (Function)` | ⭐⭐ | [`Solution`]() | [`Video`]() |
+| 36 | [`03_​If_​F04`]() | `03_​MobileNumber (Function)` | ⭐ | [`Solution`]() | [`Video`]() |
+| 37 | [`03_​If_​F08`]() | `03_​DayOfYear (Function)` | ⭐⭐ | [`Solution`]() | [`Video`]() |
+| 38 | [`P1_​07_​Biorhythm`]() | `03_​Biorhythm` | ⭐⭐⭐ | [`Solution`]() | [`Video`]() |
 
 ## บทที่ 04: Repetition
 | No. | Problem Code | Name | Difficulty | Solution | VDO |
