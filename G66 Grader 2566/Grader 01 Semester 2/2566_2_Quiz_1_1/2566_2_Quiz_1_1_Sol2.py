@@ -43,7 +43,7 @@ for i in range(n):
     # Check if the card is "Flush" or not
     IsFlush = text[2::3] == text[2]*5
 
-     # Check a set of cards pattern, then put the result in a list
+    # Check a set of cards pattern, then put the result in a list
     if(IsFlush and IsStraight and text[1] == "A"):
         pattern.append("Royal Straight Flush")
     elif(IsFlush and IsStraight):

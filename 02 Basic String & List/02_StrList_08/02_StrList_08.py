@@ -21,7 +21,6 @@ A,B,C = decimal.split(",")
 #                 X = (1,023,456 - 1,023)/(10^5 - 10^2)
 numerator = int(A+B+C) - int(A+B)
 denominator = 10**(len(B)+len(C)) - 10**len(B)
-
 # Output the Simplified fraction
 gcd = math.gcd(numerator,denominator)
 print(numerator//gcd,"/",denominator//gcd)
