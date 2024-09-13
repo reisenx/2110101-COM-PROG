@@ -52,6 +52,7 @@ class ThisRepo:
 ## Course Syllabus
 | Resources | Link | Note |
 | :---: | :---: | :---: |
+| ปีการศึกษา 2567 เทอม 1 | [Link](https://drive.google.com/file/d/1cAZorCwSdPWR16uR8kFiRG5muKiQmRpD/view?usp=drive_link) | Course Syllabus ภาคคอม (CP) |
 | ปีการศึกษา 2567 เทอม 1 | [Link](https://drive.google.com/file/d/1qpp4X5nJv3uWqoPUn9Hz2Xc7CJ2MN2lJ/view?usp=drive_link) | Course Syllabus ภาครวม |
 | ปีการศึกษา 2566 เทอม 2 | [Link](https://drive.google.com/file/d/10vIL4HBaUorJbKCQgE5D5pe01Mc-GLRq/view?usp=drive_link) | Course Syllabus ภาครวม |
 | ปีการศึกษา 2566 เทอม 1 | [Link](https://drive.google.com/file/d/1vErmKOEqDauHqzeYtun0fUFh_NrJxgLh/view?usp=drive_link) | Course Syllabus ภาคคอม (CP) |
