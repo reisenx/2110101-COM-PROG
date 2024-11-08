@@ -13,8 +13,6 @@ for i in range(row):
 
 # Input command
 command = input()
-# Create newImg as an empty list to contains flipped image
-newImg = []
 
 # Horizontal flip
 # Original Image        | Rotated Image
@@ -24,9 +22,9 @@ newImg = []
 # ... ... ...    ...    | ...    ... ... ...
 # [r0][r1][r2]...[rc]   | [rc]...[r2][r1][r0]
 if(command == "hflip"):
-    # Reversed each line in img
-    for line in img:
-        newImg.append(line[::-1])
+    # Reversed each row in img, then output
+    for row in img:
+        print(row[::-1])
 
 # Vertical flip
 # Original Image        | Rotated Image
@@ -36,10 +34,8 @@ if(command == "hflip"):
 # ... ... ...    ...    | [10][11][12]...[1c]
 # [r0][r1][r2]...[rc]   | [00][01][02]...[0c]
 if(command == "vflip"):
-    # Start at the last line, and stop at the first line
-    for r in range(row-1, -1, -1):
-        newImg.append(img[r])
-
-# Output
-for line in newImg:
-    print(line)
+    # Reverse all row in img list
+    img[::-1]
+    # Output
+    for row in img:
+        print(row)

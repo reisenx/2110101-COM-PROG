@@ -9,18 +9,18 @@ A = []
 for i in range(n):
     # Separate integer part and decimal part of C
     # Example: 3.14159 = 3 + 0.14159
-    intPart = int(C)
-    decPart = C - int(C)
+    integer = int(C)
+    decimal = C - int(C)
     # Append integer part to list A
-    A.append(intPart)
+    A.append(integer)
     
     # If decimal part < 10^(-10), then end the process
-    if(decPart < 10**(-10)):
+    if(decimal < 10**(-10)):
         break
-    # Change the value of C to 1/decPart
-    C = 1/decPart
+    # Change the value of C to 1/decimal
+    C = 1/decimal
 
 # Output all item in list A
-# To use join() function, we need to convert all item in list from int to str
-A = [str(item) for item in A]
-print(", ".join(A))
+# - Convert list A to string
+# - Remove brackets by slicing a string
+print(str(A)[1:-1])
