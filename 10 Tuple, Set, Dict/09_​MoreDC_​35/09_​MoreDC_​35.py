@@ -1,73 +1,36 @@
-# Input number of students
+# Input student data
+# Example: [['Krit','A','97','CP'], ['Oat','A','98','CE'], ['Pim','C','99','CP'], ...]
 n = int(input())
-
-# Input data of each student details which contains
-# [Name] [Group] [Generation] [Department]
-# We will indicate a student with a number and put students details in a dictionary
-# Example: students = {1:['Krit','A','97','CP'], 2:['Oat','A','98','CE']}
-# Example: num2name = {1:'Krit', 2:'Oat'}
-# Example: name2num = {'Krit':1, 'Oat',2}
-students = {}
-num2name = {}
-name2num = {}
-for i in range(1, n+1):
+students = []
+for i in range(n):
     data = input().strip().split()
-    students[i] = data
-    num2name[i] = data[0]
-    name2num[data[0]] = i
+    students.append(data)
 
-# Input searching data
-# Example: "CP 97" --> ['CP','97']
+# Input search data as a set
+# Example: {'A','CP'}
 search = input().strip().split()
+search = set(search)
 
-# There might be a case that the student name is the name of a group or department
-# So we need to create a tuple of these name
-# Example: "Dog N 110 PE" might have a little bit of problem
+# ---------- Search student ----------
+# 1.) Convert student to a set (Ex. ['Krit','A','97','CP'] --> {'Krit','A','97','CP'})
+# 2.) Check if the student has all attributes by using .issubset()
+#     {'A','CP'} is subset of {'Krit','A','97','CP'} --> Add to found
+#     {'A','CP'} is not subset of {'Oat','A','98','CE'} --> Skip
+# NOTE: There's a case like "Dog N 110 PE" or "ENV S 105 ME"
+found = []
 groups = ('A','B','C','Dog','E','F','G','H','J','K','L','M','N','P','Q','R','S','T')
-departments = ('CE','EE','ME','AE','IE','CHE','PE','GE','ENV','SV','MT','CP','NT','CEDT')
+departments = ('CE','EE','ME','AE','IE','CHE','PE','GE','ENV','SV','MT','CP','NT','CEDT','ICE','NANO','ADME','CHPE','AI','AERO','SEMI')
 
-# Seaching Process
-# 1.) Search each object in 'search' list in 'students' dictionary value
-# 2.) If found, put the student number (dictionary key) to a set 'temp'
-# 3.) If i = 0, setup matching = temp as initial value
-# 4.) If i > 0, matching is an intersection between matching and temp 
-for i in range(len(search)):
-    # Serching
-    temp = set()
-    for num, data in students.items():
-        # Searching name
-        if(search[i] == data[0] and search[i] not in groups and search[i] not in departments):
-            temp.add(num)
-        # Serching group
-        if(search[i] == data[1] and search[i] in groups):
-            temp.add(num)
-        # Searching generation
-        if(search[i] == data[2]):
-            temp.add(num)
-        # Seaching department
-        if(search[i] == data[3] and search[i] in departments):
-            temp.add(num)
-    # Put data in 'matching'
-    if(i == 0):
-        matching = temp
-    else:
-        matching = matching & temp
-
-# Convert 'matching' to a list
-matching = list(matching)
-# Convert all numbers in 'matching' to name, put them in 'matching_name' and sort them in alphabetical order
-matching_name = []
-for num in matching:
-    matching_name.append(num2name[num])
-matching_name.sort()
-matching = []
-# Convert all name in 'matching_name' to numbers and put them in 'matching' again
-for name in matching_name:
-    matching.append(name2num[name])
+for student in students:
+    name, group, generation, department = student
+    if(search.issubset(set(student)) and (name not in groups) and (name not in departments)):
+        found.append(student)
 
 # Output
-if(len(matching) == 0):
+if(len(found) == 0):
     print("Not Found")
 else:
-    for num in matching:
-        print(" ".join(students[num]))
+    # Don't forget to sort students by name
+    found.sort()
+    for name, group, generation, department in found:
+        print(name, group, generation, department)
