@@ -1,31 +1,31 @@
 # ---------- Algorithm ----------
 # Example:
-# Python is a HIGH-LEVEL
-# programming language.
-# I love Python.
+# Pasta is a type of food typically made
+# from an unleavened dough of wheat
+# flour mixed with water or eggs, and
+# formed into sheets or other shapes,
+# then cooked by boiling or baking.
 
 # Step 1: Input and convert message
-# - Input searching word and replace word
+# - Input searching word
 # - output = 1 line string Input (convert newline to '\n')
 # - passage = 1 line string Input (convert newline to space)
 
-# Step 2: Find and replace string
+# Step 2: Find and insert <found> and </found>
 # Given start = 0
 # Loop process until passage.find(search, start) is -1 (not found)
 # - Given start = passage.find(search, start)
 # - Given end = start + len(search)
-# - Replace a string (Replace to both passage and output)
-# - Given start = start + len(replace)
+# - Insert <found> at start (Insert to both passage and output)
+# - Insert </found> at end (Insert to both passage and output)
+# - Given start = end + len("<found>") + len("</found>")
 # NOTE: Use .lower() to find search in passage (Case Insensitive)
-# Example (Before replace):
-# output = "Python is a HIGH-LEVEL\nprogramming language.\nI love Python."
-# passage = "Python is a HIGH-LEVEL programming language. I love Python."
-# Example (After replace):
-# output = "Python is a popular language.\nI love Python."
-# passage = "Python is a popular language. I love Python."
+# Example:
+# output = "... unleavened dough of wh<found>eat\nflour</found> mixed with ..."
+# passage = "... unleavened dough of wh<found>eat flour</found> mixed with ..."
 
 # Step 1: Input and convert message
-search, replace = input().strip().split('/')
+search = input().strip()
 N = int(input())
 passage = ""
 output = ""
@@ -43,11 +43,11 @@ while(True):
     # If not found (start = -1), then break the loop
     if(start == -1):
         break
-    # Replace a string
-    passage = passage[0:start] + replace + passage[end:]
-    output = output[0:start] + replace + output[end:]
+    # Insert <found> and </found>
+    passage = passage[0:start] + "<found>" + passage[start:end] + "</found>" + passage[end:]
+    output = output[0:start] + "<found>" + output[start:end] + "</found>" + output[end:]
     # Find new start
-    start += len(replace)
+    start = end + len("<found>") + len("</found>")
     
 # Output
 print(output.strip())
