@@ -39,3 +39,16 @@
 | 7 | [`2565_1_Quiz_3_1`](https://drive.google.com/file/d/1BoPNT4h4WUaEGRZkvI1ozz56IFY8JLNl/view?usp=drive_link) | **Group Stage** | [`Solution`](https://github.com/reisenx/2110101-COM-PROG/blob/main/G65%20Grader%202565/Grader%2003%20Semester%201/2565_1_Quiz_3_1/2565_1_Quiz_3_1.py) | - |
 | 8 | [`2565_1_Quiz_3_2`](https://drive.google.com/file/d/1BfTD2iJvAstAIeJ8XgmA995RKqY_yIs9/view?usp=drive_link) | **Graduation Ceremony** | [`Solution`](https://github.com/reisenx/2110101-COM-PROG/blob/main/G65%20Grader%202565/Grader%2003%20Semester%201/2565_1_Quiz_3_2/2565_1_Quiz_3_2.py) | - |
 | 9 | [`2565_1_Quiz_3_3`](https://drive.google.com/file/d/1ZIimEsb8SgSz-Ho8RXoJvJ3E3ZtJXIWx/view?usp=drive_link) | **APEC Headache** | [`Solution`](https://github.com/reisenx/2110101-COM-PROG/blob/main/G65%20Grader%202565/Grader%2003%20Semester%201/2565_1_Quiz_3_3/2565_1_Quiz_3_3.py) | - |
+
+## Grader 01 - 03 (ภาคเรียนที่ 2 ปีการศึกษา 2565)
+| No. | Problem Code | Name | Solution | VDO |
+| :---: | :--- | :--- | :---: | :---: |
+| 1 | [`2565_1_Quiz_1_1`]- | **Flowchart** | [`Solution`]- | - |
+| 2 | [`2565_1_Quiz_1_2`]- | **Decryptions Functions** | [`Solution`]- | - |
+| 3 | [`2565_1_Quiz_1_3`]- | **Air Quality Index** | [`Solution`]- | - |
+| 4 | [`2565_1_Quiz_2_1`]- | ** - ** | [`Solution`]- | - |
+| 5 | [`2565_1_Quiz_2_2`]- | ** - ** | [`Solution`]- | - |
+| 6 | [`2565_1_Quiz_2_3`]- | ** - ** | [`Solution`]- | - |
+| 7 | [`2565_1_Quiz_1_1`]- | ** - ** | [`Solution`]- | - |
+| 8 | [`2565_1_Quiz_2_2`]- | **Seating Map** | [`Solution`]- | - |
+| 9 | [`2565_1_Quiz_3_3`]- | **Friends** | [`Solution`]- | - |
