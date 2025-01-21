@@ -55,21 +55,21 @@
 ## บทที่ 04: Repetition
 | No. | Problem Code | Name | Difficulty | Solution | VDO |
 | :---: | :--- | :--- | :--- | :--- | :---: |
-| 0 | [``]() | **** | ⭐ | [`Solution`]() | [`Video`]() |
-| 0 | [``]() | **** | ⭐ | [`Solution`]() | [`Video`]() |
-| 0 | [``]() | **** | ⭐ | [`Solution`]() | [`Video`]() |
-| 0 | [``]() | **** | ⭐ | [`Solution`]() | [`Video`]() |
-| 0 | [``]() | **** | ⭐ | [`Solution`]() | [`Video`]() |
-| 0 | [``]() | **** | ⭐ | [`Solution`]() | [`Video`]() |
-| 0 | [``]() | **** | ⭐ | [`Solution`]() | [`Video`]() |
-| 0 | [``]() | **** | ⭐ | [`Solution`]() | [`Video`]() |
-| 0 | [``]() | **** | ⭐ | [`Solution`]() | [`Video`]() |
-| 0 | [``]() | **** | ⭐ | [`Solution`]() | [`Video`]() |
-| 0 | [``]() | **** | ⭐ | [`Solution`]() | [`Video`]() |
-| 0 | [``]() | **** | ⭐ | [`Solution`]() | [`Video`]() |
-| 0 | [``]() | **** | ⭐ | [`Solution`]() | [`Video`]() |
-| 0 | [``]() | **** | ⭐ | [`Solution`]() | [`Video`]() |
-| 0 | [``]() | **** | ⭐ | [`Solution`]() | [`Video`]() |
+| 1 | [`04_Loop_001`]() | **BirthdayParadox** | ⭐ | [`Solution`]() | [`Video`]() |
+| 2 | [`04_Loop_002`]() | **Partition** | ⭐⭐ | [`Solution`]() | [`Video`]() |
+| 3 | [`04_Loop_01`]() | **Average** | ⭐ | [`Solution`]() | [`Video`]() |
+| 4 | [`04_Loop_02`]() | **Bisection Log10** | ⭐1/2 | [`Solution`]() | [`Video`]() |
+| 5 | [`04_Loop_03`]() | **MCQ** | ⭐ | [`Solution`]() | [`Video`]() |
+| 6 | [`04_Loop_04`]() | **Parentheses** | ⭐ | [`Solution`]() | [`Video`]() |
+| 7 | [`04_Loop_05`]() | **CountWord** | ⭐ | [`Solution`]() | [`Video`]() |
+| 8 | [`04_Loop_06`]() | **PrintTriangle** | ⭐⭐ | [`Solution`]() | [`Video`]() |
+| 9 | [`04_Loop_10`]() | **Bisection Log10 Ver.2** | ⭐⭐ | [`Solution`]() | [`Video`]() |
+| 10 | [`04_Loop_11`]() | **RLE** | ⭐⭐ | [`Solution`]() | [`Video`]() |
+| 11 | [`04_Loop_12`]() | **ZigZag 1** | ⭐⭐ | [`Solution`]() | [`Video`]() |
+| 12 | [`04_Loop_20`]() | **Zigzag 2** | ⭐⭐⭐ | [`Solution`]() | [`Video`]() |
+| 13 | [`04_Loop_F03`]() | **MCQ (Function)** | ⭐ | [`Solution`]() | [`Video`]() |
+| 14 | [`04_Loop_F06`]() | **PrintTriangle (Function)** | ⭐⭐ | [`Solution`]() | [`Video`]() |
+| 15 | [`04_Loop_F11`]() | **RLE (Function)** | ⭐⭐ | [`Solution`]() | [`Video`]() |
 
 ## บทที่ 05: List Processing
 | No. | Problem Code | Name | Difficulty | Solution | VDO |
