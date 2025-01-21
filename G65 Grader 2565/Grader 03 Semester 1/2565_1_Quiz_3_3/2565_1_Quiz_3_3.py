@@ -1,5 +1,3 @@
-# Not guarantee 100/100 points on this code
-
 # Create dictionary that contains set of allies and enemies of every input countries
 allies = {}
 enemies = {}
@@ -16,7 +14,6 @@ while(True):
     # This command tell us that the following countries are allies
     # Example: "Ally America England France"
     # This tell us that America, England and France are allies
-    # NOTE: Enemy of the enemy is not always an ally
 
     # == Algorithm ==
     # 1.) command[1:] will be list of countries
@@ -29,8 +26,8 @@ while(True):
     # 3.) Contains the data in 'allies' dictionary (Convert the list of countries to a set)
     #   3.1.) If the country is not exist in 'allies' dictionary, just add it
     #   3.2.) If the country is already exist in 'allies' dictionary, union the set
-    # > Example: allies = {'America':{'England','France'}, 'England':{'America','France'}, ...} 
-    elif(command[0] == "Ally"):
+    # > Example: allies = {'America':{'England','France'}, 'England':{'America','France'}, ...}
+    if(command[0] == "Ally"):
         for i in range(1, len(command)):
             # Reconstruct the list to find allies of each country
             country = command[i]
@@ -41,12 +38,14 @@ while(True):
                 allies[country] = temp
             else:
                 allies[country] = allies[country] | temp
+            # Ensure that every country are in 'enemies' dictionary
+            if(country not in enemies):
+                enemies[country] = set()
     
     # Command: Enemy
     # This command tell us that the following countries are enemies
     # Example: "Enemy China America"
     # This tell us that China and America are enemies
-    # NOTE: Ally of the enemy is always an enemy
 
     # == Algorithm ==
     # 1.) command[1:] will be list of countries
@@ -59,27 +58,39 @@ while(True):
     #   3.1.) If the country is not exist in 'enemies' dictionary, just add it
     #   3.2.) If the country is already exist in 'enemies' dictionary, union the set
     # > Example: enemies = {'China':{'America'}, 'America':{'China'}, ...}
-    # 4.) Union the set of allies of the enemies to the 'enemies' dictionary too (If exist)
-    elif(command[0] == "Enemy"):
+    if(command[0] == "Enemy"):
         for i in range(1, len(command)):
-            # Reconstruct the list to find allies of each country
+            # Reconstruct the list to find enemy of each country
             country = command[i]
             temp = command[1:i] + command[i+1:]
-            # Contains the data in 'allies' dictionary
+            # Contains the data in 'enemies' dictionary
             temp = set(temp)
             if(country not in enemies):
                 enemies[country] = temp
             else:
                 enemies[country] = enemies[country] | temp
-            # Union the set of allies of the enemies to the 'enemies' dictionary too (If exist)
-            for item in enemies[country]:
-                if(item in allies):
-                    enemies[country] = enemies[country] | allies[item]
+            # Ensure that every country are in 'allies' dictionary
+            if(country not in allies):
+                allies[country] = set()
+    
+    # Update 'allies' and 'enemies' dictionary
+    # - Allies of an enemy is always enemies
+    for country in enemies:
+        temp = set()
+        for enemy in enemies[country]:
+            temp = temp | allies[enemy]
+        enemies[country] = enemies[country] | temp
+    # - Enemies of ally is always enemies
+    for country in allies:
+        temp = set()
+        for ally in allies[country]:
+            temp = temp | enemies[ally]
+        enemies[country] = enemies[country] | temp
     
     # Command: Table
     # This command can check if the there're no enemies that sit close to each other
     # The country may not exist in both 'allies' and 'enemies' dictionary
-    # == Posible cases ==
+    # == Possible cases ==
     # Case 1: Only 1 country sitting
     # > This always 'Okay'
     # Case 2: Only 2 country sitting
@@ -99,13 +110,18 @@ while(True):
     # > Loop 1 ('England'): Check enemy status of 'America' and 'Iceland'
     # > Loop 2 ('Iceland'): Check enemy status of 'England' and 'America'
     # > Loop 3 ('America'): Check enemy status of 'Iceland' and 'England'
-    elif(command[0] == "Table"):
-        # Do this make sure that every country exist in 'allies' and 'enemy' dictionary.
+    if(command[0] == "Table"):
+        
+        print(allies)
+        print(enemies)
+        
+        # Ensure that every country are in 'allies' and 'enemies' dictionary
         for country in command[1:]:
             if(country not in allies):
                 allies[country] = set()
             if(country not in enemies):
                 enemies[country] = set()
+        
         # Case 1: Only 1 country sitting
         if(len(command) == 2):
             print("Okay")
