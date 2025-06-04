@@ -6,10 +6,15 @@
 
 # About this Repository
 
-- Repository นี้สร้างขึ้นเพื่อจัดเก็บ Code ของผู้เขียน และเอกสารการเรียนการสอนในรายวิชา **2110101 COMPUTER PROGRAMMING (เทอม 2/2566)**
-- Repository นี้สร้างขึ้นโดยมีจุดประสงค์คือ การสร้างแหล่งรวบรวม Resources ต่างๆของรายวิชา **2110101 COMPUTER PROGRAMMING** ไว้ในที่เดียว เพื่อนิสิตคณะวิศวกรรมศาสตร์ จุฬาลงกรณ์มหาวิทยาลัย
-- Repository นี้เหมาะสำหรับนิสิตคณะวิศวกรรมศาสตร์ จุฬาลงกรณ์มหาวิทยาลัย และผู้ที่สนใจในการเขียนโปรแกรมภาษา Python
-- Repository นี้สร้างโดย **นายวรลภย์ ศรีชัยนนท์**
+-   Repository นี้สร้างขึ้นเพื่อจัดเก็บ Code ของผู้เขียน
+    และเอกสารการเรียนการสอนในรายวิชา **2110101 COMPUTER PROGRAMMING (เทอม
+    2/2566)**
+-   Repository นี้สร้างขึ้นโดยมีจุดประสงค์คือ การสร้างแหล่งรวบรวม Resources
+    ต่างๆของรายวิชา **2110101 COMPUTER PROGRAMMING** ไว้ในที่เดียว
+    เพื่อนิสิตคณะวิศวกรรมศาสตร์ จุฬาลงกรณ์มหาวิทยาลัย
+-   Repository นี้เหมาะสำหรับนิสิตคณะวิศวกรรมศาสตร์ จุฬาลงกรณ์มหาวิทยาลัย
+    และผู้ที่สนใจในการเขียนโปรแกรมภาษา Python
+-   Repository นี้สร้างโดย **นายวรลภย์ ศรีชัยนนท์**
 
 ```python
 class ThisRepo:
@@ -28,8 +33,8 @@ class ThisRepo:
 
 [![COM PROG Get Ready Freshy 2024](https://raw.githubusercontent.com/reisenx/2110101-COM-PROG/main/Z99%20OTHERS/COM%20PROG%20Get%20Ready%20Freshy%20COVER.png)](https://drive.google.com/file/d/1MobiIMdO5ejGxo801d9RZENZJnBddpBg/view?usp=drive_link)
 
-จัดทำโดย นายวรลภย์ ศรีชัยนนท์
-อ้างอิงเนื้อหาจาก Course Syllabus ปีการศึกษา 2567 ภาคการเรียนที่ 1
+จัดทำโดย นายวรลภย์ ศรีชัยนนท์ อ้างอิงเนื้อหาจาก Course Syllabus ปีการศึกษา 2567
+ภาคการเรียนที่ 1
 
 ---
 
