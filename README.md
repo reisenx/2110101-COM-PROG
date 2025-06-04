@@ -1,8 +1,8 @@
 # 2110101 COMPUTER PROGRAMMING
 
-## ถ้าหากต้องการทำโจทย์ หรือดูเฉลย [กรุณากดที่นี่](https://github.com/reisenx/2110101-COM-PROG?tab=readme-ov-file#problem-and-solution)
+## ถ้าหากต้องการทำโจทย์ หรือดูเฉลย [กรุณากดที่นี่](#แหล่งรวมโจทย์และเฉลยของรายวิชา)
 
-![Banner](https://raw.githubusercontent.com/reisenx/2110101-COM-PROG/main/Z99%20OTHERS/Banner%20PICS/00%20COM%20PROG%20Banner.png)
+![00-com-prog.png](/Z99-OTHERS/00-main/00-com-prog.png)
 
 # About this Repository
 
@@ -27,11 +27,11 @@ class ThisRepo:
 
 # COM PROG Study Guide
 
-![Banner](https://raw.githubusercontent.com/reisenx/2110101-COM-PROG/main/Z99%20OTHERS/Banner%20PICS/01%20Study%20Guide%20Banner.png)
+![01-study-guide.png](/Z99-OTHERS/00-main/01-study-guide.png)
 
 ## COM PROG Study Guide Slides โครงการ Get Ready, Freshy! 2024 (กรุณาคลิกที่ภาพ)
 
-[![COM PROG Get Ready Freshy 2024](https://raw.githubusercontent.com/reisenx/2110101-COM-PROG/main/Z99%20OTHERS/COM%20PROG%20Get%20Ready%20Freshy%20COVER.png)](https://drive.google.com/file/d/1MobiIMdO5ejGxo801d9RZENZJnBddpBg/view?usp=drive_link)
+[![01a-grf.png](/Z99-OTHERS/00-main/01a-grf.png)](https://drive.google.com/file/d/1MobiIMdO5ejGxo801d9RZENZJnBddpBg/view?usp=drive_link)
 
 จัดทำโดย นายวรลภย์ ศรีชัยนนท์ อ้างอิงเนื้อหาจาก Course Syllabus ปีการศึกษา 2567
 ภาคการเรียนที่ 1
@@ -40,7 +40,7 @@ class ThisRepo:
 
 # How to use this GitHub
 
-![Banner](https://raw.githubusercontent.com/reisenx/2110101-COM-PROG/main/Z99%20OTHERS/Banner%20PICS/02%20GitHub%20Guide%20Banner.png)
+![02-how-to-github.png](/Z99-OTHERS/00-main/02-how-to-github.png)
 
 **COMING SOON**
 
@@ -48,7 +48,7 @@ class ThisRepo:
 
 # Resources
 
-![Banner](https://raw.githubusercontent.com/reisenx/2110101-COM-PROG/main/Z99%20OTHERS/Banner%20PICS/03%20Resources%20Banner.png)
+![03-resources.png](/Z99-OTHERS/00-main/03-resources.png)
 
 ## โปรแกรมที่จำเป็นในวิชาเรียน
 
@@ -84,18 +84,18 @@ class ThisRepo:
 
 # Problem and Solution
 
-![Banner](https://raw.githubusercontent.com/reisenx/2110101-COM-PROG/main/Z99%20OTHERS/Banner%20PICS/04%20Grader%20Banner.png)
+![04-grader.png](/Z99-OTHERS/00-main/04-grader.png)
 
 ## แหล่งรวมโจทย์และเฉลยของรายวิชา
 
-|          Resources          |                                                      Link                                                      |                    Note                     |
-| :-------------------------: | :------------------------------------------------------------------------------------------------------------: | :-----------------------------------------: |
-|     แบบฝึกหัดใน Grader      |  [Link](https://github.com/reisenx/2110101-COM-PROG/blob/main/PL%20Problem%20List/01%20Grader%20Exercise.md)   |         แบบฝึกหัดทั้งหมดของรายวิชา          |
-|      ข้อสอบเก่า Grader      | [Link](https://github.com/reisenx/2110101-COM-PROG/blob/main/PL%20Problem%20List/02%20Grader%20Examination.md) |             ข้อสอบเก่าปี 65-66              |
-| Cheat Sheet เพื่อสอบ Grader |                                                    [Link]()                                                    |                 COMING SOON                 |
-|   ข้อสอบ Midterm + Final    |          [Link](https://drive.google.com/drive/folders/1rhd6NiDNIuwJ2tYQ21UVqUfxJr4DpxoK?usp=sharing)          |               ข้อสอบพร้อมเฉลย               |
-|  Intania Starter Kit 2024   |          [Link](https://drive.google.com/drive/folders/14brjzl8lX5lZvZNOC85Bw6nyOgGIzeTY?usp=sharing)          | ครบจบทุกวิชาในที่เดียว (ต้องใช้เมลจุฬาเปิด) |
+|          Resources          |                                             Link                                             |                    Note                     |
+| :-------------------------: | :------------------------------------------------------------------------------------------: | :-----------------------------------------: |
+|     แบบฝึกหัดใน Grader      |                        [Link](/PL-Problem-List/01-Grader-Exercise.md)                        |         แบบฝึกหัดทั้งหมดของรายวิชา          |
+|      ข้อสอบเก่า Grader      |                      [Link](/PL-Problem-List/02-Grader-Examination.md)                       |             ข้อสอบเก่าปี 65-66              |
+| Cheat Sheet เพื่อสอบ Grader |                                           [Link]()                                           |                 COMING SOON                 |
+|   ข้อสอบ Midterm + Final    | [Link](https://drive.google.com/drive/folders/1rhd6NiDNIuwJ2tYQ21UVqUfxJr4DpxoK?usp=sharing) |               ข้อสอบพร้อมเฉลย               |
+|  Intania Starter Kit 2024   | [Link](https://drive.google.com/drive/folders/14brjzl8lX5lZvZNOC85Bw6nyOgGIzeTY?usp=sharing) | ครบจบทุกวิชาในที่เดียว (ต้องใช้เมลจุฬาเปิด) |
 
 ---
 
-![Banner](https://raw.githubusercontent.com/reisenx/2110101-COM-PROG/main/Z99%20OTHERS/Banner%20PICS/05%20Author.png)
+![05-author.png](/Z99-OTHERS/00-main/05-author.png)
