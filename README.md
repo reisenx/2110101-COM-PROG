@@ -39,10 +39,10 @@ class ThisRepo:
 
 <p align="center">
   <a href="https://www.python.org/downloads/">
-    <img src="Z99-OTHERS/00-main/02a-python.png" style="width:30%; margin-right:10px;">
+    <img src="Z99-OTHERS/00-main/02a-python.png" style="width:30%; margin-right:3%;">
   </a>
   <a href="https://thonny.org/">
-    <img src="Z99-OTHERS/00-main/02b-thonny.png" style="width:30%; margin-right:10px;">
+    <img src="Z99-OTHERS/00-main/02b-thonny.png" style="width:30%; margin-right:3%;">
   </a>
   <a href="https://code.visualstudio.com/">
     <img src="Z99-OTHERS/00-main/02c-vscode.png" style="width:30%;">
@@ -51,7 +51,7 @@ class ThisRepo:
 
 <p align="center">
   <a href="/SM-Study-Materials/02-COM-PROG-Slides/00-COM-PROG-All-Slides.pdf">
-    <img src="Z99-OTHERS/00-main/02d-slides.png" style="width:45%; margin-right:20px;">
+    <img src="Z99-OTHERS/00-main/02d-slides.png" style="width:45%; margin-right:5%;">
   </a>
   <a href="https://www.cp.eng.chula.ac.th/~somchai/python101/">
     <img src="Z99-OTHERS/00-main/02e-python-101.png" style="width:45%;">
