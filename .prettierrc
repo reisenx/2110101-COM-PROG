@@ -6,5 +6,7 @@
     "bracketSpacing": true,
     "printWidth": 80,
     "proseWrap": "always",
-    "arrowParens": "always"
+    "arrowParens": "always",
+    "embeddedLanguageFormatting": "auto",
+    "htmlWhitespaceSensitivity": "ignore"
 }
