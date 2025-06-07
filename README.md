@@ -72,7 +72,7 @@ class ThisRepo:
   </tr>
 </table>
 
-[![02f-more-resources.png](/Z99-OTHERS/00-main/02f-more-resources.png)]()
+[![02f-more-resources.png](/Z99-OTHERS/00-main/02f-more-resources.png)](/SM-Study-Materials/)
 
 ---
 
