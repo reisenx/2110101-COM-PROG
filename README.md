@@ -37,26 +37,40 @@ class ThisRepo:
 
 ![02-resources.png](/Z99-OTHERS/00-main/02-resources.png)
 
-<p align="center">
-  <a href="https://www.python.org/downloads/">
-    <img src="Z99-OTHERS/00-main/02a-python.png" style="width:30%; margin-right:3%;">
-  </a>
-  <a href="https://thonny.org/">
-    <img src="Z99-OTHERS/00-main/02b-thonny.png" style="width:30%; margin-right:3%;">
-  </a>
-  <a href="https://code.visualstudio.com/">
-    <img src="Z99-OTHERS/00-main/02c-vscode.png" style="width:30%;">
-  </a>
-</p>
+<table align="center" border="0" cellpadding="0" cellspacing="0" style="border-collapse: collapse; width: 95%;">
+  <tr style="display: flex; justify-content: center; align-items: center;">
+    <td align="center" style="padding-right: 2%;">
+      <a href="https://www.python.org/downloads/">
+        <img src="Z99-OTHERS/00-main/02a-python.png" width="100%">
+      </a>
+    </td>
+    <td align="center" style="padding-left: 1%; padding-right: 1%;">
+      <a href="https://thonny.org/">
+        <img src="Z99-OTHERS/00-main/02b-thonny.png" width="100%">
+      </a>
+    </td>
+    <td align="center" style="padding-left: 2%;">
+      <a href="https://code.visualstudio.com/">
+        <img src="Z99-OTHERS/00-main/02c-vscode.png" width="100%">
+      </a>
+    </td>
+  </tr>
+</table>
 
-<p align="center">
-  <a href="/SM-Study-Materials/02-COM-PROG-Slides/00-COM-PROG-All-Slides.pdf">
-    <img src="Z99-OTHERS/00-main/02d-slides.png" style="width:45%; margin-right:5%;">
-  </a>
-  <a href="https://www.cp.eng.chula.ac.th/~somchai/python101/">
-    <img src="Z99-OTHERS/00-main/02e-python-101.png" style="width:45%;">
-  </a>
-</p>
+<table align="center" border="0" cellpadding="0" cellspacing="0" style="border-collapse: collapse; width: 95%;">
+  <tr style="display: flex; justify-content: center; align-items: center;">
+    <td align="center" style="padding-right: 2.5%;">
+      <a href="/SM-Study-Materials/02-COM-PROG-Slides/00-COM-PROG-All-Slides.pdf">
+        <img src="Z99-OTHERS/00-main/02d-slides.png" width="100%">
+      </a>
+    </td>
+    <td align="center" style="padding-left: 2.5%;">
+      <a href="https://www.cp.eng.chula.ac.th/~somchai/python101/">
+        <img src="Z99-OTHERS/00-main/02e-python-101.png" width="100%">
+      </a>
+    </td>
+  </tr>
+</table>
 
 [![02f-more-resources.png](/Z99-OTHERS/00-main/02f-more-resources.png)]()
 
