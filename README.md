@@ -2,7 +2,7 @@
 
 ![00-com-prog.png](/Z99-OTHERS/00-main/00-com-prog.png)
 
-[![00a-get-started](/Z99-OTHERS/00-main/00a-get-started.png)](/PL-Problem-List/)
+[![00a-get-started](/Z99-OTHERS/00-main/00a-get-started.png)](/PL-Problem-List/README.md)
 
 # About this Repository
 
