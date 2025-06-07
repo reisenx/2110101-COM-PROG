@@ -10,7 +10,7 @@
 
 # แบบฝึกหัด
 
-<p align="left">
+<p align="center">
   <a href="../00-Python-Intro/">
     <img src="../Z99-OTHERS/00-intro/00-intro.png" style="width:70%">
   </a>
@@ -49,5 +49,21 @@
   </a>
   <a href="../12-Class-and-Object/">
     <img src="../Z99-OTHERS/12-class/00-class.png" style="width:70%">
+  </a>
+</p>
+
+---
+
+# เพิ่มเติม
+
+<p align="center">
+  <a href="../P1-Grader-01-Practice/">
+    <img src="../Z99-OTHERS/p1-practice/00-p1.png" style="width:30%; margin-right:3%;">
+  </a>
+  <a href="../P2-Grader-02-Practice/">
+    <img src="../Z99-OTHERS/p2-practice/00-p2.png" style="width:30%; margin-right:3%;">
+  </a>
+  <a href="../P3-Grader-03-Practice/">
+    <img src="../Z99-OTHERS/p3-practice/00-p3.png" style="width:30%;">
   </a>
 </p>
