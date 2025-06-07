@@ -56,14 +56,22 @@
 
 # เพิ่มเติม
 
-<p align="center">
-  <a href="../P1-Grader-01-Practice/">
-    <img src="../Z99-OTHERS/p1-practice/00-p1.png" style="width:30%; margin-right:3%;">
-  </a>
-  <a href="../P2-Grader-02-Practice/">
-    <img src="../Z99-OTHERS/p2-practice/00-p2.png" style="width:30%; margin-right:3%;">
-  </a>
-  <a href="../P3-Grader-03-Practice/">
-    <img src="../Z99-OTHERS/p3-practice/00-p3.png" style="width:30%;">
-  </a>
-</p>
+<table align="center">
+  <tr>
+    <td align="center">
+      <a href="../P1-Grader-01-Practice/">
+        <img src="../Z99-OTHERS/p1-practice/00-p1.png" width="100%">
+      </a>
+    </td>
+    <td align="center">
+      <a href="../P2-Grader-02-Practice/">
+        <img src="../Z99-OTHERS/p2-practice/00-p2.png" width="100%">
+      </a>
+    </td>
+    <td align="center">
+      <a href="../P3-Grader-03-Practice/">
+        <img src="../Z99-OTHERS/p3-practice/00-p3.png" width="100%">
+      </a>
+    </td>
+  </tr>
+</table>
