@@ -11,43 +11,43 @@
 # แบบฝึกหัด
 
 <p align="center">
-  <a href="../00-Python-Intro/">
+  <a href="../00-Python-Intro/README.md">
     <img src="../Z99-OTHERS/00-intro/00-intro.png" style="width:70%">
   </a>
-  <a href="../01-Data-Type-and-Expression/">
+  <a href="../01-Data-Type-and-Expression/README.md">
     <img src="../Z99-OTHERS/01-expr/00-expr.png" style="width:70%">
   </a>
-  <a href="../02-Basic-String-and-List/">
+  <a href="../02-Basic-String-and-List/README.md">
     <img src="../Z99-OTHERS/02-str-list/00-str-list.png" style="width:70%">
   </a>
-  <a href="../03-Selection/">
+  <a href="../03-Selection/README.md">
     <img src="../Z99-OTHERS/03-if/00-if.png" style="width:70%">
   </a>
-  <a href="../04-Repetition/">
+  <a href="../04-Repetition/README.md">
     <img src="../Z99-OTHERS/04-loop/00-loop.png" style="width:70%">
   </a>
-  <a href="../05-List-Processing/">
+  <a href="../05-List-Processing/README.md">
     <img src="../Z99-OTHERS/05-list/00-list.png" style="width:70%">
   </a>
-  <a href="../06-Function/">
+  <a href="../06-Function/README.md">
     <img src="../Z99-OTHERS/06-func/00-func.png" style="width:70%">
   </a>
-  <a href="../07-String-Processing/">
+  <a href="../07-String-Processing/README.md">
     <img src="../Z99-OTHERS/07-str/00-str.png" style="width:70%">
   </a>
-  <a href="../08-Basic-Dict/">
+  <a href="../08-Basic-Dict/README.md">
     <img src="../Z99-OTHERS/08-dict/00-dict.png" style="width:70%">
   </a>
-  <a href="../09-Nested-Structure/">
+  <a href="../09-Nested-Structure/README.md">
     <img src="../Z99-OTHERS/09-nested/00-nested.png" style="width:70%">
   </a>
-  <a href="../10-Tuple-Set-Dict/">
+  <a href="../10-Tuple-Set-Dict/README.md">
     <img src="../Z99-OTHERS/10-tsd/00-tsd.png" style="width:70%">
   </a>
-  <a href="../11-NumPy/">
+  <a href="../11-NumPy/README.md">
     <img src="../Z99-OTHERS/11-numpy/00-numpy.png" style="width:70%">
   </a>
-  <a href="../12-Class-and-Object/">
+  <a href="../12-Class-and-Object/README.md">
     <img src="../Z99-OTHERS/12-class/00-class.png" style="width:70%">
   </a>
 </p>
