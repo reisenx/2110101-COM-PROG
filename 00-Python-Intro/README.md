@@ -1,6 +1,6 @@
 <p align="left">
   <a href="../PL-Problem-List/README.md">
-    <img src="../Z99-OTHERS/00-common/00-back.png" style="width:20%">
+    <img src="../Z99-OTHERS/00-common/00-back.png" style="width:10%">
   </a>
 </p>
 
