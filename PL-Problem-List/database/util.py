@@ -10,7 +10,10 @@ PATH = ['/00-Python-Intro/',
         '/09-Nested-Structure/',
         '/10-Tuple-Set-Dict/',
         '/11-NumPy/',
-        '/12-Class-and-Object/']
+        '/12-Class-and-Object/',
+        '/P1-Grader-01-Practice/',
+        '/P2-Grader-02-Practice/',
+        '/P2-Grader-03-Practice/']
 
 FILENAME = ['00-intro',
             '01-expr',
@@ -24,7 +27,10 @@ FILENAME = ['00-intro',
             '09-nested',
             '10-tsd',
             '11-numpy',
-            '12-class']
+            '12-class',
+            'p1-practice',
+            'p2-practice',
+            'p3-practice']
 
 # Utility function to get generate file index
 def welcome() -> tuple:
