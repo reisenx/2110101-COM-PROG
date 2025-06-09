@@ -39,8 +39,8 @@ def welcome() -> tuple:
     for [i, item] in enumerate(FILENAME):
         print(f"{i} - {item}")
     
-    start = int(input(f"Start index (0 - {len(FILENAME)}): "))
-    end = int(input(f"End index (0 - {len(FILENAME)}): "))
+    start = int(input(f"Start index (0 - {len(FILENAME) - 1}): "))
+    end = int(input(f"End index (0 - {len(FILENAME) - 1}): "))
     return (start, end + 1)
 
 # Utility function to get difficulty text
