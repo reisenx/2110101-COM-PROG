@@ -1,0 +1,69 @@
+<div align="center">
+  <h1>
+    Dedent ★ (
+      <a href="https://drive.google.com/file/d/1jwFfjUwAcA8qQh51eLvWtQvZ2UB2GicG/view?usp=drive_link">
+        <code>09_Nested_11</code>
+      </a>
+    )
+  </h1>
+</div>
+
+<div align="center">
+  <h1>
+    Factorization ★★ (
+      <a href="https://drive.google.com/file/d/1vBEe2Hq6z409zK5KqrL2lAehhiDF_WBw/view?usp=drive_link">
+        <code>09_Nested_21</code>
+      </a>
+    )
+  </h1>
+</div>
+
+<div align="center">
+  <h1>
+    Matrix ★★ (
+      <a href="https://drive.google.com/file/d/1CTwQql8pKD4g2zZTikhUhIYJfhhv1WPB/view?usp=drive_link">
+        <code>09_Nested_22</code>
+      </a>
+    )
+  </h1>
+</div>
+
+<div align="center">
+  <h1>
+    Tiling Puzzle ★★☆ (
+      <a href="https://drive.google.com/file/d/1QgrpIfq7AeOfxVe8VCWx3PAVxvocIl29/view?usp=drive_link">
+        <code>09_Nested_25</code>
+      </a>
+    )
+  </h1>
+</div>
+
+<div align="center">
+  <h1>
+    Pythagorean Triple ★★★ (
+      <a href="https://drive.google.com/file/d/1SNN6xz6-R4IevIL8uLU9GexVMoLptVhb/view?usp=drive_link">
+        <code>09_Nested_31</code>
+      </a>
+    )
+  </h1>
+</div>
+
+<div align="center">
+  <h1>
+    First-Fit Best-Fit ★★★ (
+      <a href="https://drive.google.com/file/d/1s9ueFIJNywIOl8C9mEoUoqBwR9Ai275I/view?usp=drive_link">
+        <code>09_Nested_32</code>
+      </a>
+    )
+  </h1>
+</div>
+
+<div align="center">
+  <h1>
+    Fill in Numbers ★★★ (
+      <a href="https://drive.google.com/file/d/1MGvTR5ZNjPpurG1jetgUOv__NIuNpQOu/view?usp=drive_link">
+        <code>09_Nested_34</code>
+      </a>
+    )
+  </h1>
+</div>

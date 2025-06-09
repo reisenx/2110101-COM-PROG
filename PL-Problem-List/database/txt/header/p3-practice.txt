@@ -1,0 +1,99 @@
+<div align="center">
+  <h1>
+    Gray Codes ★★★ (
+      <a href="https://drive.google.com/file/d/1wtcfvhjixQCCNLIbgYGeM6CuGrg597gz/view?usp=drive_link">
+        <code>P3_01_Gray</code>
+      </a>
+    )
+  </h1>
+</div>
+
+<div align="center">
+  <h1>
+    Giant Checker ★★★ (
+      <a href="https://drive.google.com/file/d/1yxHWqPdlpDYGA5fi5GwBWQIgUZU1_xvg/view?usp=drive_link">
+        <code>P3_02_Checker</code>
+      </a>
+    )
+  </h1>
+</div>
+
+<div align="center">
+  <h1>
+    Text Formatting ★★★ (
+      <a href="https://drive.google.com/file/d/1QGJZXr-JWt5Q5TsxwuGSbMgivmjtX_z_/view?usp=drive_link">
+        <code>P3_03_Text</code>
+      </a>
+    )
+  </h1>
+</div>
+
+<div align="center">
+  <h1>
+    ASCII Text ★★★ (
+      <a href="https://drive.google.com/file/d/19OKv5YMBBL2tA_5PuhJFt6fX69pJdM4d/view?usp=drive_link">
+        <code>P3_04_Ascii</code>
+      </a>
+    )
+  </h1>
+</div>
+
+<div align="center">
+  <h1>
+    Spiral Square ★★★☆ (
+      <a href="https://drive.google.com/file/d/1R_KGdDjiZfEVLHv9dntXGvGLEBCq6aeb/view?usp=drive_link">
+        <code>P3_05_Spiral</code>
+      </a>
+    )
+  </h1>
+</div>
+
+<div align="center">
+  <h1>
+    Movie Stars ★★ (
+      <a href="https://drive.google.com/file/d/1DK_DCEgW6pIdlKQ9rGdqh4aLln2Cs7Lr/view?usp=drive_link">
+        <code>P3_06_MovieStar</code>
+      </a>
+    )
+  </h1>
+</div>
+
+<div align="center">
+  <h1>
+    Search Engine ★★ (
+      <a href="https://drive.google.com/file/d/1QUqzKH_17u-sY_sTCGyMRoe2W_uh2dC9/view?usp=drive_link">
+        <code>P3_07_Search</code>
+      </a>
+    )
+  </h1>
+</div>
+
+<div align="center">
+  <h1>
+    Bidding ★★★☆ (
+      <a href="https://drive.google.com/file/d/1ERinoNzOYUVL2pBiceM8YmRaSHNoq4iW/view?usp=drive_link">
+        <code>P3_08_Bidding</code>
+      </a>
+    )
+  </h1>
+</div>
+
+<div align="center">
+  <h1>
+    BNK48 ★★★☆ (
+      <a href="https://drive.google.com/file/d/1bTrlKl6DU7X-fDITSiY6FWAyg8p-iCY0/view?usp=drive_link">
+        <code>P3_09_BNK48</code>
+      </a>
+    )
+  </h1>
+</div>
+
+<div align="center">
+  <h1>
+    NumPy Functions ★★★ (
+      <a href="https://drive.google.com/file/d/11DYcIuGS3OW7Lmzh3iQ9qowKcyepHfQW/view?usp=drive_link">
+        <code>P3_10_Numpy1</code>
+      </a>
+    )
+  </h1>
+</div>

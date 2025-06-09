@@ -1,0 +1,69 @@
+<div align="center">
+  <h1>
+    Indexing and Slicling ★ (
+      <a href="https://drive.google.com/file/d/15ONrP_P-c8VHkDHJ4cCI9GIpgTlZmiq3/view?usp=drive_link">
+        <code>11_NumPy_11</code>
+      </a>
+    )
+  </h1>
+</div>
+
+<div align="center">
+  <h1>
+    Scalar and Array ★ (
+      <a href="https://drive.google.com/file/d/1kd8NY1_YIXGCZkje78AvSlWdJuLAW6Nw/view?usp=drive_link">
+        <code>11_NumPy_12</code>
+      </a>
+    )
+  </h1>
+</div>
+
+<div align="center">
+  <h1>
+    Logistic Regression ★ (
+      <a href="https://drive.google.com/file/d/1NNc0lkUAzMbP7FX5Gp7vcLZzG6ODzMz9/view?usp=drive_link">
+        <code>11_NumPy_13</code>
+      </a>
+    )
+  </h1>
+</div>
+
+<div align="center">
+  <h1>
+    Slicing and Element-wise Operation ★★ (
+      <a href="https://drive.google.com/file/d/1w5w0mILaevnnSUQsMPd8ELhiGT-w-QF8/view?usp=drive_link">
+        <code>11_NumPy_21</code>
+      </a>
+    )
+  </h1>
+</div>
+
+<div align="center">
+  <h1>
+    Outer Product ★★ (
+      <a href="https://drive.google.com/file/d/1xqJl_9dvPZ2AvS6nRSVAnRTCY1PbMId7/view?usp=drive_link">
+        <code>11_NumPy_22</code>
+      </a>
+    )
+  </h1>
+</div>
+
+<div align="center">
+  <h1>
+    Lower than Mean ★★ (
+      <a href="https://drive.google.com/file/d/1wOeUv8OH-nsNrARr33H-V26TUjAYIuQL/view?usp=drive_link">
+        <code>11_NumPy_23</code>
+      </a>
+    )
+  </h1>
+</div>
+
+<div align="center">
+  <h1>
+    Peak Indexes ★★ (
+      <a href="https://drive.google.com/file/d/1u3KY4HE1r1rZpZYxCR8JmIsgPA8-URct/view?usp=drive_link">
+        <code>11_NumPy_24</code>
+      </a>
+    )
+  </h1>
+</div>

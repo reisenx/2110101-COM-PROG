@@ -1,0 +1,79 @@
+<div align="center">
+  <h1>
+    Plural ★ (
+      <a href="https://drive.google.com/file/d/1-NyZ_p8Q_-CGuSvA_ROoFm-VCXIqJ1BI/view?usp=drive_link">
+        <code>07_StrFile_11</code>
+      </a>
+    )
+  </h1>
+</div>
+
+<div align="center">
+  <h1>
+    Camel Case ★ (
+      <a href="https://drive.google.com/file/d/1qxebq9IQuZIsL7zibYSrSyVg3UQLRFbk/view?usp=drive_link">
+        <code>07_StrFile_13</code>
+      </a>
+    )
+  </h1>
+</div>
+
+<div align="center">
+  <h1>
+    ROT13 ★★ (
+      <a href="https://drive.google.com/file/d/1TO8vz37m9d83js4X4iks1d9j4NRwG50a/view?usp=drive_link">
+        <code>07_StrFile_21</code>
+      </a>
+    )
+  </h1>
+</div>
+
+<div align="center">
+  <h1>
+    Anagram ★★ (
+      <a href="https://drive.google.com/file/d/1AXiZNOMmZwkKV2cUSMS500qbqEBiFDwQ/view?usp=drive_link">
+        <code>07_StrFile_22</code>
+      </a>
+    )
+  </h1>
+</div>
+
+<div align="center">
+  <h1>
+    File Min-Max-Average ★★ (
+      <a href="https://drive.google.com/file/d/1g8qEXc7_TKpAVXmD9HZSHeysBDMZwiv4/view?usp=drive_link">
+        <code>07_StrFile_23</code>
+      </a>
+    )
+  </h1>
+</div>
+
+<div align="center">
+  <h1>
+    DNA ★★ (
+      <a href="https://drive.google.com/file/d/1Wf86Zr6UPfiMRRsVYhBadj8Yu2H5rkZ8/view?usp=drive_link">
+        <code>07_StrFile_31</code>
+      </a>
+    )
+  </h1>
+</div>
+
+<div align="center">
+  <h1>
+    Password Strength ★★★ (
+      <a href="https://drive.google.com/file/d/160ndl8Mg6mKUMmBVrq4JHX-GL04ajGuw/view?usp=drive_link">
+        <code>07_StrFile_32</code>
+      </a>
+    )
+  </h1>
+</div>
+
+<div align="center">
+  <h1>
+    File Merge ★★★ (
+      <a href="https://drive.google.com/file/d/18uKdSApjoJiG6TwRkK8qrx5G0X9vym8B/view?usp=drive_link">
+        <code>07_StrFile_33</code>
+      </a>
+    )
+  </h1>
+</div>

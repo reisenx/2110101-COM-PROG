@@ -1,0 +1,109 @@
+<div align="center">
+  <h1>
+    Union Intersection ★ (
+      <a href="https://drive.google.com/file/d/1oa1clo95mX24uYK4xUEI-aN3lxRzarnW/view?usp=drive_link">
+        <code>10_TSD_12</code>
+      </a>
+    )
+  </h1>
+</div>
+
+<div align="center">
+  <h1>
+    Winner ★ (
+      <a href="https://drive.google.com/file/d/1WZFAdB_0dZ0niGUEbE1tPmyu4GFuwu3w/view?usp=drive_link">
+        <code>10_TSD_13</code>
+      </a>
+    )
+  </h1>
+</div>
+
+<div align="center">
+  <h1>
+    Database ★☆ (
+      <a href="https://drive.google.com/file/d/1sVM1L8WTU6poZMnUgH2q4Ru3ynjeVz0j/view?usp=drive_link">
+        <code>10_TSD_14</code>
+      </a>
+    )
+  </h1>
+</div>
+
+<div align="center">
+  <h1>
+    Genre Total Playtime ★★ (
+      <a href="https://drive.google.com/file/d/1IkcX66v3vl9U20yYVMldH4gmyXqXDxpI/view?usp=drive_link">
+        <code>10_TSD_23</code>
+      </a>
+    )
+  </h1>
+</div>
+
+<div align="center">
+  <h1>
+    Cartoon ★★ (
+      <a href="https://drive.google.com/file/d/1-d45vrVJgudHhNZWBcjlpOO7604YnSpC/view?usp=drive_link">
+        <code>10_TSD_24</code>
+      </a>
+    )
+  </h1>
+</div>
+
+<div align="center">
+  <h1>
+    Location Analysis ★★ (
+      <a href="https://drive.google.com/file/d/1q6ZCJdDag9yIrOAhdH0dGYcXHTZxTHKG/view?usp=drive_link">
+        <code>10_TSD_26</code>
+      </a>
+    )
+  </h1>
+</div>
+
+<div align="center">
+  <h1>
+    Celebrity ★★ (
+      <a href="https://drive.google.com/file/d/11ysKVt-jorwWKFFLZj7iKNLzwwAtZHUK/view?usp=drive_link">
+        <code>10_TSD_27</code>
+      </a>
+    )
+  </h1>
+</div>
+
+<div align="center">
+  <h1>
+    Polynomial ★★★ (
+      <a href="https://drive.google.com/file/d/1NzHodyfvlrIU49Ooqf5xPqe2ys6ujKb7/view?usp=drive_link">
+        <code>10_TSD_33</code>
+      </a>
+    )
+  </h1>
+</div>
+
+<div align="center">
+  <h1>
+    Student Info ★★★ (
+      <a href="https://drive.google.com/file/d/15menRq_5rcVxJTHJ2-CBhOH0zxlM_o3W/view?usp=drive_link">
+        <code>10_TSD_35</code>
+      </a>
+    )
+  </h1>
+</div>
+
+<div align="center">
+  <h1>
+    Department Selection ★★★ (
+      <a href="https://drive.google.com/file/d/1mYbLWSQPXZ6fMd695eUBCXmvSU6TGqNN/view?usp=drive_link">
+        <code>10_TSD_37</code>
+      </a>
+    )
+  </h1>
+</div>
+
+<div align="center">
+  <h1>
+    Sky Train ★★★ (
+      <a href="https://drive.google.com/file/d/12Ak3Xe47gusCPmwAtTIi9WSXiHrxCNHp/view?usp=drive_link">
+        <code>10_TSD_38</code>
+      </a>
+    )
+  </h1>
+</div>

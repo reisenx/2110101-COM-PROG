@@ -1,0 +1,139 @@
+<div align="center">
+  <h1>
+    Missing Digits ★ (
+      <a href="https://drive.google.com/file/d/1TQnGUUCvf7KxZRCT-Q9DLiA3YMbMtkW6/view?usp=drive_link">
+        <code>05_List_11</code>
+      </a>
+    )
+  </h1>
+</div>
+
+<div align="center">
+  <h1>
+    Nicknames ★ (
+      <a href="https://drive.google.com/file/d/1Uh5SmLFLn4k6F0RzaVNpBY2iHL5t9Jfb/view?usp=drive_link">
+        <code>05_List_12</code>
+      </a>
+    )
+  </h1>
+</div>
+
+<div align="center">
+  <h1>
+    Back and Front ★ (
+      <a href="https://drive.google.com/file/d/1n1NhFs45L_Ckod3W0vENhqMMHnYxNO0z/view?usp=drive_link">
+        <code>05_List_13</code>
+      </a>
+    )
+  </h1>
+</div>
+
+<div align="center">
+  <h1>
+    Peaks ★ (
+      <a href="https://drive.google.com/file/d/1RgBxFsXsObus6cQxwf08QHdydE53CuDC/view?usp=drive_link">
+        <code>05_List_14</code>
+      </a>
+    )
+  </h1>
+</div>
+
+<div align="center">
+  <h1>
+    Unique Count ★★ (
+      <a href="https://drive.google.com/file/d/15BrwiOGvTgNx3yN0tho9532OSx83o4YG/view?usp=drive_link">
+        <code>05_List_15</code>
+      </a>
+    )
+  </h1>
+</div>
+
+<div align="center">
+  <h1>
+    Collatz ★☆ (
+      <a href="https://drive.google.com/file/d/1PKXPExf_DPAlKwaGvQaZ3vqMd54RpVJ2/view?usp=drive_link">
+        <code>05_List_16</code>
+      </a>
+    )
+  </h1>
+</div>
+
+<div align="center">
+  <h1>
+    Upgrade ★★ (
+      <a href="https://drive.google.com/file/d/1bbLkJUrzqhrarNl3i0tO6SXG9Bkx2cmt/view?usp=drive_link">
+        <code>05_List_21</code>
+      </a>
+    )
+  </h1>
+</div>
+
+<div align="center">
+  <h1>
+    Upgrade 2 ★★ (
+      <a href="https://drive.google.com/file/d/17bzTOp0JyiwwKGzB0KJzAgcDDvdY1g52/view?usp=drive_link">
+        <code>05_List_22</code>
+      </a>
+    )
+  </h1>
+</div>
+
+<div align="center">
+  <h1>
+    Third Closet ★★ (
+      <a href="https://drive.google.com/file/d/1qCZ0wgD0tv7KWyG36SdAVo_qwJY7flCR/view?usp=drive_link">
+        <code>05_List_23</code>
+      </a>
+    )
+  </h1>
+</div>
+
+<div align="center">
+  <h1>
+    Cut and Shuffle ★★ (
+      <a href="https://drive.google.com/file/d/1al5XKCb9Usd64yo8XfzuD__YfFuVWrxa/view?usp=drive_link">
+        <code>05_List_31</code>
+      </a>
+    )
+  </h1>
+</div>
+
+<div align="center">
+  <h1>
+    Queue Ticket ★★★ (
+      <a href="https://drive.google.com/file/d/1Zr5xve0MFhFOFmckERHE27i3tcze1mQO/view?usp=drive_link">
+        <code>05_List_32</code>
+      </a>
+    )
+  </h1>
+</div>
+
+<div align="center">
+  <h1>
+    Missing Digits (Function) ★ (
+      <a href="https://drive.google.com/file/d/1_WW9weWNWDnFKjGxdwiD39pUz6jX-JxT/view?usp=drive_link">
+        <code>05_List_F11</code>
+      </a>
+    )
+  </h1>
+</div>
+
+<div align="center">
+  <h1>
+    Peaks (Function) ★ (
+      <a href="https://drive.google.com/file/d/15UrBRnCHRKq6BIs2_4niUCqOj32_6v1c/view?usp=drive_link">
+        <code>05_List_F14</code>
+      </a>
+    )
+  </h1>
+</div>
+
+<div align="center">
+  <h1>
+    Upgrade 2 (Function) ★★ (
+      <a href="https://drive.google.com/file/d/1xpFZCr1TpqaLzLu_44UAiL62cVE5i7t-/view?usp=drive_link">
+        <code>05_List_F22</code>
+      </a>
+    )
+  </h1>
+</div>

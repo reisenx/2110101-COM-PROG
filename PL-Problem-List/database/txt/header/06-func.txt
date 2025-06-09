@@ -1,0 +1,59 @@
+<div align="center">
+  <h1>
+    Binary Adder ★ (
+      <a href="https://drive.google.com/file/d/18WhSghzPMPQRwFrjsYxGYeNEnU8G9dYB/view?usp=drive_link">
+        <code>06_Func_11</code>
+      </a>
+    )
+  </h1>
+</div>
+
+<div align="center">
+  <h1>
+    Next Prime ★☆ (
+      <a href="https://drive.google.com/file/d/18Vp0BbeYQX3qrRoR6hXtGh6f33BnsPyy/view?usp=drive_link">
+        <code>06_Func_12</code>
+      </a>
+    )
+  </h1>
+</div>
+
+<div align="center">
+  <h1>
+    Function Call ★★ (
+      <a href="https://drive.google.com/file/d/1MF_AAjBOT99rBndyP_Sw9rreKERif-pu/view?usp=drive_link">
+        <code>06_Func_21</code>
+      </a>
+    )
+  </h1>
+</div>
+
+<div align="center">
+  <h1>
+    Distance ★★ (
+      <a href="https://drive.google.com/file/d/1hyLbfJSTS2WVGAEz5inzI9nciJeG0-AS/view?usp=drive_link">
+        <code>06_Func_22</code>
+      </a>
+    )
+  </h1>
+</div>
+
+<div align="center">
+  <h1>
+    Four Functions ★★ (
+      <a href="https://drive.google.com/file/d/1s5E2eHburs33GwzIYKRjqBcq_xrRqalX/view?usp=drive_link">
+        <code>06_Func_23</code>
+      </a>
+    )
+  </h1>
+</div>
+
+<div align="center">
+  <h1>
+    Refactor ★★★ (
+      <a href="https://drive.google.com/file/d/1yK3lFBuwrkSOb2MPvWpcM-YZeyNO-9IC/view?usp=drive_link">
+        <code>06_Func_31</code>
+      </a>
+    )
+  </h1>
+</div>
