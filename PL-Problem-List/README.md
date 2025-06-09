@@ -59,17 +59,17 @@
 <table align="center">
   <tr>
     <td align="center">
-      <a href="../P1-Grader-01-Practice/">
+      <a href="../P1-Grader-01-Practice/README.md">
         <img src="../Z99-OTHERS/p1-practice/00-p1.png" width="100%">
       </a>
     </td>
     <td align="center">
-      <a href="../P2-Grader-02-Practice/">
+      <a href="../P2-Grader-02-Practice/README.md">
         <img src="../Z99-OTHERS/p2-practice/00-p2.png" width="100%">
       </a>
     </td>
     <td align="center">
-      <a href="../P3-Grader-03-Practice/">
+      <a href="../P3-Grader-03-Practice/README.md">
         <img src="../Z99-OTHERS/p3-practice/00-p3.png" width="100%">
       </a>
     </td>

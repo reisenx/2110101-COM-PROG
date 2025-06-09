@@ -1,0 +1,9 @@
+| No. | Problem Code | Name | Difficulty | Solution |
+| :---: | :--- | :--- | :--- | :--- |
+| 1 | [`11_NumPy_11`](https://drive.google.com/file/d/15ONrP_P-c8VHkDHJ4cCI9GIpgTlZmiq3/view?usp=drive_link) | **Indexing and Slicling** | ★ | [`Solution`](/11-NumPy/11_NumPy_11/README.md) |
+| 2 | [`11_NumPy_12`](https://drive.google.com/file/d/1kd8NY1_YIXGCZkje78AvSlWdJuLAW6Nw/view?usp=drive_link) | **Scalar and Array** | ★ | [`Solution`](/11-NumPy/11_NumPy_12/README.md) |
+| 3 | [`11_NumPy_13`](https://drive.google.com/file/d/1NNc0lkUAzMbP7FX5Gp7vcLZzG6ODzMz9/view?usp=drive_link) | **Logistic Regression** | ★ | [`Solution`](/11-NumPy/11_NumPy_13/README.md) |
+| 4 | [`11_NumPy_21`](https://drive.google.com/file/d/1w5w0mILaevnnSUQsMPd8ELhiGT-w-QF8/view?usp=drive_link) | **Slicing and Element-wise Operation** | ★★ | [`Solution`](/11-NumPy/11_NumPy_21/README.md) |
+| 5 | [`11_NumPy_22`](https://drive.google.com/file/d/1xqJl_9dvPZ2AvS6nRSVAnRTCY1PbMId7/view?usp=drive_link) | **Outer Product** | ★★ | [`Solution`](/11-NumPy/11_NumPy_22/README.md) |
+| 6 | [`11_NumPy_23`](https://drive.google.com/file/d/1wOeUv8OH-nsNrARr33H-V26TUjAYIuQL/view?usp=drive_link) | **Lower than Mean** | ★★ | [`Solution`](/11-NumPy/11_NumPy_23/README.md) |
+| 7 | [`11_NumPy_24`](https://drive.google.com/file/d/1u3KY4HE1r1rZpZYxCR8JmIsgPA8-URct/view?usp=drive_link) | **Peak Indexes** | ★★ | [`Solution`](/11-NumPy/11_NumPy_24/README.md) |

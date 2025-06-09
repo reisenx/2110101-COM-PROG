@@ -1,0 +1,8 @@
+| No. | Problem Code | Name | Difficulty | Solution |
+| :---: | :--- | :--- | :--- | :--- |
+| 1 | [`06_Func_11`](https://drive.google.com/file/d/18WhSghzPMPQRwFrjsYxGYeNEnU8G9dYB/view?usp=drive_link) | **Binary Adder** | ★ | [`Solution`](/06-Function/06_Func_11/README.md) |
+| 2 | [`06_Func_12`](https://drive.google.com/file/d/18Vp0BbeYQX3qrRoR6hXtGh6f33BnsPyy/view?usp=drive_link) | **Next Prime** | ★☆ | [`Solution`](/06-Function/06_Func_12/README.md) |
+| 3 | [`06_Func_21`](https://drive.google.com/file/d/1MF_AAjBOT99rBndyP_Sw9rreKERif-pu/view?usp=drive_link) | **Function Call** | ★★ | [`Solution`](/06-Function/06_Func_21/README.md) |
+| 4 | [`06_Func_22`](https://drive.google.com/file/d/1hyLbfJSTS2WVGAEz5inzI9nciJeG0-AS/view?usp=drive_link) | **Distance** | ★★ | [`Solution`](/06-Function/06_Func_22/README.md) |
+| 5 | [`06_Func_23`](https://drive.google.com/file/d/1s5E2eHburs33GwzIYKRjqBcq_xrRqalX/view?usp=drive_link) | **Four Functions** | ★★ | [`Solution`](/06-Function/06_Func_23/README.md) |
+| 6 | [`06_Func_31`](https://drive.google.com/file/d/1yK3lFBuwrkSOb2MPvWpcM-YZeyNO-9IC/view?usp=drive_link) | **Refactor** | ★★★ | [`Solution`](/06-Function/06_Func_31/README.md) |

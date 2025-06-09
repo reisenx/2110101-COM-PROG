@@ -1,0 +1,79 @@
+<div align="center">
+  <h1>
+    Stirling Factorial ★ (
+      <a href="https://drive.google.com/file/d/1k_Apd7ovMqxXhWhAIRw3j5fCApoWKLUG/view?usp=drive_link">
+        <code>01_Expr_01</code>
+      </a>
+    )
+  </h1>
+</div>
+
+<div align="center">
+  <h1>
+    Quadratic Root ★ (
+      <a href="https://drive.google.com/file/d/1t3sUo80oVwNc3rVWCmbVgyO69tKfFXiO/view?usp=drive_link">
+        <code>01_Expr_02</code>
+      </a>
+    )
+  </h1>
+</div>
+
+<div align="center">
+  <h1>
+    An Expression ★★ (
+      <a href="https://drive.google.com/file/d/1QjFbvlGZVW_DvMut1K-ZNRXlswoMD_Lt/view?usp=drive_link">
+        <code>01_Expr_03</code>
+      </a>
+    )
+  </h1>
+</div>
+
+<div align="center">
+  <h1>
+    Body Surface Area ★★ (
+      <a href="https://drive.google.com/file/d/19WB4pcdU4XHMoAIHkf7DW2LBYjxIbLaX/view?usp=drive_link">
+        <code>01_Expr_04</code>
+      </a>
+    )
+  </h1>
+</div>
+
+<div align="center">
+  <h1>
+    Duration ★★★ (
+      <a href="https://drive.google.com/file/d/1RUw-Y2A58UwI3n-oLprnicoxCePYZkbt/view?usp=drive_link">
+        <code>01_Expr_06</code>
+      </a>
+    )
+  </h1>
+</div>
+
+<div align="center">
+  <h1>
+    Body Surface Area (Function) ★ (
+      <a href="https://drive.google.com/file/d/1Y5w8Sg8FVCjdQD4DcAN8ckEvMk85V06Y/view?usp=drive_link">
+        <code>01_Expr_07</code>
+      </a>
+    )
+  </h1>
+</div>
+
+<div align="center">
+  <h1>
+    Cube Root (Function) ★★ (
+      <a href="https://drive.google.com/file/d/1q4SQ2FI5yLt8RGI6L5eDOaKdKPIuf728/view?usp=drive_link">
+        <code>01_Expr_08</code>
+      </a>
+    )
+  </h1>
+</div>
+
+<div align="center">
+  <h1>
+    Duration (Function) ★★ (
+      <a href="https://drive.google.com/file/d/1ZgwtK1C-FFU7v2BkYiNgJ_vXWWGgA-EP/view?usp=drive_link">
+        <code>01_Expr_09</code>
+      </a>
+    )
+  </h1>
+</div>

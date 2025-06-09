@@ -14,20 +14,12 @@
 
 # แบบฝึกหัด
 
-| No. | Problem Code | Name     | Difficulty | Solution       |
-| :-: | :----------- | :------- | :--------- | :------------- |
-|  0  | [`temp`]()   | **temp** | ⭐         | [`Solution`]() |
-|  0  | [`temp`]()   | **temp** | ⭐         | [`Solution`]() |
-|  0  | [`temp`]()   | **temp** | ⭐         | [`Solution`]() |
-|  0  | [`temp`]()   | **temp** | ⭐         | [`Solution`]() |
-|  0  | [`temp`]()   | **temp** | ⭐         | [`Solution`]() |
-|  0  | [`temp`]()   | **temp** | ⭐         | [`Solution`]() |
-|  0  | [`temp`]()   | **temp** | ⭐         | [`Solution`]() |
-|  0  | [`temp`]()   | **temp** | ⭐         | [`Solution`]() |
-|  0  | [`temp`]()   | **temp** | ⭐         | [`Solution`]() |
-|  0  | [`temp`]()   | **temp** | ⭐         | [`Solution`]() |
-|  0  | [`temp`]()   | **temp** | ⭐         | [`Solution`]() |
-|  0  | [`temp`]()   | **temp** | ⭐         | [`Solution`]() |
-|  0  | [`temp`]()   | **temp** | ⭐         | [`Solution`]() |
-|  0  | [`temp`]()   | **temp** | ⭐         | [`Solution`]() |
-|  0  | [`temp`]()   | **temp** | ⭐         | [`Solution`]() |
+| No. | Problem Code                                                                                            | Name                   | Difficulty | Solution                                                  |
+| :-: | :------------------------------------------------------------------------------------------------------ | :--------------------- | :--------- | :-------------------------------------------------------- |
+|  1  | [`09_Nested_11`](https://drive.google.com/file/d/1jwFfjUwAcA8qQh51eLvWtQvZ2UB2GicG/view?usp=drive_link) | **Dedent**             | ★          | [`Solution`](/09-Nested-Structure/09_Nested_11/README.md) |
+|  2  | [`09_Nested_21`](https://drive.google.com/file/d/1vBEe2Hq6z409zK5KqrL2lAehhiDF_WBw/view?usp=drive_link) | **Factorization**      | ★★         | [`Solution`](/09-Nested-Structure/09_Nested_21/README.md) |
+|  3  | [`09_Nested_22`](https://drive.google.com/file/d/1CTwQql8pKD4g2zZTikhUhIYJfhhv1WPB/view?usp=drive_link) | **Matrix**             | ★★         | [`Solution`](/09-Nested-Structure/09_Nested_22/README.md) |
+|  4  | [`09_Nested_25`](https://drive.google.com/file/d/1QgrpIfq7AeOfxVe8VCWx3PAVxvocIl29/view?usp=drive_link) | **Tiling Puzzle**      | ★★☆        | [`Solution`](/09-Nested-Structure/09_Nested_25/README.md) |
+|  5  | [`09_Nested_31`](https://drive.google.com/file/d/1SNN6xz6-R4IevIL8uLU9GexVMoLptVhb/view?usp=drive_link) | **Pythagorean Triple** | ★★★        | [`Solution`](/09-Nested-Structure/09_Nested_31/README.md) |
+|  6  | [`09_Nested_32`](https://drive.google.com/file/d/1s9ueFIJNywIOl8C9mEoUoqBwR9Ai275I/view?usp=drive_link) | **First-Fit Best-Fit** | ★★★        | [`Solution`](/09-Nested-Structure/09_Nested_32/README.md) |
+|  7  | [`09_Nested_34`](https://drive.google.com/file/d/1MGvTR5ZNjPpurG1jetgUOv__NIuNpQOu/view?usp=drive_link) | **Fill in Numbers**    | ★★★        | [`Solution`](/09-Nested-Structure/09_Nested_34/README.md) |

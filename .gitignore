@@ -3,5 +3,11 @@
 
 # Competitive Programming Helper Extension (.cph) file
 *.cph
+
+# Code Testing
 *test.py
 *test.cpp
+*.exe
+
+# Python Library Cache
+*__pycache__

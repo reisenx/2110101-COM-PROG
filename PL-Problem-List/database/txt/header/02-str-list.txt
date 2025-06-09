@@ -1,0 +1,109 @@
+<div align="center">
+  <h1>
+    Citizen ID ★ (
+      <a href="https://drive.google.com/file/d/1rrNBkLxvvoBxibKoOMcDxNEgvrYXO6wv/view?usp=drive_link">
+        <code>02_StrList_01</code>
+      </a>
+    )
+  </h1>
+</div>
+
+<div align="center">
+  <h1>
+    Arabic Numerals ★ (
+      <a href="https://drive.google.com/file/d/19so7zJiFzwUmRbSAQhQPItIh2FfPMgkk/view?usp=drive_link">
+        <code>02_StrList_02</code>
+      </a>
+    )
+  </h1>
+</div>
+
+<div align="center">
+  <h1>
+    US Date ★ (
+      <a href="https://drive.google.com/file/d/1nSQvpgBMvO2dFyuGitJZUQQvNWmx34Ko/view?usp=drive_link">
+        <code>02_StrList_03</code>
+      </a>
+    )
+  </h1>
+</div>
+
+<div align="center">
+  <h1>
+    N Digits ★ (
+      <a href="https://drive.google.com/file/d/1x9TSTjfAS4zqxaoHenatkl9PoeYzBxYE/view?usp=drive_link">
+        <code>02_StrList_04</code>
+      </a>
+    )
+  </h1>
+</div>
+
+<div align="center">
+  <h1>
+    Weekly Sales ★ (
+      <a href="https://drive.google.com/file/d/1Pz84txEx0ZZel6BfEcsAKOvvpvj9lGHU/view?usp=drive_link">
+        <code>02_StrList_05</code>
+      </a>
+    )
+  </h1>
+</div>
+
+<div align="center">
+  <h1>
+    Add Vector ★★ (
+      <a href="https://drive.google.com/file/d/1V5Lcg1ns6KQju1PfXaqrHr9ltsL67PkM/view?usp=drive_link">
+        <code>02_StrList_06</code>
+      </a>
+    )
+  </h1>
+</div>
+
+<div align="center">
+  <h1>
+    Decryption ★★★ (
+      <a href="https://drive.google.com/file/d/1ZdCtGOkCj1veisQGNKhYomIU7aK2A6lT/view?usp=drive_link">
+        <code>02_StrList_07</code>
+      </a>
+    )
+  </h1>
+</div>
+
+<div align="center">
+  <h1>
+    Decimal to Fraction ★★★ (
+      <a href="https://drive.google.com/file/d/1QfmOmzJvBn66DLlNARVVvvBoOz4RsFt3/view?usp=drive_link">
+        <code>02_StrList_08</code>
+      </a>
+    )
+  </h1>
+</div>
+
+<div align="center">
+  <h1>
+    Citizen ID (Function) ★ (
+      <a href="https://drive.google.com/file/d/1Ukck4JvKpCrjpvuvhG1XeAak0KtS2I8x/view?usp=drive_link">
+        <code>02_StrList_F01</code>
+      </a>
+    )
+  </h1>
+</div>
+
+<div align="center">
+  <h1>
+    Arabic Numerals (Function) ★ (
+      <a href="https://drive.google.com/file/d/19JhFGiZLYESRmaPoLqC4-yg7ibpilvdB/view?usp=drive_link">
+        <code>02_StrList_F02</code>
+      </a>
+    )
+  </h1>
+</div>
+
+<div align="center">
+  <h1>
+    Add Vector (Function) ★★ (
+      <a href="https://drive.google.com/file/d/1WYzyRZKzg7OWbNh94YhxtmMeWfrfd6x9/view?usp=drive_link">
+        <code>02_StrList_F06</code>
+      </a>
+    )
+  </h1>
+</div>

@@ -1,0 +1,149 @@
+<div align="center">
+  <h1>
+    Birthday Paradox (Flowchart) ★★ (
+      <a href="https://drive.google.com/file/d/1Y9xwtuKQuA9ivybBNBocjLk1bMhSNBod/view?usp=drive_link">
+        <code>04_Loop_001</code>
+      </a>
+    )
+  </h1>
+</div>
+
+<div align="center">
+  <h1>
+    Partition (Flowchart) ★★ (
+      <a href="https://drive.google.com/file/d/17o5HGkHrFkwV8cdCDwyzej8z9jdYetMZ/view?usp=drive_link">
+        <code>04_Loop_002</code>
+      </a>
+    )
+  </h1>
+</div>
+
+<div align="center">
+  <h1>
+    Average ★ (
+      <a href="https://drive.google.com/file/d/1qDCP0adaX9AyDZarqaKNwJpi9H2edl7t/view?usp=drive_link">
+        <code>04_Loop_01</code>
+      </a>
+    )
+  </h1>
+</div>
+
+<div align="center">
+  <h1>
+    Bisection Log 10 ★☆ (
+      <a href="https://drive.google.com/file/d/1kxFsi7BjNGh9YDjNnzYRKDESZPJ2eX0S/view?usp=drive_link">
+        <code>04_Loop_02</code>
+      </a>
+    )
+  </h1>
+</div>
+
+<div align="center">
+  <h1>
+    MCQ ★ (
+      <a href="https://drive.google.com/file/d/1045T9kHbNpOkVWQG6D0URf3tx7AYj9Zq/view?usp=drive_link">
+        <code>04_Loop_03</code>
+      </a>
+    )
+  </h1>
+</div>
+
+<div align="center">
+  <h1>
+    Parentheses ★ (
+      <a href="https://drive.google.com/file/d/1a47SEUtNOaMysUlkEDMwawdue-2c9A4A/view?usp=drive_link">
+        <code>04_Loop_04</code>
+      </a>
+    )
+  </h1>
+</div>
+
+<div align="center">
+  <h1>
+    Count Word ★ (
+      <a href="https://drive.google.com/file/d/130yj5AwIA6seHeFRHLKiJdOnV5j98Lc_/view?usp=drive_link">
+        <code>04_Loop_05</code>
+      </a>
+    )
+  </h1>
+</div>
+
+<div align="center">
+  <h1>
+    Print Triangle ★★ (
+      <a href="https://drive.google.com/file/d/1SQyDHlrG-1P4KNhaAMi-8B2NycHO0DzW/view?usp=drive_link">
+        <code>04_Loop_06</code>
+      </a>
+    )
+  </h1>
+</div>
+
+<div align="center">
+  <h1>
+    Bisection Log 10 [2] ★★ (
+      <a href="https://drive.google.com/file/d/1JOiixtgL3MuR5bhipvUmAfFJpaPNRgSA/view?usp=drive_link">
+        <code>04_Loop_10</code>
+      </a>
+    )
+  </h1>
+</div>
+
+<div align="center">
+  <h1>
+    RLE ★★ (
+      <a href="https://drive.google.com/file/d/1FJljyXrq98kzqLZK7o4SCWsisbRIa-wn/view?usp=drive_link">
+        <code>04_Loop_11</code>
+      </a>
+    )
+  </h1>
+</div>
+
+<div align="center">
+  <h1>
+    Zig Zag 1 ★★ (
+      <a href="https://drive.google.com/file/d/1qVnA8Sd9Yx741Ud-dvpnS1oX8wLMuh4F/view?usp=drive_link">
+        <code>04_Loop_12</code>
+      </a>
+    )
+  </h1>
+</div>
+
+<div align="center">
+  <h1>
+    Zig Zag 2 ★★★ (
+      <a href="https://drive.google.com/file/d/1uqvOHaGO9mRZmolJCEQUttyfUHyWmnai/view?usp=drive_link">
+        <code>04_Loop_20</code>
+      </a>
+    )
+  </h1>
+</div>
+
+<div align="center">
+  <h1>
+    MCQ (Function) ★ (
+      <a href="https://drive.google.com/file/d/1FiT8lFWI6pDnFiyKGCfqsoO6aFQHRNsn/view?usp=drive_link">
+        <code>04_Loop_F03</code>
+      </a>
+    )
+  </h1>
+</div>
+
+<div align="center">
+  <h1>
+    Print Triangle (Function) ★★ (
+      <a href="https://drive.google.com/file/d/1BZfEUio1oqtH8ogukO0SjbpGXvVK4ZDD/view?usp=drive_link">
+        <code>04_Loop_F06</code>
+      </a>
+    )
+  </h1>
+</div>
+
+<div align="center">
+  <h1>
+    RLE (Function) ★★ (
+      <a href="https://drive.google.com/file/d/1TFt7ByWF1iL5RG1q5c2kTaf2cv7yKsWl/view?usp=drive_link">
+        <code>04_Loop_F11</code>
+      </a>
+    )
+  </h1>
+</div>
