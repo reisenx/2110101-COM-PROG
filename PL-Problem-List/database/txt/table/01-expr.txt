@@ -1,0 +1,13 @@
+| No. | Problem Code | Name | Difficulty | Solution |
+| :---: | :--- | :--- | :--- | :--- |
+| 1 | [`02_StrList_01`](https://drive.google.com/file/d/1rrNBkLxvvoBxibKoOMcDxNEgvrYXO6wv/view?usp=drive_link) | **Citizen ID** | ★ | [`Solution`](/01-Data-Type-and-Expression/02_StrList_01/README.md) |
+| 2 | [`02_StrList_02`](https://drive.google.com/file/d/19so7zJiFzwUmRbSAQhQPItIh2FfPMgkk/view?usp=drive_link) | **Arabic Numerals** | ★ | [`Solution`](/01-Data-Type-and-Expression/02_StrList_02/README.md) |
+| 3 | [`02_StrList_03`](https://drive.google.com/file/d/1nSQvpgBMvO2dFyuGitJZUQQvNWmx34Ko/view?usp=drive_link) | **US Date** | ★ | [`Solution`](/01-Data-Type-and-Expression/02_StrList_03/README.md) |
+| 4 | [`02_StrList_04`](https://drive.google.com/file/d/1x9TSTjfAS4zqxaoHenatkl9PoeYzBxYE/view?usp=drive_link) | **N Digits** | ★ | [`Solution`](/01-Data-Type-and-Expression/02_StrList_04/README.md) |
+| 5 | [`02_StrList_05`](https://drive.google.com/file/d/1Pz84txEx0ZZel6BfEcsAKOvvpvj9lGHU/view?usp=drive_link) | **Weekly Sales** | ★ | [`Solution`](/01-Data-Type-and-Expression/02_StrList_05/README.md) |
+| 6 | [`02_StrList_06`](https://drive.google.com/file/d/1V5Lcg1ns6KQju1PfXaqrHr9ltsL67PkM/view?usp=drive_link) | **Add Vector** | ★★ | [`Solution`](/01-Data-Type-and-Expression/02_StrList_06/README.md) |
+| 7 | [`02_StrList_07`](https://drive.google.com/file/d/1ZdCtGOkCj1veisQGNKhYomIU7aK2A6lT/view?usp=drive_link) | **Decryption** | ★★★ | [`Solution`](/01-Data-Type-and-Expression/02_StrList_07/README.md) |
+| 8 | [`02_StrList_08`](https://drive.google.com/file/d/1QfmOmzJvBn66DLlNARVVvvBoOz4RsFt3/view?usp=drive_link) | **Decimal to Fraction** | ★★★ | [`Solution`](/01-Data-Type-and-Expression/02_StrList_08/README.md) |
+| 9 | [`02_StrList_F01`](https://drive.google.com/file/d/1Ukck4JvKpCrjpvuvhG1XeAak0KtS2I8x/view?usp=drive_link) | **Citizen ID (Function)** | ★ | [`Solution`](/01-Data-Type-and-Expression/02_StrList_F01/README.md) |
+| 10 | [`02_StrList_F02`](https://drive.google.com/file/d/19JhFGiZLYESRmaPoLqC4-yg7ibpilvdB/view?usp=drive_link) | **Arabic Numerals (Function)** | ★ | [`Solution`](/01-Data-Type-and-Expression/02_StrList_F02/README.md) |
+| 11 | [`02_StrList_F06`](https://drive.google.com/file/d/1WYzyRZKzg7OWbNh94YhxtmMeWfrfd6x9/view?usp=drive_link) | **Add Vector (Function)** | ★★ | [`Solution`](/01-Data-Type-and-Expression/02_StrList_F06/README.md) |
