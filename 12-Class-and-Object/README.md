@@ -14,20 +14,13 @@
 
 # แบบฝึกหัด
 
-| No. | Problem Code | Name     | Difficulty | Solution       |
-| :-: | :----------- | :------- | :--------- | :------------- |
-|  0  | [`temp`]()   | **temp** | ⭐         | [`Solution`]() |
-|  0  | [`temp`]()   | **temp** | ⭐         | [`Solution`]() |
-|  0  | [`temp`]()   | **temp** | ⭐         | [`Solution`]() |
-|  0  | [`temp`]()   | **temp** | ⭐         | [`Solution`]() |
-|  0  | [`temp`]()   | **temp** | ⭐         | [`Solution`]() |
-|  0  | [`temp`]()   | **temp** | ⭐         | [`Solution`]() |
-|  0  | [`temp`]()   | **temp** | ⭐         | [`Solution`]() |
-|  0  | [`temp`]()   | **temp** | ⭐         | [`Solution`]() |
-|  0  | [`temp`]()   | **temp** | ⭐         | [`Solution`]() |
-|  0  | [`temp`]()   | **temp** | ⭐         | [`Solution`]() |
-|  0  | [`temp`]()   | **temp** | ⭐         | [`Solution`]() |
-|  0  | [`temp`]()   | **temp** | ⭐         | [`Solution`]() |
-|  0  | [`temp`]()   | **temp** | ⭐         | [`Solution`]() |
-|  0  | [`temp`]()   | **temp** | ⭐         | [`Solution`]() |
-|  0  | [`temp`]()   | **temp** | ⭐         | [`Solution`]() |
+| No. | Problem Code                                                                                           | Name                         | Difficulty | Solution                                                 |
+| :-: | :----------------------------------------------------------------------------------------------------- | :--------------------------- | :--------- | :------------------------------------------------------- |
+|  1  | [`12_Class_21`](https://drive.google.com/file/d/1c-t7FxeJv0xwvdwCdvixSNVJomTEBM_f/view?usp=drive_link) | **Complex Number**           | ★★         | [`Solution`](/12-Class-and-Object/12_Class_21/README.md) |
+|  2  | [`12_Class_22`](https://drive.google.com/file/d/1dNnh5XDHG2dWd4HDvYyNcam2qJ9aHqqf/view?usp=drive_link) | **Card**                     | ★★         | [`Solution`](/12-Class-and-Object/12_Class_22/README.md) |
+|  3  | [`12_Class_23`](https://drive.google.com/file/d/1sBvznMMYRgkH8ogMi8hYEDrj5pDEQcJ9/view?usp=drive_link) | **Next Card**                | ★★         | [`Solution`](/12-Class-and-Object/12_Class_23/README.md) |
+|  4  | [`12_Class_31`](https://drive.google.com/file/d/1J4JtVByVaxCBeTAMoNvS2-byi9OLLFbC/view?usp=drive_link) | **Point in Rectangle**       | ★★★        | [`Solution`](/12-Class-and-Object/12_Class_31/README.md) |
+|  5  | [`12_Class_32`](https://drive.google.com/file/d/14_CYL0hMMiWPds7FrDK4JLUAMASWH-vB/view?usp=drive_link) | **Rectangle Sorted by Area** | ★★★        | [`Solution`](/12-Class-and-Object/12_Class_32/README.md) |
+|  6  | [`12_Class_33`](https://drive.google.com/file/d/1rqOJVzUwJG1c7o_rR6NtV8zpFgc-O79q/view?usp=drive_link) | **Piggy Bank 1**             | ★★★        | [`Solution`](/12-Class-and-Object/12_Class_33/README.md) |
+|  7  | [`12_Class_34`](https://drive.google.com/file/d/1F6onEA6o4ffyH7_50jcqVq4D8vcVRn5n/view?usp=drive_link) | **Piggy Bank 2**             | ★★★        | [`Solution`](/12-Class-and-Object/12_Class_34/README.md) |
+|  8  | [`12_Class_35`](https://drive.google.com/file/d/11l2prjZRO4y18gnNhQcr6QshCzTOvojf/view?usp=drive_link) | **Roman Numberal**           | ★★★        | [`Solution`](/12-Class-and-Object/12_Class_35/README.md) |
