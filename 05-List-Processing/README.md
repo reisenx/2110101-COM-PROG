@@ -14,20 +14,19 @@
 
 # แบบฝึกหัด
 
-| No. | Problem Code | Name     | Difficulty | Solution       |
-| :-: | :----------- | :------- | :--------- | :------------- |
-|  0  | [`temp`]()   | **temp** | ⭐         | [`Solution`]() |
-|  0  | [`temp`]()   | **temp** | ⭐         | [`Solution`]() |
-|  0  | [`temp`]()   | **temp** | ⭐         | [`Solution`]() |
-|  0  | [`temp`]()   | **temp** | ⭐         | [`Solution`]() |
-|  0  | [`temp`]()   | **temp** | ⭐         | [`Solution`]() |
-|  0  | [`temp`]()   | **temp** | ⭐         | [`Solution`]() |
-|  0  | [`temp`]()   | **temp** | ⭐         | [`Solution`]() |
-|  0  | [`temp`]()   | **temp** | ⭐         | [`Solution`]() |
-|  0  | [`temp`]()   | **temp** | ⭐         | [`Solution`]() |
-|  0  | [`temp`]()   | **temp** | ⭐         | [`Solution`]() |
-|  0  | [`temp`]()   | **temp** | ⭐         | [`Solution`]() |
-|  0  | [`temp`]()   | **temp** | ⭐         | [`Solution`]() |
-|  0  | [`temp`]()   | **temp** | ⭐         | [`Solution`]() |
-|  0  | [`temp`]()   | **temp** | ⭐         | [`Solution`]() |
-|  0  | [`temp`]()   | **temp** | ⭐         | [`Solution`]() |
+| No. | Problem Code                                                                                           | Name                          | Difficulty | Solution                                                |
+| :-: | :----------------------------------------------------------------------------------------------------- | :---------------------------- | :--------- | :------------------------------------------------------ |
+|  1  | [`05_List_11`](https://drive.google.com/file/d/1TQnGUUCvf7KxZRCT-Q9DLiA3YMbMtkW6/view?usp=drive_link)  | **Missing Digits**            | ★          | [`Solution`](/05-List-Processing/05_List_11/README.md)  |
+|  2  | [`05_List_12`](https://drive.google.com/file/d/1Uh5SmLFLn4k6F0RzaVNpBY2iHL5t9Jfb/view?usp=drive_link)  | **Nicknames**                 | ★          | [`Solution`](/05-List-Processing/05_List_12/README.md)  |
+|  3  | [`05_List_13`](https://drive.google.com/file/d/1n1NhFs45L_Ckod3W0vENhqMMHnYxNO0z/view?usp=drive_link)  | **Back and Front**            | ★          | [`Solution`](/05-List-Processing/05_List_13/README.md)  |
+|  4  | [`05_List_14`](https://drive.google.com/file/d/1RgBxFsXsObus6cQxwf08QHdydE53CuDC/view?usp=drive_link)  | **Peaks**                     | ★          | [`Solution`](/05-List-Processing/05_List_14/README.md)  |
+|  5  | [`05_List_15`](https://drive.google.com/file/d/15BrwiOGvTgNx3yN0tho9532OSx83o4YG/view?usp=drive_link)  | **Unique Count**              | ★★         | [`Solution`](/05-List-Processing/05_List_15/README.md)  |
+|  6  | [`05_List_16`](https://drive.google.com/file/d/1PKXPExf_DPAlKwaGvQaZ3vqMd54RpVJ2/view?usp=drive_link)  | **Collatz**                   | ★☆         | [`Solution`](/05-List-Processing/05_List_16/README.md)  |
+|  7  | [`05_List_21`](https://drive.google.com/file/d/1bbLkJUrzqhrarNl3i0tO6SXG9Bkx2cmt/view?usp=drive_link)  | **Upgrade**                   | ★★         | [`Solution`](/05-List-Processing/05_List_21/README.md)  |
+|  8  | [`05_List_22`](https://drive.google.com/file/d/17bzTOp0JyiwwKGzB0KJzAgcDDvdY1g52/view?usp=drive_link)  | **Upgrade 2**                 | ★★         | [`Solution`](/05-List-Processing/05_List_22/README.md)  |
+|  9  | [`05_List_23`](https://drive.google.com/file/d/1qCZ0wgD0tv7KWyG36SdAVo_qwJY7flCR/view?usp=drive_link)  | **Third Closet**              | ★★         | [`Solution`](/05-List-Processing/05_List_23/README.md)  |
+| 10  | [`05_List_31`](https://drive.google.com/file/d/1al5XKCb9Usd64yo8XfzuD__YfFuVWrxa/view?usp=drive_link)  | **Cut and Shuffle**           | ★★         | [`Solution`](/05-List-Processing/05_List_31/README.md)  |
+| 11  | [`05_List_32`](https://drive.google.com/file/d/1Zr5xve0MFhFOFmckERHE27i3tcze1mQO/view?usp=drive_link)  | **Queue Ticket**              | ★★★        | [`Solution`](/05-List-Processing/05_List_32/README.md)  |
+| 12  | [`05_List_F11`](https://drive.google.com/file/d/1_WW9weWNWDnFKjGxdwiD39pUz6jX-JxT/view?usp=drive_link) | **Missing Digits (Function)** | ★          | [`Solution`](/05-List-Processing/05_List_F11/README.md) |
+| 13  | [`05_List_F14`](https://drive.google.com/file/d/15UrBRnCHRKq6BIs2_4niUCqOj32_6v1c/view?usp=drive_link) | **Peaks (Function)**          | ★          | [`Solution`](/05-List-Processing/05_List_F14/README.md) |
+| 14  | [`05_List_F22`](https://drive.google.com/file/d/1xpFZCr1TpqaLzLu_44UAiL62cVE5i7t-/view?usp=drive_link) | **Upgrade 2 (Function)**      | ★★         | [`Solution`](/05-List-Processing/05_List_F22/README.md) |
