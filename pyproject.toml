@@ -1,0 +1,68 @@
+# ==============================================================================
+# pyproject.toml - Configuration for a modern Python project
+# ==============================================================================
+
+[project]
+# --- Core Project Metadata (PEP 621) ---
+name = "2110101-COM-PROG"
+version = "2.0.0"
+description = "2110101 COMPUTER PROGRAMMING Course in Chulalongkorn University (2023)"
+authors = [
+    { name = "Worralop Srichainont", email = "worralop.sric@gmail.com" },
+]
+readme = "README.md"
+
+# --- Project Dependencies ---
+dependencies = [
+    "numpy",
+    "pandas"
+]
+
+[project.optional-dependencies]
+# --- Optional Dependencies ---
+# `dev` contains packages needed for development, testing, and linting.
+# Install with: pip install -e .[dev]
+dev = [
+    "ruff",
+    "black",
+]
+
+# ==============================================================================
+# Tool Configurations
+# ==============================================================================
+
+[tool.black]
+# --- Black Configuration ---
+# The uncompromising code formatter.
+line-length = 88
+target-version = ['py311']
+
+[tool.ruff]
+# --- Ruff Global Configuration ---
+# The extremely fast linter and formatter.
+line-length = 88
+target-version = "py311"
+
+[tool.ruff.lint]
+# --- Ruff Linter Configuration ---
+# See all rules: https://docs.astral.sh/ruff/rules/
+select = [
+    "E",   # pycodestyle errors
+    "W",   # pycodestyle warnings
+    "F",   # Pyflakes (finds major errors)
+    "I",   # isort (import sorting)
+    "UP",  # pyupgrade (modernizes Python syntax)
+    "B",   # flake8-bugbear (finds likely bugs)
+    "C4",  # flake8-comprehensions (encourages better comprehensions)
+    "SIM", # flake8-simplify (simplifies code)
+    "PLC", # Pylint Convention rules (includes the "useless-import-alias" rule)
+]
+
+# --- Rules to ignore ---
+ignore = []
+
+[tool.ruff.format]
+# --- Ruff Formatter Configuration ---
+# This ensures Ruff's formatter matches Black's style.
+quote-style = "double"
+indent-style = "space"

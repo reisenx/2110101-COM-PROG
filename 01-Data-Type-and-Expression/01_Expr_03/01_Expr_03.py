@@ -1,5 +1,20 @@
-# Import Math library
-import math as m
+# --------------------------------------------------
+# File Name : 01_Expr_03.py
+# Problem   : An Expression
+# Author    : Worralop Srichainont
+# Date      : 2025-06-10
+# --------------------------------------------------
 
-# Calulate the answer and round into 6 decimal digits
-print(round((m.pi - (m.factorial(10)/(8**8)) + (m.log(9.7))**((7/m.sqrt(71))-m.sin(m.radians(40))))/(1.2**(2.3**(1/3))),6))
+import math
+
+# Calculate numerator and denominator of a fraction
+numerator = (
+    math.pi
+    - (math.factorial(10) / (8**8))
+    + (math.log(9.7)) ** ((7 / math.sqrt(71)) - math.sin(math.radians(40)))
+)
+denominator = 1.2 ** (2.3 ** (1 / 3))
+
+# Output
+# Round the result to 6 decimal places
+print(round(numerator / denominator, 6))

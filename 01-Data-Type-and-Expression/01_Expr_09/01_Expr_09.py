@@ -1,57 +1,69 @@
-# Create str2hms(hms_str) function
-# This function can convert a string in format "HH:MM:SS" to and 3 integers h,m,s
-def str2hms(hms_str):
-    h,m,s = hms_str.split(':')
-    return int(h),int(m),int(s)
+# --------------------------------------------------
+# File Name : 01_Expr_09.py
+# Problem   : Duration (Function)
+# Author    : Worralop Srichainont
+# Date      : 2025-06-10
+# --------------------------------------------------
 
-# Create hms2str(h,m,s) function
-# This function can convert a 3 integers h,m,s to a string in the format HH:MM:SS
-def hms2str(h,m,s):
-    return ('0'+str(h))[-2:] + ':' + ('0'+str(m))[-2:] + ':' + ('0'+str(s))[-2:]
 
-# Create to_sec(h,m,s) function
-# This function can convert the hours, minutes and second into only seconds
-# Example 01:20:30 is equal to 4,830 seconds
-def to_sec(h,m,s):
-    return (h*3600) + (m*60) + s
+# Convert a string in the format HH:MM:SS to 3 integers h, m, s
+def str2hms(hms_str: str) -> tuple:
+    h, m, s = hms_str.split(":")
+    return int(h), int(m), int(s)
 
-# Create to_hms(s) function
-# This function can convert seconds into hours, minutes and second
-# Example 4,830 seconds is equal to 01:20:30
-def to_hms(s) :
-    h = s//3600
-    s = s-(h*3600)
-    m = s//60
-    s = s-(m*60)
-    return h,m,s
 
-# Create diff(h1,m1,s1,h2,m2,s2) function
-# This function can find difference between 2 times
-# Input time is in the format h,m,s
-# Output is also in the format h,m,s
-def diff(h1,m1,s1,h2,m2,s2):
-    t1 = (h1*3600) + (m1*60) + s1
-    t2 = (h2*3600) + (m2*60) + s2
-    dt = ((24*3600) + t2 - t1) % (24*3600)
-    dh = dt//3600
-    dt = dt - (dh*3600)
-    dm = dt//60
-    dt = dt - (dm*60)
+# Convert 3 integers h, m, s to a string in the format HH:MM:SS
+def hms2str(h: int, m: int, s: int) -> str:
+    time = ("0" + str(h))[-2:]  # Add hours with leading zero if needed
+    time += ":" + ("0" + str(m))[-2:]  # Add minutes with leading zero if needed
+    time += ":" + ("0" + str(s))[-2:]  # Add seconds with leading zero if needed
+    return time
+
+
+# Calculate total seconds from hours, minutes, and seconds
+def to_sec(h: int, m: int, s: int) -> int:
+    return (h * 3600) + (m * 60) + s
+
+
+# Convert total seconds to hours, minutes, and seconds
+def to_hms(s: int) -> tuple:
+    h = s // 3600
+    s = s - (h * 3600)
+    m = s // 60
+    s = s - (m * 60)
+    return h, m, s
+
+
+# Calculate the difference between two times given in hours, minutes, and seconds
+def diff(h1: int, m1: int, s1: int, h2: int, m2: int, s2: int) -> tuple:
+    # Convert both times to total seconds
+    t1 = (h1 * 3600) + (m1 * 60) + s1
+    t2 = (h2 * 3600) + (m2 * 60) + s2
+    # Calculate the difference in seconds
+    dt = ((24 * 3600) + t2 - t1) % (24 * 3600)
+    # Convert the difference back to hours, minutes, and seconds
+    dh = dt // 3600
+    dt = dt - (dh * 3600)
+    dm = dt // 60
+    dt = dt - (dm * 60)
     ds = dt
-    return dh,dm,ds
+    return dh, dm, ds
 
-# Create main() function
-# This function can find difference between 2 times
-# Input time is in the format HH:MM:SS
-# Output is also in the format HH:MM:SS
-def main():
+
+# Main function to read input times, calculate the difference, and print the result
+def main() -> None:
+    # Read input times in the format HH:MM:SS
     hms_start = input()
     hms_end = input()
-    h1,m1,s1 = str2hms(hms_start)
-    h2,m2,s2 = str2hms(hms_end)
-    dh,dm,ds = diff(h1,m1,s1,h2,m2,s2)
-    time = hms2str(dh,dm,ds)
+    # Convert input strings to hours, minutes, and seconds
+    h1, m1, s1 = str2hms(hms_start)
+    h2, m2, s2 = str2hms(hms_end)
+    # Calculate the difference and convert it to a string
+    dh, dm, ds = diff(h1, m1, s1, h2, m2, s2)
+    # Convert the difference to a string in the format HH:MM:SS
+    time = hms2str(dh, dm, ds)
     print(time)
 
-# Execute the input string
+
+# Execute the input string as code
 exec(input())

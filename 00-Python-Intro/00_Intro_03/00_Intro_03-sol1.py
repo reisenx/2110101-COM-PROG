@@ -1,6 +1,9 @@
-# Problem:  Mountain Valley [00_Intro_03]
-# Author:   Worralop Srichainont
-# Date:     2025-06-10
+# --------------------------------------------------
+# File Name : 00_Intro_03-sol1.py
+# Problem   : Mountain Valley
+# Author    : Worralop Srichainont
+# Date      : 2025-06-10
+# --------------------------------------------------
 
 print("+" + ("-" * 42) + "+")
 print("|" + ("." * 32) + "/" + "\\" + ("." * 8) + "|")
