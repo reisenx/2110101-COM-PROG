@@ -55,7 +55,7 @@ This describes the project structure of this repository.
 
 # Naming Conventions
 
-> ![IMPORTANT]
+> [!IMPORTANT]
 >
 > Avoid using whitespaces and symbols except `-` and `_` (especially
 > `&ZeroWidthSpace`) on a filename.
