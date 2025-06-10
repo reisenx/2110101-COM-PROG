@@ -1,8 +1,20 @@
-# Input a string into sales variable
-sales = str(input())
+# --------------------------------------------------
+# File Name : 02_StrList_05.py
+# Problem   : Weekly Sales
+# Author    : Worralop Srichainont
+# Date      : 2025-06-10
+# --------------------------------------------------
 
-# Split a price from sales variable
-price = sales.split()
+# Input weekly sales data
+sales = input().strip().split()
 
-# Output the weekly sales
-print(int(price[0]) + int(price[1]) + int(price[2]) + int(price[3]) + int(price[4]) + int(price[5]) + int(price[6]))
+# Output the total sales for the week
+print(
+    int(sales[0])
+    + int(sales[1])
+    + int(sales[2])
+    + int(sales[3])
+    + int(sales[4])
+    + int(sales[5])
+    + int(sales[6])
+)
