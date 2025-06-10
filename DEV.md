@@ -208,7 +208,35 @@ black my_python_file.py
 black my_project_directory/
 ```
 
+or simply use
+
+```bash
+black .
+```
+
 And `black` will automatically format the code according to PEP 8.
+
+## Code Lint
+
+In this repository, I use `Ruff` to analyzes code for potential errors, bugs,
+and stylistic issues.
+
+To install it, use this command in terminal
+
+```bash
+pip install ruff
+```
+
+After finishing writing your code and already install the library, you can just
+open the terminal and use the command.
+
+```bash
+# To find problems
+ruff check .
+
+# To find and fix problems
+ruff check --fix .
+```
 
 ---
 
