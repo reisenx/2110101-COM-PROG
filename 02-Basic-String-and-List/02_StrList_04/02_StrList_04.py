@@ -1,14 +1,15 @@
-# Input variable txt as a string variable
-txt = str(input())
-# Input variable N as a integer variable
+# --------------------------------------------------
+# File Name : 02_StrList_04.py
+# Problem   : N Digits
+# Author    : Worralop Srichainont
+# Date      : 2025-06-10
+# --------------------------------------------------
+
+# Input a number
+num = input().strip()
+
+# Input number of digits
 N = int(input())
 
-# Calculuate the length of the text
-M = len(txt)
-
-# Output the text in the specific format
-# If M >= N, just output txt
-# Example: txt = "123", M = 3, N = 2 --> Output: "123"
-# If M < N, output N-M digits '0' before txt string
-# Example: txt = "123", M = 3, N = 5 --> Output:00123
-print('0'*(max(M,N)-M) + txt)
+# Output the number with leading zeros if N > digits in num
+print("0" * max(N - len(num), 0) + num)
