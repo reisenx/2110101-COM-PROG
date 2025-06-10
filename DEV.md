@@ -178,12 +178,15 @@ S6701-Course-Syllabus-2567-S1-CP.pdf
 On every solution code, This needed to be added
 
 ```python
-# Problem:  <problem_name> [<problem_code>]
-# Author:   Worralop Srichainont
-# Date:     <solve_date>
+# --------------------------------------------------
+# File Name : <filename>
+# Problem   : <problem-name>
+# Author    : Worralop Srichainont
+# Date      : <solve-date>
+# --------------------------------------------------
 ```
 
-## PEP 8
+## PEP 8 - Style Guide for Python Code
 
 The code inside this repository mainly follow the conventions from PEP 8
 (https://peps.python.org/pep-0008/)
@@ -201,22 +204,85 @@ After finishing writing your code and already install the library, you can just
 open the terminal and use the command.
 
 ```bash
-# Format a single file
-black my_python_file.py
-
-# Format an entire project directory
-black my_project_directory/
-```
-
-or simply use
-
-```bash
 black .
 ```
 
 And `black` will automatically format the code according to PEP 8.
 
-## Code Lint
+## PEP 484 - Type Hints
+
+The code inside this repository are also follow the conventions from PEP 484
+(https://peps.python.org/pep-0484/)
+
+A programming language like C++ or Java is necessary to declare the variable
+type, data type of parameters and return type of function.
+
+**C++ code example**
+
+```cpp
+#include<iostream>
+
+int func(int a, int b, int c) {
+    return (a * 3) + (b * 2) + c;
+}
+```
+
+**Java code example**
+
+```java
+public class program {
+    public int func(int a, int b, int c) {
+        return (a * 3) + (b * 2) + c;
+    }
+}
+```
+
+From these two example code works exactly the same which are
+
+-   A function named `func()` has three parameters which are `a`, `b`, and `c`.
+    All of them are integers.
+-   `func()` calculates and returns a value of `3a + 2b + c` as an integers.
+
+Now let's see python
+
+**Python code example**
+
+```python
+def func(a, b, c):
+    return (a * 3) + (b * 2) + c
+```
+
+The python code has no declaration of the data type. We don't know what data
+type is `a` or what data type `func()` returns.
+
+Moreover, `func("A", "B", "C")` can be used, and it returns `"AAABBC"` which is
+a bug.
+
+To solve the problem, we need to declare the data type.
+
+```python
+def func(a: int, b: int, c: int) -> int:
+    return (a * 3) + (b * 2) + c
+```
+
+And it works properly without the bug.
+
+`MyPy` is the tools to help me recheck this convention!
+
+To install it, use this command in terminal
+
+```bash
+pip install mypy
+```
+
+After finishing writing your code and already install the library, you can just
+open the terminal and use the command.
+
+```bash
+mypy .
+```
+
+## Python Linter & Formatter
 
 In this repository, I use `Ruff` to analyzes code for potential errors, bugs,
 and stylistic issues.
@@ -237,6 +303,11 @@ ruff check .
 # To find and fix problems
 ruff check --fix .
 ```
+
+## Configurations
+
+The file [`pyproject.toml`](/pyproject.toml) is the configuration of `black` and
+`ruff` about the convention rules used in this repository.
 
 ---
 
