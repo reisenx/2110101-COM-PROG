@@ -1,12 +1,31 @@
-# Input date
-date = str(input())
+# --------------------------------------------------
+# File Name : 02_StrList_03.py
+# Problem   : US Date
+# Author    : Worralop Srichainont
+# Date      : 2025-06-10
+# --------------------------------------------------
 
-# Split a split using '/' and put it in variable d,m,y
-# DD/MM/YYYY --> d,m,y
-d,m,y = date.split('/')
+# Input a date in the format DD/MM/YYYY
+date = input().strip()
 
-# Create a list that "January" is in index 0, "February" is in index 1 and so on
-month_name = ["January","February","March","April","May","June","July","August","September","October","November","December"]
+# Split the input date into day, month, and year
+d, m, y = date.split("/")
 
-# Output a date in the specific format
-print(month_name[int(m)-1] + " " + d + ", " + y)
+# List of month names in English
+MONTH = [
+    "January",
+    "February",
+    "March",
+    "April",
+    "May",
+    "June",
+    "July",
+    "August",
+    "September",
+    "October",
+    "November",
+    "December",
+]
+
+# Output the date in the format "Month Day, Year"
+print(MONTH[int(m) - 1], (d + ", " + y))
