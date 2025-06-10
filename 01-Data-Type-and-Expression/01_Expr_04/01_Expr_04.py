@@ -1,20 +1,24 @@
-# Import Math library
+# --------------------------------------------------
+# File Name : 01_Expr_04.py
+# Problem   : Body Surface Area
+# Author    : Worralop Srichainont
+# Date      : 2025-06-10
+# --------------------------------------------------
+
 import math
 
-# Input W and H as float variable
-# W is a width of a medicine
-# H is a height of a medicine
+# Input width and height
 W = float(input())
 H = float(input())
 
-# Calculate and Output body surface area using Mosteller's formula
-mos = math.sqrt(W*H)/60
-print(mos)
+# Mosteller's formula for body surface area
+mosteller = math.sqrt(W * H) / 60
+print(mosteller)
 
-# Calculate and Output body surface area using Haycock's formula
-hay = 0.024265*(W**0.5378)*(H**0.3964)
-print(hay)
+# Haycock's formula for body surface area
+haycock = 0.024265 * (W**0.5378) * (H**0.3964)
+print(haycock)
 
-# Calculate and Output body surface area using Boyd's formula
-boyd = 0.0333*(W**(0.6157-(0.0188*math.log10(W))))*(H**0.3)
+# Boyd's formula for body surface area
+boyd = 0.0333 * (W ** (0.6157 - (0.0188 * math.log10(W)))) * (H**0.3)
 print(boyd)
