@@ -1,19 +1,22 @@
-# Input u and v vector as a string
-u = str(input())
-v = str(input())
+# --------------------------------------------------
+# File Name : 02_StrList_06.py
+# Problem   : Add Vector
+# Author    : Worralop Srichainont
+# Date      : 2025-06-10
+# --------------------------------------------------
 
-# Delete "[]" Bracket from u and v string
-mod_u = u[1 : len(u)-1]
-mod_v = v[1 : len(v)-1]
+# Input two vectors
+u = input().strip()
+v = input().strip()
 
-# Then split u and v string
-ux,uy,uz = mod_u.split(", ")
-vec_u = [float(ux), float(uy), float(uz)]
-vx,vy,vz = mod_v.split(", ")
-vec_v = [float(vx), float(vy), float(vz)]
+# Remove parentheses and split into a list
+u = u[1:-1].split(",")
+v = v[1:-1].split(",")
 
-# Calculate and output the sum vector
-ux,uy,uz = vec_u
-vx,vy,vz = vec_v
-vec_sum = [ux+vx, uy+vy, uz+vz]
-print(vec_u, "+", vec_v, "=", vec_sum)
+# Convert string elements to floats
+u[0], u[1], u[2] = float(u[0]), float(u[1]), float(u[2])
+v[0], v[1], v[2] = float(v[0]), float(v[1]), float(v[2])
+
+# Output the sum of the two vectors
+total = [u[0] + v[0], u[1] + v[1], u[2] + v[2]]
+print(u, "+", v, "=", total)
