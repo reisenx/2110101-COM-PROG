@@ -54,14 +54,14 @@
 -   กด download `Python` เวอร์ชันที่ต้องการ
 
 <p align="center">
-  <img src="../../Z99-OTHERS/00-intro/lecture/01-01.png" style="width:60%">
+  <img src="../../Z99-OTHERS/00-intro/lecture/01-01.png" style="width:80%">
 </p>
 
 -   เมื่อ download เสร็จสิ้น จะพบไฟล์ `.exe` บนเครื่องคอมพิวเตอร์
     ให้กดสองครั้งบนไฟล์นั้นเพื่อติดตั้งโปรแกรม
 
 <p align="center">
-  <img src="../../Z99-OTHERS/00-intro/lecture/01-02.png" style="width:20%">
+  <img src="../../Z99-OTHERS/00-intro/lecture/01-02.png" style="width:15%">
 </p>
 
 -   (Optional) หากต้องการตรวจสอบว่าภาษา `Python` ถูก download
@@ -83,14 +83,14 @@ python --version
 -   กด download เวอร์ชันที่เขียนว่า _recommended for you_
 
 <p align="center">
-  <img src="../../Z99-OTHERS/00-intro/lecture/01-04.png" style="width:60%">
+  <img src="../../Z99-OTHERS/00-intro/lecture/01-04.png" style="width:80%">
 </p>
 
 -   เมื่อ download เสร็จสิ้น จะพบไฟล์ `.exe` บนเครื่องคอมพิวเตอร์
     ให้กดสองครั้งบนไฟล์นั้นเพื่อติดตั้งโปรแกรม
 
 <p align="center">
-  <img src="../../Z99-OTHERS/00-intro/lecture/01-05.png" style="width:20%">
+  <img src="../../Z99-OTHERS/00-intro/lecture/01-05.png" style="width:15%">
 </p>
 
 ## 3. การติดตั้ง VS Code
@@ -99,7 +99,7 @@ python --version
 -   กด download บนหน้า website
 
 <p align="center">
-  <img src="../../Z99-OTHERS/00-intro/lecture/01-07.png" style="width:60%">
+  <img src="../../Z99-OTHERS/00-intro/lecture/01-07.png" style="width:80%">
 </p>
 
 -   เมื่อ download เสร็จสิ้น จะพบไฟล์ `.exe` บนเครื่องคอมพิวเตอร์
@@ -165,7 +165,7 @@ python --version
 -   กดเปิด extension อันเดียวกับภาพข้างต้น และกด install
 
 <p align="center">
-  <img src="../../Z99-OTHERS/00-intro/lecture/03-01.png" style="width:60%">
+  <img src="../../Z99-OTHERS/00-intro/lecture/03-01.png" style="width:80%">
 </p>
 
 ## 2. การจัดการไฟล์
@@ -175,7 +175,7 @@ python --version
     จากนั้นกด `Ctrl + O`)
 
 <p align="center">
-  <img src="../../Z99-OTHERS/00-intro/lecture/03-02.png" style="width:60%">
+  <img src="../../Z99-OTHERS/00-intro/lecture/03-02.png" style="width:80%">
 </p>
 
 -   `New File` อยู่ที่บริเวณกรอบสีแดงในภาพข้างล่าง กดเพื่อสร้างไฟล์ใหม่
@@ -183,7 +183,7 @@ python --version
 -   `New Folder` อยู่ที่บริเวณกรอบสีเขียวในภาพข้างล่าง กดเพื่อสร้างโฟล์เดอร์ใหม่
 
 <p align="center">
-  <img src="../../Z99-OTHERS/00-intro/lecture/03-03.png" style="width:60%">
+  <img src="../../Z99-OTHERS/00-intro/lecture/03-03.png" style="width:80%">
 </p>
 
 -   หากต้องการสร้างไฟล์ในโฟล์เดอร์ ให้กดที่โฟล์เดอร์ที่ต้องการ จากนั้นกด
@@ -197,7 +197,7 @@ python --version
 การรันโปรแกรมภาษา Python จะกดที่ไอคอนสีแดง และเลือก `Run Python File`
 
 <p align="center">
-  <img src="../../Z99-OTHERS/00-intro/lecture/03-04.png" style="width:60%">
+  <img src="../../Z99-OTHERS/00-intro/lecture/03-04.png" style="width:80%">
 </p>
 
 ## 4. ปัญหาที่อาจพบ
@@ -205,7 +205,7 @@ python --version
 การรันโปรแกรม Python ใน VS Code ช่วงแรก ๆ อาจเกิด error ดังภาพ
 
 <p align="center">
-  <img src="../../Z99-OTHERS/00-intro/lecture/03-05.png" style="width:60%">
+  <img src="../../Z99-OTHERS/00-intro/lecture/03-05.png" style="width:80%">
 </p>
 
 ซึ่งที่มาของ error นั้นมาจากได้หลายสาเหตุ แต่โดยส่วนใหญ่แล้ว จะเกิดมาจากการเลือก
@@ -230,20 +230,20 @@ python --version
     และกดคลิกตัวเลือกนั้น ดังภาพ
 
 <p align="center">
-  <img src="../../Z99-OTHERS/00-intro/lecture/03-07.png" style="width:60%">
+  <img src="../../Z99-OTHERS/00-intro/lecture/03-07.png" style="width:80%">
 </p>
 
 -   เลือก version อันเดียวกับที่ขึ้นบน terminal (ในกรณีของผู้เขียน ต้องเลือก
     version `3.11.8`)
 
 <p align="center">
-  <img src="../../Z99-OTHERS/00-intro/lecture/03-08.png" style="width:60%">
+  <img src="../../Z99-OTHERS/00-intro/lecture/03-08.png" style="width:80%">
 </p>
 
 -   จากนั้นลองรันโปรแกรมดูอีกครั้ง พบว่าโปรแกรมสามารถทำงานได้แล้ว
 
 <p align="center">
-  <img src="../../Z99-OTHERS/00-intro/lecture/03-09.png" style="width:60%">
+  <img src="../../Z99-OTHERS/00-intro/lecture/03-09.png" style="width:80%">
 </p>
 
 ---
@@ -260,7 +260,7 @@ python --version
     ได้มากน้อยแค่ไหน
 
 <p align="center">
-  <img src="../../Z99-OTHERS/00-intro/lecture/04-01.png" style="width:60%">
+  <img src="../../Z99-OTHERS/00-intro/lecture/04-01.png" style="width:80%">
 </p>
 
 ## 2. การเข้าใช้งาน Grader
@@ -288,7 +288,7 @@ python --version
 -   **ปุ่มแก้ไข Code** คือปุ่ม `Edit` ซึ่งจะนำไปสู่หน้าที่เราจะใช้ส่ง Code
 
 <p align="center">
-  <img src="../../Z99-OTHERS/00-intro/lecture/04-03.png" style="width:60%">
+  <img src="../../Z99-OTHERS/00-intro/lecture/04-03.png" style="width:80%">
 </p>
 
 เมื่อกดปุ่ม `Edit` ที่หน้าแรกแล้วนั้น จะเข้าสู่หน้าที่เราจะใช้ส่ง Code
@@ -309,7 +309,7 @@ python --version
     โดยที่ระบบตรวจให้คะแนนจะเป็นระบบอัตโนมัติ
 
 <p align="center">
-  <img src="../../Z99-OTHERS/00-intro/lecture/04-04.png" style="width:60%">
+  <img src="../../Z99-OTHERS/00-intro/lecture/04-04.png" style="width:80%">
 </p>
 
 ## 3. คะแนนบน Grader
@@ -318,7 +318,7 @@ python --version
 (testcase) และจะแสดงผลออกมาอยู่ในรูปของคะแนน ตามด้วยตัวอักษร
 
 <p align="center">
-  <img src="../../Z99-OTHERS/00-intro/lecture/04-05.png" style="width:50%">
+  <img src="../../Z99-OTHERS/00-intro/lecture/04-05.png" style="width:60%">
 </p>
 
 จากภาพ มีการแสดงผล `8.3333 [-xxP-x-T-xx-]` ซึ่งหมายความว่าดังนี้
@@ -358,7 +358,7 @@ python --version
     เพื่อวิเคราะห์ปัญหาเพิ่มเติม
 
 <p align="center">
-  <img src="../../Z99-OTHERS/00-intro/lecture/04-06.png" style="width:60%">
+  <img src="../../Z99-OTHERS/00-intro/lecture/04-06.png" style="width:80%">
 </p>
 
 > [!IMPORTANT]
