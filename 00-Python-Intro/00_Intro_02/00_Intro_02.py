@@ -1,6 +1,9 @@
-# Problem:  Big Numbers [00_Intro_02]
-# Author:   Worralop Srichainont
-# Date:     2025-06-10
+# --------------------------------------------------
+# File Name : 00_Intro_02.py
+# Problem   : Big Numbers
+# Author    : Worralop Srichainont
+# Date      : 2025-06-10
+# --------------------------------------------------
 
 print(2938402734091273094162387451928736401926340971234)
 print("+")
