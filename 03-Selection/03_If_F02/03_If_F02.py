@@ -1,68 +1,40 @@
-# Create a function choose(stu1,stu2)
-# stu1, stu2 are list contains [ID, GPAX, compprog, cal1, cal2]
+# --------------------------------------------------
+# File Name : 03_If_F02.py
+# Problem   : Change of Major (Function)
+# Author    : Worralop Srichainont
+# Date      : 2025-06-10
+# --------------------------------------------------
 
-# == Requirement ==
-# 1.) Com Prog A, Calculus I and Calculus II >=C
-# 2.) Select the one that has more GPA
-# 3.) If same GPA, Select the one that has more Calculus I grade
-# 4.) If same Calculus I grade, Select the one that has more Calculus II grade
-# 5.) If all GPA, Calculus I and Calculus II are the same, select both
 
-# Check if student pass the first requirement
-# Please don't forget that in string comparison: A < B < C < D < F
+def choose(stu1: list, stu2: list) -> list:
+    # Initialize the result list
+    result = []
 
-def choose(stu1,stu2):
-    id1, GPA1, Com1, Cal1_1, Cal2_1 = stu1[0], stu1[1], stu1[2], stu1[3], stu1[4]
-    id2, GPA2, Com2, Cal1_2, Cal2_2 = stu2[0], stu2[1], stu2[2], stu2[3], stu2[4]
+    # Set initial values for success of change of major
+    # A student must have COM equal to A and CAL at least C
+    success01 = stu1[2] == "A" and stu1[3] <= "C" and stu1[4] <= "C"
+    success02 = stu2[2] == "A" and stu2[3] <= "C" and stu2[4] <= "C"
 
-    # Check if student pass the first requirement
-    if(Com1 == "A" and Cal1_1 <= "C" and Cal2_1 <= "C"):
-        status1 = True
-    else:
-        status1 = False
-    if(Com2 == "A" and Cal1_2 <= "C" and Cal2_2 <= "C"):
-        status2 = True
-    else:
-        status2 = False
+    # Find the result of change of major
+    if success01 and success02:
+        # Compare GPAX then CAL1 and CAL2
+        student01 = [-stu1[1], stu1[3], stu1[4]]
+        student02 = [-stu2[1], stu2[3], stu2[4]]
+        if student01 < student02:
+            result += [stu1[0]]
+        elif student01 > student02:
+            result += [stu2[0]]
+        else:
+            result += [stu1[0], stu2[0]]
 
-    # Checking in 1st citeria
-    # Case 1: Both pass the 1st citeria
-    if(status1 and status2):
-        # Checking in 2nd citeria (GPA)
-        if(GPA1==GPA2):
-            
-            # Checking in 3rd citeria (Calculus I Grade)
-            if(Cal1_1 == Cal1_2):
-                
-                # Checking in 4th citeria (Calculus II Grade)
-                if(Cal2_1 == Cal2_2):
-                    return [id1,id2]
-                elif(Cal2_1 < Cal2_2):
-                    return [id1]
-                elif(Cal2_2 < Cal2_1):
-                    return [id2]
-            
-            elif(Cal1_1 < Cal1_2):
-                return [id1]
-            elif(Cal1_2 < Cal1_1):
-                return [id2]
-        
-        elif(GPA1 > GPA2):
-            return [id1]
-        elif(GPA2 > GPA1):
-            return [id2]
-    
-    # Case 2: Only student 1 pass 1st citeria
-    elif(status1):
-        return [id1]
-    
-    # Case 3: Only student 2 pass 1st citeria
-    elif(status2):
-        return [id2]
-    
-    # Case 4: None pass the 1st citeria
-    else:
-        return []
+    elif success01:
+        result += [stu1[0]]
 
-# Execute the input string
+    elif success02:
+        result += [stu2[0]]
+
+    return result
+
+
+# Execute the input string as code
 exec(input())
