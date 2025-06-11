@@ -1,22 +1,32 @@
-# Input 2 string
-word = str(input())
-sentence = str(input())
+# --------------------------------------------------
+# File Name : 04_Loop_05.py
+# Problem   : Count Word
+# Author    : Worralop Srichainont
+# Date      : 2025-06-11
+# --------------------------------------------------
 
-# Replace symbol from the string to " "
-symbol = ["\"", "(", ")", ",", ".", "\'"]
-for item in symbol:
-    sentence = sentence.replace(item," ")
+# Input interested word
+key = input().strip()
 
-# Split a sentences into a list
-words_list = sentence.split()
+# Input text
+text = input().strip()
 
-# Set initial word count = 0
+# Remove symbol from the text
+new_text = ""
+for char in text:
+    if char in ['"', "(", ")", ",", ".", "'"]:
+        new_text += " "
+    else:
+        new_text += char
+
+# Split the new text into words
+words = new_text.split()
+
+# Count the occurrences of the interested word
 count = 0
-
-# Check how many word in a list is the same to input word 
-for item in words_list:
-    if(item == word):
+for word in words:
+    if word == key:
         count += 1
 
-# Output the word count
+# Output the count
 print(count)
