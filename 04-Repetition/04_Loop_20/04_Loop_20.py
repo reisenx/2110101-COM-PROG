@@ -8,7 +8,7 @@
 # Initialize variables
 line = 0
 min_A, max_A = 0, 0
-max_B, min_B = 0, 0
+min_B, max_B = 0, 0
 
 # Loop to read input values
 while True:
