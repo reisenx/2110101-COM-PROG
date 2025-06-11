@@ -1,16 +1,18 @@
-# Flowchart
+# --------------------------------------------------
+# File Name : 03_If_004.py
+# Problem   : Grading (Flowchart)
+# Author    : Worralop Srichainont
+# Date      : 2025-06-10
+# --------------------------------------------------
 
-# Input Score
-S = float(input())
-
-# Output the grade
-if(S >= 80):
-    print('A')
-elif(S >= 70):
-    print('B')
-elif(S >= 60):
-    print('C')
-elif(S >= 50):
-    print('D')
+s = float(input())
+if s >= 80:
+    print("A")
+elif s >= 70:
+    print("B")
+elif s >= 60:
+    print("C")
+elif s >= 50:
+    print("D")
 else:
-    print('F')
+    print("F")
