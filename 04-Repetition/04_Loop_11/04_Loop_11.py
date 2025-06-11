@@ -1,27 +1,31 @@
-# Input string
-code = str(input())
+# --------------------------------------------------
+# File Name : 04_Loop_11.py
+# Problem   : RLE
+# Author    : Worralop Srichainont
+# Date      : 2025-06-11
+# --------------------------------------------------
 
-# Create empty RLE string
+# Input text
+text = input().strip()
+
+# Construct RLE string
 RLE = ""
 
-# Convert string into RLE
-# Example: ABBA --> A 1 B 2 A 1
-for i in range(0,len(code)):
-    # Setup a matching character = character in index 0 and starts counting
-    if(i == 0):
-        character = code[0]
-        count = 1
-    # If the current character doesn't match anymore
-    # Note it in to RLE, setup a new character then reset the variable
-    elif(code[i] != character):
-        RLE += character + " " + str(count) + " "
-        character = code[i]
-        count = 1
-    # If the current character matches, then count them
-    elif(code[i] == character):
-        count += 1
-# Don't forget note the last one into RLE
-RLE += character + " " + str(count) + " "
+# Initialize counter
+char = text[0]
+count = 1
 
-# Output RLE
+# Iterate through the text
+for i in range(1, len(text)):
+    if text[i] == char:
+        count += 1
+    else:
+        RLE += char + " " + str(count) + " "
+        char = text[i]
+        count = 1
+
+# Append the last character and its count
+RLE += char + " " + str(count)
+
+# Output the RLE string
 print(RLE)
