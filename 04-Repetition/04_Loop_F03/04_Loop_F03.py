@@ -1,19 +1,24 @@
-# Create function grade_mcq(sol,ans)
-def grade_mcq(sol,ans):
-    # Set the initial score to 0
+# --------------------------------------------------
+# File Name : 04_Loop_F03.py
+# Problem   : MCQ (Function)
+# Author    : Worralop Srichainont
+# Date      : 2025-06-11
+# --------------------------------------------------
+
+
+# Create a function to grade multiple-choice questions (MCQ)
+def grade_mcq(sol: str, ans: str) -> int:
+    # Initialize score
     score = 0
-    
-    # Check if the answer is incomplete answer
-    # Incomplete answer is the length of the string is not equal
-    if(len(sol) != len(ans)):
-        return -1
-    # Complete answer
-    else:
-        # If the answer string and key string in index i is the same, add score by 1
-        for i in range(0,len(sol)):
-            if(ans[i] == sol[i]):
+
+    # Returns a score
+    if len(ans) == len(sol):
+        for i in range(len(ans)):
+            if ans[i] == sol[i]:
                 score += 1
         return score
+    return -1
 
-# Execute input string
+
+# Execute the input string as code
 exec(input())

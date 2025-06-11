@@ -1,19 +1,25 @@
-# Input data, put them in the list and add it to sum
-# Input data until the input = "q"
-sum = 0
-num_list = []
-while(True):
-    num_input = str(input())
-    if(num_input == "q"):
-        break
-    else:
-        num_list.append(float(num_input)) 
-        sum += float(num_input)
+# --------------------------------------------------
+# File Name : 04_Loop_01.py
+# Problem   : Average
+# Author    : Worralop Srichainont
+# Date      : 2025-06-11
+# --------------------------------------------------
 
-# Calculate and output the average by divide sum by the length of the list
-# Don't forget to round the decimal to 2 digits
-# If there's no data in the list, output "No Data"
-if(len(num_list) > 0):
-    print(round(sum/len(num_list), 2))
+# Initialize total and num_count
+total = 0
+num_count = 0
+
+# Input numbers until 'q' is entered
+while True:
+    num = input().strip()
+    if num == "q":
+        break
+    total += float(num)
+    num_count += 1
+
+# Calculate and print the average
+if num_count > 0:
+    average = total / num_count
+    print(round(average, 2))
 else:
     print("No Data")
