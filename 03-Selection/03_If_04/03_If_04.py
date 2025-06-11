@@ -1,13 +1,15 @@
-# Input a string
-telephone = str(input())
+# --------------------------------------------------
+# File Name : 03_If_04.py
+# Problem   : Mobile Number
+# Author    : Worralop Srichainont
+# Date      : 2025-06-10
+# --------------------------------------------------
 
-# Create a list that indicate mobile number
-mobile_num = ["06","08","09"]
+# Input the mobile number
+mobile = input().strip()
 
-# Mobile number Requirement
-# 1.) The first 2 digits must be "06", "08" or "09"
-# 2.) Mobile number must be 10-digit long
-if(telephone[0:2] in mobile_num and len(telephone)==10):
+# Validate the mobile number
+if len(mobile) == 10 and mobile[:2] in ["06", "08", "09"]:
     print("Mobile number")
 else:
     print("Not a mobile number")
