@@ -1,19 +1,31 @@
-# Create a function print_triangle(n)
-def print_triangle(n):
-    # Output the triangle
-    # A triangle height is n
-    # Output the first n-1 lines
-    for i in range (1,n):
-        # Part 1: Print "." outside the triangle
-        # Part 2: Print "*" (left egde of the triangle)
-        # Part 3: Print "." inside the triangle
-        # Part 4: Print "*" (right edge of triangle)
-        if(i==1):
-            print((n-i)*"." + "*")
-        elif(i!=1):
-            print((n-i)*"." + "*" + (2*(i-1)-1)*"." + "*")
-    # Output the bottom of a triangle
-    print((2*n-1)*"*")
+# --------------------------------------------------
+# File Name : 04_Loop_F06.py
+# Problem   : Print Triangle (Function)
+# Author    : Worralop Srichainont
+# Date      : 2025-06-11
+# --------------------------------------------------
 
-# Execute input string
+
+# Construct a function to print a triangle pattern
+def print_triangle(h: int) -> None:
+    triangle = ""
+    for i in range(h - 1):
+        # Add leading dots
+        triangle += "." * (h - i - 1)
+        # Add the first star
+        triangle += "*"
+        # Add dots between stars and the second star
+        if i > 0:
+            triangle += "." * ((2 * i) - 1)
+            triangle += "*"
+        # Add newline character
+        triangle += "\n"
+    # Add base of the triangle
+    triangle += "*" * ((2 * h) - 1)
+
+    # Output the triangle
+    print(triangle)
+
+
+# Execute the input string as code
 exec(input())
