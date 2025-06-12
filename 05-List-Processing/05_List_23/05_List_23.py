@@ -23,4 +23,3 @@ points.sort()
 # Output the third closest point
 order, x, y = points[2][1:]
 print(f"#{order}: {(x, y)}")
-
