@@ -1,57 +1,48 @@
-# Input a number of ice cream
-n = int(input())
+# --------------------------------------------------
+# File Name : 08_Dict_22.py
+# Problem   : Ice Cream Sales
+# Author    : Worralop Srichainont
+# Date      : 2025-06-12
+# --------------------------------------------------
 
-# Input a ice cream brand and its price, then contain them in a dictionary
-# Example Input:
-# 5
-# Magnum 50
-# Cornetto 25
-# PaddlePop 15
-# AsianDelight 20
-# Calippo 15
-# > menu = {'Magnum': 50, 'Cornetto': 25, 'PaddlePop': 15, 'AsianDelight': 20, 'Calippo': 15}
-# > sales = {'Magnum': 0, 'Cornetto': 0, 'PaddlePop': 0, 'AsianDelight': 0, 'Calippo': 0}
+# Initialize dictionaries for menu and sales
 menu = {}
 sales = {}
-for i in range(n):
-    product,price = input().split()
-    menu[product] = int(price)
-    sales[product] = 0
+total_revenue = 0.0
 
-# Calculate sales of each product
-# Example Input:
-# 6
-# Magnum 5
-# Magnum 5
-# Cookie 20
-# MamaTomYum 3
-# Cornetto 20
-# AsianDelight 1
-# > sales = {'Magnum': 500, 'Cornetto': 500, 'PaddlePop': 0, 'AsianDelight': 20, 'Calippo': 0}
+# Input the menu items and their prices
 n = int(input())
-for i in range(n):
-    product,quantity = input().split()
-    if(product in menu):
-        sales[product] += menu[product]*int(quantity)
+for _ in range(n):
+    item, price = input().strip().split()
+    menu[item] = float(price)
+    sales[item] = 0.0
 
-# Calulate top sales and total sales
-top_sales = 0
-total_sales = 0
-for icecream,money in sales.items():
-    total_sales += money
-    if(money > top_sales):
-        top_sales = money
+# Input the sales data
+n = int(input())
+for _ in range(n):
+    item, quantity = input().strip().split()
+    if item in menu:
+        sales[item] += menu[item] * int(quantity)
 
-# Put top sales products into a list and sort it in alphabetical order
-top_products = []
-for icecream,money in sales.items():
-    if(money == top_sales):
-        top_products.append(icecream)
-top_products.sort()
+# Sort the sales items by total sales amount (descending) and then alphabetically
+sorted_sales = []
+for item, revenue in sales.items():
+    if revenue > 0:
+        total_revenue += revenue
+        sorted_sales.append([-revenue, item])
+sorted_sales.sort()
 
 # Output
-if(top_sales == 0):
-    print("No ice cream sales")
+if len(sorted_sales) > 0:
+    # Find the top sales items and their total sales
+    highest_revenue = sorted_sales[0][0]
+    top_items = []
+    for revenue, item in sorted_sales:
+        if revenue == highest_revenue:
+            top_items.append(item)
+
+    # Output the top sales items
+    print(f"Total ice cream sales: {total_revenue}")
+    print("Top sales:", ", ".join(top_items))
 else:
-    print("Total ice cream sales:",float(total_sales))
-    print("Top sales:", ", ".join(top_products))
+    print("No ice cream sales")
