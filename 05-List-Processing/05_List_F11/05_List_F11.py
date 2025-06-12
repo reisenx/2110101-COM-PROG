@@ -17,13 +17,13 @@ def missing_digits(text: str) -> list:
             found_digits[digit] = True
 
     # Collect the missing digits
-    missing_digits = []
+    missing = []
     for num in range(10):
         if not found_digits[num]:
-            missing_digits.append(num)
+            missing.append(num)
 
     # Return the missing digits
-    return missing_digits
+    return missing
 
 
 # Execute the input string as code

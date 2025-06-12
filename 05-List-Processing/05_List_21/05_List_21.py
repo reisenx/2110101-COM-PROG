@@ -17,17 +17,17 @@ while True:
         break
     # Add student information to the list
     # Convert grade to index
-    id, grade = student.split()
-    students.append([id, GRADES.index(grade)])
+    sid, grade = student.split()
+    students.append([sid, GRADES.index(grade)])
 
 # Upgrade student grades
 upgrade_ids = input().split()
 for student in students:
-    id, grade = student
-    if id in upgrade_ids:
+    sid, grade = student
+    if sid in upgrade_ids:
         # Upgrade the grade of that student
         student[1] = max(grade - 1, 0)
 
 # Output the upgraded grades
-for id, grade in students:
-    print(id, GRADES[grade])
+for sid, grade in students:
+    print(sid, GRADES[grade])
