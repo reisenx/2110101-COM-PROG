@@ -1,20 +1,23 @@
-# Input integer n
-n = int(input())
+# --------------------------------------------------
+# File Name : 05_List_16.py
+# Problem   : Collatz
+# Author    : Worralop Srichainont
+# Date      : 2025-06-11
+# --------------------------------------------------
 
-# Collatz's Problem
-# Collect n of each loop in a list
-collatz_num = [n]
-while(n != 1):
-    if(n%2 == 0):
-        n = n//2
-        collatz_num.append(n)
+# Input numbers
+num = int(input())
+
+# Initialize the Collatz sequence list
+collatz = [str(num)]
+
+# Generate the Collatz sequence
+while num != 1:
+    if num % 2 == 0:
+        num //= 2
     else:
-        n = (3*n) + 1
-        collatz_num.append(n)
+        num = 3 * num + 1
+    collatz.append(str(num))
 
-# Output the last 15 items in 'collatz_num'.
-# Convert all item in a list to string and join each item with "-->" string
-process = collatz_num[-15:]
-for i in range(len(process)):
-    process[i] = str(process[i])
-print("->".join(process))
+# Output the Collatz sequence
+print("->".join(collatz[-15:]))
