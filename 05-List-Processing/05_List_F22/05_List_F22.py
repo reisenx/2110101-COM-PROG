@@ -24,9 +24,10 @@ def index_of(grades: list, ID: str) -> int:
 def upgrade(grades: list, IDs: list) -> None:
     for ID in IDs:
         idx = index_of(grades, ID)
-        if idx > -1 and grades[idx][1] > "A":
-            old_grade = grades[idx][1]
-            new_grade = GRADES[GRADES.index(old_grade) - 1]
+        old_grade = GRADES.index(grades[idx][1])
+
+        if idx > -1 and old_grade > GRADES.index("A"):
+            new_grade = GRADES[old_grade - 1]
             grades[idx][1] = new_grade
     grades.sort()
 
