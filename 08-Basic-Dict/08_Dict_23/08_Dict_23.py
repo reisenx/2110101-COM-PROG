@@ -1,26 +1,29 @@
-# Input number of data
-n = int(input())
+# --------------------------------------------------
+# File Name : 08_Dict_23.py
+# Problem   : Telephone Directory
+# Author    : Worralop Srichainont
+# Date      : 2025-06-12
+# --------------------------------------------------
 
-# Input name and their telephone number
-# In each line contains [First Name] [Last Name] [Telephone]
-# Example: "Anthony Stark 086-111-1111"
-name_to_tel = {}
-tel_to_name = {}
-for i in range(n):
+# Initialize the telephone directory
+to_telephone = {}
+to_name = {}
+
+# Input the entries in the directory
+n = int(input())
+for _ in range(n):
     first_name, last_name, telephone = input().strip().split()
-    name = first_name + " " + last_name
-    name_to_tel[name] = telephone
-    tel_to_name[telephone] = name
+    name = f"{first_name} {last_name}"
+    to_telephone[name] = telephone
+    to_name[telephone] = name
 
-# Output
+# Search queries in the directory
 n = int(input())
-for i in range(n):
-    search = input().strip()
-    if(search in name_to_tel):
-        print(search, "-->", name_to_tel[search])
-    
-    elif(search in tel_to_name):
-        print(search, "-->", tel_to_name[search])
-    
+for _ in range(n):
+    query = input().strip()
+    if query in to_telephone:
+        print(f"{query} --> {to_telephone[query]}")
+    elif query in to_name:
+        print(f"{query} --> {to_name[query]}")
     else:
-        print(search, "--> Not found")
+        print(f"{query} --> Not found")

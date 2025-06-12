@@ -1,25 +1,28 @@
-# Input number of input name
+# --------------------------------------------------
+# File Name : 08_Dict_12.py
+# Problem   : Nickname
+# Author    : Worralop Srichainont
+# Date      : 2025-06-12
+# --------------------------------------------------
+
+# Initialize a dictionary with names and their nicknames
+to_fullname = {}
+to_nickname = {}
+
+# Input name and nickname pairs
 n = int(input())
+for _ in range(n):
+    fullname, nickname = input().strip().split()
+    to_fullname[nickname] = fullname
+    to_nickname[fullname] = nickname
 
-# Input name and nickname and contains it in a dict
-# Example: "Robert Dick"
-# name_to_nick["Robert"] = "Dick" and nick_to_name["Dick"] = "Robert"
-nick_to_name = {}
-name_to_nick = {}
-for i in range(n):
-    name, nickname = input().split()
-    nick_to_name[nickname] = name
-    name_to_nick[name] = nickname
-
-# Output
+# Search for a nickname or fullname
 n = int(input())
-for i in range(n):
-    search = input()
-    if(search in nick_to_name):
-        print(nick_to_name[search])
-
-    elif(search in name_to_nick):
-        print(name_to_nick[search])
-
+for _ in range(n):
+    name = input().strip()
+    if name in to_fullname:
+        print(to_fullname[name])
+    elif name in to_nickname:
+        print(to_nickname[name])
     else:
         print("Not found")
