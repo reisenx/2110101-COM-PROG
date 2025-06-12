@@ -1,22 +1,25 @@
-# Input integer n
+# --------------------------------------------------
+# File Name : 05_List_23.py
+# Problem   : Third Closest
+# Author    : Worralop Srichainont
+# Date      : 2025-06-12
+# --------------------------------------------------
+
+# Input number of points
 n = int(input())
 
-# Input coordinates (x,y)
-# Calculate a distance between (0,0) to (x,y)
-# Distance = sqrt(x^2 + y^2)
-X = []
-Y = []
-distance = []
-distance_sort = []
-for i in range(n):
-    x,y = input().split()
-    X.append(float(x))
-    Y.append(float(y))
-    distance.append(((X[i]**2) + (Y[i]**2))**0.5)
+# Input points
+points = []
+for order in range(n):
+    x, y = [float(num) for num in input().split()]
+    # Calculate distance from origin
+    distance = (x**2 + y**2) ** 0.5
+    # Store point with its distance and order
+    points.append([distance, order + 1, x, y])
 
-# Sorting a distance
-distance_sort = sorted(distance)
+# Sort points by distance from origin
+points.sort()
 
-# Output coordinate (x,y) of the 3rd longest distance from (0,0)
-index = distance.index(distance_sort[2])
-print("#" + str(index+1) + ": " + "(" + str(X[index]) + ", " + str(Y[index]) + ")")
+# Output the third closest point
+order, x, y = points[2][1:]
+print("#" + str(order) + ":", (x, y))
