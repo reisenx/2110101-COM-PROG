@@ -1,19 +1,25 @@
-# Input a string 
-word = str(input())
+# --------------------------------------------------
+# File Name : 07_StrFile_11.py
+# Problem   : Plural
+# Author    : Worralop Srichainont
+# Date      : 2025-06-12
+# --------------------------------------------------
 
-# Create a list that contains vowel
-vowel = ['a','e','i','o','u']
+# Input a word
+word = input().strip()
 
-# Convert a word into plural
-# 1.) If a word end with -s, -x or -ch then add -es at the end
-# 2.) If a word end with -y and a letter before y is not a vowel then change -y to -i then add -es
-# 3.) Else, add -s
-if(word[-1] == 's' or word[-1] == 'x' or word[-2:] == 'ch'):
-    plural = word + "es"
-elif(word[-1] == 'y' and word[-2] not in vowel):
-    plural = word[:-1] + 'ies'
+# List of vowels
+VOWELS = ["a", "e", "i", "o", "u"]
+
+# Add -es if the word ends with 's', 'x', or 'ch'
+if word[-1] in ["s", "x"] or word[-2:] == "ch":
+    word += "es"
+# Add -ies if the word ends with 'y' and the second last character is a vowel
+elif word[-1] == "y" and word[-2] not in VOWELS:
+    word = word[:-1] + "ies"
+# Otherwise, just add -s
 else:
-    plural = word + 's'
+    word += "s"
 
-# Output
-print(plural)
+# Output the plural form of the word
+print(word)
