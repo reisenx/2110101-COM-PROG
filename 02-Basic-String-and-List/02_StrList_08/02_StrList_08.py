@@ -19,4 +19,6 @@ denominator = 10 ** (len(B) + len(C)) - 10 ** len(B)
 
 # Output the fraction in its simplest form
 gcd = math.gcd(numerator, denominator)
-print(numerator // gcd, "/", denominator // gcd)
+numerator //= gcd
+denominator //= gcd
+print(f"{numerator} / {denominator}")

@@ -19,4 +19,4 @@ v[0], v[1], v[2] = float(v[0]), float(v[1]), float(v[2])
 
 # Output the sum of the two vectors
 total = [u[0] + v[0], u[1] + v[1], u[2] + v[2]]
-print(u, "+", v, "=", total)
+print(f"{u} + {v} = {total}")
