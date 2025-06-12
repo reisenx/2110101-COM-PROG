@@ -33,11 +33,11 @@ def distance3(c1: list, c2: list) -> tuple:
 # Calculate the perimeter of a polygon defined by a list of points
 # points is a list of lists in the format [[x1, y1], [x2, y2], ...]
 def perimeter(points: list) -> float:
-    perimeter = 0.0
+    total = 0.0
     for i in range(1, len(points)):
-        perimeter += distance2(points[i - 1], points[i])
-    perimeter += distance2(points[-1], points[0])
-    return perimeter
+        total += distance2(points[i - 1], points[i])
+    total += distance2(points[-1], points[0])
+    return total
 
 
 # Execute a input string as code
