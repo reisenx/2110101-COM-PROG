@@ -1,34 +1,31 @@
-# Input a namefile and year
-# Slice 2 last digits from "year" string 
-name,year = input().split()
+# --------------------------------------------------
+# File Name : 07_StrFile_23.py
+# Problem   : File Min Max Average
+# Author    : Worralop Srichainont
+# Date      : 2025-06-12
+# --------------------------------------------------
+
+# Input filename and year (extract last two digits)
+filename, year = input().strip().split()
 year = year[-2:]
 
-# Read a file
-file = open(name, "r")
+# Initialize lists to store scores
+scores = []
 
-# Read data from a file and put the data in a list 'students'
-# students = [[ID01, Score01], [ID02, Score02], ...]
-students = []
-for line in file:
-    ID,score = line.strip().split()
-    students.append([ID, float(score)])
+# Read the file and extract scores for the specified year
+with open(filename) as file:
+    for line in file:
+        sid, score = line.strip().split()
+        if sid[:2] == year:
+            scores.append(float(score))
 
-# Close a file
-file.close()
+if len(scores) > 0:
+    # Calculate min, max, and average
+    min_score = min(scores)
+    max_score = max(scores)
+    avg_score = sum(scores) / len(scores)
 
-# Find score of all students in specified year
-score_in_year = []
-for ID,score in students:
-    if(ID[0:2] == year):
-        score_in_year.append(score)
-
-# In case of there are no student in that year
-if(score_in_year == []):
-    print("No data")
+    # Print the results
+    print(min_score, max_score, avg_score)
 else:
-    # Calculate minimum, maximum and average score
-    max = max(score_in_year)
-    min = min(score_in_year)
-    average = sum(score_in_year) / len(score_in_year)
-    # Output
-    print(min,max,average)
+    print("No data")
