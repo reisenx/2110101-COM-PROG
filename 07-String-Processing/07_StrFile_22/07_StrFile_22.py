@@ -1,36 +1,36 @@
-# Input 2 strings and lower them into a lowercase string
-text1 = input().lower()
-text2 = input().lower()
+# --------------------------------------------------
+# File Name : 07_StrFile_22.py
+# Problem   : Anagram
+# Author    : Worralop Srichainont
+# Date      : 2025-06-12
+# --------------------------------------------------
 
-# Create a list to count number of alphabet and number
-alphabet = "abcdefghijklmnopqrstuvwxyz"
-number = "0123456789"
-alphabet_count1 = [0]*26
-number_count1 = [0]*10
-alphabet_count2 = [0]*26
-number_count2 = [0]*10
+# Initialize the character set
+CHARACTERS = "abcdefghijklmnopqrstuvwxyz0123456789"
 
-# Count alphabet and number of each string
-for char in text1:
-    if(char in alphabet):
-        index = alphabet.find(char)
-        alphabet_count1[index] += 1
-    elif(char in number):
-        index = number.find(char)
-        number_count1[index] += 1
+# Initialize character count arrays for two strings
+# Index 0-25 for 'a'-'z', index 26-35 for '0'-'9'
+char_count_01 = [0] * 36
+char_count_02 = [0] * 36
 
-for char in text2:
-    if(char in alphabet):
-        index = alphabet.find(char)
-        alphabet_count2[index] += 1
-    elif(char in number):
-        index = number.find(char)
-        number_count2[index] += 1
+# Input two strings and lowercase them
+text01 = input().strip().lower()
+text02 = input().strip().lower()
 
-# Output
-# Anagram is a text that can be created by shuffle a letter of other text
-# So anagram must have a same alphabet_count and number_count
-if(alphabet_count1 == alphabet_count2 and number_count1 == number_count2):
+# Count characters in the first string
+for char in text01:
+    if char in CHARACTERS:
+        index = CHARACTERS.index(char)
+        char_count_01[index] += 1
+
+# Count characters in the second string
+for char in text02:
+    if char in CHARACTERS:
+        index = CHARACTERS.index(char)
+        char_count_02[index] += 1
+
+# Check if the two strings are anagrams
+if char_count_01 == char_count_02:
     print("YES")
 else:
     print("NO")

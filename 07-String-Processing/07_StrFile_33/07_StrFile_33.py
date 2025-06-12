@@ -1,56 +1,27 @@
-# Create function to read 1 line in a text file
-# If it there no data in that line, return 2 empty string
-# data[0] is ID and data[1] is GPA
-def read_next(filename):
-    while True:
-        line = filename.readline()
-        if(len(line) == 0):
-            break
-        data = line.strip().split()
-        if(len(data) == 2):
-            return data[0],data[1]
-    return "",""
+# --------------------------------------------------
+# File Name : 07_StrFile_33.py
+# Problem   : File Merge
+# Author    : Worralop Srichainont
+# Date      : 2025-06-12
+# --------------------------------------------------
 
-# Input 2 filenames then open 2 files
-filename01, filename02 = input().strip().split()
-file01 = open(filename01,"r")
-file02 = open(filename02,"r")
+# Input file names
+filenames = input().strip().split()
 
-# Output
-# Since data in both files are in order already, so we can compare each line in both files
-# 1.) Compare faculty (Example: 66322002[21])
-# 2.) Compare ID
-ID01, GPA01 = read_next(file01)
-ID02, GPA02 = read_next(file02)
-while True:
-    if(ID01 == "" and ID02 == ""):
-        break
+# Initialize a list to store student data
+students = []
 
-    elif(ID02 == ""):
-        print(ID01,GPA01)
-        ID01, GPA01 = read_next(file01)
+# Read each file and append the data to the students list
+for filename in filenames:
+    with open(filename) as file:
+        for line in file:
+            sid, grade = line.split()
+            faculty = sid[-2:]
+            students.append([faculty, sid, grade])
 
-    elif(ID01 == ""):
-        print(ID02,GPA02)
-        ID02, GPA02 = read_next(file02)
+# Sort the students list by faculty and then by student ID
+students.sort()
 
-    elif(ID01[-2:] < ID02[-2:]):
-        print(ID01,GPA01)
-        ID01, GPA01 = read_next(file01)
-
-    elif(ID02[-2:] < ID01[-2:]):
-        print(ID02,GPA02)
-        ID02, GPA02 = read_next(file02)
-
-    elif(ID01[-2:] == ID02[-2:]):
-        if(ID01 < ID02):
-            print(ID01,GPA01)
-            ID01, GPA01 = read_next(file01)
-            
-        elif(ID02 < ID01):
-            print(ID02,GPA02)
-            ID02, GPA02 = read_next(file02)
-
-# Close files
-file01.close()
-file02.close()
+# Output the sorted student data
+for _, sid, grade in students:
+    print(sid, grade)
