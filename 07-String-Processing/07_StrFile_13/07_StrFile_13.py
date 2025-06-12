@@ -1,31 +1,24 @@
+# --------------------------------------------------
+# File Name : 07_StrFile_13.py
+# Problem   : Camel Case
+# Author    : Worralop Srichainont
+# Date      : 2025-06-12
+# --------------------------------------------------
+
 # Input a text
 text = input().strip()
 
-# Convert all character into lowercase
-# Replace all symbol from a text with " "
-# Split them to be a list of words
-# Example: "Power of "love" 555"
-# text = "power of "love" 555"
-# new_text = "power of  love  555"
-# word_list = ["power", "of", "love", "555"]
-text = text.lower()
-new_text = ""
+# Remove all symbols and split the text into words
 for char in text:
-    if("a" <= char <= "z"):
-        new_text += char
-    elif("0" <= char <= "9"):
-        new_text += char
-    else:
-        new_text += " "
-word_list = new_text.split()
+    if not char.isalnum():
+        text = text.replace(char, " ")
+words = text.split()
 
-# Output
-# The first one will be all lower but the rest are all lowercase except the first letter
-# Example: ["power", "of", "love", "555"] --> powerOfLove555
-camelCase = ""
-for i in range(len(word_list)):
-    if(i == 0):
-        camelCase += word_list[i]
-    else:
-        camelCase += word_list[i][0].upper() + word_list[i][1:]
-print(camelCase)
+# Convert all words to camel case
+for i in range(len(words)):
+    words[i] = words[i].lower()
+    if i > 0:
+        words[i] = words[i][0].upper() + words[i][1:]
+
+# Output the CamelCase string
+print("".join(words))
