@@ -7,7 +7,7 @@
 
 
 # Check if a number is prime
-def is_prime(n):
+def is_prime(n: int) -> bool:
     if n <= 1:
         return False
     for k in range(2, int(n**0.5) + 1):
@@ -17,7 +17,7 @@ def is_prime(n):
 
 
 # Find the next prime number after N
-def next_prime(N):
+def next_prime(N: int) -> int:
     N += 1
     while not is_prime(N):
         N += 1
@@ -26,7 +26,7 @@ def next_prime(N):
 
 # Find the next twin prime pair after N
 # Twin primes are pairs of prime numbers that differ by 2
-def next_twin_prime(N):
+def next_twin_prime(N: int) -> tuple:
     prime01 = next_prime(N)
     prime02 = next_prime(prime01)
     while prime02 - prime01 != 2:
