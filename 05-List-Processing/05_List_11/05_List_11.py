@@ -1,29 +1,23 @@
-# Input a string
-text = str(input())
+# --------------------------------------------------
+# File Name : 05_List_11.py
+# Problem   : Missing Digits
+# Author    : Worralop Srichainont
+# Date      : 2025-06-11
+# --------------------------------------------------
 
-# Create a list to count how many of each number in a string
-# Example: count[1] is used to count how many "1" in the srting
-count = [0,0,0,0,0,0,0,0,0,0]
+# Input text
+text = input().strip()
 
-# Count a number in a string
-for character in text:
-    if("0" <= character <= "9"):
-        count[int(character)] += 1
+# Initialize a list of missing digits
+missing_digits = ["0", "1", "2", "3", "4", "5", "6", "7", "8", "9"]
 
-# Create a new string that contains number that missing
-# Example: count = [5,0,0,0,0,9,12,3,1,7] --> missing = "1,2,3,4"
-missing = ""
-for i in range(0,10):
-    if(count[i] == 0):
-        missing = missing + str(i) + ","
-# Delete the excess comma
-# Example: "1,2,3,4," --> "1,2,3,4"
-if(missing != ""):
-    missing = missing[:-1]
+# Remove digits found in the input text
+for char in text:
+    if char in missing_digits:
+        missing_digits.remove(char)
 
-# Output the missing number
-# If there are no missing number, output "None"
-if(missing == ""):
-    print("None")
+# Output the missing digits
+if len(missing_digits) > 0:
+    print(",".join(missing_digits))
 else:
-    print(missing)
+    print("None")
