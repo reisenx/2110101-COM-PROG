@@ -33,4 +33,4 @@ if m > 12:
 
 y = y + 543
 
-print(str(d) + "/" + str(m) + "/" + str(y))
+print(f"{d}/{m}/{y}")

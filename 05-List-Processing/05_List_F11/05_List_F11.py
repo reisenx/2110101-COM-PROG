@@ -1,22 +1,30 @@
-def missing_digits(text):
-    # Create a list to count how many of each number in a string
-    # Example: count[1] is used to count how many "1" in the srting
-    count = [0,0,0,0,0,0,0,0,0,0]
+# --------------------------------------------------
+# File Name : 05_List_F11.py
+# Problem   : Missing Digits (Function)
+# Author    : Worralop Srichainont
+# Date      : 2025-06-12
+# --------------------------------------------------
 
-    # Count a number in a string
-    for character in text:
-        if("0" <= character <= "9"):
-            count[int(character)] += 1
 
-    # Create a new list that contains number that missing
-    # Example: count = [5,0,0,0,0,9,12,3,1,7] --> missing = [1,2,3,4]
+def missing_digits(text: str) -> list:
+    # Initialize a list to track found digits
+    found_digits = [False] * 10
+
+    # Iterate through each character in the input text
+    for char in text:
+        if char.isdigit():
+            digit = int(char)
+            found_digits[digit] = True
+
+    # Collect the missing digits
     missing = []
-    for i in range(0,10):
-        if(count[i] == 0):
-            missing.append(i)
-    
-    # Return a list
+    for num in range(10):
+        if not found_digits[num]:
+            missing.append(num)
+
+    # Return the missing digits
     return missing
 
-# Execute the input string
+
+# Execute the input string as code
 exec(input())

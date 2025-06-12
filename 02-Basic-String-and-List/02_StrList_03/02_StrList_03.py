@@ -28,4 +28,4 @@ MONTH = [
 ]
 
 # Output the date in the format "Month Day, Year"
-print(MONTH[int(m) - 1], (d + ", " + y))
+print(f"{MONTH[int(m) - 1]} {d}, {y}")

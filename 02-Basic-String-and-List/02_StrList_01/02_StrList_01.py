@@ -26,4 +26,4 @@ val = (
 last_digit = (11 - (val % 11)) % 10
 
 # Output the formatted ID
-print(ID[0], ID[1:5], ID[5:10], ID[10:12], last_digit)
+print(f"{ID[0]} {ID[1:5]} {ID[5:10]} {ID[10:12]} {last_digit}")

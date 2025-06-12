@@ -23,4 +23,4 @@ NUMBERS = [
 ]
 
 # Output the number and its string representation
-print(num, "-->", NUMBERS[num])
+print(f"{num} --> {NUMBERS[num]}")

@@ -1,12 +1,18 @@
-# Input a string and convert it to a float list
-number = [float(e) for e in input().split()]
+# --------------------------------------------------
+# File Name : 05_List_14.py
+# Problem   : Peaks
+# Author    : Worralop Srichainont
+# Date      : 2025-06-11
+# --------------------------------------------------
 
-# Check if the index i are both greater than index i-1 and i+1
-# If yes, considered it as a peak and count
+# Input a list of numbers
+numbers = [float(e) for e in input().split()]
+
+# Count the number of peaks
 peak_count = 0
-for i in range(1,len(number)-1):
-    if(number[i] > number[i-1] and number[i] > number[i+1]):
+for i in range(1, len(numbers) - 1):
+    if numbers[i] > numbers[i - 1] and numbers[i] > numbers[i + 1]:
         peak_count += 1
-    
+
 # Output the number of peaks
 print(peak_count)

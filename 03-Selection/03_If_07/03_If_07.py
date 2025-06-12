@@ -19,6 +19,6 @@ while num > 1000 and n < 3:
 
 # Output the abbreviated number
 if num < 10:
-    print(str(round(num, 1)) + SYMBOLS[n])
+    print(f"{round(num, 1)}{SYMBOLS[n]}")
 else:
-    print(str(round(num)) + SYMBOLS[n])
+    print(f"{round(num)}{SYMBOLS[n]}")

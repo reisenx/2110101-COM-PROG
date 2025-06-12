@@ -23,5 +23,6 @@ def day_of_year(D: int, M: int, Y: int) -> int:
         else:
             return TOTAL_DAYS[M - 2] + D
 
+
 # Execute the input string as code
 exec(input())

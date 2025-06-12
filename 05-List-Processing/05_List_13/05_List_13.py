@@ -1,40 +1,36 @@
-# Input a first set of data
+# --------------------------------------------------
+# File Name : 05_List_13.py
+# Problem   : Back and Front
+# Author    : Worralop Srichainont
+# Date      : 2025-06-11
+# --------------------------------------------------
+
+# Initialize numbers list
+numbers = []
+
+# Input first set of numbers
 n = int(input())
-list_01 = []
-for i in range(n):
-    number = int(input())
-    list_01.append(number)
+for _ in range(n):
+    numbers.append(int(input()))
 
-# Input a second set of data
-number = str(input())
-if(number == ""):
-    list_02 = []
-else:
-    list_02 = [int(e) for e in number.split()]
+# Input second set of numbers
+numbers += [int(num) for num in input().split()]
 
-# Input a third set of data
-list_03 = []
-while(True):
-    number = int(input())
-    if(number == -1):
+# Input the third set of numbers
+while True:
+    num = int(input())
+    if num == -1:
         break
+    numbers.append(num)
+
+# Rearrange the numbers
+rearranged_numbers = []
+for i in range(len(numbers)):
+    # Insert at the back first, then at the front
+    if i % 2 == 0:
+        rearranged_numbers.append(numbers[i])
     else:
-        list_03.append(number)
+        rearranged_numbers.insert(0, numbers[i])
 
-# Merge all list into 1 list
-merge_list = list_01 + list_02 + list_03
-
-# Create a new list by 
-# - Add a data at the back of a list 
-# - Add a data at the front of a list
-# - Do the previous 2 step reapeatly until all data are added
-# Example: [1,2,3,4,5,6] --> [6,4,2,1,3,5]
-backfront_list = []
-for i in range(len(merge_list)):
-    if(i%2 == 0):
-        backfront_list.append(merge_list[i])
-    else:
-        backfront_list.insert(0,merge_list[i])
-
-# Output a list
-print(backfront_list)
+# Output the rearranged numbers
+print(rearranged_numbers)
