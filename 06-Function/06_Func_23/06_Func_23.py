@@ -17,11 +17,7 @@ def is_odd(num: int) -> bool:
 
 
 def odd_list(numbers: list) -> list:
-    new_numbers = []
-    for num in numbers:
-        if is_odd(num):
-            new_numbers.append(num)
-    return new_numbers
+    return [num for num in numbers if is_odd(num)]
 
 
 # Calculate the sum of squares of a list of numbers
