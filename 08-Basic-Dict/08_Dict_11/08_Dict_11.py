@@ -7,17 +7,17 @@
 
 
 # Reverses the keys and values of a dictionary
-def reverse(dict: dict) -> dict:
+def reverse(input_dict: dict) -> dict:
     new_dict = {}
-    for key, value in dict.items():
+    for key, value in input_dict.items():
         new_dict[value] = key
     return new_dict
 
 
 # Returns a list of keys that have the specified value in the dictionary
-def keys(dict: dict, v: int) -> list:
+def keys(input_dict: dict, v: int) -> list:
     keys = []
-    for key, value in dict.items():
+    for key, value in input_dict.items():
         if value == v:
             keys.append(key)
     return keys
