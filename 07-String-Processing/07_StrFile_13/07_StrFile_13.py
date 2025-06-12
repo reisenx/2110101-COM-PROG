@@ -9,10 +9,13 @@
 text = input().strip()
 
 # Remove all symbols and split the text into words
+new_text = ""
 for char in text:
     if not char.isalnum():
-        text = text.replace(char, " ")
-words = text.split()
+        new_text += " "
+    else:
+        new_text += char
+words = new_text.split()
 
 # Convert all words to camel case
 for i in range(len(words)):
