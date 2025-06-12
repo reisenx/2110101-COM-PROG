@@ -1,13 +1,19 @@
-def peaks(number):
-    # Check if the index i are both greater than index i-1 and i+1
-    # If yes, considered it as a peak and put an index to a list
-    peak = []
-    for i in range(1,len(number)-1):
-        if(number[i] > number[i-1] and number[i] > number[i+1]):
-            peak.append(i)
-    
-    # Output the number of peaks
-    return peak
+# --------------------------------------------------
+# File Name : 05_List_F14.py
+# Problem   : Peaks (Function)
+# Author    : Worralop Srichainont
+# Date      : 2025-06-12
+# --------------------------------------------------
 
-# Execute a input string
+
+# Create a function to find index of peaks in a list of numbers
+def peaks(numbers: list) -> list:
+    peaks = []
+    for i in range(1, len(numbers) - 1):
+        if numbers[i] > numbers[i - 1] and numbers[i] > numbers[i + 1]:
+            peaks.append(i)
+    return peaks
+
+
+# Execute the input string as code
 exec(input())
