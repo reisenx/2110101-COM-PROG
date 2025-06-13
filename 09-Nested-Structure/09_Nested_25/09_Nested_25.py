@@ -26,11 +26,11 @@ def flatten(tiles: list) -> list:
 
 # Count the number of inversions in a list.
 # An inversion is a pair of indices (i, j) such that i < j and x[i] > x[j].
-def inversions(x):
+def inversions(flat_tiles: list) -> int:
     inv_count = 0
-    for i in range(len(x)):
-        for j in range(i + 1, len(x)):
-            if x[i] > x[j]:
+    for i in range(len(flat_tiles)):
+        for j in range(i + 1, len(flat_tiles)):
+            if flat_tiles[i] > flat_tiles[j]:
                 inv_count += 1
     return inv_count
 
