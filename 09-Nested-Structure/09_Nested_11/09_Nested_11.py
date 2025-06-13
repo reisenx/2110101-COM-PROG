@@ -1,22 +1,26 @@
-# Input number of code line
+# --------------------------------------------------
+# File Name : 09_Nested_11.py
+# Problem   : Dedent
+# Author    : Worralop Srichainont
+# Date      : 2025-06-12
+# --------------------------------------------------
+
+# Input python code as a string
 n = int(input())
-
-# Input a code a append into a list
 code = []
-for i in range(n):
-    line = input()
-    code.append(line)
+for _ in range(n):
+    code.append(input().strip())
 
-# Output
-# Algorithm
-# 1.) Use for loop to count dot (.) in front of the code
-# 2.) Output '.' count//2 times then the rest of the code
-# 3.) Reset count to 0 every new line of code
+# Output the dedented code
 for line in code:
-    count = 0
+    # Count amount of leading dot
+    leading_dots = 0
     for char in line:
-        if(char == '.'):
-            count += 1
+        if char == ".":
+            leading_dots += 1
         else:
             break
-    print("."*(count//2) + line[count:])
+    # Remove half of leading dots
+    dedented_line = line[leading_dots // 2 :]
+    # Print the dedented line
+    print(dedented_line)
