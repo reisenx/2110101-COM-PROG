@@ -1,89 +1,64 @@
-# First fit
-# - Consider the data from left to right
-# - If a number can fit in the sublist (sum(sublist) + number <= 100), put that number in that sublist
-# - If it has no sublist that fit, create new a sublist at the end
-# Example: 10 --> [[50],[90]]
-# Sublist 1: 50+10 < 100 --> [[50,10],[90]]
-def first_fit(L, num):
-    FitAble = False
-    # If a number can fit in a sublist, put the number in a sublist
-    for i in range(len(L)):
-        if(sum(L[i]) + num <= 100):
-            L[i].append(num)
-            FitAble = True
-            break
-    # If a number can't fit in a sublist, create a new sublist at the end
-    if(not FitAble):
-        L.append([num])
-    return L
+# --------------------------------------------------
+# File Name : 09_Nested_32.py
+# Problem   : First Fit Best Fit
+# Author    : Worralop Srichainont
+# Date      : 2025-06-12
+# --------------------------------------------------
 
-# Best fit
-# - Consider all data
-# - Find a sublist that sum(sublist) + number near 100 the most (Also sum(sublist) + number <= 100)
-# - If it has no sublist that fit, create a sublist at the end
-# Example: 10 --> [[50],[90]]
-# Sublist 1: 50+10 = 60
-# Sublist 2: 90+10 = 100
-# Choose Sublist 2 --> [[50],[90,10]]
-def best_fit(L, num):
-    # Find a difference between sum(sublist)+number and 100 in each sublist
-    # If the sublist is impossible to fit, then input 100
-    diff = [100]*len(L)
-    for i in range(len(L)):
-        if(sum(L[i]) + num <= 100):
-            diff[i] = 100 - (sum(L[i]) + num)
-    # Find an index that have the minimum difference
-    # If it is possible to fit, minimum difference must not be 100 and diff must not an empty list
-    if(diff == []):
-        L.append([num])
-    elif(min(diff) < 100):
-        index = diff.index(min(diff))
-        L[index].append(num)
+
+# First Fit: Place the number in the first list that its sum does not exceed 100.
+#            Otherwise, create a new list.
+def first_fit(numbers: list, num: int) -> list:
+    # Check if the number can fit into any existing list
+    for i in range(len(numbers)):
+        if sum(numbers[i]) + num <= 100:
+            numbers[i].append(num)
+            return numbers
+    # Otherwise, create a new list for the number
+    numbers.append([num])
+    return numbers
+
+
+# Best Fit: Place the number in the list that has the least remaining value
+#           after adding the number, but still does not exceed 100.
+def best_fit(numbers: list, num: int) -> list:
+    # If there are no existing lists, create the first one
+    if len(numbers) == 0:
+        numbers.append([num])
+        return numbers
+
+    # Calculate the remaining value in each list after adding the number
+    diffs = [100] * len(numbers)
+    for i in range(len(numbers)):
+        if sum(numbers[i]) + num <= 100:
+            diffs[i] = 100 - (sum(numbers[i]) + num)
+
+    # Put the number in the list with the least remaining value
+    min_diff = min(diffs)
+    if min_diff < 100:
+        index = diffs.index(min_diff)
+        numbers[index].append(num)
+    # Otherwise, create a new list for the number
     else:
-        L.append([num])
-    return L
+        numbers.append([num])
+    return numbers
 
-# Partition FF (First Fit)
-# Example: D = [50,90,10,80,50,20]
-# Loop 6 times
-# Loop 1: Put 50 to FF = []
-# > FF = [[50]]
-# Loop 2: Put 90 to FF = [[50]]
-# > FF = [[50],[90]]
-# Loop 3: Put 10 to FF = [[50],[90]]
-# > FF = [[50,10],[90]]
-# Loop 4: Put 80 to FF = [[50,10],[90]]
-# > FF = [[50,10],[90],[80]]
-# Loop 5: Put 50 to FF = [[50,10],[90],[80]]
-# > FF = [[50,10],[90],[80],[50]]
-# Loop 6: Put 20 to FF = [[50,10],[90],[80],[50]]
-# > FF = [[50,10,20],[90],[80],[50]]
-def partition_FF(D):
-    FF = []
-    for num in D:
-        FF = first_fit(FF, num)
-    return FF
 
-# Partition BF (Best Fit)
-# Example: D = [50,90,10,80,50,20]
-# Loop 6 times
-# Loop 1: Put 50 to BF = []
-# > BF = [[50]]
-# Loop 2: Put 90 to BF = [[50]]
-# > BF = [[50],[90]]
-# Loop 3: Put 10 to BF = [[50],[90]]
-# > BF = [[50],[90,10]]
-# Loop 4: Put 80 to BF = [[50],[90,10]]
-# > BF = [[50],[90,10],[80]]
-# Loop 5: Put 50 to BF = [[50],[90,10],[80]]
-# > BF = [[50,50],[90,10],[80]]
-# Loop 6: Put 20 to BF = [[50,50],[90,10],[80]]
-# > BF = [[50,50],[90,10],[80,20]]
-def partition_BF(D):
-    BF = []
-    for num in D:
-        BF = best_fit(BF, num)
-    return BF
+# Partitioning numbers using First Fit algorithms
+def partition_FF(numbers: list) -> list:
+    result = []
+    for num in numbers:
+        result = first_fit(result, num)
+    return result
 
-# Execute an input string
+
+# Partitioning numbers using Best Fit algorithms
+def partition_BF(numbers: list) -> list:
+    result = []
+    for num in numbers:
+        result = best_fit(result, num)
+    return result
+
+
+# Execute the input string as code
 exec(input().strip())
