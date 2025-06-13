@@ -1,49 +1,39 @@
-# Find GCD using Euclidean Algorithm
-def gcd(a,b):
+# --------------------------------------------------
+# File Name : 09_Nested_31.py
+# Problem   : Pythagorean Triple
+# Author    : Worralop Srichainont
+# Date      : 2025-06-12
+# --------------------------------------------------
+
+
+# Calculate the greatest common divisor (GCD) of two numbers
+def gcd(a: int, b: int) -> int:
     while b != 0:
-        a,b = b, a%b
+        a, b = b, a % b
     return a
 
-# This function can check if a,b,c are coprime
-# If gcd(a,b) = 1, we call a,b as coprime
-# So if a,b,c are coprimes, then gcd(a,b,c) = 1
-def is_coprime(a,b,c):
-    if(gcd(gcd(a,b),c) == 1):
-        return True
-    else:
-        return False
 
-# Primitive Pythagorean triples is the set of (a,b,c) that satisfy these citeria
-# 1.) a <= b <= c <= max_len
-# 2.) a^2 + b^2 = c^2
-# 3.) gcd(a,b,c) = 1
-# If we loop a,b,c from 1 to max_len, it would cause a Runtime Exceed (T)
-# So we need to find another algorithm
+# Check if three numbers are coprime (their GCD is 1)
+def is_coprime(a: int, b: int, c: int) -> bool:
+    return gcd(gcd(a, b), c) == 1
 
-# From a^2 + b^2 = c^2 we can know that c = (a^2 + b^2)^0.5
-# To check if c is an integer, we can use c == int(c)
-def primitive_Pythagorean_triples(max_len):
-    temp = []
+
+# Generate all primitive Pythagorean triples with a, b, c <= max_len
+# Three numbers a, b, c must satisfy a^2 + b^2 = c^2 and gcd(a, b, c) = 1
+def primitive_Pythagorean_triples(max_len: int) -> list:
     triples = []
-    for a in range(1, max_len+1):
-        for b in range(1, max_len+1):
-            c = (a**2 + b**2)**(0.5)
-            # Conditions
-            # 1.) c <= max_len
-            # 2.) a^2 + b^2 = c^2 (c must be an integer)
-            # 3.) a,b,c must be coprime
-            if(c <= max_len and c == int(c) and is_coprime(a,b,c)):
-                # Prevent cases when b < a
-                a,b,c = sorted([a,b,int(c)])
-                # Append in [c,a,b] format for sorting purpose
-                if([c,a,b] not in temp):
-                    temp.append([c,a,b])
-    temp.sort()
-    
-    # Convert to [a,b,c] format
-    for c,a,b in temp:
-        triples.append([a,b,c])
-    return triples
+    for a in range(1, max_len + 1):
+        for b in range(a + 1, max_len + 1):
+            c = (a**2 + b**2) ** (0.5)
+            if c <= max_len and c == int(c) and is_coprime(a, b, c):
+                triples.append([int(c), a, b])
+    triples.sort()
+
+    sorted_triples = []
+    for c, a, b in triples:
+        sorted_triples.append([a, b, c])
+    return sorted_triples
+
 
 # Execute an input string
 exec(input().strip())
