@@ -1,60 +1,51 @@
-# Convert tiles of number into a list (Replace a blank spot to '0')
-#  1 |  7 |  2 |  3
-#  6 |    |  8 |  4
-#  5 |  9 | 10 | 11
-# 13 | 14 | 15 | 12
-# We will get a list [[1,7,2,3], [6,0,8,4], [5,9,10,11], [13,14,15,12]]
+# --------------------------------------------------
+# File Name : 09_Nested_25.py
+# Problem   : Tiling Puzzle
+# Author    : Worralop Srichainont
+# Date      : 2025-06-12
+# --------------------------------------------------
 
-# This fuction returns row number of list 't' that contains 'num' (Top row is index 0) 
-def row_number(t, num):
-    row_index = 0
-    for row in t:
-        if(num in row):
-            return row_index
-        else:
-            row_index += 1
 
-# Flatten: convert a list with sublist to a list (Remove 0)
-# Example: [[1,2,0],[3,5,6],[4,7,8]] = [1,2,3,5,6,4,7,8]
-def flatten(t):
-    new = []
-    for row in t:
-        for num in row:
-            if(num != 0):
-                new.append(num)
-    return new
+# Get the row number of num in the tiles which is a 2D list.
+def row_number(tiles: list, num: int) -> int:
+    for idx in range(len(tiles)):
+        if num in tiles[idx]:
+            return idx
+    return -1
 
-# Inversion: compare all (num1,num2) possible and count (num1,num2) that num1 > num2
-# Example: [1,2,3,5,6,4,7,8]
-# > Compare (1,2),(1,3),...,(1,7),(1,8),(2,3),(2,5),...,(5,4),...,(6,4),...,(4,7),(4,8),(7,8)
-# > In this case the function returns 2 
+
+# Flatten the 2D list of tiles into a 1D list, ignoring zeros.
+def flatten(tiles: list) -> list:
+    flat_tiles = []
+    for row in tiles:
+        for tile in row:
+            if tile > 0:
+                flat_tiles.append(tile)
+    return flat_tiles
+
+
+# Count the number of inversions in a list.
+# An inversion is a pair of indices (i, j) such that i < j and x[i] > x[j].
 def inversions(x):
-    count = 0
-    for i in range(0, len(x)-1):
-        for j in range(i+1, len(x)):
-            if(x[i] > x[j]):
-                count += 1
-    return count
+    inv_count = 0
+    for i in range(len(x)):
+        for j in range(i + 1, len(x)):
+            if x[i] > x[j]:
+                inv_count += 1
+    return inv_count
 
-# Solvable: returns True if it meet the citeria below, else returns False
-# rows = len(t)
-# inversion = inversions(flatten(t))
-# number of row that contains '0' = row_number(t,0)
-# 1.) rows = odd  | inversion = even | number of row that contains '0' = any
-# 2.) rows = even | inversion = odd  | number of row that contains '0' = even
-# 3.) rows = even | inversion = even | number of row that contains '0' = odd
-def solvable(t):
-    rows = len(t)
-    inv = inversions(flatten(t))
-    row_0 = row_number(t,0)
-    if(rows%2 == 1 and inv%2 == 0):
-        return True
-    elif(rows%2 == 0 and inv%2 == 1 and row_0%2 == 0):
-        return True
-    elif(rows%2 == 0 and inv%2 == 0 and row_0%2 == 1):
-        return True
-    else:
-        return False
 
-# Execute an input string
+# Check if the 15 puzzle is solvable
+def solvable(tiles: list) -> bool:
+    # Tiles information
+    rows = len(tiles)
+    inv_count = inversions(flatten(tiles))
+    empty_row = row_number(tiles, 0)
+    # Condition for solvability
+    c1 = rows % 2 == 1 and inv_count % 2 == 0
+    c2 = rows % 2 == 0 and (inv_count + empty_row) % 2 == 1
+    return c1 or c2
+
+
+# Execute an input string as code
 exec(input().strip())
