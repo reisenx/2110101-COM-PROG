@@ -38,10 +38,10 @@ class PiggyBank:
 
     # __str__ method
     def __str__(self) -> str:
-        sorted_coins = {}
+        ordered_coins = {}
         for value, quantity in sorted(self.coins.items()):
-            sorted_coins[value] = quantity
-        return str(sorted_coins)
+            ordered_coins[value] = quantity
+        return str(ordered_coins)
 
 
 # Output
