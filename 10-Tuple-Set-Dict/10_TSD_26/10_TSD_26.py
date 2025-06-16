@@ -1,37 +1,47 @@
-# Input number of IDs
+# --------------------------------------------------
+# File Name : 10_TSD_26.py
+# Problem   : Location Analysis
+# Author    : Worralop Srichainont
+# Date      : 2025-06-16
+# --------------------------------------------------
+
+# Initialize a dictionary to store locations and their users.
+locations_to_users = {}
+users_to_locations = {}
+location_order = []
+
+# Input number of locations
 n = int(input())
 
-# Input social network data.
-# Each line contains [ID]: [City1], [City2], [City3], ...
-# It is guarantee that each ID have at least 1 city
-# Put data in a dictionary 'IDs'
-# IDs = {ID:[City1, City2, City3, ...], ...}
-IDs = {}
-unique_IDs = []
-for i in range(n):
-    ID, cities = input().strip().split(": ")
-    cities = cities.split(", ")
-    IDs[ID] = cities
-    unique_IDs.append(ID)
+# Read each location and its users
+for _ in range(n):
+    line = input().strip().split(": ")
+    location = line[0]
+    users_list = line[1].split(", ")
+    # Update locations set
+    location_order.append(location)
+    # Store the location and its users in the dictionary
+    locations_to_users[location] = set(users_list)
+    # Update the users dictionary
+    for user in users_list:
+        if user not in users_to_locations:
+            users_to_locations[user] = set()
+        users_to_locations[user].add(location)
 
-# Input KeyID
-KeyID = input()
+# Input analysis location
+analysis_location = input().strip()
 
-# Find ID that went to same city of KeyID
-# Contains ID in a set to prevent duplication
-samecity_ID = set()
-for key_city in IDs[KeyID]:
-    temp = set()
-    for ID, cities in IDs.items():
-        if((key_city in cities) and (ID != KeyID)):
-            temp.add(ID)
-    samecity_ID = samecity_ID.union(temp)
+# Find all locations visited by users of the analysis location
+visited_locations = set()
+for user in locations_to_users[analysis_location]:
+    visited_locations |= users_to_locations[user]
+# Exclude the analysis location itself
+visited_locations -= {analysis_location}
 
-# Output 'samecity_ID' in input order
-# If 'samecity_ID' is an empty set, then output "Not Found"
-if(len(samecity_ID) == 0):
-    print("Not Found")
+# Output the result
+if len(visited_locations) > 0:
+    for location in location_order:
+        if location in visited_locations:
+            print(location)
 else:
-    for ID in unique_IDs:
-        if(ID in samecity_ID):
-            print(ID)
+    print("Not Found")
