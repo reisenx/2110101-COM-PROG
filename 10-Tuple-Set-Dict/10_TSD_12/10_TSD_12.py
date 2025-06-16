@@ -1,25 +1,30 @@
+# --------------------------------------------------
+# File Name : 10_TSD_12.py
+# Problem   : Union Intersection
+# Author    : Worralop Srichainont
+# Date      : 2025-06-16
+# --------------------------------------------------
+
 # Input number of sets
 n = int(input())
 
-# Create union and intersect set as an empty set
-# So it won't be error if n = 0
+# Initialize sets for union and intersection
 union = set()
-intersect = set()
+intersection = set()
 
-# Input sets
-for i in range(n):
-    # Input each line as a list first, then convert to a set
-    data = [int(e) for e in input().split()]
-    data = set(data)
-    # In the first loop, setup initial sets as input in the first line
-    if(i == 0):
-        union = data
-        intersect = data
-    # Find union and intersect after the first loop
+# Process each set
+for _ in range(n):
+    # Read the current set of integers
+    current_set = {int(num) for num in input().split()}
+
+    # Update union and intersection
+    if len(union) == 0:
+        union = current_set
+        intersection = current_set
     else:
-        union = union | data
-        intersect = intersect & data
+        union |= current_set
+        intersection &= current_set
 
-# Output the length of the union set and intersect set
+# Output length of union and intersection
 print(len(union))
-print(len(intersect))
+print(len(intersection))
