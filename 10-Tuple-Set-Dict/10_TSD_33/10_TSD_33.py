@@ -7,7 +7,7 @@
 
 
 def add_poly(p1: list, p2: list) -> list:
-    # Initialize a variables to hold the result of the addition
+    # Initialize variables to hold the result of the addition
     result_dict = {}
     result = []
 

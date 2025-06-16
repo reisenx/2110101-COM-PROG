@@ -8,7 +8,7 @@
 # Initialize a dictionary to store locations and their users.
 locations_to_users = {}
 users_to_locations = {}
-locations = []
+location_order = []
 
 # Input number of locations
 n = int(input())
@@ -19,7 +19,7 @@ for _ in range(n):
     location = line[0]
     users_list = line[1].split(", ")
     # Update locations set
-    locations.append(location)
+    location_order.append(location)
     # Store the location and its users in the dictionary
     locations_to_users[location] = set(users_list)
     # Update the users dictionary
@@ -40,7 +40,7 @@ visited_locations -= {analysis_location}
 
 # Output the result
 if len(visited_locations) > 0:
-    for location in locations:
+    for location in location_order:
         if location in visited_locations:
             print(location)
 else:
