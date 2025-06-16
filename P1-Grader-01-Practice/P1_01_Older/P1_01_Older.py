@@ -1,32 +1,38 @@
-# Input a string
-person01 = input().strip()
-person02 = input().strip()
+# --------------------------------------------------
+# File Name : P1_01_Older.py
+# Problem   : Part-I Older
+# Author    : Worralop Srichainont
+# Date      : 2025-06-16
+# --------------------------------------------------
 
-# Delete symbol "," from the string
-person01 = person01.replace(",", " ")
-person02 = person02.replace(",", " ")
+# List of month names
+MONTH = [
+    "January",
+    "February",
+    "March",
+    "April",
+    "May",
+    "June",
+    "July",
+    "August",
+    "September",
+    "October",
+    "November",
+    "December",
+]
 
-# Split a string to get data
-# Don't forget to convert day and year to integers
-name01, month01, day01, year01 = person01.split()
-name02, month02, day02, year02 = person02.split()
-day01, year01, day02, year02 = int(day01), int(year01), int(day02), int(year02)
+# Input first person's name and birthday
+name01, m1, d1, y1 = input().strip().split()
+birthday01 = [int(y1), MONTH.index(m1) + 1, int(d1.strip(","))]
 
-# Convert month name to month number
-month_list = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"]
-month01 = month_list.index(month01) + 1
-month02 = month_list.index(month02) + 1
+# Input second person's name and birthday
+name02, m2, d2, y2 = input().strip().split()
+birthday02 = [int(y2), MONTH.index(m2) + 1, int(d2.strip(","))]
 
-# Put day, month, year and name in a list and sort. This makes it a lot easier
-# Sorting order: year --> month --> day
-birthday = [[year01, month01, day01, name01], [year02, month02, day02, name02]]
-birthday.sort()
-
-# Output
-# Case 1: Both have the same birthday
-if(birthday[0][0:3] == birthday[1][0:3]):
-    print(name01,name02)
-# Case 2: Both have different birthday
-# A person appears in the first sublist is older
+# Compare the two birthdays and output the older person
+if birthday01 < birthday02:
+    print(name01)
+elif birthday01 > birthday02:
+    print(name02)
 else:
-    print(birthday[0][3])
+    print(name01, name02)
