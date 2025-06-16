@@ -1,93 +1,48 @@
-# Input a operation and number of row
-command = str(input().strip())
-row = int(input().strip())
+# --------------------------------------------------
+# File Name : P1_06_RotateString.py
+# Problem   : Part-I Rotate String
+# Author    : Worralop Srichainont
+# Date      : 2025-06-16
+# --------------------------------------------------
 
-# Input a string, strip() it then put it in a list
-# Example:
-# "ABCD"
-# "1234"
-# "WXYZ"
-# string = [['A','B','C','D'], ['1','2','3','4'], ['W','X','Y','Z']]
-# string[0] = ['A','B','C','D']
-# string[0][0] = 'A'
-string = []
-for i in range(row):
-    line = list(input().strip())
-    string.append(line)
+# Input command to modify the image
+cmd = input().strip()
 
-# Check the length of the string
-# If all line have the same length then SizeValid = True
-# If there's a line that has a different length then SizeValid = False
-SizeValid = True
-column = len(string[0])
-for line in string:
-    if(len(line) != column):
-        SizeValid = False
+# Input original image
+row = int(input())
+img = [input().strip() for _ in range(row)]
+
+# Validate the image size
+is_valid = True
+col = len(img[0])
+for line in img:
+    if len(line) != col:
+        is_valid = False
+        print("Invalid size")
         break
 
-# Invalid Size
-if(not SizeValid):
-    print("Invalid size")
+# Modify the image based on the command
+if is_valid:
+    # Initialize the modified image
+    modified_img = []
+    # Rotate the image by 90 degrees clockwise
+    if cmd == "90":
+        for c in range(col):
+            line = ""
+            for r in range(row - 1, -1, -1):
+                line += img[r][c]
+            modified_img.append(line)
 
-# Rotate 90 degrees clockwise
-# Orginal String
-# [11][12][13]...[1j]
-# [21][22][23]...[2j]
-# [31][32][33]...[3j]
-# ... ... ...    ...
-# [i1][i2][i3]...[ij]
+    # Rotate the image by 180 degrees
+    elif cmd == "180":
+        for r in range(row - 1, -1, -1):
+            modified_img.append(img[r][::-1])
 
-# Modified string
-# [i1]...[31][21][11]
-# [i2]...[32][22][12]
-# [i3]...[33][23][13]
-# ...    ... ... ...
-# [ij]...[3j][2j][1j]
-elif(command == "90"):
-    for j in range(column):
-        line = ""
-        for i in range(row-1, -1, -1):
-            line += string[i][j]
-        print(line)
+    # Flip the image horizontally
+    elif cmd == "flip":
+        for r in range(row):
+            modified_img.append(img[r][::-1])
 
-# Rotate 180 degrees
-# Orginal String
-# [11][12][13]...[1j]
-# [21][22][23]...[2j]
-# [31][32][33]...[3j]
-# ... ... ...    ...
-# [i1][i2][i3]...[ij]
-
-# Modified string
-# [ij]...[i3][i2][i1]
-# ...    ... ... ...
-# [3j]...[33][32][31]
-# [2j]...[23][22][21]
-# [1j]...[13][12][11]
-elif(command == "180"):
-    for i in range(row-1, -1, -1):
-        line = ""
-        for j in range(column-1, -1, -1):
-            line += string[i][j]
-        print(line)
-
-# Flip
-# Orginal String
-# [11][12][13]...[1j]
-# [21][22][23]...[2j]
-# [31][32][33]...[3j]
-# ... ... ...    ...
-# [i1][i2][i3]...[ij]
-
-# Modified string
-# [1j]...[13][12][11]
-# [2j]...[23][22][21]
-# [3j]...[33][32][31]
-# ...    ... ... ...
-# [ij]...[i3][i2][i1]
-elif(command == "flip"):
-    for i in range(row):
-        line = ""
-        for j in range(column-1, -1, -1):
-            line += string[i][j]
+    # Output the modified image
+    for line in modified_img:
         print(line)

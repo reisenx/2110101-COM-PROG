@@ -1,63 +1,51 @@
-# Input a command
-command = str(input())
+# --------------------------------------------------
+# File Name : P1_02_RLE.py
+# Problem   : Part-I RLE
+# Author    : Worralop Srichainont
+# Date      : 2025-06-16
+# --------------------------------------------------
 
-# Command: "str2RLE"
-# Convert a string into a RLE code
-if(command == "str2RLE"):
-    # Input string
-    string = str(input())
+# Input command
+cmd = input().strip()
 
-    # Create empty RLE string
-    RLE = ""
+# Initialize result variable
+result = ""
 
-    # Convert string into RLE
-    # Example: ABBA --> A 1 B 2 A 1
-    for i in range(0,len(string)):
-        # Setup a matching character = character in index 0 and starts counting
-        if(i == 0):
-            character = string[0]
-            count = 1
-        # If the current character doesn't match anymore
-        # Note it in to RLE, setup a new character then reset the variable
-        elif(string[i] != character):
-            RLE = RLE + character + " " + str(count) + " "
-            character = string[i]
-            count = 1
-        # If the current character matches, then count them
-        elif(string[i] == character):
+# Convert string to RLE
+if cmd == "str2RLE":
+    # Input text
+    text = input().strip()
+
+    # Initialize counter
+    char = text[0]
+    count = 1
+
+    # Iterate through the text
+    for i in range(1, len(text)):
+        if text[i] == char:
             count += 1
-    # Don't forget note the last one into RLE
-    RLE += character + " " + str(count) + " "
+        else:
+            result += f"{char} {count} "
+            char = text[i]
+            count = 1
+    # Append the last character and its count
+    result += f"{char} {count}"
 
-    # Output RLE
-    print(RLE)
+# Convert RLE to string
+elif cmd == "RLE2str":
+    # Input text
+    text = input().strip()
 
-# Command: "RLE2str"
-# Convert RLE Code into a string
-elif(command == "RLE2str"):
-    # Input RLE Code
-    RLE = str(input())
+    # Split the input text into parts
+    parts = text.split()
 
-    # Create an empty string
-    string = ""
-
-    # Split a RLE string into a list
-    # Example: "A 2 B 3 C 1" --> ['A','2','B','3','C','1']
-    RLE = RLE.split()
-
-
-    # Convert RLE into a string
-    # Example: RLE = ['A','2','B','3','C','1']
-    # Index 0,2,4,..., len(RLE)-2 is a character
-    # Index 1,3,5,...., len(RLE)-1 is a number
-    for i in range(len(RLE)//2):
-        char = RLE[2*i]
-        num = int(RLE[2*i + 1])
-        string += char*num
-
-    # Output a string
-    print(string)
-
-# Invalid command
+    # Iterate through the parts in pairs
+    for i in range(0, len(parts), 2):
+        char = parts[i]
+        count = int(parts[i + 1])
+        result += char * count
 else:
-    print("Error")
+    result = "Error"
+
+# Output the result
+print(result)
