@@ -9,7 +9,7 @@ import numpy as np
 
 
 # Find the indexes of peaks in a 1D NumPy array
-def peak_indexes(numbers: np.ndarray) -> list:
+def peak_indexes(numbers: np.ndarray) -> np.ndarray:
     # Check if the input array has at least 3 elements
     if len(numbers) < 3:
         return []
@@ -24,12 +24,12 @@ def peak_indexes(numbers: np.ndarray) -> list:
 
 
 # Main function to read input and output peak indexes
-def main():
+def main() -> None:
     numbers = np.array(input().split(), float)
-    peak_indices = peak_indexes(np.array(numbers))
+    peak_indices = peak_indexes(numbers)
     # Output
     if len(peak_indices) > 0:
-        print(", ".join([str(idx) for idx in peak_indices]))
+        print(", ".join(np.array(peak_indices, str)))
     else:
         print("No peaks")
 
