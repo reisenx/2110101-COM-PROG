@@ -13,17 +13,15 @@ union = set()
 intersection = set()
 
 # Process each set
-for _ in range(n):
+for i in range(n):
     # Read the current set of integers
     current_set = {int(num) for num in input().split()}
 
-    # Update union and intersection
-    if len(union) == 0:
-        union = current_set
-        intersection = current_set
-    else:
-        union |= current_set
-        intersection &= current_set
+    # Update union and intersection sets
+    if i == 0:
+        intersection |= current_set
+    union |= current_set
+    intersection &= current_set
 
 # Output length of union and intersection
 print(len(union))

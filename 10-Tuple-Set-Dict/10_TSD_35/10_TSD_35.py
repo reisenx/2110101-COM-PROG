@@ -58,7 +58,7 @@ for _ in range(n):
     students.append(data)
 
 # Input query as a set
-query = {input().strip().split()}
+query = set(input().strip().split())
 
 # Search for students matching the query
 results = []

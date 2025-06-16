@@ -12,9 +12,9 @@ def knows(relation: dict, a: str, b: str) -> bool:
 
 
 # Check if a candidate is a celebrity
-def is_celebrity(relation: dict, candidate: str) -> bool:
-    # Return false if candidate knows anyone
-    if len(relation[candidate]) > 0:
+def is_celeb(relation: dict, candidate: str) -> bool:
+    # Return false if candidate knows anyone other than themselves
+    if len(relation[candidate]) > 1:
         return False
     # Check if everyone knows the candidate
     for person, known_people in relation.items():
@@ -24,9 +24,9 @@ def is_celebrity(relation: dict, candidate: str) -> bool:
 
 
 # Find the celebrity in the relations
-def find_celebrity(relation: dict) -> None | str:
+def find_celeb(relation: dict) -> None | str:
     for candidate in relation:
-        if is_celebrity(relation, candidate):
+        if is_celeb(relation, candidate):
             return candidate
     return None
 
@@ -54,7 +54,7 @@ def read_relations() -> dict:
 # Main function
 def main() -> None:
     relations = read_relations()
-    celebrity = find_celebrity(relations)
+    celebrity = find_celeb(relations)
     if celebrity is not None:
         print(celebrity)
     else:
