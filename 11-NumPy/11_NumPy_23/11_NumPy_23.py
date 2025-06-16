@@ -1,44 +1,42 @@
+# --------------------------------------------------
+# File Name : 11_Numpy_23.py
+# Problem   : Lower than Mean
+# Author    : Worralop Srichainont
+# Date      : 2025-06-16
+# --------------------------------------------------
+
 import numpy as np
 
-# weight is an 1D array that contains score weight of [Midterm Final Project]
-# data is an 2D array (Size: nx4) that each line contains [ID Midterm_score Final_score Project_score] 
-def read_data():
-    # Get 'weight' array
-    w = [float(e) for e in input().split()]
-    weight = np.array(w)
-    
-    # Get 'data' array
+
+# Read data from input
+def read_data() -> tuple:
+    # Read score weight as a float array
+    weight = np.array(input().split(), float)
+    # Read student data as an integer array
     n = int(input())
-    data = np.ndarray((n, 4), int)
-    for i in range(n):
-        data[i] = [int(e) for e in input().split()]
-    
-    # Returns both array
+    data = np.array([input().split() for _ in range(n)], int)
+    # Return the weight and data
     return weight, data
 
-# This function can returns ID of students that have total score lower than mean
-def report_lower_than_mean(weight, data):
-    # Get an 1D array of IDs
-    # Example: [610111 610222 610333 610444 610555]
-    ID = data[:,0]
-    
-    # Calculate and get an 1D array total score (weighted)
-    # Example: [83.  68.6 79.5 61.  78. ]
-    total = np.dot(data[:,1:4],weight)
-    
-    # Calculate mean score
-    mean = np.mean(total)
 
-    # Select item in array that (total < mean == True)
-    lowers = ID[total < mean]
-    
-    # Output
-    if(len(lowers) == 0):
-        print("None")
+# Report students with total score lower than the mean score
+def report_lower_than_mean(weight: np.ndarray, data: np.ndarray) -> None:
+    # Get the student IDs
+    student_ids = data[:, 0]
+    # Calculate the total score for each student
+    total_score = np.dot(data[:, 1:4], weight)
+    # Calculate the mean score
+    mean_score = np.mean(total_score)
+    # Select students with total score lower than the mean score
+    # Convert student IDs to string for output
+    lower_than_mean = np.array(student_ids[total_score < mean_score], str)
+
+    # Output the result
+    if len(lower_than_mean) > 0:
+        print(", ".join(lower_than_mean))
     else:
-        # Convert all item in 'lowers' array from int to str
-        lowers = np.array(lowers, dtype = str)
-        print(", ".join(lowers))
+        print(None)
 
-# Execute an input string
+
+# Execute an input string as code
 exec(input().strip())

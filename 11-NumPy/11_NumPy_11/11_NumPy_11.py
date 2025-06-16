@@ -1,42 +1,43 @@
+# --------------------------------------------------
+# File Name : 11_Numpy_11.py
+# Problem   : Indexing and Slicing
+# Author    : Worralop Srichainont
+# Date      : 2025-06-16
+# --------------------------------------------------
+
 # Import numpy library
 import numpy as np
 
-# Given that A is 2D array (matrix)
-# Slice row in reverse order and fix column
-# Example: A = [[1 2] [3 4]], column = 1
-# Returns [3 4]
-def get_column_from_bottom_to_top(A, column):
-    return A[::-1, column]
 
-# Given that A is 2D array (matrix)
-# Slice only odd row
-# Example: A = [[1 2] [3 4] [5 6] [7 8]]
-# Returns [[3 4] [7 8]]
-def get_odd_rows(A):
-    return A[1::2, :]
+# Reverse column of 2D array (matrix)
+def get_column_from_bottom_to_top(A: np.ndarray, col: int) -> np.ndarray:
+    return A[::-1, col]
 
-# Given that A is 2D array (matrix)
-# Fix row and slice only even column
-# Example: A = [[1 2 3] [4 5 6]]
-# Returns [4 6]
-def get_even_column_last_row(A):
+
+# Get odd rows of 2D array (matrix)
+def get_odd_rows(A: np.ndarray) -> np.ndarray:
+    return A[1::2]
+
+
+# Get even rows of the last row of 2D array (matrix)
+def get_even_column_last_row(A: np.ndarray) -> np.ndarray:
     return A[-1, ::2]
 
-# Given that A is 2D array (square matrix)
-# Get number from top-left corner down to bottom-right corner
-# Example: A = [[1 2 3] [4 5 6] [7 8 9]]
-# Returns [1 5 9]
-def get_diagonal1(A):
-    n = A.shape[0]
-    return A[list(range(n)), list(range(n))]
 
-# Given that A is 2D array (square matrix)
-# Get number from top-right corner down to bottom-left corner
-# Example: A = [[1 2 3] [4 5 6] [7 8 9]]
-# Returns [3 5 7]
-def get_diagonal2(A):
-    n = A.shape[0]
-    return A[list(range(n)), list(range(n-1, -1, -1))]
+# Get the diagonal elements of a 2D array (matrix)
+# From top-left to bottom-right
+def get_diagonal1(A: np.ndarray) -> np.ndarray:
+    idx = np.arange(A.shape[0])
+    return A[idx, idx]
 
-# Execute an input string
+
+# Get the diagonal elements of a 2D array (matrix)
+# From top-right to bottom-left
+def get_diagonal2(A: np.ndarray) -> np.ndarray:
+    row_idx = np.arange(A.shape[0])
+    col_idx = np.arange(A.shape[1] - 1, -1, -1)
+    return A[row_idx, col_idx]
+
+
+# Execute an input string as code
 exec(input().strip())

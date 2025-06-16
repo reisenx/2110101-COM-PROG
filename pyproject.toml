@@ -25,6 +25,7 @@ dependencies = [
 dev = [
     "ruff",
     "black",
+    "mypy",
 ]
 
 # ==============================================================================
@@ -66,3 +67,18 @@ ignore = []
 # This ensures Ruff's formatter matches Black's style.
 quote-style = "double"
 indent-style = "space"
+
+[tool.mypy]
+# --- mypy Configuration ---
+# The standard static type checker.
+python_version = "3.11"
+warn_return_any = true
+warn_unused_configs = true
+ignore_missing_imports = true
+
+# For new projects, starting with `strict = true` is highly recommended.
+# It enables a strong set of checks for robust type safety.
+strict = true
+
+# Exclude virtual environments from type checking.
+exclude = "venv"

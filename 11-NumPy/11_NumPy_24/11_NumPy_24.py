@@ -1,39 +1,38 @@
+# --------------------------------------------------
+# File Name : 11_Numpy_24.py
+# Problem   : Peak Indexes
+# Author    : Worralop Srichainont
+# Date      : 2025-06-16
+# --------------------------------------------------
+
 import numpy as np
 
-# The problem is the same with 05_List_F14.py
-# But in this solution, we use NumPy instead of loop
 
-# Returns array that contains peak value
-# Example: x = [1 4 5.1 5.2 5.3 6 9 6.1 6.2 7.1 7.2 7.3 8.4 8.5 9.2 9.3 20 6 8 11.2 11.5]
-# In this case, we will create 3 array
-# > left    = [1     4 5.1 5.2 5.3   6   9 6.1 6.2 7.1 7.2 7.3 8.4 8.5 9.2 9.3 20  6      8]
-# > center  = [4   5.1 5.2 5.3   6   9 6.1 6.2 7.1 7.2 7.3 8.4 8.5 9.2 9.3  20  6  8   11.2]
-# > right   = [5.1 5.2 5.3   6   9 6.1 6.2 7.1 7.2 7.3 8.4 8.5 9.2 9.3  20   6  8 11.2 11.5]
-# Peaks are numbers in 'center' that satisfy 'center' > 'left' and 'center' > right
-def peak_indexes(x):
-    # If there are less than 3 numbers in 'x' array, it has 0 peaks
-    if(len(x) < 3):
+# Find the indexes of peaks in a 1D NumPy array
+def peak_indexes(numbers: np.ndarray) -> np.ndarray:
+    # Check if the input array has at least 3 elements
+    if len(numbers) < 3:
         return []
-    else:
-        left = x[0 : len(x)-2]
-        center = x[1 : len(x)-1]
-        right = x[2 : len(x)]
-        
-        # Find a position of all peaks
-        condition = (center > left) & (center > right)
-        position = np.arange(1,len(x)-1)[condition]
-        return position
+    # Create slices for left, center, and right elements
+    left = numbers[:-2]
+    center = numbers[1:-1]
+    right = numbers[2:]
+    # Identify peaks where the center element is greater than adjacent elements
+    is_peak = (center > left) & (center > right)
+    peak_indices = np.arange(1, len(numbers) - 1)[is_peak]
+    return peak_indices
 
-def main():
-    # Input number and create array
-    d = np.array([float(e) for e in input().split()])
-    # Get array with only peaks
-    pos = peak_indexes(np.array(d))
+
+# Main function to read input and output peak indexes
+def main() -> None:
+    numbers = np.array(input().split(), float)
+    peak_indices = peak_indexes(numbers)
     # Output
-    if len(pos) > 0:
-        print(", ".join([str(e) for e in pos]))
+    if len(peak_indices) > 0:
+        print(", ".join(np.array(peak_indices, str)))
     else:
         print("No peaks")
 
-# Execute an input string
+
+# Execute an input string as code
 exec(input().strip())
