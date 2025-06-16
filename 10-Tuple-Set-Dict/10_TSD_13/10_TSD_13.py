@@ -1,20 +1,25 @@
-# Input number of input team
+# --------------------------------------------------
+# File Name : 10_TSD_13.py
+# Problem   : Winner
+# Author    : Worralop Srichainont
+# Date      : 2025-06-16
+# --------------------------------------------------
+
+# Input number of matches
 n = int(input())
 
-# Input team in each football match in the format
-# [Winning team] [Losing team]
-win = set()
-lose = set()
-for i in range(n):
-    data = input().split()
-    # Input winning team and losing team in a set to prevent duplicates
-    win.add(data[0])
-    lose.add(data[1])
+# Initialize sets for winners and losers
+winners = set()
+losers = set()
 
-# Find all winning team that never lose by subtracting set
-# Because winning team that never lose must not appear in 'lose' set 
-ans = win - lose
+# Process each match
+for _ in range(n):
+    # Read the match result
+    winner, loser = input().strip().split()
 
-# Output a list of winning team that never lose in alphabetical order
-# sorted() function always returns a list 
-print(sorted(ans))
+    # Update winners and losers sets
+    winners.add(winner)
+    losers.add(loser)
+
+# Output the winner who is not in the losers set
+print(sorted(winners - losers))
