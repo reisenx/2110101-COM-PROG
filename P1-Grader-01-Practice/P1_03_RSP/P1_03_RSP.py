@@ -1,42 +1,39 @@
-# Input reqiured score and setup initial score to 0
-win_score = int(input())
+# --------------------------------------------------
+# File Name : P1_03_RSP.py
+# Problem   : Part-I Rock Scissors Paper
+# Author    : Worralop Srichainont
+# Date      : 2025-06-16
+# --------------------------------------------------
+
+# Initialize winning and losing conditions
+WINNING = [["R", "S"], ["S", "P"], ["P", "R"]]
+LOSING = [["S", "R"], ["P", "S"], ["R", "P"]]
+
+# Initialize each player's score
 player01 = 0
 player02 = 0
 
-# Create a list of winning and losing scenario
-# Given that index 0 is player1 and index 1 is player2 
-# Example: 'R' wins 'S' --> Put ['R','S'] as 'winning' sublist
-# Example: 'R' lose 'P' --> Put ['R','P'] as 'losing' sublist
-winning = [['R','S'], ['S','P'], ['P','R']]
-losing = [['S','R'], ['P','S'], ['R','P']]
+# Input the winning score
+win_score = int(input())
 
-# Input game for 3*win_score times
-# If any player wins, then break the loop
-IsWinning = False
-for i in range(3*win_score):
-    # Input each game
-    # Example: "R P" --> ['R','P']
-    game = input().strip().split()
-    
-    # Count player score
-    if(game in winning):
+# Process each game result for 3 times the winning score
+for _ in range(3 * win_score):
+    # Input the result of the game
+    result = input().strip().split()
+    # Count scores for each player
+    if result in WINNING:
         player01 += 1
-    elif(game in losing):
+    elif result in LOSING:
         player02 += 1
-
-    # Check if any player wins the game
-    if(player01 == win_score):
-        IsWinning = True
-        print(player01, player02)
-        print("Player 1 wins")
-        break
-    elif(player02 == win_score):
-        IsWinning = True
-        print(player01, player02)
-        print("Player 2 wins")
+    # Check if either player has reached the winning score
+    if player01 == win_score or player02 == win_score:
         break
 
-# In case that there's nobody wins tha game yet
-if(not IsWinning):
-    print(player01, player02)
+# Output the final scores and the winner
+print(player01, player02)
+if player01 == win_score:
+    print("Player 1 wins")
+elif player02 == win_score:
+    print("Player 2 wins")
+else:
     print("Tie")
