@@ -69,8 +69,9 @@ class Card:
     # next2 method
     # This method will update the current card to the next card in order
     def next2(self) -> None:
-        self.value = self.next1().value
-        self.suit = self.next1().suit
+        next_card = self.next1()
+        self.value = next_card.value
+        self.suit = next_card.suit
 
 
 # Input card number

@@ -30,7 +30,7 @@ class Complex:
         if b != 0:
             if b > 0 and a != 0:
                 complex_str += "+"
-            if abs(b) != -1:
+            if abs(b) != 1:
                 complex_str += str(b)
             elif b == -1:
                 complex_str += "-"
