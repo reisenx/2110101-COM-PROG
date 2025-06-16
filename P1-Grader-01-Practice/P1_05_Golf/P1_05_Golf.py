@@ -1,32 +1,30 @@
-# Import math library
+# --------------------------------------------------
+# File Name : P1_05_Golf.py
+# Problem   : Part-I Golf
+# Author    : Worralop Srichainont
+# Date      : 2025-06-16
+# --------------------------------------------------
+
 import math
 
-# Create and empty list and necessary variable
-par_list = []
-stroke_list = []
-mod_stroke_list = []
+# Initialize variables
+total_par = 0
+total_stroke = 0
+total_modified_stroke = 0
 
-# Input a string of each hole, split them, then put them in the list
-# Each line contains [Par] [Stroke] [Select]
+# Read score of each hole
+for _ in range(9):
+    par, stroke, select = [int(num) for num in input().split()]
+    # Calculate total par stroke and modified stroke
+    total_par += par
+    total_stroke += stroke
+    total_modified_stroke += select * min(stroke, par + 2)
 
-# == Modified stroke ==
-# - If select = 1, mod_stroke = min(stroke, par+2)
-# - If select = 0, mod_stroke = 0
-for i in range(9):
-    par,stroke,select = [int(e) for e in input().split()]
-    if(select == 1):
-        mod_stroke = min(stroke, par+2)
-    else:
-        mod_stroke = 0
-    par_list.append(par)
-    stroke_list.append(stroke)
-    mod_stroke_list.append(mod_stroke)
+# Calculate the score
+handicap = math.floor(0.8 * (1.5 * total_modified_stroke - total_par))
+total_score = total_stroke - handicap
 
-# Calculate a handicap and score
-handicap = math.floor(0.8*(1.5*sum(mod_stroke_list) - sum(par_list)))
-score = sum(stroke_list) - handicap
-
-# Output a sum of stroke, handicap and score
-print(sum(stroke_list))
+# Output the result
+print(total_stroke)
 print(handicap)
-print(score)
+print(total_score)
