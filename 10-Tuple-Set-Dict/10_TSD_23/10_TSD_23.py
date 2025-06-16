@@ -1,49 +1,48 @@
-# Input number of songs
+# --------------------------------------------------
+# File Name : 10_TSD_23.py
+# Problem   : Genre Total Playtime
+# Author    : Worralop Srichainont
+# Date      : 2025-06-16
+# --------------------------------------------------
+
+
+# Convert time string in MM:SS format to total seconds.
+def to_seconds(time: str) -> int:
+    m, s = [int(num) for num in time.split(":")]
+    return (m * 60) + s
+
+
+# Convert total seconds to time string in MM:SS format.
+def to_time(seconds: int) -> str:
+    m = str(seconds // 60)
+    s = "0" + str(seconds % 60)
+    return f"{m}:{s[-2:]}"
+
+
+# Initialize a dictionary to store total playtime for each genre.
+genre_playtime = {}
+
+# Input number of entries.
 n = int(input())
 
-# Create a function that can convert time in MM:SS format to seconds
-# Exmaple: "1:39" --> 99
-def time2sec(time):
-    min,sec = [int(num) for num in time.split(":")]
-    seconds = (min*60) + sec
-    return seconds
+# Process each entry.
+for _ in range(n):
+    data = input().strip().split(", ")
+    genre = data[-2]
+    time = to_seconds(data[-1])
 
-# Create a function that can convert seconds to time in MM:SS format
-# Example: 99 --> "1:39"
-def sec2time(seconds):
-    min = seconds//60
-    sec = seconds%60
-    sec = '0' + str(sec)
-    time = str(min) + ":" + sec[-2:]
-    return time
-
-# Input song details. Each song detail contains 
-# [Name], [Artist], [Genre], [Duration]
-# Contains the detials in a dictionary 'genres'
-# genres = {Genre:[Duration1, Duration2, ...], ...}
-# Example: {Pop:['3:39', '3:48', '3:36', '3:42'], ...}
-genres = {}
-for i in range(n):
-    name, artist, type, duration = input().strip().split(", ")
-    if(type not in genres):
-        genres[type] = [duration]
+    # Add the playtime to the corresponding genre.
+    if genre in genre_playtime:
+        genre_playtime[genre] += time
     else:
-        genres[type].append(duration)
+        genre_playtime[genre] = time
 
-# Find duration of each genres and sort them in descending order
-# Contains the data in a 'duration_list'
-# duration_list = [[Seconds, Time, Genre], ...]
-# Example: duration_list = [[924,'15:24','Rock'], [885,'14:45','Pop'], [242, '4:02', 'Country']]
-duration_list = []
-for genre, durations in genres.items():
-    seconds = 0
-    for duration in durations:
-        seconds += time2sec(duration)
-    time = sec2time(seconds)
-    duration_list.append([seconds, time, genre])
-duration_list.sort(reverse = True)
+# Sort genres by total playtime in descending order.
+sorted_genres = []
+for genre, total_time in genre_playtime.items():
+    sorted_genres.append([-total_time, genre])
+sorted_genres.sort()
 
-# Output top 3 longest duration genres
-output = duration_list[0:3]
-for seconds, time, genre in output:
-    print(genre, "-->", time)
+# Output the top 3 genres with the longest total playtime.
+for total_time, genre in sorted_genres[:3]:
+    print(f"{genre} --> {to_time(-total_time)}")
