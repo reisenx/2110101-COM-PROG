@@ -1,30 +1,28 @@
-# Input character details until the input = 'q'
-# Each line contains [Character], [Animal]
-# Contains data in a dictionary 'animals_dict' and list 'unique_animals'
-# animals = {Animal:[Character01 ,Character02, ...], ...}
-# unique_animals = [Animal01, Animal02, ...]
-unique_animals = []
-animals_dict = {}
-while(True):
-    # Input data
-    data = input().strip()
-    # Check if data is 'q'. If true, then break the loop
-    if(data == 'q'):
-        break
-    else:
-        # Split an input data 
-        character, animal = data.split(", ")
-        # Input data to 'unique_animals'
-        if(animal not in unique_animals):
-            unique_animals.append(animal)
-        # Input data to 'animals_dict'
-        if(animal not in animals_dict):
-            animals_dict[animal] = [character]
-        else:
-            animals_dict[animal].append(character)
+# --------------------------------------------------
+# File Name : 10_TSD_24.py
+# Problem   : Cartoon
+# Author    : Worralop Srichainont
+# Date      : 2025-06-16
+# --------------------------------------------------
 
-# Output
-for animal in unique_animals:
-    line = animal + ": "
-    line += ", ".join(animals_dict[animal])
-    print(line)
+# Initialize a dictionary to store cartoon characters.
+characters = {}
+
+# Input cartoon character names and animal types.
+while True:
+    # Input a line of data.
+    data = input().strip()
+    # If the input is "q", break the loop.
+    if data == "q":
+        break
+    # Split the input data into name and animal type.
+    name, animal = data.split(", ")
+    # Update the characters dictionary.
+    if animal in characters:
+        characters[animal].append(name)
+    else:
+        characters[animal] = [name]
+
+# Output the animal types and their corresponding characters.
+for animal, names in characters.items():
+    print(f"{animal}: {', '.join(names)}")
