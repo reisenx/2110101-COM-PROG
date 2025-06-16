@@ -1,81 +1,61 @@
-class Point: 
+# --------------------------------------------------
+# File Name : 12_Class_31.py
+# Problem   : Point in Rectangle
+# Author    : Worralop Srichainont
+# Date      : 2025-06-16
+# --------------------------------------------------
+
+
+class Point:
     # __init__ method
-    # Create 'Point' object that contains coordinate (x,y)
-    def __init__(self, x, y): 
-        self.x = x 
-        self.y = y 
-    
+    # Initialize the 'Point' object with x and y coordinates
+    def __init__(self, x: int, y: int) -> None:
+        self.x = x
+        self.y = y
+
     # __str__ method
-    # Convert 'Point' object to a string
-    # Example: Point(5,2) --> "(5,2)"
-    def __str__(self): 
-        return "("+str(self.x)+","+str(self.y)+")"
+    # Convert the 'Point' object to a string representation
+    def __str__(self) -> str:
+        return str((self.x, self.y))
+
 
 class Rect:
     # __init__ method
-    # Create 'Rect' object by given
-    # - 'p1' is lower left 'Point' object of a reactangle
-    # - 'p2' is upper right 'Point' object of a rectangle
-    def __init__(self, p1, p2): 
-        self.lowerleft = p1
-        self.upperright = p2
-    
-    # == Shape of a rectangle ==
-    # Given the coordinate of 'p1' is (a,b) and 'p2' is (c,d)
-    #         _______________ p2(c,d)
-    #        |               |
-    #        |               |
-    #        |               |
-    #        |_______________|
-    # p1(a,b)
+    # Initialize the 'Rect' object with two points: lower left and upper right
+    def __init__(self, p1: "Point", p2: "Point") -> None:
+        self.lower_left = p1
+        self.upper_right = p2
 
     # area method
-    # This method can calculate the rectangle area
-    # Given that all reactangle sides are parallel to x-axis and y-axis
-    def area(self):
-        # Assign the value to a variable
-        p1 = self.lowerleft
-        p2 = self.upperright
-        a,b = p1.x, p1.y
-        c,d = p2.x, p2.y
+    # Calculate the area of the rectangle
+    def area(self) -> int:
+        x1, y1 = (self.lower_left).x, (self.lower_left).y
+        x2, y2 = (self.upper_right).x, (self.upper_right).y
+        return (x2 - x1) * (y2 - y1)
 
-        # Calulate and return the area
-        area = (c-a) * (d-b)
-        return area
-    
     # contains method
-    # This method can check if the Point object 'p' is in the rectangle or not
-    def contains(self, p):
-        # Assign the value to a variable
-        p1 = self.lowerleft
-        p2 = self.upperright
-        a,b = p1.x, p1.y
-        c,d = p2.x, p2.y
-        x,y = p.x, p.y
+    # Check if a point is inside the rectangle
+    def contains(self, p: "Point") -> bool:
+        x1, y1 = (self.lower_left).x, (self.lower_left).y
+        x2, y2 = (self.upper_right).x, (self.upper_right).y
+        x, y = p.x, p.y
+        return x1 <= x <= x2 and y1 <= y <= y2
 
-        # Check if 'p' is in the rectangle or not
-        if((a <= x <= c) and (b <= y <= d)):
-            return True
-        else:
-            return False
 
-# Input coordinates and Create 'Point' object
-x1,y1,x2,y2 = [int(e) for e in input().split()] 
-lowerleft = Point(x1,y1) 
-upperright = Point(x2,y2) 
+# Input lower left and upper right points of the rectangle
+x1, y1, x2, y2 = [int(e) for e in input().split()]
+# Create a rectangle object
+lower_left = Point(x1, y1)
+upper_right = Point(x2, y2)
+rect = Rect(lower_left, upper_right)
 
-# Create 'Rect' object
-rect = Rect(lowerleft, upperright) 
-
-# Output the area of a rectangle
+# Output the area of the rectangle
 print(rect.area())
 
-# Input number of points needed to check
+# Input number of points to check
 m = int(input())
-
-# Output True if the point is in the rectangle
-# Output False if the point in not in the rectangle
-for i in range(m): 
-    x,y = [int(e) for e in input().split()]
-    p = Point(x,y)
+# For each point, check if it is inside the rectangle
+for _ in range(m):
+    x, y = [int(e) for e in input().split()]
+    p = Point(x, y)
     print(rect.contains(p))
