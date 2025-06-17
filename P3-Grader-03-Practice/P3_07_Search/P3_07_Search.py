@@ -1,64 +1,53 @@
-# Calculate frequency of a word in text
-# It is guaruntee that all parameters will be all uppercase
-def frequency(text, word):
-    # Create a list of words
-    words_list = text.strip().split()
-    # Count times that a specified word appears in text
-    appears_count = words_list.count(word)
-    # Count all words in a text
-    words_count = len(words_list)
-    # Calculate frequency
-    freq = appears_count/words_count
-    return freq
+# --------------------------------------------------
+# File Name : P3_07_Search.py
+# Problem   : Part-III Search Engine
+# Author    : Worralop Srichainont
+# Date      : 2025-06-17
+# --------------------------------------------------
 
-# Calculate specified value of a word in text
-# It is guaruntee that all parameters will be all uppercase
-def specified(text, word):
-    # Create a list of words, then convert it to set to delete duplicates
-    words_list = text.strip().split()
-    words_set = set(words_list)
-    # Count all unique words in a set
-    unique_count = len(words_set)
-    # Calculate specified value
-    spec = 1/unique_count
-    return spec
 
-# Calculate relateable value of a word in text
-# It is guaruntee that all parameters will be all uppercase
-def relateable(text, word):
-    return frequency(text, word) * specified(text, word)
+# Calculate relatable scores for a list of words.
+def calculate_relatable_scores(words: list[str]) -> dict[str, float]:
+    word_counts = {}
+    for word in words:
+        if word not in word_counts:
+            word_counts[word] = 0
+        word_counts[word] += 1
 
-# Input number of documents
-n = int(input())
+    total_words = len(words)
+    total_unique_words = len(word_counts)
 
-# Input documents and store them in dictionary and list
-doc_name = []
+    relatable_scores = {}
+    for word, count in word_counts.items():
+        relatable_scores[word] = (count / total_words) * (1 / total_unique_words)
+    return relatable_scores
+
+
+# Initialize a list of documents.
 documents = {}
-for i in range(n):
-    name = input()
-    text = input()
-    doc_name.append(name)
-    documents[name] = text
 
-# Input searching words until -1
-# Contains all searching words in a list
-search_words = []
-while(True):
-    temp = input()
-    if(temp == "-1"):
+# Input amount of documents and calculate relatable scores for each document.
+n = int(input())
+for _ in range(n):
+    name = input().strip()
+    words = input().strip().split()
+    documents[name] = calculate_relatable_scores(words)
+
+# Query for a word and find the most relatable document.
+while True:
+    query = input().strip()
+    if query == "-1":
         break
-    else:
-        search_words.append(temp)
 
-# Output a document that is the most relateable to each serching words
-# If the maximum relateable value = 0, then output "NOT FOUND"
-for word in search_words:
-    # Find document with maximum relateable value and its name
-    maximum = 0
-    max_name = "NOT FOUND"
-    for name, text in documents.items():
-        if(relateable(text,word) > maximum):
-            max_name = name
-            maximum = relateable(text,word)
-    # Output a name of document with maximum relateable value
-    print(max_name)
+    max_score = 0
+    best_document = ""
+
+    for name, scores in documents.items():
+        if query in scores and scores[query] > max_score:
+            max_score = scores[query]
+            best_document = name
+
+    if max_score > 0:
+        print(best_document)
+    else:
+        print("NOT FOUND")
