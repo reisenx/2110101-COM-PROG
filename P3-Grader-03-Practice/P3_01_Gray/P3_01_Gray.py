@@ -34,17 +34,17 @@ def num_pattern(n: int, k: int) -> None:
 # Generate Gray codes for a given number of bits
 def gray_codes(bits: int) -> list[str]:
     # Initialize the list with the first two Gray codes
-    n = 2
+    half = 1
     codes = ["0", "1"]
     # Generate Gray codes
     for _ in range(bits - 1):
         # Append the reverse of the current codes
         codes += codes[::-1]
+        half *= 2
         # Prefix '0' to the first half and '1' to the second half
-        for i in range(n):
+        for i in range(half):
             codes[i] = "0" + codes[i]
-            codes[n + i] = "1" + codes[n + i]
-        n *= 2
+            codes[half + i] = "1" + codes[half + i]
     return codes
 
 
