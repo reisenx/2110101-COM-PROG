@@ -1,42 +1,31 @@
-# Input number of movies
+# --------------------------------------------------
+# File Name : P3_06_MovieStar.py
+# Problem   : Part-III Movie Stars
+# Author    : Worralop Srichainont
+# Date      : 2025-06-17
+# --------------------------------------------------
+
+# Initialize a dictionary to store actor names and their movies
+actor_to_movies = {}
+
+# Input the number of movies
 n = int(input())
-
-# Input movie with its actors
-# Movie name is in index 0 and the rest are actors
-# Contains movies name to a list to make sure that the output arrange in input order
-# Contains actors name to a set to prevent duplication of a name
-# Contains data in a dictionary with
-# > Keys: Movie name
-# > Value: List of actors
-movies = {}
-movies_name = []
-actors_name = []
-for i in range(n):
+for _ in range(n):
     data = input().strip().split(", ")
-    movies[data[0]] = data[1:]
-    movies_name.append(data[0])
-    for name in data[1:]:
-        actors_name.append(name)
-actors_name = set(actors_name)
+    movie = data[0].strip()
+    actors = data[1:]
 
-# Reconstruct a dictionary with
-# > Keys: Actors
-# > Value: List of movies
-actors = {}
-for name in actors_name:
-    movies_list = []
-    for movie in movies_name:
-        if(name in movies[movie]):
-            movies_list.append(movie)
-    actors[name] = movies_list
+    for actor in actors:
+        if actor not in actor_to_movies:
+            actor_to_movies[actor] = []
+        actor_to_movies[actor].append(movie)
 
-# Input actors that are interested
-actors_output = [name.strip() for name in input().split(", ")]
-
-# Output
-# Search each name in actors_output in actors dictionary
-for name in actors_output:
-    if(name in actors):
-        print(name, "->", ", ".join(actors[name]))
+# Input query
+query_actors = input().strip().split(", ")
+# Find and print the movies for each queried actor
+for actor in query_actors:
+    if actor in actor_to_movies:
+        movies = ", ".join(actor_to_movies[actor])
+        print(f"{actor} -> {movies}")
     else:
-        print(name, "-> Not found")
+        print(f"{actor} -> Not found")
