@@ -31,7 +31,7 @@ def closest_point_indexes(points: np.ndarray, target: np.ndarray) -> np.ndarray:
 def number_of_inversions(A: np.ndarray) -> int:
     count = 0
     for i in range(len(A)):
-        count += np.sum(A[i + 1 :] <= A[i])
+        count += np.sum(A[i] > A[i + 1 :])
     return count
 
 
