@@ -1,114 +1,82 @@
-# == Reminder ==
-# All function must not change the value of parameters
+# --------------------------------------------------
+# File Name : P2_03_Func2.py
+# Problem   : Part-II Potpourri Functions
+# Author    : Worralop Srichainont
+# Date      : 2025-06-17
+# --------------------------------------------------
 
-# This function can find an area of a polygon
-# 'p' parameter is a list that contains coordinates (x,y) of a polygon
-# Assume that coordinates (x,y) are already sorted in clockwise or counterclockwise order
-# Area of the polygon = 1/2[(x1*y2 + x2*y3 + ... + xn*y1) - (y1*x2 + y2*x3 + ... + yn*x1)]
-# If the coordinates (x,y) are in clockwise order the value will be negative so we need to absolute the value
-def convex_polygon_area(p):
-    # Seperate list p into 2 list which are X list and Y list
-    # Example: [[0,0], [0,3], [4,0]] --> X = [0,0,4] and Y = [0,3,0]
-    X = []
-    Y = []
-    for x,y in p:
-        X.append(x)
-        Y.append(y)
+
+# Function to calculate the area of a convex polygon given its vertices
+# The vertices are provided in a counterclockwise order.
+def convex_polygon_area(points: list[list[int]]) -> float:
+    # Initialize terms for the area calculation
+    terms01 = 0
+    terms02 = 0
+    # Iterate through each vertex and calculate the terms
+    for i in range(len(points)):
+        x1, y1 = points[i]
+        x2, y2 = points[(i + 1) % len(points)]
+        terms01 += x1 * y2
+        terms02 += y1 * x2
     # Calculate the area
-    # Given sum1 = x1*y2 + x2*y3 + ... + xn*y1
-    # And given sum2 = y1*x2 + y2*x3 + ... + yn*x1
-    sum1 = 0
-    sum2 = 0
-    for i in range(len(p)-1):
-        sum1 += X[i]*Y[i+1]
-        sum2 += Y[i]*X[i+1]
-    sum1 += X[len(p)-1]*Y[0]
-    sum2 += Y[len(p)-1]*X[0]
-    area = abs(0.5*(sum1 - sum2))
-    return area
+    return abs(terms01 - terms02) / 2
 
-# This function can check if the string is heterogram
-# Heterogram occurs when all english letter in a string are all difference
-# Consider lowercase and uppercase are the same letter
-# Example: "Python" is heterogram but "Java" is not heterogram
-def is_heterogram(s):
-    # Convert all letter in string 's' to uppercase
-    text = s.upper()
-    alphabet = "ABCDEFGHIJKLMNOPQRSTUVWXYZ"
-    # Count a letter and put them in a dictionary 'letter_count'
-    letter_count = {}
-    for char in text:
-        if(char in alphabet):
-            if(char not in letter_count):
-                letter_count[char] = 1
-            elif(char in letter_count):
-                letter_count[char] += 1
-    # If the string 's' is heterogram, maximum value of 'letter_count' must be 1
-    return max(letter_count.values()) == 1
 
-# This function can replace a substring 'a' with substring 'b' in string 's'
-# Consider lowercase and uppercase are the same letter
-# Example 1: replace_ignorecase("Python is hard", "Hard", "easy")
-# In this case, we will see a string "Hard" here "Python is [hard]". Replace it with "easy"
-# and you got a new string which is "Python is easy"
+# Function to check if a given text is a heterogram
+# where a heterogram is a word or phrase without a repeating letter.
+def is_heterogram(text: str) -> bool:
+    # Initialize a dictionary to count occurrences of each character
+    char_count = {}
+    # Iterate through each character in the text
+    for char in text.upper():
+        # First occurrence of the character
+        if char.isalpha() and char not in char_count:
+            char_count[char] = 1
+        # Repeated occurrence of the character
+        elif char.isalpha() and char in char_count:
+            return False
+    # If no character is repeated, return True
+    return True
 
-# == Algorithm ==
-# Create a new string 'replaced'
-# Check if s[start:end] is 'b' until the end of the string 's' 
-# - If yes, replace with substring 'b' and increase start and end by len(a)
-# - If no, add s[start] to 'replaced' and increase start and end by 1
 
-# Example 2: replace_ignorecase("AAabaAA", "Aa", "Aaa")
-# Loop 1: t[0:2] = "[AA]abaAA" --> replaced = "Aaa"         <-- Add b = "Aaa"
-# Loop 2: t[2:4] = "AA[ab]aAA" --> replaced = "Aaaa"   
-# Loop 3: t[3:5] = "AAa[ba]AA" --> replaced = "Aaaab"  
-# Loop 4: t[4:6] = "AAab[aA]A" --> replaced = "AaaabAaa"    <-- Add b = "Aaa"
-# Loop 5: t[7:9] = "AAabaA[A]" --> replaced = "AaaabAaaA"  
-# Loop 6: t[8:10] --> break (start = 8 and len(s) = 8)
-def replace_ignorecase(s,a,b):
-    replaced = ""
+# Function to replace all occurrences of a target substring with a replacement substring
+def replace_ignorecase(text: str, target: str, replacement: str) -> str:
+    # Initialize variables for the result
+    result = ""
+    # Initialize start and end indices for substring comparison
     start = 0
-    end = len(a)
-    while(start < len(s)):
-        if(s[start:end].lower() == a.lower()):
-            replaced += b
-            start += len(a)
-            end += len(a)
+    end = len(target)
+    # Iterate through the text to find and replace occurrences of the target substring
+    while start < len(text):
+        # Replace the target substring with the replacement substring
+        if text[start:end].lower() == target.lower():
+            result += replacement
+            start += len(target)
+            end += len(target)
+        # Add the current character to the result if no match is found
         else:
-            replaced += s[start]
+            result += text[start]
             start += 1
             end += 1
-    return replaced
+    # Return the modified text
+    return result
 
-# This function can return a list contains top 3 names
-# 'votes' parameter is a dictionary
-# If there are people with same score, sort them in alphabetical order
-# Example: top3({"A": 8888, "B": 6666, "C": 7777, "X":6666}) returns ['A','C','B']
-def top3(votes):
-    # Find unique top 3 scores
-    # Example: {"A":8888, "B":6666, "C":7777, "X":6666} --> [8888,7777,6666]
-    top3_scores = []
-    for name,score in votes.items():
-        if(score not in top3_scores):
-            top3_scores.append(score)
-    top3_scores.sort(reverse = True)
-    top3_scores = top3_scores[0:3]
 
-    # Find all top3 names
-    top3_names = []
-    for t_score in top3_scores:
-        # Find a score of each rank, sort them and put all of them in 'top3_names' 
-        temp = []
-        for name,score in votes.items():
-            if(score == t_score):
-                temp.append(name)
-        temp.sort()
-        for item in temp:
-            top3_names.append(item)    
-    
-    # Return first 3 names in 'top3_names'
-    return top3_names[0:3]
+# Function to find the top 3 candidates based on votes
+def top3(votes: dict[str, int]) -> list[str]:
+    # Sort the candidates based on their scores in descending order
+    ranked_votes = []
+    for candidate, score in votes.items():
+        ranked_votes.append([-score, candidate])
+    ranked_votes.sort()
 
-# Execute an input string 2 times
-for k in range(2):
+    # Extract the top 3 candidates from the sorted list
+    top_candidates = []
+    for _, candidate in ranked_votes[:3]:
+        top_candidates.append(candidate)
+    return top_candidates
+
+
+# Execute the input string as code
+for _ in range(2):
     exec(input().strip())
