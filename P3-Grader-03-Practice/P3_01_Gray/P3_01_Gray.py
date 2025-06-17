@@ -8,13 +8,14 @@
 
 # Check if n and k are valid integers
 def is_valid(n: int, k: int) -> bool:
-    if n < 1 or k < 1:
-        if n < 1 and k < 1:
-            print("Invalid n and k")
-        elif n < 1:
-            print("Invalid n")
-        elif k < 1:
-            print("Invalid k")
+    if n < 1 and k < 1:
+        print("Invalid n and k")
+        return False
+    elif n < 1:
+        print("Invalid n")
+        return False
+    elif k < 1:
+        print("Invalid k")
         return False
     return True
 

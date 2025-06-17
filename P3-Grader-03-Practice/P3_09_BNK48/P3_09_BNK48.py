@@ -36,7 +36,7 @@ def get_kamioshi(otaku: str) -> str:
 
 # Function to update all otakus' kamioshi and idols' kamioshi counts
 def update_all_kamioshi() -> None:
-    # Interate through each otaku and determine their kamioshi
+    # Iterate through each otaku and determine their kamioshi
     for otaku, details in otakus.items():
         # Get the kamioshi for the otaku
         kamioshi = get_kamioshi(otaku)
