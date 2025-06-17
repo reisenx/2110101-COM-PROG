@@ -1,111 +1,82 @@
-# Input put number of friuts
+# --------------------------------------------------
+# File Name : P2_09_Vitamin.py
+# Problem   : Part-II Vitamin
+# Author    : Worralop Srichainont
+# Date      : 2025-06-17
+# --------------------------------------------------
+
+# Initialize the fruit dictionary
+FRUITS = {}
+
+# Input fruit information
 n = int(input())
+for _ in range(n):
+    data = input().strip().split()
+    fruit = data[0]
+    vitamins = [float(percent) for percent in data[1:]]
+    FRUITS[fruit] = vitamins
 
-# Input vitamin details of input fruits and put them in the dictionary
-# data[0] is fruit name, and the rest are vitamin details
-# Exmaple: "apricots 0.2 0.06 0.05 0.05" --> {'apricots':[0.2, 0.06, 0.05, 0.05]}
-fruits = {}
-for i in range(n):
-    data = input().split()
-    # Convert vitamin amount from string to float
-    for j in range(1,len(data)):
-        data[j] = float(data[j])
-    fruits[data[0]] = data[1:]
+# Input the command
+cmd = input().strip().split()
 
-# Input command
-command = input().strip().split()
-# 'show' command is to show all input data
-if(command[0] == 'show'):
-    for item in fruits:
-        # Create an empty string
-        text = ""
-        # Add the name of the fruit
-        text += item + " "
-        # Add amount of vitamins of that fruit
-        for amount in fruits[item]:
-            text += str(amount) + " "
-        # Output
-        print(text.strip())
+# Command: show
+# Output all fruits with their vitamin percentages in the order of input
+if cmd[0] == "show":
+    for fruit, vitamins in FRUITS.items():
+        print(f"{fruit} {' '.join([str(percent) for percent in vitamins])}")
 
-# 'get' command is to show the input friut data
-# command[1] is the fruit name
-# Considered that uppercase and lowercase are not the same
-# If there're no matching name, output as "not found"
-# Example: get banana
-elif(command[0] == 'get'):
-    if(command[1] in fruits):
-        # Create an empty string
-        text = ""
-        # Add the name of the fruit
-        text += command[1] + " "
-        # Add amount of vitamins of that fruit
-        for amount in fruits[command[1]]:
-            text += str(amount) + " "
-        # Output
-        print(text.strip())
+# Command: get
+# Output the vitamin percentages of a specific fruit
+elif cmd[0] == "get":
+    fruit = cmd[1]
+    # Check if the fruit exists in the dictionary
+    if fruit in FRUITS:
+        vitamins = FRUITS[fruit]
+        print(f"{fruit} {' '.join([str(percent) for percent in vitamins])}")
+    # If the fruit does not exist, output "not found"
     else:
-        print(command[1], "not found")
+        print(f"{fruit} not found")
 
-# 'avg' command is to find the average amount of that vitamin type
-# round a average number to 4 decimal places
-# Example: {'apricots':[0.2, 0.06, 0.05, 0.05]} means
-# - Apricots has vitamin 1 = 0.2
-# - Apricots has vitamin 2 = 0.06
-# - Apricots has vitamin 3 = 0.05
-# - Apricots has vitamin 4 = 0.05
-elif(command[0] == 'avg'):
-    index = int(command[1])-1
-    vitamin_list = []
-    for item in fruits:
-        vitamin_list.append(fruits[item][index])
-    average = round(sum(vitamin_list) / len(vitamin_list), 4)
-    print(average)
+# Command: avg
+# Output the average percentage of a specific vitamin across all fruits
+elif cmd[0] == "avg":
+    idx = int(cmd[1]) - 1
+    # Get all vitamin percentages for the specified index
+    percentages = []
+    for _, vitamins in FRUITS.items():
+        percentages.append(vitamins[idx])
+    # Calculate and print the average percentage
+    print(round(sum(percentages) / len(percentages), 4))
 
-# 'max' command is to find maximum amount of that vitamin type
-# If there are mone than 1 friut that have maximum vitamin, output the first name that appear in dictionary
-elif(command[0] == 'max'):
-    # Create and find a list contains amount of vitamin of each fruit
-    index = int(command[1])-1
-    vitamin_list = []
-    for item in fruits:
-        vitamin_list.append(fruits[item][index])
-    # Find maximum amount of vitamin
-    maximum = max(vitamin_list)
-    # Find a list of fruit names that have maximum amout of vitamin
-    max_fruit = []
-    for item in fruits:
-        if(fruits[item][index] == maximum):
-            max_fruit.append(item)
-    # Sort a name in alphabetical order
-    max_fruit.sort()
-    # Output the first name in 'max_fruit' and 'maximum' value
-    print(max_fruit[0], maximum)
+# Command: max
+# Output the fruit with the maximum percentage of a specific vitamin
+elif cmd[0] == "max":
+    idx = int(cmd[1]) - 1
+    # Create a list of fruits with their vitamin percentages for sorting
+    vitamin_ranks = []
+    for fruit, vitamins in FRUITS.items():
+        vitamin_ranks.append([-vitamins[idx], fruit])
+    # Sort the list by vitamin percentage (descending) and fruit name (ascending)
+    vitamin_ranks.sort()
 
-# 'sort' command is to sort a fruit bu its vitamin in ascending order
-# If there are mone than 1 friut that have maximum vitamin, output the first name that appear in dictionary
-elif(command[0] == 'sort'):
-    # Create and find a list contains amount of vitamin of each fruit
-    index = int(command[1])-1
-    vitamin_list = []
-    for item in fruits:
-        if(fruits[item][index] not in vitamin_list):
-            vitamin_list.append(fruits[item][index])
-    # Sort the vitamin in ascending order
-    vitamin_list.sort()
-    # Output the name using the value in 'vitamin_list'
-    name_sort = ""
-    for amount in vitamin_list:
-        # Reset the temp_name list
-        temp_name = []
-        # Find a list of fruit names that have the same amout of vitamin
-        for item in fruits:
-            if(fruits[item][index] == amount):
-                temp_name.append(item)
-        # Sort the name that have the same amount of vitamin
-        temp_name.sort()
-        # Put them all to a string
-        for name in temp_name:
-            name_sort += name + " "
-    # Output the string
-    name_sort = name_sort.strip()
-    print(name_sort)
+    # Output the fruit with the maximum percentage
+    max_fruit = vitamin_ranks[0][1]
+    max_percentage = -vitamin_ranks[0][0]
+    print(f"{max_fruit} {max_percentage}")
+
+# Command: sort
+# Output all fruits sorted by a specific vitamin percentage
+elif cmd[0] == "sort":
+    idx = int(cmd[1]) - 1
+    # Create a list of fruits with their vitamin percentages for sorting
+    vitamin_ranks = []
+    for fruit, vitamins in FRUITS.items():
+        vitamin_ranks.append([vitamins[idx], fruit])
+    # Sort the list by vitamin percentage (ascending) and fruit name (ascending)
+    vitamin_ranks.sort()
+
+    # Output the sorted fruits
+    result = []
+    for _, fruit in vitamin_ranks:
+        result.append(fruit)
+    print(" ".join(result))
