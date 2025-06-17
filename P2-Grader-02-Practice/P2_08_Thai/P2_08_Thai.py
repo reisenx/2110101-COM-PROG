@@ -1,91 +1,70 @@
-# Create a dictionary that contains number in Thai
-thai_num = {'1':'neung', '2':'song', '3':'sam', '4':'si', '5':'ha', '6':'hok', '7':'chet', '8':'paet', '9':'kao', '0':'soon'}
+# --------------------------------------------------
+# File Name : P2_08_Thai.py
+# Problem   : Part-II Thai Numeral
+# Author    : Worralop Srichainont
+# Date      : 2025-06-17
+# --------------------------------------------------
 
-# Create a function that able to read number (0-9999) in Thai
-def to_Thai(N):
-    N = str(N)
-    num_read = ""
-    # Case 1: 0-9
-    if(len(N) == 1):
-        return thai_num[N]
-    
-    # Case 2: 10-99
-    # 1.) If ones is 0, don't read '0' (Example: '60' -> 'hok sip')
-    # 2.) If ones is 1, read '1' as 'et' instead (Example: '31' --> sam sip et)
-    # 3.) If tens is 1, don't read '1' (Example: '15' --> 'sip ha')
-    # 4.) If tens is 2, read '2' as 'yi' instead (Example: '27' --> 'yi sip chet')
-    elif(len(N) == 2):
-        # Read tens
-        if(N[0] == '1'):
-            pass
-        elif(N[0] == '2'):
-            num_read += "yi "
+# Initialize the Thai numeral mapping
+THAI = {
+    0: "soon",
+    1: "neung",
+    2: "song",
+    3: "sam",
+    4: "si",
+    5: "ha",
+    6: "hok",
+    7: "chet",
+    8: "paet",
+    9: "kao",
+    10: "sip",
+    100: "roi",
+    1000: "pun",
+}
+THAI_EX = {1: "et", 2: "yi"}
+
+
+# Function to convert an integer to Thai numeral representation
+def to_Thai(number: int) -> str:
+    # Initialize the result list
+    result = []
+
+    # Split into digits
+    thousands = number // 1000
+    hundreds = (number % 1000) // 100
+    tens = (number % 100) // 10
+    ones = number % 10
+
+    # Read the thousands digit
+    if thousands > 0:
+        result.append(THAI[thousands])
+        result.append(THAI[1000])
+
+    # Read the hundreds digits
+    if hundreds > 0:
+        result.append(THAI[hundreds])
+        result.append(THAI[100])
+
+    # Read the tens digits
+    if tens > 0:
+        if tens == 2:
+            result.append(THAI_EX[2])
+        elif tens > 1:
+            result.append(THAI[tens])
+        result.append(THAI[10])
+
+    # Read the ones digits
+    if ones > 0:
+        if ones == 1 and (tens > 0 or hundreds > 0 or thousands > 0):
+            result.append(THAI_EX[1])
         else:
-            num_read += thai_num[N[0]] + " "
-        num_read += "sip "
+            result.append(THAI[ones])
+    if number == 0:
+        return THAI[0]
 
-        # Read ones
-        if(N[1] == '0'):
-            pass
-        elif(N[1] == '1'):
-            num_read += "et"
-        else:
-            num_read += thai_num[N[1]]
-    
-    # Case 3: 100-999
-    # 5.) If tens is 0, don't read '0' and 'sip' (Example: '208' --> 'song roi paet')
-    elif(len(N) == 3):
-        # Read hundreds
-        num_read += thai_num[N[0]] + " roi "
+    # Return the result as a string
+    return " ".join(result)
 
-        # Read tens
-        if(N[1] == '0' or N[1] == '1'):
-            pass
-        elif(N[1] == '2'):
-            num_read += "yi "
-        else:
-            num_read += thai_num[N[1]] + " "
-        if(N[1] != '0'):
-            num_read += "sip "
 
-        # Read ones
-        if(N[2] == '0'):
-            pass
-        elif(N[2] == '1'):
-            num_read += "et"
-        else:
-            num_read += thai_num[N[2]]
-    
-    # Case 4: 1000-9999
-    # 6.) If hundreds is 0, don't read '0' and 'roi' (Example: '1024' --> 'neung pun yi sip si')
-    elif(len(N) == 4):
-        # Read thousands
-        num_read += thai_num[N[0]] + " pun "
-
-        # Read hundreds
-        if(N[1] != '0'):
-            num_read += thai_num[N[1]] + " roi "
-
-        # Read tens
-        if(N[2] == '0' or N[2] == '1'):
-            pass
-        elif(N[2] == '2'):
-            num_read += "yi "
-        else:
-            num_read += thai_num[N[2]] + " "
-        if(N[2] != '0'):
-            num_read += "sip "
-
-        # Read ones
-        if(N[3] == '0'):
-            pass
-        elif(N[3] == '1'):
-            num_read += "et"
-        else:
-            num_read += thai_num[N[3]]
-    
-    # Return "num_read"
-    return num_read
-
-# Execute an input string
+# Execute an input string as code
 exec(input().strip())

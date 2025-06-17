@@ -1,127 +1,111 @@
-# Create important dictionary and list
-common_year = [31,28,31,30,31,30,31,31,30,31,30,31]
-leap_year = [31,29,31,30,31,30,31,31,30,31,30,31]
-delivery_type = {'E':1, 'Q':3, 'N':7, 'F':14}
-success = []
+# --------------------------------------------------
+# File Name : P2_04_Delivery.py
+# Problem   : Part-II Delivery
+# Author    : Worralop Srichainont
+# Date      : 2025-06-17
+# --------------------------------------------------
 
-# Check leap year (Don't forget to convert from B.E. to A.D.)
-def IsLeapYear(year):
-    return ((year-543)%400 == 0) or ((year-543)%100 != 0 and (year-543)%4 == 0)
+# List of days in each month for common and leap years
+COMMON = [31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31]
+LEAP = [31, 29, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31]
+# Delivery types and their corresponding days
+DELIVERY = {"E": 1, "Q": 3, "N": 7, "F": 14}
 
-# This function can check if the order is error or not
-# 'order' contains [ID] [Type] [Day] [Month] [Year]
-# 1.) Invalid year: Year less than 2558
-# 2.) Invaid month: Month doesn't exist
-# 3.) Invalid date: Date doesn't exist
-# 4.) Invalid delivery type: Type is not in ['E','Q','N','F']
-def IsError(order):
-    # Get value from parameter
-    ID, type, day, month, year = order.strip().split()
-    day, month, year = int(day), int(month), int(year)
-    
-    # 1.) Invalid year
-    if(year < 2558):
-        print("Error:", ID, type, day, month, year, "--> Invalid year")
-        return True
-    
-    # 2.) Invalid month
-    if(month < 1 or month > 12):
-        print("Error:", ID, type, day, month, year, "--> Invalid month")
-        return True
-    
-    # 3.) Invalid date
-    # 3.1) Leap year
-    if(IsLeapYear(year)):
-        if(day < 1 or day > leap_year[month-1]):
-            print("Error:", ID, type, day, month, year, "--> Invalid date")
-            return True
-    # 3.2) Common year
+
+# Check if the year is a leap year
+def is_leap_year(year: int) -> bool:
+    return ((year - 543) % 400 == 0) or (
+        (year - 543) % 100 != 0 and (year - 543) % 4 == 0
+    )
+
+
+# This function checks if the order is valid
+def is_order_valid(o_id: str, o_type: str, day: int, month: int, year: int) -> bool:
+    # Case 1: Invalid order year
+    if year < 2558:
+        print(f"Error: {o_id} {o_type} {day} {month} {year} --> Invalid year")
+        return False
+
+    # Case 2: Invalid order month
+    if month < 1 or month > 12:
+        print(f"Error: {o_id} {o_type} {day} {month} {year} --> Invalid month")
+        return False
+
+    # Case 3: Invalid order date
+    if (
+        day < 1
+        or (not is_leap_year(year) and day > COMMON[month - 1])
+        or (is_leap_year(year) and day > LEAP[month - 1])
+    ):
+        print(f"Error: {o_id} {o_type} {day} {month} {year} --> Invalid date")
+        return False
+
+    # Case 4: Invalid delivery type
+    if o_type not in DELIVERY:
+        print(f"Error: {o_id} {o_type} {day} {month} {year} --> Invalid delivery type")
+        return False
+
+    # The order is valid
+    return True
+
+
+# This function adds the delivery days to the order date
+def add_date(day: int, month: int, year: int, o_type: str) -> list[int]:
+    # Initialize total days in the year and the new date variables
+    total_days = 0
+    new_day, new_month, new_year = day, month, year
+    # Add the delivery days to the order date and adjust the year
+    if is_leap_year(year):
+        total_days = sum(LEAP[: month - 1]) + day
+        total_days += DELIVERY[o_type]
+        if total_days > 366:
+            new_year = year + 1
+            total_days -= 366
     else:
-        if(day < 1 or day > common_year[month-1]):
-            print("Error:", ID, type, day, month, year, "--> Invalid date")
-            return True
-    
-    # 4.) Invalid delivery type
-    if(type not in delivery_type):
-        print("Error:", ID, type, day, month, year, "--> Invalid delivery type")
-        return True
-    
-    # If the order is not error, it will return this
-    return False
+        total_days = sum(COMMON[: month - 1]) + day
+        total_days += DELIVERY[o_type]
+        if total_days > 365:
+            new_year = year + 1
+            total_days -= 365
 
-# This function can add date by delivery type
-# Example: Add(28,12,2560,'F') returns (11,1,2561)
-def AddDate(day,month,year,type):
-    # Calculate days from 1/1/year to day/month/year
-    # Case 1: Leap year
-    if(IsLeapYear(year)):
-        days = sum(leap_year[0 : month-1]) + day
-    # Case 2: Common year
-    else:
-        days = sum(common_year[0 : month-1]) + day
-    
-    # Add days by delivery type
-    days += delivery_type[type]
-
-    # Convert back day,month,year value
-    # Case 1: Leap year
-    if(IsLeapYear(year)):
-        # In case of 'days' exceed 366
-        if(days > 366):
-            days -= 366
-            year += 1
-        # Find new 'day' and 'month'
-        for m in range(13):
-            if(days <= sum(leap_year[0:m])):
-                month = m
-                day = days - sum(leap_year[0:m-1])
+    # Determine the new month and day after adding delivery days
+    for m in range(13):
+        if is_leap_year(year):
+            if total_days <= sum(LEAP[:m]):
+                new_month = m
+                new_day = total_days - sum(LEAP[: m - 1])
                 break
-    # Case 2: Common year
-    else:
-        # In case of 'days' exceed 365
-        if(days > 365):
-            days -= 365
-            year += 1
-        # Find new 'day' and 'month'
-        for m in range(13):
-            if(days <= sum(common_year[0:m])):
-                month = m
-                day = days - sum(common_year[0:m-1])
+        else:
+            if total_days <= sum(COMMON[:m]):
+                new_month = m
+                new_day = total_days - sum(COMMON[: m - 1])
                 break
-    
-    # Returns new day,month,year value
-    return day,month,year
+    # Return the new date as a list [day, month, year]
+    return [new_day, new_month, new_year]
 
-# This function can convert day,month,year to DD/MM/YYYY format
-def DateFormat(day,month,year):
-    return str(day) + "/" + str(month) + "/" + str(year)
 
-# Input orders
-while(True):
-    order = input().strip()
-    if(order != "END"):
-        # Input order that is not error in 'success' list in the format
-        # success = [[Year, Month, Date, ID], ...]
-        if(not IsError(order)):
-            # Get value from input
-            ID, type, day, month, year = order.strip().split()
-            day, month, year = int(day), int(month), int(year)
-            
-            # Add date by delivery type
-            day,month,year = AddDate(day,month,year,type)
-
-            # Store a data in 'success' list
-            success.append([year,month,day,ID])
-    
-    # Break the loop if input = "END"
-    else:
+# Input orders until "END" is entered
+successful_orders = []
+while True:
+    # Read the order input
+    order = input().strip().split()
+    # Stop if "END" is entered
+    if order[0] == "END":
         break
 
-# Sort 'success' by year, month, day then ID
-# Example: [[2561,5,11,'10008'], [2559,12,31,'10005'], [2560,1,1,'10010']]
-# After sorting: [[2559,12,31,'10005'], [2560,1,1,'10010'], [2561,5,11,'10008']]
-success.sort()
+    # Extract order details
+    o_id, o_type = order[:2]
+    day, month, year = int(order[2]), int(order[3]), int(order[4])
+    # Check if the order is valid
+    if is_order_valid(o_id, o_type, day, month, year):
+        # Add the delivery days to the order date
+        day, month, year = add_date(day, month, year, o_type)
+        # Append the successful order to the list
+        successful_orders.append([year, month, day, o_id])
 
-# Output
-for year,month,day,ID in success:
-    print(ID + ": delivered on " + DateFormat(day,month,year))
+# Sort the successful orders by year, month, day, and ID
+successful_orders.sort()
+
+# Output the successful orders
+for year, month, day, o_id in successful_orders:
+    print(f"{o_id}: delivered on {day}/{month}/{year}")
