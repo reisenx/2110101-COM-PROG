@@ -1,52 +1,60 @@
-# This function can return a ruler string
-def ruler(k):
+# --------------------------------------------------
+# File Name : P3_03_Text.py
+# Problem   : Part-III Text Formatting
+# Author    : Worralop Srichainont
+# Date      : 2025-06-17
+# --------------------------------------------------
+
+
+# Print a ruler with dashes and numbers
+def print_ruler(limit: int) -> None:
     line = ""
-    for i in range(k//10):
-        line += "-"*9 + str(i+1)
-    line += "-"*(k%10)
-    return line
+    for i in range(limit // 10):
+        line += f"{'-' * 9}{i + 1}"
+    line += "-" * (limit % 10)
+    print(line)
 
-# This function can read text in a file and convert to a list of all words
-def file_to_wordslist(filename):
-    file = open(filename, "r")
-    wordslist = []
-    for line in file:
-        data = line.strip().split('.')
-        for item in data:
-            wordslist.append(item)
-    file.close()
-    return wordslist
 
-# Input filename and k
+# Extract words from a file and return them as a list
+def extract_words_from_file(filename: str) -> list[str]:
+    words = []
+    with open(filename) as file:
+        for line in file:
+            words += line.strip().split(".")
+    return words
+
+
+# Input the filename and limit
 filename = input().strip()
-k = int(input())
+limit = int(input())
 
-# Output ruler
-print(ruler(k))
+# Output the ruler
+print_ruler(limit)
+# Extract words from the file
+words = extract_words_from_file(filename)
 
-# Get a list of words
-words = file_to_wordslist(filename)
+# Initialize start and end indices for word processing
+start, end = 0, 0
+# Process until all words are processed
+while start < len(words):
+    # Construct the line from words[start:end]
+    line = ".".join(words[start:end]).strip(".")
 
-# Rearrange the text
-# Algorithm is similar to 2566_2_Quiz_2_3.py
-start = 0
-end = 0
-while(start < len(words)):
-    # There's no '.' at the front and the end of each line so we need to strip '.' every loop
-    line = ".".join(words[start:end]).strip('.')
-    # Stop when reached the end of the 'words' list
-    if(end > len(words)):
+    # Check if the end index exceeds the length of words
+    if end > len(words):
         print(line)
         break
-    # If using only 1 words but the len(line) already exceed 'k', output the line
-    elif(end-start == 1 and len(line) > k):
-        print(line)
-        start = end
-    # If len(line) exceed k, output the line.
-    elif(len(line) > k):
-        print(".".join(words[start:end-1]).strip('.'))
-        start = end-1
-        end = end-1
-    # If len(line) is less than k, add 'end' by 1 until it exceed 'k'
+
+    # If the line exceeds the limit, print the current line and reset start
+    if len(line) > limit:
+        # Output the line without the last word to fit the limit
+        if end - start > 1:
+            print(".".join(words[start : end - 1]).strip("."))
+            start = end - 1
+        # The length of only one word exceeds the limit
+        else:
+            print(line)
+            start = end
+    # If the line does not exceed the limit, increment end
     else:
         end += 1
