@@ -1,5 +1,5 @@
 # --------------------------------------------------
-# File Name : P3_10_Numpy.py
+# File Name : P3_10_Numpy1.py
 # Problem   : Part-III NumPy Functions
 # Author    : Worralop Srichainont
 # Date      : 2025-06-17
