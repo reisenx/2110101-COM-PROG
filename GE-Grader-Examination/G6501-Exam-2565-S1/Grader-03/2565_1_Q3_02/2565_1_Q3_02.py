@@ -6,17 +6,17 @@
 # --------------------------------------------------
 
 # Input number of students, faculties, and testcases
-faculty_amt, guest_amt, testcases = [int(amt) for amt in input().split()]
+student_count, guest_count, testcases = [int(amt) for amt in input().split()]
 
 # Create a dictionary to map students to their faculty
 students_faculty = {}
-for _ in range(faculty_amt):
+for _ in range(student_count):
     student, faculty = input().split()
     students_faculty[student] = faculty
 
 # Create a dictionary to map each guest to the set of faculties of their students
 guest_faculties = {}
-for _ in range(guest_amt):
+for _ in range(guest_count):
     # Read the guest name and their visited students
     people = input().split()
     guest = people[0]
