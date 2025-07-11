@@ -7,7 +7,7 @@
 
 # Input equation and add spaces before operators
 equation = ""
-for char in input().split():
+for char in input().strip():
     if char in "+-":
         equation += " "
     equation += char
