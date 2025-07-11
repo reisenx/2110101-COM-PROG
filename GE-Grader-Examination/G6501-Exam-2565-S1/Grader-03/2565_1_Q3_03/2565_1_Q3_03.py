@@ -60,11 +60,11 @@ def is_enemy_pair(country01: str, country02: str) -> bool:
 # Check if the circular table of countries can be a valid arrangement
 def is_table_valid(countries: list[str]) -> bool:
     # Ensure the list is circular by appending the first country to the end
-    countries.append(countries[0])
+    circular_countries = countries + [countries[0]]
     # Check each pair of adjacent countries if they are enemies
-    for i in range(len(countries) - 1):
+    for i in range(len(circular_countries) - 1):
         # If any adjacent pair is an enemy pair, return False
-        if is_enemy_pair(countries[i], countries[i + 1]):
+        if is_enemy_pair(circular_countries[i], circular_countries[i + 1]):
             return False
     # If no adjacent pairs are enemies, return True
     return True
