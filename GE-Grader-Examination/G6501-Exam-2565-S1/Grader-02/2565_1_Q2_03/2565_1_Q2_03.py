@@ -29,7 +29,7 @@ def mark_color(text: str, color: str) -> str:
     result = text
     start_find_idx = 0
     while True:
-        start_idx = text.lower().find(color, start_find_idx)
+        start_idx = result.lower().find(color, start_find_idx)
         end_idx = start_idx + len(color)
         if start_idx == -1:
             break
