@@ -1,63 +1,61 @@
-# Not guarantee 100/100 points on this code
+# --------------------------------------------------
+# File Name : 2565_1_Q1_02.py
+# Problem   : Multiplexer
+# Author    : Worralop Srichainont
+# Date      : 2025-07-11
+# --------------------------------------------------
 
-# 'f1' function returns minimum value of a,b,c (Consider only positive number)
-def f1(a,b,c):
-    # Find a positive number in a,b,c and put it in the list
-    positive = []
-    if(a > 0):
-        positive.append(a)
-    if(b > 0):
-        positive.append(b)
-    if(c > 0):
-        positive.append(c)
-    # Return a minimum value among positive numbers
-    return min(positive)
 
-# 'f2' function returns maximum value of a,b,c (Consider only negative number)
-def f2(a,b,c):
-    # Find a negative number in a,b,c and put it in the list
-    negative = []
-    if(a < 0):
-        negative.append(a)
-    if(b < 0):
-        negative.append(b)
-    if(c < 0):
-        negative.append(c)
-    # Return a maximum value among negative numbers
-    return max(negative)
+# Returns the minimum positive integer from a, b, c
+def f1(a: int, b: int, c: int) -> int:
+    positives = []
+    if a > 0:
+        positives += [a]
+    if b > 0:
+        positives += [b]
+    if c > 0:
+        positives += [c]
+    return min(positives)
 
-# 'f3' function returns the leftmost digit of a+b+c (Ignore negative symbol)
-def f3(a,b,c):
-    # Find sum then remove negative symbol using absolute
-    sum = abs(a+b+c)
-    # Convert a sum into a string a return the leftmost digit
-    return str(sum)[0]
 
-# 'f4' function returns the rightmost digit of a+b+c (Ignore negative symbol)
-def f4(a,b,c):
-    # Find sum then remove negative symbol using absolute
-    sum = abs(a+b+c)
-    # Convert a sum into a string a return the rightmost digit
-    return str(sum)[-1]
+# Returns the maximum negative integer from a, b, c
+def f2(a: int, b: int, c: int) -> int:
+    negatives = []
+    if a < 0:
+        negatives += [a]
+    if b < 0:
+        negatives += [b]
+    if c < 0:
+        negatives += [c]
+    return max(negatives)
 
-# Get s1,s2,a,b,c value from keyboard
-# - If s1=0, s2=0, print(f1(a,b,c))
-# - If s1=0, s2=1, print(f2(a,b,c))
-# - If s1=1, s2=0, print(f3(a,b,c))
-# - If s1=1, s2=1, print(f4(a,b,c))
-# - If s1 or s2 is not 0 or 1, print("Error")
-def main():
-    s1,s2,a,b,c = [int(e) for e in input().split()]
-    if(s1 == 0 and s2 == 0):
-        print(f1(a,b,c))
-    elif(s1 == 0 and s2 == 1):
-        print(f2(a,b,c))
-    elif(s1 == 1 and s2 == 0):
-        print(f3(a,b,c))
-    elif(s1 == 1 and s2 == 1):
-        print(f4(a,b,c))
+
+# Returns the first digit of the absolute sum of a, b, c
+def f3(a: int, b: int, c: int) -> str:
+    sums = abs(a + b + c)
+    return str(sums)[0]
+
+
+# Returns the last digit of the absolute sum of a, b, c
+def f4(a: int, b: int, c: int) -> str:
+    sums = abs(a + b + c)
+    return str(sums)[-1]
+
+
+# Main function to read input and call the appropriate function based on s1 and s2
+def main() -> None:
+    s1, s2, a, b, c = [int(e) for e in input().split()]
+    if [s1, s2] == [0, 0]:
+        print(f1(a, b, c))
+    elif [s1, s2] == [0, 1]:
+        print(f2(a, b, c))
+    elif [s1, s2] == [1, 0]:
+        print(f3(a, b, c))
+    elif [s1, s2] == [1, 1]:
+        print(f4(a, b, c))
     else:
         print("Error")
 
-# Execute an input string
+
+# Execute a input string as code
 exec(input().strip())
