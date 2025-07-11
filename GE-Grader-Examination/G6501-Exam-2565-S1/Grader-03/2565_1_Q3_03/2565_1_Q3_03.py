@@ -33,7 +33,7 @@ def add_enemies(countries: list[str]) -> None:
 
 # Add more enemies based on the allies and enemies relationships
 def add_more_enemies() -> None:
-    # Add enemies of allies to the enemies of each country
+    # Add allies of enemies to the enemies of each country
     for country, enemy_countries in enemies.items():
         # Collect all allies of enemies
         allies_of_enemies = set()
