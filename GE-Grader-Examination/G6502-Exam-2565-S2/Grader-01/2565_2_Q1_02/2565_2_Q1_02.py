@@ -14,12 +14,12 @@ print("-------------")
 for i in range(7):
     if aqi[i] < 25:
         print(f"{i + 1}..|+........")
-    if 25 <= aqi[i] < 50:
+    elif 25 <= aqi[i] < 50:
         print(f"{i + 1}..|..+......")
-    if 50 <= aqi[i] < 100:
+    elif 50 <= aqi[i] < 100:
         print(f"{i + 1}..|....+....")
-    if 100 <= aqi[i] < 200:
+    elif 100 <= aqi[i] < 200:
         print(f"{i + 1}..|......+..")
-    if aqi[i] >= 200:
+    elif aqi[i] >= 200:
         print(f"{i + 1}..|........+")
 print("-------------")
