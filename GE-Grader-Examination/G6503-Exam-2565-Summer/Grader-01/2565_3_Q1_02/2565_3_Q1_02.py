@@ -1,40 +1,34 @@
-# Create a list that contains names
-# 'SNames' list contains candidates names
-# 'PNames' list contains party names
-SNames = ["A1", "B2", "C3", "D4", "E5", "F6", "G7", "H8", "X9", "Y10", "Z11"]
-PNames = ["PT1", "PP2", "RT3", "TT4", "KK5", "ST6"]
+# --------------------------------------------------
+# File Name : 2565_3_Q1_02.py
+# Problem   : Election
+# Author    : Worralop Srichainont
+# Date      : 2025-07-12
+# --------------------------------------------------
 
-# Create a list that contains votes
-# 'SCount' list contains votes of each candidates
-# > Index 0 of 'SCount' is for "A1"
-# > Index 1 of 'Scount' is for "B2"
-# > Index 2 of 'SCount' is for "C3" and so on...
-# 'PCount' list contains votes of each party
-# > Index 0 of 'PCount' is for "PT1"
-# > Index 1 of 'PCount' is for "PP2"
-# > Index 2 of 'PCount' is for "RT3" and so on...
-SCount = [0]*11
-PCount = [0]*6
+# List of candidates and parties names
+CANDIDATE = ["A1", "B2", "C3", "D4", "E5", "F6", "G7", "H8", "X9", "Y10", "Z11"]
+PARTY = ["PT1", "PP2", "RT3", "TT4", "KK5", "ST6"]
 
-# Input
-while(True):
+# Initialize vote counts for candidates and parties
+candidate_votes = [0] * 11
+party_votes = [0] * 6
+
+while True:
+    # Input data until "q" is entered
     data = input().strip().split()
-    # If the input is 'q', then break
-    if(data[0] == 'q'):
+    if data == ["q"]:
         break
-    
-    # The input will be in the format
-    # [Candidates number] [Party number]
-    else:
-        S,P = int(data[0]), int(data[1])
-        # Count votes
-        SCount[S-1] += 1
-        PCount[P-1] += 1
+    # Extract candidate and party indices from input
+    candidate_idx = int(data[0]) - 1
+    party_idx = int(data[1]) - 1
+    # Increment the vote counts for the candidate and their party
+    candidate_votes[candidate_idx] += 1
+    party_votes[party_idx] += 1
 
-# Find index of the most voted candidates and party in 'SCount' and 'PCount'
-S_index = SCount.index(max(SCount))
-P_index = PCount.index(max(PCount))
+# Find the candidate and party with the maximum votes
+candidate_idx = candidate_votes.index(max(candidate_votes))
+party_idx = party_votes.index(max(party_votes))
 
-# Output
-print(SNames[S_index], max(SCount))
-print(PNames[P_index], max(PCount))
+# Output the candidate and party with the most votes
+print(CANDIDATE[candidate_idx], max(candidate_votes))
+print(PARTY[party_idx], max(party_votes))
