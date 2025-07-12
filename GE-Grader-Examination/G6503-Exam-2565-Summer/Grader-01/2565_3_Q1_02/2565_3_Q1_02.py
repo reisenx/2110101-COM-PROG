@@ -10,8 +10,8 @@ CANDIDATE = ["A1", "B2", "C3", "D4", "E5", "F6", "G7", "H8", "X9", "Y10", "Z11"]
 PARTY = ["PT1", "PP2", "RT3", "TT4", "KK5", "ST6"]
 
 # Initialize vote counts for candidates and parties
-candidate_votes = [0] * 11
-party_votes = [0] * 6
+candidate_votes = [0] * len(CANDIDATE)
+party_votes = [0] * len(PARTY)
 
 while True:
     # Input data until "q" is entered
