@@ -1,74 +1,57 @@
-# Unofficial
-# Summer2023 Euro2024
+# --------------------------------------------------
+# File Name : 2566_3_Q2_01.py
+# Problem   : Euro 2024
+# Author    : Worralop Srichainont
+# Date      : 2025-07-15
+# --------------------------------------------------
 
-# Input football matches
-matches = []
-match_cnt = 0
+
+# Check if the match result of the guessed score is the same as the actual score.
+# Both teams must have the same win/loss/draw status.
+def is_match_result_same(exact: list[int], guess: list[int]) -> bool:
+    return (
+        ((exact[0] > exact[1]) and (guess[0] > guess[1]))
+        or ((exact[0] < exact[1]) and (guess[0] < guess[1]))
+        or ((exact[0] == exact[1]) and (guess[0] == guess[1]))
+    )
+
+
+# Compare the exact match scores with the guessed scores and return points.
+# 3 points for exact match, 1 point for correct score of one team,
+# and 0 points for no correct scores.
+def get_match_scores(exact: list[int], guess: list[int]) -> int:
+    if exact == guess:
+        return 3
+    elif (exact[0] == guess[0]) or (exact[1] == guess[1]):
+        return 1
+    return 0
+
+
+# Get the exact scores from the input.
+exact_scores = []
 while True:
-    data = input().strip()
-    # Stop input, if input = "-1"
-    if(data == "-1"):
+    # Read input data until "-1" is entered.
+    data = input().strip().split()
+    if data == ["-1"]:
         break
+    # Extract the scores from the input and store them in a list.
+    score = data[1].split(":")
+    exact_scores += [[int(score[0]), int(score[1])]]
 
-    # Put data in 'matches'
-    # Example:
-    # > data = "England:Italy 3:1"
-    # > matches = [[3,1,"Win"],...]
-    else:
-        # Get score from 'data'
-        name, score = data.split()
-        score1, score2 = score.split(":")
-        score1, score2 = int(score1), int(score2)
-        # Compare score
-        if(score1 > score2):
-            result = "Win"
-        elif(score1 == score2):
-            result = "Draw"
-        elif(score1 < score2):
-            result = "Lose"
-        # append a data in 'matches'
-        matches.append([score1, score2, result])
-        match_cnt += 1
+# Get the guessed scores from the input.
+guess_scores = []
+for _ in range(len(exact_scores)):
+    # Extract the scores from the input and store them in a list.
+    score = input().strip().split(":")
+    guess_scores += [[int(score[0]), int(score[1])]]
 
-# Input user predicted football match score and calculate the user point
-user_point = 0
-for i in range(match_cnt):
-    # Get score from user predicted football match score
-    score1, score2 = input().strip().split(":")
-    score1, score2 = int(score1), int(score2)
-    # Get result from user predicted football match score
-    # Compare score
-    if(score1 > score2):
-        result = "Win"
-    elif(score1 == score2):
-        result = "Draw"
-    elif(score1 < score2):
-        result = "Lose"
-
-    # Calculate user point
-    # Citeria 1: Check result Win/Draw/Lose [3 points]
-    if(result == matches[i][2]):
-        user_point += 3
-        # Citeria 2: Check score
-        # - Correctly predict 2 team [3 point]
-        if(score1 == matches[i][0] and score2 == matches[i][1]):
-            user_point += 3
-        # - Correctly predict 1 team [1 point]
-        elif(score1 == matches[i][0] or score2 == matches[i][1]):
-            user_point += 1
-
-# Output
-print(user_point)
-
-# -- Testcase Input --
-# England:Italy 3:1
-# Germany:France 1:1
-# Portugal:Belgium 0:3
-# Spain:Netherlands 2:2
-# -1
-# 2:1
-# 0:0
-# 0:0
-# 2:2
-# -- Testcase Output --
-# 13
+# Initialize total points to 0
+total_points = 0
+# Compare each exact score with the guessed score and calculate total points.
+for i in range(len(exact_scores)):
+    # Check if the match result is the same
+    if is_match_result_same(exact_scores[i], guess_scores[i]):
+        # If the match result is the same, compare scores and add points.
+        total_points += get_match_scores(exact_scores[i], guess_scores[i])
+# Output the total points.
+print(total_points)
