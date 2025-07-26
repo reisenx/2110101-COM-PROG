@@ -1,5 +1,5 @@
 # --------------------------------------------------
-# File Name : 2566_2_Q3_01.py
+# File Name : 2566_2_Q3_02.py
 # Problem   : Friends
 # Author    : Worralop Srichainont
 # Date      : 2025-07-15

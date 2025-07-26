@@ -1,5 +1,5 @@
 # --------------------------------------------------
-# File Name : 2566_1_Q1_01.py
+# File Name : 2566_2_Q1_01.py
 # Problem   : Poker Hands Straight Flush
 # Author    : Worralop Srichainont
 # Date      : 2025-07-13
