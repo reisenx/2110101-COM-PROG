@@ -1,57 +1,47 @@
-# Not guarantee 100/100 points on this code
+# --------------------------------------------------
+# File Name : 2566_1_Q2_01.py
+# Problem   : Outlier
+# Author    : Worralop Srichainont
+# Date      : 2025-07-12
+# --------------------------------------------------
 
-# Input a number from a keyboard and split as a list
-number = [int(e) for e in input().split()]
 
-# Sort a list in ascending order
-number.sort()
+# Calculate the median of a list of sorted numbers
+def get_median(numbers: list[int]) -> float:
+    n = len(numbers)
+    if n % 2 == 1:
+        return float(numbers[n // 2])
+    return (numbers[(n // 2) - 1] + numbers[n // 2]) / 2.0
 
-# Split into 2 list with the same length
-# Case 1: length of the list is even number
-# Example: [1,3,5,5,5,5,5,6,6,6,6,7,18,20] --> [1,3,5,5,5,5,5] and [6,6,6,6,7,18,20]
-# Case 2: length of the list is odd number --> Ignore the center number in the list
-# Example: [1,3,4,5,5,5,(5),6,6,6,7,18,20] --> [1,3,4,5,5,5] and [6,6,6,7,18,20]
-if(len(number)%2 == 0):
-    list01 = number[:len(number)//2]
-    list02 = number[len(number)//2:]
+
+# Input the list of numbers and sort them in ascending order
+numbers = [int(num) for num in input().split()]
+numbers.sort()
+
+# Split the list into two halves
+n = len(numbers)
+first_half = numbers[: n // 2]
+second_half = numbers[-(n // 2) :]
+
+# Calculate the IQR
+q1 = get_median(first_half)
+q3 = get_median(second_half)
+iqr = q3 - q1
+
+# Calculate the lower and upper bounds for outliers
+lower_bound = q1 - (1.5 * iqr)
+upper_bound = q3 + (1.5 * iqr)
+
+# Find outliers in the list of numbers
+outliers = []
+for num in numbers:
+    if num < lower_bound or num > upper_bound:
+        outliers.append(num)
+
+# Output
+print(f"L = {lower_bound} U = {upper_bound}")
+# Output the outliers if any, otherwise print "Not found"
+if len(outliers) > 0:
+    print(" ".join([str(num) for num in outliers]))
 else:
-    list01 = number[:len(number)//2]
-    list02 = number[len(number)//2 + 1:]
-
-# Find Q1 which is median of the first list
-# Case 1: length of the list is even number
-# Example: [1,3,(4,5),5,5] --> Median = (4+5)/2 = 4.5
-# Case 2: length of the list is odd number
-# Example: [6,6,6,(6),7,18,20] --> Median = 6
-if(len(list01)%2 == 0):
-    Q1 = (list01[len(list01)//2 - 1] + list01[len(list01)//2]) / 2
-else:
-    Q1 = list01[len(list01)//2]
-
-# Find Q3 which is median of the second list
-if(len(list02)%2 == 0):
-    Q3 = (list02[len(list02)//2 - 1] + list02[len(list02)//2]) / 2
-else:
-    Q3 = list02[len(list02)//2]
-
-# Find IQR
-IQR = Q3 - Q1
-
-# Find L and U
-L = Q1 - (1.5*IQR)
-U = Q3 + (1.5*IQR)
-
-# Outlier of the data is data that less than L or more than U
-outlier = []
-for num in number:
-    if(num < L or num > U):
-        outlier.append(num)
-
-# Output L,U and outlier
-for i in range(len(outlier)):
-    outlier[i] = str(outlier[i])
-print("L =", L, "U =", U)
-if(outlier == []):
     print("Not found")
-else:
-    print(" ".join(outlier))

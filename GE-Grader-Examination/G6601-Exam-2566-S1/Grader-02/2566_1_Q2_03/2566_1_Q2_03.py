@@ -1,83 +1,55 @@
-# Not guarantee 100/100 points on this code
+# --------------------------------------------------
+# File Name : 2566_1_Q2_03.py
+# Problem   : Eavesdrop
+# Author    : Worralop Srichainont
+# Date      : 2025-07-13
+# --------------------------------------------------
 
-# Input interested character
+# Input the character name queries
+queries = []
 n = int(input())
-character = []
-for i in range(n):
-    character.append(input().strip())
+for _ in range(n):
+    queries.append(input().strip())
 
-# As you can see a dialogue always starts with * and ends with "
-# Example:
-# *author123: "I would like to send a 
-# special gift to you as a thank you." 
-# *Main Character: "Gift?"
-
-# Algorithm
-# 1.) If a string start with * and if find() character in list not returns -1
-# then put that line in a dialogue list
-# 2.) If a string ends with ", put that line in a dialogue list then stop and find a string starts with *
-
-# But there are hard cases which the dialogue ends between the string (" symbol not at the end of the string)
-# Example:
-# *Main Character: "Wow, really?" I'm surprised. 
-# *Villian: "Here, you are."
-    
-# If you split *Main Character: "Wow, really?" I'm surprised. 
-# You will get a list [*Main Character:, "Wow, really?", I'm surprised.]
-# And you can see a data in index 1 have " at the end, so that means it's the end of the dialogue
-# So if we join a string at index 0 and 1 we will get a string
-# *Main Character: "Wow, really?"
-# and the length of the string above is 31, so the index of " at the end is 30
-# That means we can slice a string from index 0 to 30 which is [:30+1] and put it in the dialogue list
-
-dialogue = []
-IsDialogue = False
-IsEnd = False
+# Input the novel dialog as a raw string
+raw_dialog = ""
 while True:
     line = input().strip()
-    if(line == "END"):
+    if line == "END":
         break
-    else:
-        # Check if the string starts with * and is a dialogue we interested
-        if(line[0] == '*'):
-            for name in character:
-                if(line.find(name) != -1):
-                    IsDialogue = True
-                    break
-        
-        # Check if the dialogue ends
-        # Split a dialogue to a list
-        check = line.split()
-        # Find a string in a list that ends with "
-        for string in check:
-            if(string[-1] == '\"'):
-                IsEnd = True
-                list_index = check.index(string)
-                break
-        # Find index of "
-        if(IsEnd):
-            index = len(" ".join(check[:list_index+1])) - 1
+    raw_dialog += line + "\n"
 
-        # Put a dialogue in a list
-        # If a dialogue starts with *, remove it
-        if(IsDialogue):
-            if(line[0] == '*' and (not IsEnd)):
-                dialogue.append(line[1:])
-            elif(not IsEnd):
-                dialogue.append(line)
-            elif(line[0] == '*' and IsEnd):
-                dialogue.append(line[1:index+1])
-            elif(IsEnd):
-                dialogue.append(line[:index+1])
-        
-        # Reset the variables if the dialouge ends
-        if(IsEnd):
-            IsDialogue = False
-            IsEnd = False
+# Parse the raw dialog to extract character names and their dialogs
+dialog_list = []
+# Initialize the index for searching
+query_idx = 0
+while True:
+    # Find the start index of the character name
+    name_start_idx = raw_dialog.find("*", query_idx)
+    # Stop if no more names are found
+    if name_start_idx == -1:
+        break
+    # Find the end index of the character name
+    name_end_idx = raw_dialog.find(":", name_start_idx + 1)
+    # Find the start and end index of the dialog
+    dialog_start_idx = raw_dialog.find('"', name_end_idx + 1)
+    dialog_end_idx = raw_dialog.find('"', dialog_start_idx + 1)
 
-# Output
-if(dialogue == []):
+    # Extract the character name and dialog from the raw dialog
+    name = raw_dialog[name_start_idx + 1 : name_end_idx].strip()
+    dialog = raw_dialog[dialog_start_idx : dialog_end_idx + 1].strip()
+    # Store the character name and dialog in the list
+    dialog_list.append([name, dialog])
+
+    # Update the query index to search for the next character name
+    query_idx = dialog_end_idx + 1
+
+# Output the dialogs for the queried character names
+has_dialog = False
+for name, dialog in dialog_list:
+    if name in queries:
+        print(f"{name}: {dialog}")
+        has_dialog = True
+
+if not has_dialog:
     print("Maybe wrong novel")
-else:
-    for line in dialogue:
-        print(line)
