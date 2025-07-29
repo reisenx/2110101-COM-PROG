@@ -1,54 +1,64 @@
-# Create generation dictionary
-# Key:   Generation acronym
-# Value: list of [year, month, day, name]
-generation = {'S':[], 'B':[], 'X':[], 'Y':[], 'Z':[], 'A':[]}
+# --------------------------------------------------
+# File Name : 2567_1_Q3_B1.py
+# Problem   : Generations
+# Author    : Worralop Srichainont
+# Date      : 2025-07-28
+# --------------------------------------------------
 
-# Input names and their birthday
-while(True):
+# Generations information about name, start year, and end year
+GEN_INFO = (
+    ("S", 2468, 2488),
+    ("B", 2489, 2507),
+    ("X", 2508, 2523),
+    ("Y", 2524, 2539),
+    ("Z", 2540, 2555),
+    ("A", 2556, 9999),
+)
+
+# Dictionary to hold people by generation
+GEN_PEOPLE = {"S": [], "B": [], "X": [], "Y": [], "Z": [], "A": []}
+
+while True:
+    # Input each line of data
     data = input().strip()
-    # If the input is "-1", stop the process
-    if(data == "-1"):
+    # Stop, if the input is "-1"
+    if data == "-1":
         break
-    
-    # Get name and their birthday information
-    name, date = data.split()
-    day, month, year = [int(item) for item in date.split('/')]
-    
-    # Input the information into the dictionary
-    if(2468 <= year <= 2488):
-        generation['S'].append([year, month, day, name])
-    if(2489 <= year <= 2507):
-        generation['B'].append([year, month, day, name])
-    if(2508 <= year <= 2523):
-        generation['X'].append([year, month, day, name])
-    if(2524 <= year <= 2539):
-        generation['Y'].append([year, month, day, name])
-    if(2540 <= year <= 2555):
-        generation['Z'].append([year, month, day, name])
-    if(year >= 2556):
-        generation['A'].append([year, month, day, name])
 
-# Sort the name by their age in ascending order
-# To do that, we need to sort their birthday in descending order
-# For example, People who born at 25/3/2559 are younger than people who born at 17/1/2524
-# But [2559,3,25] is greater than [17,1,2524]
-generation['S'].sort(reverse = True)
-generation['B'].sort(reverse = True)
-generation['X'].sort(reverse = True)
-generation['Y'].sort(reverse = True)
-generation['Z'].sort(reverse = True)
-generation['A'].sort(reverse = True)
+    # Extract name, birth day, month, and year
+    name, birth_date = data.split()
+    birth_day, birth_month, birth_year = [int(num) for num in birth_date.split("/")]
 
-# Output
+    # Create a tuple with birth year, month, day, and name
+    info = (birth_year, birth_month, birth_day, name)
+
+    # Determine the generation based on the birth year and add to the corresponding list
+    for gen_name, start_year, end_year in GEN_INFO:
+        if start_year <= birth_year <= end_year:
+            GEN_PEOPLE[gen_name].append(info)
+
+# Sort each generation's people by age in ascending order
+# which means sorting by birth date in descending order
+for _, people in GEN_PEOPLE.items():
+    people.sort(reverse=True)
+
+# Input query of generation names
 n = int(input())
-for i in range(n):
-    letter = input().strip()
-    output = letter + " : "
-    # There is no people in that generation
-    if(len(generation[letter]) == 0):
-        output += "Not found"
-    # There are people in that generation
+query_gen = []
+for _ in range(n):
+    query_gen.append(input().strip())
+
+# Iterate through each queried generation name
+for gen_name in query_gen:
+    # If the generation exists and has people
+    if gen_name in GEN_PEOPLE and len(GEN_PEOPLE[gen_name]) > 0:
+        # Get the names of people in that generation
+        names = []
+        for _, _, _, name in GEN_PEOPLE[gen_name]:
+            names.append(name)
+        # Output the generation name and names
+        print(f"{gen_name}: {' '.join(names)}")
+
+    # If the generation does not exist or has no people
     else:
-        for [year, month, day, name] in generation[letter]:
-            output += name + " "
-    print(output)
+        print(f"{gen_name}: Not found")
