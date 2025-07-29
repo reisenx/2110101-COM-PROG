@@ -1,53 +1,62 @@
-# ---------- Algorithm ----------
-# Example:
-# Python is a HIGH-LEVEL
-# programming language.
-# I love Python.
+# --------------------------------------------------
+# File Name : 2567_1_Q3_B2.py
+# Problem   : Text Replace
+# Author    : Worralop Srichainont
+# Date      : 2025-07-28
+# --------------------------------------------------
 
-# Step 1: Input and convert message
-# - Input searching word and replace word
-# - output = 1 line string Input (convert newline to '\n')
-# - passage = 1 line string Input (convert newline to space)
+# Input target and its replacement string
+target, replacement_str = input().strip().split("/")
+target = target.strip().lower()
 
-# Step 2: Find and replace string
-# Given start = 0
-# Loop process until passage.find(search, start) is -1 (not found)
-# - Given start = passage.find(search, start)
-# - Given end = start + len(search)
-# - Replace a string (Replace to both passage and output)
-# - Given start = start + len(replace)
-# NOTE: Use .lower() to find search in passage (Case Insensitive)
-# Example (Before replace):
-# output = "Python is a HIGH-LEVEL\nprogramming language.\nI love Python."
-# passage = "Python is a HIGH-LEVEL programming language. I love Python."
-# Example (After replace):
-# output = "Python is a popular language.\nI love Python."
-# passage = "Python is a popular language. I love Python."
+# Calculate replacement offset
+REPLACEMENT_OFFSET = len(replacement_str) - len(target)
 
-# Step 1: Input and convert message
-search, replace = input().strip().split('/')
-N = int(input())
-passage = ""
+# Initialize query passage and output strings
+query_passage = ""
 output = ""
-for i in range(N):
+
+# Input number of lines and read each line of the passage
+n = int(input())
+for _ in range(n):
+    # Input each line of the passage
     line = input().strip()
-    passage += line + " "
+
+    # Add lowercase line and replace newline characters with spaces
+    # to query passage for case-insensitive search
+    query_passage += line.lower() + " "
+
+    # Add the exact passage line to the output string
     output += line + "\n"
 
-# Step 2: Find and insert <found> and </found>
-start,end = 0,0
-while(True):
-    # Find position to insert
-    start = (passage.lower()).find(search.lower(), start)
-    end = start + len(search)
-    # If not found (start = -1), then break the loop
-    if(start == -1):
+# Remove trailing spaces from the query passage
+query_passage = query_passage.strip()
+
+# Initialize variables for searching and replacing
+replacement_count = 0
+find_start_idx = 0
+
+while True:
+    # Find the next occurrence of the target in the query passage
+    start_idx = query_passage.find(target, find_start_idx)
+    end_idx = start_idx + len(target)
+
+    # Update the start index for the next search
+    find_start_idx = end_idx
+
+    # If no more occurrences are found, break the loop
+    if start_idx == -1:
         break
-    # Replace a string
-    passage = passage[0:start] + replace + passage[end:]
-    output = output[0:start] + replace + output[end:]
-    # Find new start
-    start += len(replace)
-    
-# Output
+
+    # Add the offset to the start and end indices for replacement on the output string
+    start_idx += REPLACEMENT_OFFSET * replacement_count
+    end_idx += REPLACEMENT_OFFSET * replacement_count
+
+    # Replace the target in the output string with the replacement string
+    output = output[:start_idx] + replacement_str + output[end_idx:]
+
+    # Increment the replacement count
+    replacement_count += 1
+
+# Output the final result
 print(output.strip())
