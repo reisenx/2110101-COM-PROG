@@ -1,41 +1,32 @@
-# Input image as a list of string
-# Example: img = ["@@@@@.", "@@@@@.", "@@@@@.", "@.....", "@....."] can be represented as
-# @@@@@.
-# @...@.
-# @@@@@.
-# @.....
-# @.....
-row = int(input())
-img = []
-for i in range(row):
-    data = input().strip()
-    img.append(data)
+# --------------------------------------------------
+# File Name : 2567_1_Q2_A3.py
+# Problem   : Horizontal & Vertical Flip
+# Author    : Worralop Srichainont
+# Date      : 2025-07-28
+# --------------------------------------------------
 
-# Input command
-command = input()
+# Input number of rows and the image
+rows = int(input())
+img = [input().strip() for _ in range(rows)]
 
-# Horizontal flip
-# Original Image        | Rotated Image
-# [00][01][02]...[0c]   | [0c]...[02][01][00]
-# [10][11][12]...[1c]   | [1c]...[12][11][10]
-# [20][21][22]...[2c]   | [2c]...[22][21][20]
-# ... ... ...    ...    | ...    ... ... ...
-# [r0][r1][r2]...[rc]   | [rc]...[r2][r1][r0]
-if(command == "hflip"):
-    # Reversed each row in img, then output
+# Find the number of columns
+cols = len(img[0])
+
+# Initialize the modified image
+modified_img = []
+
+# Input command to modify the image
+cmd = input().strip()
+
+# Rotate the image by 90 degrees clockwise
+if cmd == "hflip":
     for row in img:
-        print(row[::-1])
+        modified_img.append(row[::-1])
 
-# Vertical flip
-# Original Image        | Rotated Image
-# [00][01][02]...[0c]   | [r0][r1][r2]...[rc]
-# [10][11][12]...[1c]   | ...    ... ... ...
-# [20][21][22]...[2c]   | [20][21][22]...[2c]
-# ... ... ...    ...    | [10][11][12]...[1c]
-# [r0][r1][r2]...[rc]   | [00][01][02]...[0c]
-if(command == "vflip"):
-    # Reverse all row in img list
-    img[::-1]
-    # Output
-    for row in img:
-        print(row)
+# Rotate the image by 180 degrees
+elif cmd == "vflip":
+    modified_img = img[::-1]
+
+# Output the modified image
+for line in modified_img:
+    print(line)
