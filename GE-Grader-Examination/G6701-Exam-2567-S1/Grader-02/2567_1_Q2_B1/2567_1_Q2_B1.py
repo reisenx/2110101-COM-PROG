@@ -1,46 +1,32 @@
-# Input list 'D'
-D = [int(e) for e in input().split()]
-# Find list 'P'
-P = sorted(D)
-# Given X is an empty list
-X = []
+# --------------------------------------------------
+# File Name : 2567_1_Q2_B1.py
+# Problem   : List Rearrangement
+# Author    : Worralop Srichainont
+# Date      : 2025-07-28
+# --------------------------------------------------
 
-# ---------- Algorithm ----------
-# Example: D = [8,3,1,6] | P = [1,3,6,8] | X = [] | pos = 0
-# Step 1: Find X[0]   | D = [8,3,1,6]
-# - Add P[0] to pos   | pos = 1
-# - Mod pos to len(D) | index = pos%4 = 1
-# - Add D[1] to X     | X = [3]
-# - Remove D[1]       | D = [8,1,6]
+# Input a list of numbers
+numbers = [int(num) for num in input().split()]
 
-# Step 2: Find X[1]   | D = [8,1,6]
-# - Add P[1] to pos   | pos = 4
-# - Mod pos to len(D) | index = pos%3 = 1
-# - Add D[1] to X     | X = [3,1]
-# - Remove D[1]       | D = [8,6]
+# Create another sequence of sorted numbers
+sorted_numbers = sorted(numbers)
 
-# Step 3: Find X[2]   | D = [8,6]
-# - Add P[2] to pos   | pos = 10
-# - Mod pos to len(D) | index = pos%2 = 0
-# - Add D[0] to X     | X = [3,1,8]
-# - Remove D[0]       | D = [6]
+# Initialize an empty list to hold the rearranged numbers
+rearranged_numbers = []
+# Initialize the position counter
+position = 0
 
-# Step 4: Find X[3]   | D = [6]
-# - Add P[3] to pos   | pos = 16
-# - Mod pos to len(D) | index = pos%1 = 0
-# - Add D[0] to X     | X = [3,1,8,6]
-# - Remove D[0]       | D = []
-# ----------------------------------------
+# Rearrange the numbers based on the sorted sequence
+for add_position in sorted_numbers:
+    # Calculate the new position in the original list
+    position += add_position
+    # Get the index in the original list
+    idx = position % len(numbers)
 
-# Find list X using algorithm above
-pos = 0
-for i in range(len(P)):
-    pos += P[i]
-    index = pos % len(D)
-    X.append(D[index])
-    D.pop(index)
+    # Append the number at the calculated index to the rearranged list
+    rearranged_numbers.append(str(numbers[idx]))
+    # Remove the number from the original list
+    numbers.pop(idx)
 
-# Output
-# To use join() function, we need to convert all item in list from int to str
-X = [str(item) for item in X]
-print(" ".join(X))
+# Output the rearranged numbers
+print(" ".join(rearranged_numbers))
