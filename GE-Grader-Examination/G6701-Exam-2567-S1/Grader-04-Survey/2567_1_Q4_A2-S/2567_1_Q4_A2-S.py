@@ -1,23 +1,28 @@
-# Input percentage of each type
-type1 = float(input())
-type2 = float(input())
-type3 = float(input())
-type4 = float(input())
+# --------------------------------------------------
+# File Name : 2567_1_Q4_A2-S.py
+# Problem   : Benefit from Sales
+# Author    : Worralop Srichainont
+# Date      : 2025-07-29
+# --------------------------------------------------
 
-# Input sales
-N = int(input())
-benefit = 0
-for i in range(N):
-    date, product, sales = input().strip().split()
-    product, sales = int(product), float(sales)
-    if(product == 1):
-        benefit += sales*(type1/100)
-    if(product == 2):
-        benefit += sales*(type2/100)
-    if(product == 3):
-        benefit += sales*(type3/100)
-    if(product == 4):
-        benefit += sales*(type4/100)
+# Input benefits percentage for each type
+BENEFITS = [0.0, 0.0, 0.0, 0.0]
+for i in range(4):
+    BENEFITS[i] = float(input().strip()) / 100
 
-# Output
-print(round(benefit, 2))
+# Initialize total benefit money
+total_benefit = 0.0
+
+# Input sales records
+n = int(input().strip())
+for _ in range(n):
+    # Extract sales type and money gained
+    data = input().strip().split()
+    type = int(data[1]) - 1
+    sales = float(data[2])
+
+    # Calculate benefit for this sale and add to total
+    total_benefit += BENEFITS[type] * sales
+
+# Output total benefit rounded to 2 decimal places
+print(round(total_benefit, 2))
