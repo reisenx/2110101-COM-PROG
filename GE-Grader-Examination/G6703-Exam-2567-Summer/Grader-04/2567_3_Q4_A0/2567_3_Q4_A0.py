@@ -34,5 +34,5 @@ for g in G:
     elif g == "F":
         c += 0.0
 
-gx = round(c/len(G), 2)
+gx = round(c / len(G), 2)
 print(gx)

@@ -26,7 +26,7 @@ for m in range(1, 11):
         r = 4
     else:
         r = 7
-    total *= (1 + r / 12 / 100)
+    total *= 1 + r / 12 / 100
 
 total = round(total, 2)
 print(total)

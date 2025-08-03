@@ -14,25 +14,25 @@
 C = input().split()
 total = 0
 for c in C:
-    if c == '2':
+    if c == "2":
         p = 2
-    elif c == '3':
+    elif c == "3":
         p = 3
-    elif c == '4':
+    elif c == "4":
         p = 4
-    elif c == '5':
+    elif c == "5":
         p = 5
-    elif c == '6':
+    elif c == "6":
         p = 6
-    elif c == '7':
+    elif c == "7":
         p = 7
-    elif c == '8':
+    elif c == "8":
         p = 8
-    elif c == '9':
+    elif c == "9":
         p = 9
-    elif c in 'JQK':
+    elif c in "JQK":
         p = 10
-    elif c == 'A':
+    elif c == "A":
         p = 1
     total += p
 print(total)
