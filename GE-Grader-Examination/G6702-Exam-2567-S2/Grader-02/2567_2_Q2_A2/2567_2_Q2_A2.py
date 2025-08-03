@@ -1,5 +1,5 @@
 # --------------------------------------------------
-# File Name : 2567_2_Q2_A1.py
+# File Name : 2567_2_Q2_A2.py
 # Problem   : Lyla
 # Author    : Worralop Srichainont
 # Date      : 2025-07-29

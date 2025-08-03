@@ -1,5 +1,5 @@
 # --------------------------------------------------
-# File Name : 2567_2_Q2_B1.py
+# File Name : 2567_2_Q2_B2.py
 # Problem   : Text Replace in File
 # Author    : Worralop Srichainont
 # Date      : 2025-07-29
