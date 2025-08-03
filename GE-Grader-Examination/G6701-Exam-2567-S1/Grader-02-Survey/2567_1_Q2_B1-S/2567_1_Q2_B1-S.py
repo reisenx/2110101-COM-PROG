@@ -1,43 +1,38 @@
-# Create a function to find median
-# Step 1: Sort the list in ascending order
-# > Example: sublist = [2,3,6,1,4] --> [1,2,3,4,6]
-# Step 2 : Find median of a list
-# > sublist = [1,2,3,4,6] --> median is sublist[2]
-# > sublist = [1,2,3,6]   --> median is (sublist[1] + sublist[2])/2
-# NOTE: 5//2 and 4//2 is 2
-def median(sublist):
-    sublist.sort()
-    N = len(sublist)
-    if(N % 2 == 1):
-        pos = N//2
-        return float(sublist[pos])
-    else:
-        pos = N//2
-        return (sublist[pos-1] + sublist[pos])/2
+# --------------------------------------------------
+# File Name : 2567_1_Q2_B1-S.py
+# Problem   : Median of Median of K
+# Author    : Worralop Srichainont
+# Date      : 2025-07-28
+# --------------------------------------------------
 
-# Input length of sublist
-K = int(input())
-# Convert Input to list of sublist with length K
-# Example: input is ['1','3','2','4','5','5','2','1','6','7','3','4'] and K = 5
-# > data = [[1,3,2,4,5], [5,2,1,6,7], [3,4]]
-data = []
-sublist = []
-for item in input().split():
-    # Append input into a list until len(sublist) == K
-    sublist.append(int(item))
-    # Append sublist into a data and reset sublist to an empty list
-    if(len(sublist) == K):
-        data.append(sublist)
-        sublist = []
-# Don't forget to append the last list
-if(len(sublist) > 0):
-    data.append(sublist)
 
-# Find medians of K
-# Example: data = [[1,3,2,4,5], [5,2,1,6,7], [3,4]]
-# > medians = [3.0, 5.0, 3.5]
+# Function to calculate the median of a unsorted list
+def get_median(unsorted_nums: list[int]) -> float:
+    # Sort the list in ascending order
+    nums = sorted(unsorted_nums)
+
+    # Get the length of the list and middle index
+    n = len(nums)
+    mid = n // 2
+
+    # Return the median value of the even length list
+    if n % 2 == 0:
+        return (nums[mid - 1] + nums[mid]) / 2
+
+    # Return the median value of the odd length list
+    return float(nums[mid])
+
+
+# Input k and the list of integers
+k = int(input())
+nums = [int(num) for num in input().split()]
+
+# Initialize a list to store medians of each k-sized segment
 medians = []
-for sublist in data:
-    medians.append(median(sublist))
-# Find median of medians of K
-print(median(medians))
+
+# Calculate the median for each segment of size k
+for idx in range(0, len(nums), k):
+    medians.append(get_median(nums[idx : idx + k]))
+
+# Calculate and print the median of the medians
+print(get_median(medians))

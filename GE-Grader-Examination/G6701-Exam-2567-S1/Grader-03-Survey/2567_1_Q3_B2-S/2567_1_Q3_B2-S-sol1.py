@@ -1,81 +1,42 @@
-# Input cards as a list
-# 1.) Remove blank space at the end using .strip()
-# 2.) Remove '|' at the at the start and end using .strip('|')
-# 3.) Use .split('|') to separate a string into a list
-cards = input().strip().strip('|').split('|')
+# --------------------------------------------------
+# File Name : 2567_1_Q3_B2-S-sol1.py
+# Problem   : Card Sorting
+# Author    : Worralop Srichainont
+# Date      : 2025-07-29
+# --------------------------------------------------
 
-# For each card in cards list
-# - card number is card[0:-1] (Example: '10H' --> '10')
-# - card suit is card[-1]     (Example: '10H' --> 'H')
-# - Categorize card by its suit
-# For card number we will indicate
-# - 'J' is 11
-# - 'Q' is 12
-# - 'K' is 13
-# - 'A' is 14
-spades = []
-clubs = []
-diamonds = []
-hearts = []
-for card in cards:
-    # Get card information
-    cardNumber = card[0:-1]
-    cardSuit = card[-1]
-    # Convert cardNumber to int
-    if(cardNumber == 'J'): cardNumber = 11
-    elif(cardNumber == 'Q'): cardNumber = 12
-    elif(cardNumber == 'K'): cardNumber = 13
-    elif(cardNumber == 'A'): cardNumber = 14
-    else: cardNumber = int(cardNumber)
-    # Categorize card by its suit
-    if(cardSuit == 'S'): spades.append(cardNumber)
-    if(cardSuit == 'C'): clubs.append(cardNumber)
-    if(cardSuit == 'D'): diamonds.append(cardNumber)
-    if(cardSuit == 'H'): hearts.append(cardNumber)
+# Initialize lists for each suit
+VALUE_EX = {"J": 11, "Q": 12, "K": 13, "A": 14}
+SUIT = {"S": 0, "C": 1, "D": 2, "H": 3}
 
-# Sorting each suit by card number in ascending order
-spades.sort()
-clubs.sort()
-diamonds.sort()
-hearts.sort()
+# Input cards as a list of strings
+cards_str = input().strip("| ").split("|")
 
-# Clear cards list
-cards.clear()
-# Put spades into cards list
-for card in spades:
-    # Convert back to string (Example: 13 --> "KS")
-    if(card == 11): cards.append("JS")
-    elif(card == 12): cards.append("QS")
-    elif(card == 13): cards.append("KS")
-    elif(card == 14): cards.append("AS")
-    else: cards.append(str(card) + "S")
+# Initialize a list to hold card sublist
+cards = []
 
-# Put clubs into cards list
-for card in clubs:
-    # Convert back to string (Example: 13 --> "KC")
-    if(card == 11): cards.append("JC")
-    elif(card == 12): cards.append("QC")
-    elif(card == 13): cards.append("KC")
-    elif(card == 14): cards.append("AC")
-    else: cards.append(str(card) + "C")
+# Iterate through each card string
+for card in cards_str:
+    # Extract value from the card string
+    value = 0
+    if card[:-1] in VALUE_EX:
+        value = VALUE_EX[card[:-1]]
+    else:
+        value = int(card[:-1])
 
-# Put diamonds into cards list
-for card in diamonds:
-    # Convert back to string (Example: 13 --> "KD")
-    if(card == 11): cards.append("JD")
-    elif(card == 12): cards.append("QD")
-    elif(card == 13): cards.append("KD")
-    elif(card == 14): cards.append("AD")
-    else: cards.append(str(card) + "D")
+    # Extract suit from the card string
+    suit = SUIT[card[-1]]
 
-# Put hearts into cards list
-for card in hearts:
-    # Convert back to string (Example: 13 --> "KH")
-    if(card == 11): cards.append("JH")
-    elif(card == 12): cards.append("QH")
-    elif(card == 13): cards.append("KH")
-    elif(card == 14): cards.append("AH")
-    else: cards.append(str(card) + "H")
+    # Append the card sublist for sorting
+    cards.append([suit, value, card])
 
-# Output
-print('|' + '|'.join(cards) + '|')
+# Sort the cards based on suit and value in ascending order
+cards.sort()
+
+# Construct the output string
+output = "|"
+for _, _, card in cards:
+    output += f"{card}|"
+
+# Output the output string
+print(output)

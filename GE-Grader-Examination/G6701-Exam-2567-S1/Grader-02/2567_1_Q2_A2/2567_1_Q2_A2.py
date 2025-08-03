@@ -1,26 +1,34 @@
-# Input data
-C,n = input().strip().split()
-C,n = float(C), int(n)
+# --------------------------------------------------
+# File Name : 2567_1_Q2_A2.py
+# Problem   : Positive Real Number to Continued Fraction
+# Author    : Worralop Srichainont
+# Date      : 2025-07-28
+# --------------------------------------------------
 
-# Given A contains a sequence a0, a1, a2, ... of a finite simple continued fraction of C
-A = []
+# Input value and maximum number of terms
+data = input().strip().split()
+initial_value = float(data[0])
+max_terms_amount = int(data[1])
 
-# Loop n times
-for i in range(n):
-    # Separate integer part and decimal part of C
-    # Example: 3.14159 = 3 + 0.14159
-    integer = int(C)
-    decimal = C - int(C)
-    # Append integer part to list A
-    A.append(integer)
-    
-    # If decimal part < 10^(-10), then end the process
-    if(decimal < 10**(-10)):
+# Initialize the list to store terms and the current value
+terms = []
+current_value = initial_value
+
+# Generate terms
+for _ in range(max_terms_amount):
+    # Separate the integer and decimal parts of the current value
+    integer_part = int(current_value)
+    decimal_part = current_value - integer_part
+
+    # Append the integer part to the terms list
+    terms.append(str(integer_part))
+
+    # If the decimal part is less than 1e-10, break the loop
+    if decimal_part < 1e-10:
         break
-    # Change the value of C to 1/decimal
-    C = 1/decimal
 
-# Output all item in list A
-# - Convert list A to string
-# - Remove brackets by slicing a string
-print(str(A)[1:-1])
+    # Update the current value to be the reciprocal of the decimal part
+    current_value = 1 / decimal_part
+
+# Output the terms
+print(", ".join(terms))

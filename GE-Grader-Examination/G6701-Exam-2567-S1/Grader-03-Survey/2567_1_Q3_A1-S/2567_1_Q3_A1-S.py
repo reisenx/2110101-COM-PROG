@@ -1,17 +1,25 @@
-a,b,c,d = [int(e) for e in input().split()]
-if(a == 1):
+# --------------------------------------------------
+# File Name : 2567_1_Q3_A1-S.py
+# Problem   : Flowchart
+# Author    : Worralop Srichainont
+# Date      : 2025-07-28
+# --------------------------------------------------
+
+a, b, c, d = [int(e) for e in input().split()]
+
+if a == 1:
     a = b + c + d
-    if(b == 1):
+    if b == 1:
         c += c + d
     else:
-        if(b > 4):
+        if b > 4:
             c += c * d
-        if(b > 5):
+        if b > 5:
             c += c % d
     print(c)
 else:
-    while(b < c):
+    while b < c:
         b += 1
-        if(b > a):
+        if b > a:
             break
-print(a,b,c,d)
+print(a, b, c, d)

@@ -1,41 +1,56 @@
-# This function can replace some letters in word to '*'
-# Example: hide_vowel("Bitch") returns "B*t*h"
-def hide_vowel(word):
-    censor = ""
+# --------------------------------------------------
+# File Name : 2567_1_Q2_B2-S.py
+# Problem   : Offensive Words
+# Author    : Worralop Srichainont
+# Date      : 2025-07-28
+# --------------------------------------------------
+
+
+# Function to hide words by alternating characters with asterisks
+def hide_word(word: str) -> str:
+    result = ""
     for i in range(len(word)):
-        if(i%2 == 0):
-            censor += word[i]
+        if i % 2 == 0:
+            result += word[i]
         else:
-            censor += '*'
-    return censor
+            result += "*"
+    return result
 
-# ---------- Algorithm ----------
-# Create a new string 'censor'
-# Check if t[start:end] is 'offensive' until the end of the string 't'
-# - If yes, add censored t[start:end] to 'censor' and increase start and end by len(oword)
-# - If no, add t[start] to 'censor' and increase start and end by 1
 
-# Example: less_offensive("He's so full of crap.","Crap")
-# Loop 1: t[0:4] = "[He's] so full of crap." --> censor = "H"
-# Loop 2: t[1:5] = "H[e's ]so full of crap." --> censor = "He"
-# Loop 3: t[2:6] = "He['s s]o full of crap." --> censor = "He'"
-# ...
-# Loop 16: t[15:19] = "He's so full of[ cra]p." --> censor = "He's so full of "
-# Loop 17: t[16:20] = "He's so full of [crap]." --> censor = "He's so full of cr*p" (Added 'cr*p' to censor)
-# Loop 18: t[20:24] = "He's so full of crap[.]" --> censor = "He's so full of cr*p."
-# Loop 19: t[21:25] --> break (start = 21 and len(t) = 21)
-# ------------------------------
-offensive = input().strip()
-t = input().strip()
-start,end = 0, len(offensive) 
-censor = ""
-while(start < len(t)):
-    if(t[start:end].lower() == offensive.lower()):
-        censor += hide_vowel(t[start:end])
-        start += len(offensive)
-        end += len(offensive)
-    else:
-        censor += t[start]
-        start += 1
-        end += 1
-print(censor)
+# Censor the text by replacing offensive word with their hidden versions
+def censor_text(text: str, target: str) -> str:
+    # Initialize the result with the original text and search index
+    result = text
+    search_idx = 0
+
+    # Loop to find and replace all occurrences of the target word
+    while True:
+
+        # Find the next occurrence of the target word
+        start_idx = result.lower().find(target.lower(), search_idx)
+        end_idx = start_idx + len(target)
+
+        # If no more occurrences are found, break the loop
+        if start_idx == -1:
+            break
+
+        # Replace the target word with its vowel-hidden version
+        before_target = result[:start_idx]
+        censored_target = hide_word(result[start_idx:end_idx])
+        after_target = result[end_idx:]
+
+        result = before_target + censored_target + after_target
+
+        # Update the search index to continue searching after the replaced word
+        search_idx = end_idx
+
+    # Return the censored text
+    return result
+
+
+# Input offensive word and text
+offensive_word = input().strip()
+text = input().strip()
+
+# Output the censored text
+print(censor_text(text, offensive_word))
