@@ -11,7 +11,9 @@ students_in_faculty = {}
 students_in_subject = {}
 
 # Input the filename and display type
-filename, display_type = [int(num) for num in input().split()]
+data = input().strip().split()
+filename = data[0].strip()
+display_type = int(data[1])
 
 # Read the file and store student IDs in the respective dictionaries
 with open(filename) as file:
