@@ -1,5 +1,5 @@
 # --------------------------------------------------
-# File Name : 2567_3_Q4_B1.py
+# File Name : 2567_3_Q4_B2.py
 # Problem   : Student Ranking
 # Author    : Worralop Srichainont
 # Date      : 2025-08-01
