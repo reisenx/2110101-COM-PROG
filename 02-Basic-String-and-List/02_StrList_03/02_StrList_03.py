@@ -5,12 +5,6 @@
 # Date      : 2025-06-10
 # --------------------------------------------------
 
-# Input a date in the format DD/MM/YYYY
-date = input().strip()
-
-# Split the input date into day, month, and year
-d, m, y = date.split("/")
-
 # List of month names in English
 MONTH = [
     "January",
@@ -26,6 +20,12 @@ MONTH = [
     "November",
     "December",
 ]
+
+# Input a date in the format DD/MM/YYYY
+date = input().strip()
+
+# Split the input date into day, month, and year
+d, m, y = date.split("/")
 
 # Output the date in the format "Month Day, Year"
 print(f"{MONTH[int(m) - 1]} {d}, {y}")
