@@ -6,24 +6,26 @@
 # --------------------------------------------------
 
 # Initialize the telephone directory
-to_telephone = {}
-to_name = {}
+name_to_telephone = {}
+telephone_to_name = {}
 
 # Input the entries in the directory
 n = int(input())
 for _ in range(n):
     first_name, last_name, telephone = input().strip().split()
     name = f"{first_name} {last_name}"
-    to_telephone[name] = telephone
-    to_name[telephone] = name
+    name_to_telephone[name] = telephone
+    telephone_to_name[telephone] = name
 
 # Search queries in the directory
 n = int(input())
 for _ in range(n):
     query = input().strip()
-    if query in to_telephone:
-        print(f"{query} --> {to_telephone[query]}")
-    elif query in to_name:
-        print(f"{query} --> {to_name[query]}")
+    if query in name_to_telephone:
+        print(f"{query} --> {name_to_telephone[query]}")
+
+    elif query in telephone_to_name:
+        print(f"{query} --> {telephone_to_name[query]}")
+
     else:
         print(f"{query} --> Not found")

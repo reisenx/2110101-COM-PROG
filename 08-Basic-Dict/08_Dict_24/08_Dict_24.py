@@ -6,7 +6,7 @@
 # --------------------------------------------------
 
 # Initialize dictionaries for conversion between keys and text
-TO_KEYS = {
+TEXT_TO_KEYS = {
     " ": "0",
     "a": "2",
     "b": "22",
@@ -35,7 +35,7 @@ TO_KEYS = {
     "y": "999",
     "z": "9999",
 }
-TO_TEXT = {
+KEYS_TO_TEXT = {
     "0": " ",
     "2": "a",
     "22": "b",
@@ -67,20 +67,20 @@ TO_TEXT = {
 
 
 # Function to convert text to keys
-def text2keys(text: str) -> str:
+def text2keys(text):
     result = []
     for char in text.lower():
-        if char in TO_KEYS:
-            result.append(TO_KEYS[char])
+        if char in TEXT_TO_KEYS:
+            result.append(TEXT_TO_KEYS[char])
     return " ".join(result)
 
 
 # Function to convert keys to text
-def keys2text(keys: str) -> str:
+def keys2text(keys):
     result = ""
     for key in keys.split():
-        if key in TO_TEXT:
-            result += TO_TEXT[key]
+        if key in KEYS_TO_TEXT:
+            result += KEYS_TO_TEXT[key]
     return result
 
 
