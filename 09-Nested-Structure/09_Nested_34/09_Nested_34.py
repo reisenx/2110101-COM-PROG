@@ -12,7 +12,7 @@
 # [[ 1,  2,  3,  4,  5,  6,  7],
 #  [ 8,  9, 10, 11, 12, 13, 14],
 #  [15, 16, 17, 18, 19, 20, 21]]
-def pattern1(rows: int, cols: int) -> list:
+def pattern1(rows, cols):
     matrix = []
     for i in range(rows):
         row = []
@@ -31,7 +31,7 @@ def pattern1(rows: int, cols: int) -> list:
 # [[1, 4, 7, 10, 13, 16, 19],
 #  [2, 5, 8, 11, 14, 17, 20],
 #  [3, 6, 9, 12, 15, 18, 21]]
-def pattern2(rows: int, cols: int) -> list:
+def pattern2(rows, cols):
     matrix = []
     for i in range(rows):
         row = []
@@ -51,13 +51,13 @@ def pattern2(rows: int, cols: int) -> list:
 #  [0, 0, 10, 11, 12],
 #  [0, 0,  0, 13, 14],
 #  [0, 0,  0,  0, 15]]
-def pattern3(N: int) -> list:
+def pattern3(rows):
     num = 0
     matrix = []
-    for i in range(N):
+    for i in range(rows):
         # Create a row with zeros at the beginning
         row = [0] * i
-        for _ in range(i, N):
+        for _ in range(i, rows):
             # Append the current number to the row
             num += 1
             row.append(num)
@@ -73,14 +73,14 @@ def pattern3(N: int) -> list:
 #  [0, 0, 4,  8, 13],
 #  [0, 0, 0,  7, 12],
 #  [0, 0, 0,  0, 11]]
-def pattern4(N: int) -> list:
+def pattern4(rows):
     matrix = []
-    for i in range(N):
+    for i in range(rows):
         # Create a row with zeros at the beginning
         row = [0] * i
         # Calculate the first number in the row
         num = (i * (i + 1)) // 2 + 1
-        for j in range(i, N):
+        for j in range(i, rows):
             # Append the current number to the row
             row.append(num)
             # Get the next number by adding (j + 2)
@@ -97,18 +97,18 @@ def pattern4(N: int) -> list:
 #  [0, 0,  3,  8, 12],
 #  [0, 0,  0,  4,  9],
 #  [0, 0,  0,  0,  5]]
-def pattern5(N: int) -> list:
+def pattern5(rows):
     matrix = []
-    for i in range(N):
+    for i in range(rows):
         # Create a row with zeros at the beginning
         row = [0] * i
         # Calculate the first number in the row
         num = i + 1
-        for j in range(N - i):
+        for j in range(rows - i):
             # Append the current number to the row
             row.append(num)
             # Get the next number by adding (N - i - j)
-            num += N - j
+            num += rows - j
         # Add each row to a matrix
         matrix.append(row)
     return matrix
@@ -121,20 +121,20 @@ def pattern5(N: int) -> list:
 #  [0, 0,  3,  7, 12],
 #  [0, 0,  0,  4,  6],
 #  [0, 0,  0,  0,  5]]
-def pattern6(N: int) -> list:
+def pattern6(rows):
     # Initialize the matrix with zeros
     matrix = []
-    for i in range(N):
+    for i in range(rows):
         matrix.append([0] * i)
 
     # Fill the matrix with numbers
     num = 1
-    for j in range(N):
-        for i in range(N - j):
+    for j in range(rows):
+        for i in range(rows - j):
             if j % 2 == 0:
                 matrix[i].append(num)
             else:
-                matrix[N - j - (i + 1)].append(num)
+                matrix[rows - j - (i + 1)].append(num)
             num += 1
     return matrix
 

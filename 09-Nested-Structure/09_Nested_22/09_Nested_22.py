@@ -7,7 +7,7 @@
 
 
 # Return a matrix of n rows as a list of lists.
-def read_matrix() -> list:
+def read_matrix():
     # Read the number of rows from input
     n = int(input())
     # Read matrix rows from input
@@ -19,28 +19,28 @@ def read_matrix() -> list:
 
 
 # Multiply each element of the matrix by a constant c.
-def mult_c(c: int, A: list) -> list:
-    new_matrix = A[:]
-    for i in range(len(A)):
-        for j in range(len(A[i])):
-            new_matrix[i][j] *= c
-    return new_matrix
+def mult_c(const, matrix):
+    result = matrix[:]
+    for i in range(len(matrix)):
+        for j in range(len(matrix[i])):
+            result[i][j] *= const
+    return result
 
 
-def mult(A: list, B: list) -> list:
+def mult(a, b):
     # Get the number of rows and columns for A and B
-    n = len(A)
-    m = len(A[0])
-    p = len(B[0])
+    rows_a = len(a)
+    cols_a = len(a[0])
+    cols_b = len(b[0])
 
     # Matrix multiplication
     result = []
-    for i in range(n):
+    for i in range(rows_a):
         row = []
-        for j in range(p):
+        for j in range(cols_b):
             num = 0
-            for k in range(m):
-                num += A[i][k] * B[k][j]
+            for k in range(cols_a):
+                num += a[i][k] * b[k][j]
             row.append(num)
         result.append(row)
     return result
