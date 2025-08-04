@@ -7,20 +7,20 @@
 
 
 # Create a function to calculate the last digit of a citizen ID
-def check_digit(ID: str) -> int:
+def check_digit(id: str) -> int:
     val = (
-        13 * int(ID[0])
-        + 12 * int(ID[1])
-        + 11 * int(ID[2])
-        + 10 * int(ID[3])
-        + 9 * int(ID[4])
-        + 8 * int(ID[5])
-        + 7 * int(ID[6])
-        + 6 * int(ID[7])
-        + 5 * int(ID[8])
-        + 4 * int(ID[9])
-        + 3 * int(ID[10])
-        + 2 * int(ID[11])
+        13 * int(id[0])
+        + 12 * int(id[1])
+        + 11 * int(id[2])
+        + 10 * int(id[3])
+        + 9 * int(id[4])
+        + 8 * int(id[5])
+        + 7 * int(id[6])
+        + 6 * int(id[7])
+        + 5 * int(id[8])
+        + 4 * int(id[9])
+        + 3 * int(id[10])
+        + 2 * int(id[11])
     )
     last_digit = (11 - (val % 11)) % 10
     return last_digit

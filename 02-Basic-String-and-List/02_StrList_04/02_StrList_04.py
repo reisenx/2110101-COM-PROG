@@ -9,7 +9,7 @@
 num = input().strip()
 
 # Input number of digits
-N = int(input())
+display_digits = int(input())
 
-# Output the number with leading zeros if N > digits in num
-print("0" * max(N - len(num), 0) + num)
+# Output the number with leading zeros if display digits > digits in num
+print("0" * max(display_digits - len(num), 0) + num)
