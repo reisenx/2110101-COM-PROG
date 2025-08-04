@@ -7,7 +7,7 @@
 
 
 # Create a function to grade multiple-choice questions (MCQ)
-def grade_mcq(sol: str, ans: str) -> int:
+def grade_mcq(sol, ans):
     # Initialize score
     score = 0
 
