@@ -15,8 +15,8 @@ scores = []
 # Read the file and extract scores for the specified year
 with open(filename) as file:
     for line in file:
-        sid, score = line.strip().split()
-        if sid[:2] == year:
+        student_id, score = line.strip().split()
+        if student_id[:2] == year:
             scores.append(float(score))
 
 if len(scores) > 0:
