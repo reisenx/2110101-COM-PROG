@@ -9,7 +9,7 @@
 TOTAL_DAYS = [31, 59, 90, 120, 151, 181, 212, 243, 273, 304, 334, 365]
 
 
-def day_of_year(D: int, M: int, Y: int) -> int:
+def day_of_year(D, M, Y):
     # Convert the year to the year in the Gregorian calendar
     Y = Y - 543
 
