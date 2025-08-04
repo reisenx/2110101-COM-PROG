@@ -5,23 +5,23 @@
 # Date      : 2025-06-10
 # --------------------------------------------------
 
-# Input the day, month, and year
-D = int(input())
-M = int(input())
-Y = int(input())
-
-# Convert the year to the year in the Gregorian calendar
-Y = Y - 543
-
 # List of total days in each month
 TOTAL_DAYS = [31, 59, 90, 120, 151, 181, 212, 243, 273, 304, 334, 365]
 
+# Input the day, month, and year
+d = int(input())
+m = int(input())
+y = int(input())
+
+# Convert the year to the year in the Gregorian calendar
+y -= 543
+
 # Output the day of the year
-if M <= 2:
-    print(31 * (M - 1) + D)
+if m <= 2:
+    print((TOTAL_DAYS[0] * (m - 1)) + d)
 else:
     # Check if the year is a leap year
-    if (Y % 4 == 0 and Y % 100 != 0) or (Y % 400 == 0):
-        print(TOTAL_DAYS[M - 2] + D + 1)
+    if (y % 4 == 0 and y % 100 != 0) or (y % 400 == 0):
+        print(TOTAL_DAYS[m - 2] + d + 1)
     else:
-        print(TOTAL_DAYS[M - 2] + D)
+        print(TOTAL_DAYS[m - 2] + d)
