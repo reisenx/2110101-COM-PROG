@@ -7,7 +7,7 @@
 
 
 # Calculate the total money in the pocket
-def total(pocket: dict) -> int:
+def total(pocket):
     total_money = 0
     for money, quantity in pocket.items():
         total_money += money * quantity
@@ -15,7 +15,7 @@ def total(pocket: dict) -> int:
 
 
 # This function takes money and adds it to the pocket
-def take(pocket: dict, money_in: dict) -> dict:
+def take(pocket, money_in):
     for money, quantity in money_in.items():
         if money in pocket:
             pocket[money] += quantity
@@ -28,7 +28,7 @@ def take(pocket: dict, money_in: dict) -> dict:
 # The pocket must be able to pay the exact amount of money_out
 # Return a dictionary of money and quantity used to pay
 # If it is impossible to pay, return an empty dictionary
-def pay(pocket: dict, money_out: int) -> dict:
+def pay(pocket, money_out):
     if total(pocket) >= money_out:
         # Find the money and quantity to pay
         pocket_pay = {}
