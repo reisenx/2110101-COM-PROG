@@ -5,23 +5,21 @@
 # Date      : 2025-06-12
 # --------------------------------------------------
 
-# Input a text
-text = input().strip()
+# Input a text as lowercase string
+text = input().strip().lower()
 
 # Remove all symbols and split the text into words
 new_text = ""
 for char in text:
-    if not char.isalnum():
-        new_text += " "
-    else:
+    if char.isalnum():
         new_text += char
-words = new_text.split()
+    else:
+        new_text += " "
 
 # Convert all words to camel case
-for i in range(len(words)):
-    words[i] = words[i].lower()
-    if i > 0:
-        words[i] = words[i][0].upper() + words[i][1:]
+words = new_text.split()
+for i in range(1, len(words)):
+    words[i] = words[i][0].upper() + words[i][1:]
 
 # Output the CamelCase string
 print("".join(words))
