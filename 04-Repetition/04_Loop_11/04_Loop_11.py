@@ -9,7 +9,7 @@
 text = input().strip()
 
 # Construct RLE string
-RLE = ""
+rle = ""
 
 # Initialize counter
 char = text[0]
@@ -20,12 +20,12 @@ for i in range(1, len(text)):
     if text[i] == char:
         count += 1
     else:
-        RLE += char + " " + str(count) + " "
+        rle += char + " " + str(count) + " "
         char = text[i]
         count = 1
 
 # Append the last character and its count
-RLE += char + " " + str(count)
+rle += char + " " + str(count)
 
 # Output the RLE string
-print(RLE)
+print(rle)

@@ -9,22 +9,22 @@
 n = int(input())
 
 # Initialize lists
-A = []
-B = []
+a = []
+b = []
 
 # Loop to read input values
 for i in range(n):
-    X, Y = [int(e) for e in input().split()]
+    x, y = [int(e) for e in input().split()]
     if i % 2 == 0:
-        A += [X]
-        B += [Y]
+        a += [x]
+        b += [y]
     else:
-        A += [Y]
-        B += [X]
+        a += [y]
+        b += [x]
 
 # Output the results
 cmd = input().strip()
 if cmd == "Zig-Zag":
-    print(min(A), max(B))
+    print(min(a), max(b))
 elif cmd == "Zag-Zig":
-    print(min(B), max(A))
+    print(min(b), max(a))
