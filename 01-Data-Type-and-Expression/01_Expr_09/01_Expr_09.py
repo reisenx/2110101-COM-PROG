@@ -12,13 +12,13 @@ SECONDS_IN_DAY = 86400
 
 
 # Convert a string in the format HH:MM:SS to 3 integers h, m, s
-def str2hms(hms_str: str) -> tuple[int, int, int]:
+def str2hms(hms_str):
     h, m, s = hms_str.split(":")
     return int(h), int(m), int(s)
 
 
 # Convert 3 integers h, m, s to a string in the format HH:MM:SS
-def hms2str(h: int, m: int, s: int) -> str:
+def hms2str(h, m, s):
     time = f"0{h}"[-2:]  # Add hours with leading zero if needed
     time += f":0{m}"[-2:]  # Add minutes with leading zero if needed
     time += f":0{s}"[-2:]  # Add seconds with leading zero if needed
@@ -26,12 +26,12 @@ def hms2str(h: int, m: int, s: int) -> str:
 
 
 # Calculate total seconds from hours, minutes, and seconds
-def to_sec(h: int, m: int, s: int) -> int:
+def to_sec(h, m, s):
     return (h * SECONDS_IN_HOUR) + (m * SECONDS_IN_MIN) + s
 
 
 # Convert total seconds to hours, minutes, and seconds
-def to_hms(s: int) -> tuple[int, int, int]:
+def to_hms(s):
     h = s // SECONDS_IN_HOUR
     s %= SECONDS_IN_HOUR
     m = s // SECONDS_IN_MIN
@@ -40,7 +40,7 @@ def to_hms(s: int) -> tuple[int, int, int]:
 
 
 # Calculate the difference between two times given in hours, minutes, and seconds
-def diff(h1: int, m1: int, s1: int, h2: int, m2: int, s2: int) -> tuple[int, int, int]:
+def diff(h1, m1, s1, h2, m2, s2):
     # Convert both times to total seconds
     t1 = to_sec(h1, m1, s1)
     t2 = to_sec(h2, m2, s2)
@@ -53,7 +53,7 @@ def diff(h1: int, m1: int, s1: int, h2: int, m2: int, s2: int) -> tuple[int, int
 
 
 # Main function to read input times, calculate the difference, and print the result
-def main() -> None:
+def main():
     # Read input times in the format HH:MM:SS
     hms_start = input()
     hms_end = input()

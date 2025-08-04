@@ -9,22 +9,22 @@ import math
 
 
 # Calculate the body surface area using the Mosteller formula
-def mosteller(w: float, h: float) -> float:
+def mosteller(w, h):
     return math.sqrt((w * h) / 3600)
 
 
 # Calculate the body surface area using the Du Bois formula
-def du_bois(w: float, h: float) -> float:
+def du_bois(w, h):
     return 0.007184 * (w**0.425) * (h**0.725)
 
 
 # Calculate the body surface area using the Fujimoto formula
-def fujimoto(w: float, h: float) -> float:
+def fujimoto(w, h):
     return 0.008883 * (w**0.444) * (h**0.663)
 
 
 # Main function to read input and display results
-def main() -> None:
+def main():
     # Read weight and height from input
     w = float(input())
     h = float(input())
