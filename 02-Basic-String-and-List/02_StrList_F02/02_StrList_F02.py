@@ -21,7 +21,7 @@ NUMBERS = [
 
 
 # Function to convert a number to its string representation
-def number_name(num: int | float | str) -> str:
+def number_name(num):
     return NUMBERS[int(num)]
 
 
