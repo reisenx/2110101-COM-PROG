@@ -7,7 +7,7 @@
 
 
 # Calculate relatable scores for a list of words.
-def calculate_relatable_scores(words: list[str]) -> dict[str, float]:
+def calculate_relatable_scores(words):
     word_counts = {}
     for word in words:
         if word not in word_counts:

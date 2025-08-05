@@ -7,7 +7,7 @@
 
 
 # Check if n and k are valid integers
-def is_valid(n: int, k: int) -> bool:
+def is_valid(n, k):
     if n < 1 and k < 1:
         print("Invalid n and k")
         return False
@@ -21,7 +21,7 @@ def is_valid(n: int, k: int) -> bool:
 
 
 # Print the number pattern based on n and k
-def num_pattern(n: int, k: int) -> None:
+def num_pattern(n, k):
     line = ""
     for num in range(1, k + 1):
         if num == k:
@@ -32,7 +32,7 @@ def num_pattern(n: int, k: int) -> None:
 
 
 # Generate Gray codes for a given number of bits
-def gray_codes(bits: int) -> list[str]:
+def gray_codes(bits):
     # Initialize the list with the first two Gray codes
     half = 1
     codes = ["0", "1"]

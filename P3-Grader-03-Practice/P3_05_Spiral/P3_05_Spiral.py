@@ -11,7 +11,7 @@ DIRECTIONS = ((0, 1), (-1, 0), (0, -1), (1, 0))
 
 
 # Generate an n x n spiral matrix
-def spiral_square(n: int) -> list[list[int]]:
+def spiral_square(n):
     # Create an n x n matrix filled with zeros
     matrix = [[0] * n for _ in range(n)]
 

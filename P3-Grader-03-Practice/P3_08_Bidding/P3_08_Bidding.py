@@ -11,7 +11,7 @@ users = {}
 
 
 # Bid on a product by a user with a specified price and time
-def bid_product(user: str, product: str, price: int, time: int) -> None:
+def bid_product(user, product, price, time):
     # If the product or user does not exist, initialize them
     if product not in products:
         products[product] = {}
@@ -22,7 +22,7 @@ def bid_product(user: str, product: str, price: int, time: int) -> None:
 
 
 # Withdraw a user's bid for a product
-def withdraw_product(user: str, product: str) -> None:
+def withdraw_product(user, product):
     # Ignore if the product or user does not exist
     if product not in products or user not in products[product]:
         return
@@ -31,7 +31,7 @@ def withdraw_product(user: str, product: str) -> None:
 
 
 # Get the winner of a product based on the highest bid
-def get_winner(product: str) -> tuple[str, int]:
+def get_winner(product):
     # If the product does not exist or has no bids
     if product not in products or len(products[product]) == 0:
         return "", -1
@@ -46,7 +46,7 @@ def get_winner(product: str) -> tuple[str, int]:
 
 
 # Update all users with the winning bids for each product
-def update_all_users() -> None:
+def update_all_users():
     # Iterate through each product to determine the winner
     for product, _ in products.items():
         user, price = get_winner(product)
@@ -57,7 +57,7 @@ def update_all_users() -> None:
 
 
 # Report the final results of all users
-def report() -> None:
+def report():
     # Initialize a list to store the result of each user
     results = []
     # Iterate through each user and format their results
@@ -74,7 +74,7 @@ def report() -> None:
 
 
 # Main function to read commands and process bids
-def main() -> None:
+def main():
     # Read the number of commands
     n = int(input())
     for time in range(n):
