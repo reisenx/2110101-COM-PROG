@@ -9,7 +9,7 @@ import numpy as np
 
 
 # Read data from input
-def read_data() -> tuple:
+def read_data():
     # Read score weight as a float array
     weight = np.array(input().split(), float)
     # Read student data as an integer array
@@ -20,7 +20,7 @@ def read_data() -> tuple:
 
 
 # Report students with total score lower than the mean score
-def report_lower_than_mean(weight: np.ndarray, data: np.ndarray) -> None:
+def report_lower_than_mean(weight, data):
     # Get the student IDs
     student_ids = data[:, 0]
     # Calculate the total score for each student
