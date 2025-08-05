@@ -13,7 +13,7 @@ SUIT = {"S": 0, "C": 1, "D": 2, "H": 3}
 # Create a class to represent a card
 class Card:
     # Initialize the card with its name, value and suit
-    def __init__(self, card: str) -> None:
+    def __init__(self, card):
         # Initialize card name
         self.name = card
 
@@ -27,11 +27,11 @@ class Card:
         self.value = int(card[:-1])
 
     # Convert card to string representation
-    def __str__(self) -> str:
+    def __str__(self):
         return self.name
 
     # Define less than operator for sorting by comparing suit and value
-    def __lt__(self, rhs: "Card") -> bool:
+    def __lt__(self, rhs):
         return (self.suit, self.value) < (rhs.suit, rhs.value)
 
 

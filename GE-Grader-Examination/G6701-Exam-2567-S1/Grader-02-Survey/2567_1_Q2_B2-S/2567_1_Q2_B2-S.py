@@ -7,7 +7,7 @@
 
 
 # Function to hide words by alternating characters with asterisks
-def hide_word(word: str) -> str:
+def hide_word(word):
     result = ""
     for i in range(len(word)):
         if i % 2 == 0:
@@ -18,7 +18,7 @@ def hide_word(word: str) -> str:
 
 
 # Censor the text by replacing offensive word with their hidden versions
-def censor_text(text: str, target: str) -> str:
+def censor_text(text, target):
     # Initialize the result with the original text and search index
     result = text
     search_idx = 0
