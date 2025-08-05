@@ -38,7 +38,7 @@ NUMBER_TO_ROMAN = {
     1000: "M",
     2000: "MM",
     3000: "MMM",
-    4000: "MMMM"
+    4000: "MMMM",
 }
 ROMAN_TO_NUMBER = {
     "I": (("III", 3), ("IX", 9), ("IV", 4), ("II", 2), ("I", 1)),
