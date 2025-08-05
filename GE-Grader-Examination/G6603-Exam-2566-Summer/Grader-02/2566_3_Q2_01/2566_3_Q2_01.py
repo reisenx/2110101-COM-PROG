@@ -8,7 +8,7 @@
 
 # Check if the match result of the guessed score is the same as the actual score.
 # Both teams must have the same win/loss/draw status.
-def is_match_result_same(exact: list[int], guess: list[int]) -> bool:
+def is_match_result_same(exact, guess):
     return (
         ((exact[0] > exact[1]) and (guess[0] > guess[1]))
         or ((exact[0] < exact[1]) and (guess[0] < guess[1]))
@@ -19,7 +19,7 @@ def is_match_result_same(exact: list[int], guess: list[int]) -> bool:
 # Compare the exact match scores with the guessed scores and return points.
 # 3 points for exact match, 1 point for correct score of one team,
 # and 0 points for no correct scores.
-def get_match_scores(exact: list[int], guess: list[int]) -> int:
+def get_match_scores(exact, guess):
     if exact == guess:
         return 3
     elif (exact[0] == guess[0]) or (exact[1] == guess[1]):

@@ -7,7 +7,7 @@
 
 
 # Extract team names and scores from a match result string.
-def get_info(result: str) -> tuple[str, str, int, int]:
+def get_info(result):
     data = result.split()
     teams = data[0].split(":")
     scores = data[1].split(":")
@@ -15,7 +15,7 @@ def get_info(result: str) -> tuple[str, str, int, int]:
 
 
 # Find the scores between two teams in a list of match results.
-def get_score(team01: str, team02: str, results: list[str]) -> list[int]:
+def get_score(team01, team02, results):
     # Iterate through the results to find the match between team01 and team02.
     for result in results:
         # Extract scores from the result string.
@@ -31,9 +31,7 @@ def get_score(team01: str, team02: str, results: list[str]) -> list[int]:
 
 
 # Extract scores from actual results and guess results.
-def extract_scores(
-    actual_results: list[str], guess_results: list[str]
-) -> list[list[int]]:
+def extract_scores(actual_results, guess_results):
     # Initialize an empty list to store the results of every match.
     results = []
     # Iterate through each match in the actual results.
