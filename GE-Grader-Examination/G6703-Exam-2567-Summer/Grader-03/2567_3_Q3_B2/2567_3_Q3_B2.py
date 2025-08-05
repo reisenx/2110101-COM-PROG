@@ -8,7 +8,7 @@
 
 # Separate the input into sublist by slicing and sort each sublist.
 # Then concatenate into a single list.
-def sorted_by_sublist(data: list, sublist_amount: int) -> list:
+def sorted_by_sublist(data, sublist_amount):
     result = []
     for i in range(sublist_amount):
         result += sorted(data[i::sublist_amount])
@@ -16,7 +16,7 @@ def sorted_by_sublist(data: list, sublist_amount: int) -> list:
 
 
 # Get the names of students whose at the same position in both lists.
-def get_matched_names(initial_data: list, modified_data: list) -> list:
+def get_matched_names(initial_data, modified_data):
     # Initialize an empty list to store matched names
     matched_names = []
 

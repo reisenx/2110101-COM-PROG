@@ -7,17 +7,17 @@
 
 
 # Initialize the conveyor belt string with items placed at the front
-def init_conveyor_belt(conveyor_length: int, items: str) -> str:
+def init_conveyor_belt(conveyor_length, items):
     return items[::-1] + (conveyor_length * ".")
 
 
 # Move the conveyor belt by shifting items to the right
-def move_conveyor_belt(conveyor: str, time: int) -> str:
+def move_conveyor_belt(conveyor, time):
     return ("." * time) + conveyor[:-time]
 
 
 # Display the conveyor belt in a rows x cols format
-def display_conveyor_belt(conveyor: str, rows: int, cols: int) -> None:
+def display_conveyor_belt(conveyor, rows, cols):
     # Display only the last rows * cols characters of the conveyor belt
     conveyor_to_display = conveyor[-(rows * cols) :]
 
@@ -36,7 +36,7 @@ def display_conveyor_belt(conveyor: str, rows: int, cols: int) -> None:
 
 
 # Main function
-def main() -> None:
+def main():
     # Read the conveyor belt dimensions and time processed
     cols, rows, time = [int(num) for num in input().split()]
     # Read the items to be placed on the conveyor belt
