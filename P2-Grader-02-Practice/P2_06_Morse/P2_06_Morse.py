@@ -11,7 +11,7 @@ MORSE_TO_CHAR = {}
 
 
 # Read Morse code mappings from the input
-def read_mappings(line: str) -> None:
+def read_mappings(line):
     # Replace brackets with whitespace
     line = line.replace("[", " ").replace("]", " ")
     # Split the line into character and Morse code pairs
@@ -25,7 +25,7 @@ def read_mappings(line: str) -> None:
 
 
 # Convert Morse code to text
-def morse_to_text(morse_code: str) -> None:
+def morse_to_text(morse_code):
     result = ""
     for code in morse_code.split():
         if code in MORSE_TO_CHAR:
@@ -37,7 +37,7 @@ def morse_to_text(morse_code: str) -> None:
 
 
 # Convert text to Morse code
-def text_to_morse(text: str) -> None:
+def text_to_morse(text):
     result = []
     for char in text:
         if char in CHAR_TO_MORSE:

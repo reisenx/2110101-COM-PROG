@@ -7,12 +7,12 @@
 
 
 # Check if a number is odd
-def is_odd(number: int) -> bool:
+def is_odd(number):
     return number % 2 == 1
 
 
 # Check if there are any odd numbers in the data
-def has_odds(numbers: list[int]) -> bool:
+def has_odds(numbers):
     for number in numbers:
         if is_odd(number):
             return True
@@ -20,7 +20,7 @@ def has_odds(numbers: list[int]) -> bool:
 
 
 # Check if all numbers in the data are odd
-def all_odds(numbers: list[int]) -> bool:
+def all_odds(numbers):
     for number in numbers:
         if not is_odd(number):
             return False
@@ -28,12 +28,12 @@ def all_odds(numbers: list[int]) -> bool:
 
 
 # Check if there are no odd numbers in the data
-def no_odds(numbers: list[int]) -> bool:
+def no_odds(numbers):
     return not has_odds(numbers)
 
 
 # Get a list of all odd numbers from the data
-def get_odds(numbers: list[int]) -> list[int]:
+def get_odds(numbers):
     result = []
     for number in numbers:
         if is_odd(number):
@@ -42,7 +42,7 @@ def get_odds(numbers: list[int]) -> list[int]:
 
 
 # Zip two lists of odd numbers together, alternating between the two lists
-def zip_odds(a: list[int], b: list[int]) -> list[int]:
+def zip_odds(a, b):
     # Get the odd numbers from both lists
     odds_a = get_odds(a)
     odds_b = get_odds(b)

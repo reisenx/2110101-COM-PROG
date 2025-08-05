@@ -25,7 +25,7 @@ THAI_EX = {1: "et", 2: "yi"}
 
 
 # Function to convert an integer to Thai numeral representation
-def to_Thai(number: int) -> str:
+def to_Thai(number):
     # Initialize the result list
     result = []
 

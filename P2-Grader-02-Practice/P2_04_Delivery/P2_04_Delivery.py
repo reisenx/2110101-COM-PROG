@@ -13,14 +13,14 @@ DELIVERY = {"E": 1, "Q": 3, "N": 7, "F": 14}
 
 
 # Check if the year is a leap year
-def is_leap_year(year: int) -> bool:
+def is_leap_year(year):
     return ((year - 543) % 400 == 0) or (
         (year - 543) % 100 != 0 and (year - 543) % 4 == 0
     )
 
 
 # This function checks if the order is valid
-def is_order_valid(o_id: str, o_type: str, day: int, month: int, year: int) -> bool:
+def is_order_valid(o_id, o_type, day, month, year):
     # Case 1: Invalid order year
     if year < 2558:
         print(f"Error: {o_id} {o_type} {day} {month} {year} --> Invalid year")
@@ -50,7 +50,7 @@ def is_order_valid(o_id: str, o_type: str, day: int, month: int, year: int) -> b
 
 
 # This function adds the delivery days to the order date
-def add_date(day: int, month: int, year: int, o_type: str) -> list[int]:
+def add_date(day, month, year, o_type):
     # Initialize total days in the year and the new date variables
     total_days = 0
     new_day, new_month, new_year = day, month, year
