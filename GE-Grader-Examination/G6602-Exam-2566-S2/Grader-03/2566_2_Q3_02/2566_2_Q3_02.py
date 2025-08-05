@@ -7,7 +7,7 @@
 
 
 # Read relationship data and return a list of tuples.
-def read_friends() -> list[tuple[str, str]]:
+def read_friends():
     friends = []
     n = int(input())
     for _ in range(n):
@@ -16,9 +16,7 @@ def read_friends() -> list[tuple[str, str]]:
 
 
 # Count the number of friends for each person in the list of names.
-def count_friends(
-    friends: list[tuple[str, str]], names: list[str]
-) -> list[tuple[str, int]]:
+def count_friends(friends, names):
     # Create a dictionary to store set of friends of each person.
     all_friends = {}
     for a, b in friends:

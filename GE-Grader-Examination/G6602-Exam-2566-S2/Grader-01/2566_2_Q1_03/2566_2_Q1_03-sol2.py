@@ -7,7 +7,7 @@
 
 
 # Count the number of times a pattern repeats in a text
-def get_repeat_count(text: str, pattern: str) -> int:
+def get_repeat_count(text, pattern):
     # Initialize the index and repeat count
     idx = 0
     repeat = 0
