@@ -17,10 +17,9 @@ def total(pocket):
 # This function takes money and adds it to the pocket
 def take(pocket, money_in):
     for money, quantity in money_in.items():
-        if money in pocket:
-            pocket[money] += quantity
-        else:
-            pocket[money] = quantity
+        if money not in pocket:
+            pocket[money] = 0
+        pocket[money] += quantity
     return pocket
 
 

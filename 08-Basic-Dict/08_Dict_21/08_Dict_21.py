@@ -14,10 +14,9 @@ char_count = {}
 # Count each character in the text
 for char in text:
     if char.isalpha():
-        if char in char_count:
-            char_count[char] += 1
-        else:
-            char_count[char] = 1
+        if char not in char_count:
+            char_count[char] = 0
+        char_count[char] += 1
 
 # Sort the characters by count (descending) and then alphabetically
 sorted_char_count = []

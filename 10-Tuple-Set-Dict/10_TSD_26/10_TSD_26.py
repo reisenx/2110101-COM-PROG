@@ -18,10 +18,13 @@ for _ in range(n):
     line = input().strip().split(": ")
     location = line[0]
     users_list = line[1].split(", ")
+
     # Update locations set
     location_order.append(location)
+
     # Store the location and its users in the dictionary
     locations_to_users[location] = set(users_list)
+
     # Update the users dictionary
     for user in users_list:
         if user not in users_to_locations:
@@ -35,6 +38,7 @@ analysis_location = input().strip()
 visited_locations = set()
 for user in locations_to_users[analysis_location]:
     visited_locations |= users_to_locations[user]
+
 # Exclude the analysis location itself
 visited_locations -= {analysis_location}
 
