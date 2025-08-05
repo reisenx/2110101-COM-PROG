@@ -13,7 +13,7 @@ sport_teams = {}
 
 
 # Input the number of persons per team for each sport and store it in a dictionary
-def input_person_per_team() -> None:
+def input_person_per_team():
     while True:
         # Read input line until it is "END"
         line = input().strip()
@@ -25,7 +25,7 @@ def input_person_per_team() -> None:
 
 
 # Participants register for sports
-def register_sport() -> None:
+def register_sport():
     # Initialize dictionary for every sport
     for sport, _ in person_per_team.items():
         sport_registration[sport] = {}
@@ -48,7 +48,7 @@ def register_sport() -> None:
 
 
 # Calculate the number of department teams and substitutes for each sport
-def calculate_sport_teams() -> None:
+def calculate_sport_teams():
     for sport, departments in sport_registration.items():
         # Initialize the sport in the sport_teams dictionary
         if sport not in sport_teams:
@@ -65,7 +65,7 @@ def calculate_sport_teams() -> None:
 
 
 # Output the sport teams in the required format
-def print_sport_teams() -> None:
+def print_sport_teams():
     # Sort the sport_teams dictionary by sport alphabetically
     for sport, departments in sorted(sport_teams.items()):
         # Initialize the output line with the sport name
@@ -79,7 +79,7 @@ def print_sport_teams() -> None:
 
 
 # Main function
-def main() -> None:
+def main():
     input_person_per_team()
     register_sport()
     calculate_sport_teams()

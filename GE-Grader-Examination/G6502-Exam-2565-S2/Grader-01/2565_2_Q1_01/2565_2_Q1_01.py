@@ -7,19 +7,19 @@
 
 
 # Rotate a string to the left by n positions
-def rotate_left(num: str, n: int) -> str:
+def rotate_left(num, n):
     idx = n % len(num)
     return num[idx:] + num[:idx]
 
 
 # Rotate a string to the right by n positions
-def rotate_right(num: str, n: int) -> str:
+def rotate_right(num, n):
     idx = len(num) - (n % len(num))
     return num[idx:] + num[:idx]
 
 
 # Modulo each digit of a string by a given modulus
-def str_mod(num: str, mod: int) -> str:
+def str_mod(num, mod):
     result = ""
     for digit in num:
         result += str(int(digit) % mod)
@@ -27,7 +27,7 @@ def str_mod(num: str, mod: int) -> str:
 
 
 # Main function
-def main() -> None:
+def main():
     # Input a string of digits
     number = input().strip()
     # Extract the last two digits as command and n

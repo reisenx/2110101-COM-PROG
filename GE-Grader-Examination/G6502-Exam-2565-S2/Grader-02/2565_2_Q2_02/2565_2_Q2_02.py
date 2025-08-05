@@ -8,7 +8,7 @@
 
 # Convert a pattern string to a pattern list which contains
 # each character and its matching rule.
-def pattern_to_list(pattern_str: str) -> list[list[str]]:
+def pattern_to_list(pattern_str):
     # Add spaces around brackets and parentheses for splitting
     temp = (
         pattern_str.replace("[", " [")
@@ -39,7 +39,7 @@ def pattern_to_list(pattern_str: str) -> list[list[str]]:
 
 
 # Match a text against a pattern list
-def match(text: str, pattern_str: str) -> bool:
+def match(text, pattern_str):
     # Convert the pattern string to a pattern list
     pattern = pattern_to_list(pattern_str)
     # Check if the length of text matches the length of pattern
