@@ -7,7 +7,7 @@
 
 
 # Check if a word matches a given pattern
-def is_pattern_match(word: str, pattern: str) -> bool:
+def is_pattern_match(word, pattern):
     # Check if the lengths of the word and pattern are the same
     if len(word) != len(pattern):
         return False
@@ -21,7 +21,7 @@ def is_pattern_match(word: str, pattern: str) -> bool:
 
 
 # Check if all letters in ? position are in the excluded characters
-def has_excluded_char(word: str, pattern: str, excluded_chars: str) -> bool:
+def has_excluded_char(word, pattern, excluded_chars):
     for i in range(len(word)):
         if pattern[i] == "?" and word[i] in excluded_chars:
             return True
@@ -29,7 +29,7 @@ def has_excluded_char(word: str, pattern: str, excluded_chars: str) -> bool:
 
 
 # Check if all letters in ? position are in the included characters
-def has_all_included_chars(word: str, pattern: str, included_chars: str) -> bool:
+def has_all_included_chars(word, pattern, included_chars):
     # Collect letters from the word that are in ? positions
     filled_letters = []
     for i in range(len(word)):
@@ -45,7 +45,7 @@ def has_all_included_chars(word: str, pattern: str, included_chars: str) -> bool
     return True
 
 
-def match(word: str, pattern: str, included_chars: str, excluded_chars: str) -> bool:
+def match(word, pattern, included_chars, excluded_chars):
     # Check if the word matches the pattern
     if not is_pattern_match(word, pattern):
         return False

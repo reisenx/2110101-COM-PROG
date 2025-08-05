@@ -5,29 +5,30 @@
 # Date      : 2025-07-11
 # --------------------------------------------------
 
+LETTER_POINT = [
+    ["AEIOULNRST", 1],
+    ["DG", 2],
+    ["BCMP", 3],
+    ["FHVWY", 4],
+    ["K", 5],
+    ["JX", 8],
+    ["QZ", 10],
+]
+
 
 # Calculate the score of each letter in Scrabble
-def letter_point(letter: str) -> int:
-    if letter in "AEIOULNRST":
-        return 1
-    elif letter in "DG":
-        return 2
-    elif letter in "BCMP":
-        return 3
-    elif letter in "FHVWY":
-        return 4
-    elif letter == "K":
-        return 5
-    elif letter in "JX":
-        return 8
-    return 10
+def get_letter_point(letter):
+    for group, points in LETTER_POINT:
+        if letter in group:
+            return points
+    return 0
 
 
 # Calculate the total score of a word based on its letters
-def word_point(word: str) -> int:
+def word_point(word):
     total_point = 0
     for letter in word:
-        total_point += letter_point(letter)
+        total_point += get_letter_point(letter)
     return total_point
 
 

@@ -10,11 +10,11 @@ color_filename = input().strip()
 text_filename = input().strip()
 
 # Read the colors from the file and store them in a list
-COLORS = []
+colors = []
 with open(color_filename) as file:
     for line in file:
         for color in line.strip().split():
-            COLORS.append(color.lower())
+            colors.append(color.lower())
 
 # Read the text from the file and store it in a string
 text = ""
@@ -24,7 +24,7 @@ with open(text_filename) as file:
 
 
 # Mark HTML tags around the colors in the text
-def mark_color(text: str, color: str) -> str:
+def mark_color(text, color):
     # Initialize the result with the original text
     result = text
     start_find_idx = 0
@@ -44,7 +44,7 @@ def mark_color(text: str, color: str) -> str:
 
 
 # Apply the color marking function for every color in the list
-for color in COLORS:
+for color in colors:
     text = mark_color(text, color)
 # Output the modified text with colors marked
 print(text.strip())
