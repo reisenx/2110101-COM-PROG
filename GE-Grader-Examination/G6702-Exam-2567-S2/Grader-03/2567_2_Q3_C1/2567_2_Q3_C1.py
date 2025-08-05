@@ -28,23 +28,23 @@ drop_on_column_order = [int(num) - 1 for num in input().split()]
 
 
 # Check if the given row and column are inside the board
-def is_inside_board(row: int, col: int) -> bool:
+def is_inside_board(row, col):
     return (0 <= row < rows) and (0 <= col < cols)
 
 
 # Calculate the row to drop a piece in the given column
-def get_drop_piece_row(col: int) -> int:
+def get_drop_piece_row(col):
     return rows - (pieces_on_column[col] + 1)
 
 
 # Check if the piece at the given row and column is the player's piece
-def is_player_piece(row: int, col: int, player: str) -> bool:
+def is_player_piece(row, col, player):
     return is_inside_board(row, col) and board[row][col] == player
 
 
 # Drop a piece in the given row and column for the player
 # Return True if the piece is dropped successfully, otherwise return False
-def drop_piece(row: int, col: int, player: str) -> bool:
+def drop_piece(row, col, player):
     if is_inside_board(row, col):
         board[row][col] = player
         pieces_on_column[col] += 1
@@ -53,7 +53,7 @@ def drop_piece(row: int, col: int, player: str) -> bool:
 
 
 # Check if the player has won by connecting 4 pieces in a row
-def is_player_win(row: int, col: int, player: str) -> bool:
+def is_player_win(row, col, player):
     # Initialize the piece count
     piece_count = 1
 
@@ -79,13 +79,13 @@ def is_player_win(row: int, col: int, player: str) -> bool:
 
 
 # Display the game board
-def display_board() -> None:
+def display_board():
     for row in board:
         print("".join(row))
 
 
 # Main function to play the game
-def play_game() -> None:
+def play_game():
     # Initialize the game state
     is_game_end = False
 

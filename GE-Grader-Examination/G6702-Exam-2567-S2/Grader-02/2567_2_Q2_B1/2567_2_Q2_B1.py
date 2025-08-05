@@ -7,7 +7,7 @@
 
 
 # Returns a new position list based on the input numbers
-def find_P(numbers: list[int]) -> list[int]:
+def find_P(numbers):
     # Initialize an empty list to store positions
     positions = []
 
@@ -27,7 +27,7 @@ def find_P(numbers: list[int]) -> list[int]:
 
 
 # Rearranges the input list based on the positions calculated from find_P
-def rearrange(numbers: list[int]) -> list[int]:
+def rearrange(numbers):
     # Initialize an empty list to hold the rearranged numbers
     rearranged_numbers = []
     # Get the positions from the find_P function
