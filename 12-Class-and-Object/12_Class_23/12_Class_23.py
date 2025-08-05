@@ -43,18 +43,18 @@ ORDER_TO_SUIT = {0: "club", 1: "diamond", 2: "heart", 3: "spade"}
 class Card:
     # __init__ method
     # Initialize the card object with value and suit
-    def __init__(self, value: str, suit: str) -> None:
+    def __init__(self, value, suit):
         self.value = value
         self.suit = suit
 
     # __str__ method
     # Convert the card object to a string representation
-    def __str__(self) -> str:
+    def __str__(self):
         return f"({self.value} {self.suit})"
 
     # next1 method
     # This method will return the next card in order as a new Card object
-    def next1(self) -> "Card":
+    def next1(self):
         # Get the current order of the card
         value_order = VALUE_TO_ORDER[self.value]
         suit_order = SUIT_TO_ORDER[self.suit]
@@ -68,7 +68,7 @@ class Card:
 
     # next2 method
     # This method will update the current card to the next card in order
-    def next2(self) -> None:
+    def next2(self):
         next_card = self.next1()
         self.value = next_card.value
         self.suit = next_card.suit

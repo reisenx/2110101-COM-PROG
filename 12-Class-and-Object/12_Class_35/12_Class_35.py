@@ -54,22 +54,22 @@ ROMAN_TO_NUMBER = {
 class Roman:
     # __init__ method
     # Initializes the Roman numeral with a string representation.
-    def __init__(self, roman: str) -> None:
+    def __init__(self, roman):
         self.roman = roman
 
     # __lt__ method
     # Compares two Roman numeral objects based on their integer values.
-    def __lt__(self, rhs: "Roman") -> bool:
+    def __lt__(self, rhs):
         return int(self) < int(rhs)
 
     # __str__ method
     # Returns the string representation of the Roman numeral.
-    def __str__(self) -> str:
+    def __str__(self):
         return self.roman
 
     # __int__ method
     # Converts the Roman numeral to its integer value.
-    def __int__(self) -> int:
+    def __int__(self):
         # Initialize the number to 0
         number = 0
         string = self.roman
@@ -88,7 +88,7 @@ class Roman:
 
     # __add__ method
     # Calculates the sum of two Roman numeral objects and returns a new Roman object.
-    def __add__(self, rhs: "Roman") -> "Roman":
+    def __add__(self, rhs):
         # Initialize the sum of the two Roman numerals, and string result
         total = int(self) + int(rhs)
         result = ""

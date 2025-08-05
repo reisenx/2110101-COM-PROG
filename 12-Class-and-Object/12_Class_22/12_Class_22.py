@@ -42,29 +42,29 @@ SUIT_ORDER = {"club": 0, "diamond": 1, "heart": 2, "spade": 3}
 class Card:
     # __init__ method
     # Initialize the card object with value and suit
-    def __init__(self, value: str, suit: str) -> None:
+    def __init__(self, value, suit):
         self.value = value
         self.suit = suit
 
     # __str__ method
     # Convert the card object to a string representation
-    def __str__(self) -> str:
+    def __str__(self):
         return f"({self.value} {self.suit})"
 
     # getScore method
     # Get the score of the card based on its value
-    def getScore(self) -> int:
+    def getScore(self):
         return SCORES[self.value]
 
     # sum method
     # Calculate the sum of scores of two cards and return the last digit
-    def sum(self, other: "Card") -> int:
+    def sum(self, other):
         return (self.getScore() + other.getScore()) % 10
 
     # __lt__ method
     # Compare two card objects based on their value and suit
     # Return True if self is less than rhs, otherwise return False
-    def __lt__(self, rhs: "Card") -> bool:
+    def __lt__(self, rhs):
         # Compare by value first
         if VALUE_ORDER[self.value] < VALUE_ORDER[rhs.value]:
             return True

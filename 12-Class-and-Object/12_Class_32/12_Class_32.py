@@ -9,38 +9,38 @@
 class Point:
     # __init__ method
     # Initialize the 'Point' object with x and y coordinates
-    def __init__(self, x: int, y: int) -> None:
+    def __init__(self, x, y):
         self.x = x
         self.y = y
 
     # __str__ method
     # Convert the 'Point' object to a string representation
-    def __str__(self) -> str:
+    def __str__(self):
         return str((self.x, self.y))
 
 
 class Rect:
     # __init__ method
     # Initialize the 'Rect' object with two points: lower left and upper right
-    def __init__(self, p1: "Point", p2: "Point") -> None:
-        self.lower_left = p1
-        self.upper_right = p2
+    def __init__(self, point_01, point_02):
+        self.lower_left = point_01
+        self.upper_right = point_02
 
     # area method
     # Calculate the area of the rectangle
-    def area(self) -> int:
+    def area(self):
         x1, y1 = (self.lower_left).x, (self.lower_left).y
         x2, y2 = (self.upper_right).x, (self.upper_right).y
         return (x2 - x1) * (y2 - y1)
 
     # __str__ method
     # Convert the 'Rect' object to a string representation
-    def __str__(self) -> str:
+    def __str__(self):
         return f"{self.lower_left}-{self.upper_right}"
 
     # __lt__ method
     # Compare rectangles based on their area for sorting
-    def __lt__(self, other: "Rect") -> bool:
+    def __lt__(self, other):
         return self.area() < other.area()
 
 

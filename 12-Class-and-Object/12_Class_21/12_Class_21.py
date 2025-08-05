@@ -10,13 +10,13 @@ class Complex:
     # __init__ method
     # Initialize the complex number object
     # a is real part and b is imaginary part
-    def __init__(self, a: float, b: float) -> None:
+    def __init__(self, a, b):
         self.real = a
         self.imaginary = b
 
     # __str__ method
     # Convert the complex object to a string representation
-    def __str__(self) -> str:
+    def __str__(self):
         # Initialize variables
         a, b = self.real, self.imaginary
         complex_str = ""
@@ -40,7 +40,7 @@ class Complex:
     # __add__ method
     # Calculate the sum of 2 complex numbers
     # 'self' is a+bi and 'rhs' is c+di
-    def __add__(self, rhs: "Complex") -> "Complex":
+    def __add__(self, rhs):
         # Initialize variables
         a, b = self.real, self.imaginary
         c, d = rhs.real, rhs.imaginary
@@ -50,7 +50,7 @@ class Complex:
     # __mul__ method
     # Calculate the product of 2 complex numbers
     # 'self' is a+bi and 'rhs' is c+di
-    def __mul__(self, rhs: "Complex") -> "Complex":
+    def __mul__(self, rhs):
         # Initialize variables
         a, b = self.real, self.imaginary
         c, d = rhs.real, rhs.imaginary
@@ -62,7 +62,7 @@ class Complex:
     # __truediv__ method
     # Calculate the quotient of 2 complex numbers
     # 'self' is a+bi and 'rhs' is c+di
-    def __truediv__(self, rhs: "Complex") -> "Complex":
+    def __truediv__(self, rhs):
         # Initialize variables
         a, b = self.real, self.imaginary
         c, d = rhs.real, rhs.imaginary
