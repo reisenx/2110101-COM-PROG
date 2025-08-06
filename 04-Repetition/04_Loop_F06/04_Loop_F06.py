@@ -7,7 +7,7 @@
 
 
 # Construct a function to print a triangle pattern
-def print_triangle(h) -> None:
+def print_triangle(h):
     triangle = ""
     for i in range(h - 1):
         # Add leading dots

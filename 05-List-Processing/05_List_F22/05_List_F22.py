@@ -12,7 +12,7 @@ GRADES = ["A", "B+", "B", "C+", "C", "D+", "D", "F"]
 # Find the index of a student ID in the grades list
 def index_of(grades, id):
     idx = 0
-    for idx in len(grades):
+    for idx in range(len(grades)):
         student_id = grades[idx][0]
         if student_id == id:
             return idx
