@@ -16,6 +16,44 @@
 
 # Contents
 
--   [test1]()
--   [test2]()
--   [test3]()
+-   [**Solution**](#solution)
+
+---
+
+<div align="center">
+  <h2>เฉลยอย่างละเอียดจะตามมาทีหลัง</h2>
+</div>
+
+---
+
+# Solution
+
+```python
+# --------------------------------------------------
+# File Name : 08_Dict_11.py
+# Problem   : Reverse and Keys
+# Author    : Worralop Srichainont
+# Date      : 2025-06-12
+# --------------------------------------------------
+
+
+# Reverses the keys and values of a dictionary
+def reverse(input_dict):
+    new_dict = {}
+    for key, value in input_dict.items():
+        new_dict[value] = key
+    return new_dict
+
+
+# Returns a list of keys that have the specified value in the dictionary
+def keys(input_dict, v):
+    keys = []
+    for key, value in input_dict.items():
+        if value == v:
+            keys.append(key)
+    return keys
+
+
+# Execute the input string
+exec(input().strip())
+```
