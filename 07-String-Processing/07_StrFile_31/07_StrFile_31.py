@@ -5,13 +5,15 @@
 # Date      : 2025-06-12
 # --------------------------------------------------
 
-# Input DNA sequence
-DNA = input().strip().upper()
+# Initialize the nucleotide characters
 NUCLEOTIDE = "AGTC"
+
+# Input DNA sequence
+dna = input().strip().upper()
 
 # Validate the DNA sequence
 is_dna = True
-for char in DNA:
+for char in dna:
     if char not in NUCLEOTIDE:
         is_dna = False
         break
@@ -25,16 +27,16 @@ if is_dna:
     # Change A to T, T to A, C to G, and G to C
     # Then reverse the string
     if cmd == "R":
-        new_DNA = ""
-        for char in DNA:
+        modified_dna = ""
+        for char in dna:
             idx = NUCLEOTIDE.index(char)
-            new_DNA += NUCLEOTIDE[(idx + 2) % 4]
-        print(new_DNA[::-1])
+            modified_dna += NUCLEOTIDE[(idx + 2) % 4]
+        print(modified_dna[::-1])
 
     # Count the occurrences of each nucleotide
     elif cmd == "F":
         counts = [0] * 4
-        for char in DNA:
+        for char in dna:
             idx = NUCLEOTIDE.index(char)
             counts[idx] += 1
         # Output
@@ -45,8 +47,8 @@ if is_dna:
     elif cmd == "D":
         pair = input().strip().upper()
         pair_count = 0
-        for i in range(len(DNA) - 1):
-            if DNA[i : i + 2] == pair:
+        for i in range(len(dna) - 1):
+            if dna[i : i + 2] == pair:
                 pair_count += 1
         print(pair_count)
 

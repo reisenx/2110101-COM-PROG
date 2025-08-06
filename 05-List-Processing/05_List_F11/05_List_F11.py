@@ -6,7 +6,7 @@
 # --------------------------------------------------
 
 
-def missing_digits(text: str) -> list:
+def missing_digits(text):
     # Initialize a list to track found digits
     found_digits = [False] * 10
 

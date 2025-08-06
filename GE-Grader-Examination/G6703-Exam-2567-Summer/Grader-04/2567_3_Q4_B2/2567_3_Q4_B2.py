@@ -20,7 +20,7 @@ GRADE_CRITERIA = {
 
 
 # Function to calculate the average score from a list of scores
-def calculate_average(scores: list[float]) -> float:
+def calculate_average(scores):
     # If the list is empty, return 0.0
     if len(scores) == 0:
         return 0.0
@@ -30,7 +30,7 @@ def calculate_average(scores: list[float]) -> float:
 
 
 # Function to determine the grade based on the score
-def get_grade(score: float) -> str:
+def get_grade(score):
     # Check the score against the grade criteria and return the corresponding grade
     for grade, [low, high] in GRADE_CRITERIA.items():
         if low <= score < high:
@@ -40,7 +40,7 @@ def get_grade(score: float) -> str:
 
 
 # Function to process student data and return their name and grade
-def process_student_data(student_data: list) -> list:
+def process_student_data(student_data):
     # Extract the student's name and calculate their grade from their scores
     name = student_data[0]
     grade = get_grade(calculate_average(student_data[1]))
@@ -49,7 +49,7 @@ def process_student_data(student_data: list) -> list:
 
 
 # Function to print students ranked by their grades
-def print_students_ranked_by_grades(list_of_student_data: list[list]) -> None:
+def print_students_ranked_by_grades(list_of_student_data):
     # Initialize a dictionary to map grades to student names
     grade_to_students = {}
 

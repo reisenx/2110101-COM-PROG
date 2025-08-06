@@ -7,20 +7,20 @@
 
 
 # Calculate the greatest common divisor (GCD) of two numbers
-def gcd(a: int, b: int) -> int:
+def gcd(a, b):
     while b != 0:
         a, b = b, a % b
     return a
 
 
 # Check if three numbers are coprime (their GCD is 1)
-def is_coprime(a: int, b: int, c: int) -> bool:
+def is_coprime(a, b, c):
     return gcd(gcd(a, b), c) == 1
 
 
 # Generate all primitive Pythagorean triples with a, b, c <= max_len
 # Three numbers a, b, c must satisfy a^2 + b^2 = c^2 and gcd(a, b, c) = 1
-def primitive_Pythagorean_triples(max_len: int) -> list:
+def primitive_Pythagorean_triples(max_len):
     triples = []
     for a in range(1, max_len + 1):
         for b in range(a + 1, max_len + 1):

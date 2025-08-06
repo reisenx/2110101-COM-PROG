@@ -8,11 +8,11 @@
 
 class PiggyBank:
     # __init__ method
-    def __init__(self) -> None:
+    def __init__(self):
         self.coins = {}
 
     # add method
-    def add(self, value: int | float, n: int) -> bool:
+    def add(self, value, n):
         # Total coins cannot exceed 100
         if self.total_coins() + n > 100:
             return False
@@ -25,19 +25,19 @@ class PiggyBank:
 
     # total_coins method
     # Calculate the total number of coins in the piggy bank
-    def total_coins(self) -> int:
+    def total_coins(self):
         return sum(self.coins.values())
 
     # __float__ method
     # Calculate the total value of coins in the piggy bank
-    def __float__(self) -> float:
+    def __float__(self):
         total_money = 0.0
         for value, quantity in self.coins.items():
             total_money += value * quantity
         return total_money
 
     # __str__ method
-    def __str__(self) -> str:
+    def __str__(self):
         ordered_coins = {}
         for value, quantity in sorted(self.coins.items()):
             ordered_coins[value] = quantity

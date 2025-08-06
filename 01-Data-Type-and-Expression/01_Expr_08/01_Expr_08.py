@@ -7,12 +7,12 @@
 
 
 # Calculate the square root of a number n times
-def sqrt_n_times(x: float, n: int) -> float:
+def sqrt_n_times(x, n):
     return x ** (1 / (2**n))
 
 
 # Estimate the cube root of a number y using the sqrt_n_times function
-def cube_root(y: float) -> float:
+def cube_root(y):
     s1 = sqrt_n_times(y, 2)
     s2 = s1 * sqrt_n_times(s1, 2)
     s3 = s2 * sqrt_n_times(s2, 4)
@@ -23,7 +23,7 @@ def cube_root(y: float) -> float:
 
 
 # Main function to read input and print the cube root
-def main() -> None:
+def main():
     q = float(input())
     print(cube_root(q))
 

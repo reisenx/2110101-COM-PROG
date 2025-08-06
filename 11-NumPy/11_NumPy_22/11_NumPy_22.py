@@ -9,7 +9,7 @@ import numpy as np
 
 
 # Calculate the multiplication table of size rows x cols
-def mult_table(rows: int, cols: int) -> np.ndarray:
+def mult_table(rows, cols):
     row = np.arange(1, rows + 1).reshape(-1, 1)
     col = np.arange(1, cols + 1)
     return row * col

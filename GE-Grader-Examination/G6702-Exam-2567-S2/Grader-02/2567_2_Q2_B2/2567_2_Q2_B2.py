@@ -7,7 +7,7 @@
 
 
 # Read text from a file and return as a single-line string
-def get_text_from_file(filename: str) -> str:
+def get_text_from_file(filename):
     text = ""
     with open(filename) as file:
         for line in file:
@@ -16,7 +16,7 @@ def get_text_from_file(filename: str) -> str:
 
 
 # Get the maximum line length from the file
-def get_max_line_length(filename: str) -> int:
+def get_max_line_length(filename):
     max_length = 0
     with open(filename) as file:
         for line in file:
@@ -25,7 +25,7 @@ def get_max_line_length(filename: str) -> int:
 
 
 # Replace occurrences of target with replacement in the text (case-insensitive)
-def replace_on_text(text: str, target: str, replacement: str) -> str:
+def replace_on_text(text, target, replacement):
     # Initialize the result with the original text
     result = text
     # Initialize the index for finding occurrences
@@ -53,7 +53,7 @@ def replace_on_text(text: str, target: str, replacement: str) -> str:
     return result
 
 
-def display_text_on_limit(text: str, limit: int) -> None:
+def display_text_on_limit(text, limit):
     # Split the text into words
     words = text.split()
 
@@ -84,7 +84,7 @@ def display_text_on_limit(text: str, limit: int) -> None:
         start_idx = end_idx
 
 
-def main() -> None:
+def main():
     # Extract the filename, target, and replacement from input
     filename, target, replacement = input().strip().split(",")
 

@@ -10,20 +10,20 @@ GRADES = ["A", "B+", "B", "C+", "C", "D+", "D", "F"]
 
 
 # Find the index of a student ID in the grades list
-def index_of(grades: list, ID: str) -> int:
+def index_of(grades, id):
     idx = 0
-    for sid, _ in grades:
-        if sid == ID:
+    for idx in range(len(grades)):
+        student_id = grades[idx][0]
+        if student_id == id:
             return idx
-        idx += 1
     return -1
 
 
 # Upgrade the grades of students based on their IDs
 # After upgrading, sort students by ID in ascending order
-def upgrade(grades: list, IDs: list) -> None:
-    for ID in IDs:
-        idx = index_of(grades, ID)
+def upgrade(grades, student_ids):
+    for student_id in student_ids:
+        idx = index_of(grades, student_id)
 
         if idx > -1:
             old_grade = GRADES.index(grades[idx][1])

@@ -8,7 +8,7 @@
 
 # Function to calculate the area of a convex polygon given its vertices
 # The vertices are provided in a counterclockwise order.
-def convex_polygon_area(points: list[list[int]]) -> float:
+def convex_polygon_area(points):
     # Initialize terms for the area calculation
     terms01 = 0
     terms02 = 0
@@ -24,7 +24,7 @@ def convex_polygon_area(points: list[list[int]]) -> float:
 
 # Function to check if a given text is a heterogram
 # where a heterogram is a word or phrase without a repeating letter.
-def is_heterogram(text: str) -> bool:
+def is_heterogram(text):
     # Initialize a dictionary to count occurrences of each character
     char_count = {}
     # Iterate through each character in the text
@@ -40,7 +40,7 @@ def is_heterogram(text: str) -> bool:
 
 
 # Function to replace all occurrences of a target substring with a replacement substring
-def replace_ignorecase(text: str, target: str, replacement: str) -> str:
+def replace_ignorecase(text, target, replacement):
     # Initialize variables for the result
     result = ""
     # Initialize start and end indices for substring comparison
@@ -63,7 +63,7 @@ def replace_ignorecase(text: str, target: str, replacement: str) -> str:
 
 
 # Function to find the top 3 candidates based on votes
-def top3(votes: dict[str, int]) -> list[str]:
+def top3(votes):
     # Sort the candidates based on their scores in descending order
     ranked_votes = []
     for candidate, score in votes.items():

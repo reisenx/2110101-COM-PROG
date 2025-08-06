@@ -9,8 +9,8 @@ import numpy as np
 
 
 # Calculate the probability of a binary outcome using logistic regression
-def p(X: np.ndarray) -> np.ndarray:
-    logit = -3.98 + (0.1 * X[:, 0]) + (0.5 * X[:, 1])
+def p(x):
+    logit = -3.98 + (0.1 * x[:, 0]) + (0.5 * x[:, 1])
     return 1 / (1 + np.exp(-logit))
 
 

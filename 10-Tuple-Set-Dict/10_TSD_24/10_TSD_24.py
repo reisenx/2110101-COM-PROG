@@ -15,13 +15,14 @@ while True:
     # If the input is "q", break the loop.
     if data == "q":
         break
+
     # Split the input data into name and animal type.
     name, animal = data.split(", ")
+
     # Update the characters dictionary.
-    if animal in characters:
-        characters[animal].append(name)
-    else:
-        characters[animal] = [name]
+    if animal not in characters:
+        characters[animal] = []
+    characters[animal].append(name)
 
 # Output the animal types and their corresponding characters.
 for animal, names in characters.items():

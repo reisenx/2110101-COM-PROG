@@ -7,7 +7,7 @@
 
 
 # Create a function to add two vectors
-def add_vector(u: list[float], v: list[float]) -> list[float]:
+def add_vector(u, v):
     total = [0.0, 0.0, 0.0]
     total[0] = float(u[0]) + float(v[0])
     total[1] = float(u[1]) + float(v[1])

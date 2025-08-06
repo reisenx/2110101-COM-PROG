@@ -10,7 +10,7 @@ goto_next_island = {}
 
 
 # Function to input the island routes
-def input_island_route() -> None:
+def input_island_route():
     n = int(input())
     for _ in range(n):
         # Extract the current island, next island, and duration from input
@@ -21,7 +21,7 @@ def input_island_route() -> None:
 
 # Function to calculate the total duration of the route from start to end island
 # If the route is not found, return -1
-def find_route(start_island: str, end_island: str) -> int:
+def find_route(start_island, end_island):
     # Initialize total duration, current island and a set to track visited islands
     total_duration = 0
     current_island = start_island
@@ -50,7 +50,7 @@ def find_route(start_island: str, end_island: str) -> int:
 
 
 # Main function
-def main() -> None:
+def main():
     # Input the island routes
     input_island_route()
 

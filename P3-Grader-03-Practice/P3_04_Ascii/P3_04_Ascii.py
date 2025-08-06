@@ -7,13 +7,13 @@
 
 
 # Extract text from a file and return it as a list of lines.
-def extract_image_from_file(filename: str) -> list[str]:
+def extract_image_from_file(filename):
     with open(filename) as file:
         return [line.strip() for line in file]
 
 
 # Check if all characters in each column of the image are dots ('.')
-def get_column_all_dots(image: list[str]) -> list[bool]:
+def get_column_all_dots(image):
     rows, cols = len(image), len(image[0])
     result = [True] * cols
     for col in range(cols):
@@ -25,7 +25,7 @@ def get_column_all_dots(image: list[str]) -> list[bool]:
 
 
 # Get the left strip of columns where all characters are dots ('.').
-def get_column_left_strip(is_all_dots: list[bool]) -> list[bool]:
+def get_column_left_strip(is_all_dots):
     cols = len(is_all_dots)
     for idx in range(cols):
         if not is_all_dots[idx]:
@@ -34,7 +34,7 @@ def get_column_left_strip(is_all_dots: list[bool]) -> list[bool]:
 
 
 # Get the right strip of columns where all characters are dots ('.').
-def get_column_right_strip(is_all_dots: list[bool]) -> list[bool]:
+def get_column_right_strip(is_all_dots):
     cols = len(is_all_dots)
     for idx in range(cols):
         if not is_all_dots[-idx - 1]:
@@ -43,7 +43,7 @@ def get_column_right_strip(is_all_dots: list[bool]) -> list[bool]:
 
 
 # Get the strip of columns where all characters are dots ('.') on either side.
-def get_column_strip(is_all_dots: list[bool]) -> list[bool]:
+def get_column_strip(is_all_dots):
     cols = len(is_all_dots)
     left_strip = get_column_left_strip(is_all_dots)
     right_strip = get_column_right_strip(is_all_dots)
@@ -51,7 +51,7 @@ def get_column_strip(is_all_dots: list[bool]) -> list[bool]:
 
 
 # Output the image without the columns that are all dots ('.').
-def print_image(image: list[str], is_strip: list[bool]) -> None:
+def print_image(image, is_strip):
     for row in image:
         line = ""
         for col in range(len(row)):

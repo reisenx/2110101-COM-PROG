@@ -15,13 +15,13 @@ students = []
 for filename in filenames:
     with open(filename) as file:
         for line in file:
-            sid, grade = line.split()
-            faculty = sid[-2:]
-            students.append([faculty, sid, grade])
+            student_id, grade = line.split()
+            faculty = student_id[-2:]
+            students.append([faculty, student_id, grade])
 
 # Sort the students list by faculty and then by student ID
 students.sort()
 
 # Output the sorted student data
-for _, sid, grade in students:
-    print(sid, grade)
+for _, student_id, grade in students:
+    print(student_id, grade)

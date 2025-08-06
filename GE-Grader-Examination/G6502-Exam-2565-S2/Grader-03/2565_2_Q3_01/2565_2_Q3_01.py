@@ -24,7 +24,7 @@ ratings_money = {
 
 
 # Input ratings for each company and store them in a dictionary
-def input_ratings() -> None:
+def input_ratings():
     while True:
         data = input().strip()
         # Stop when the input is "END"
@@ -39,7 +39,7 @@ def input_ratings() -> None:
 
 
 # Get the rating of a stock based on its company name
-def get_company_rating(stock: str) -> str:
+def get_company_rating(stock):
     # Check if the stock matches any company name in the dictionary
     for company, _ in company_ratings.items():
         # If the stock starts with the company name, return its rating
@@ -50,7 +50,7 @@ def get_company_rating(stock: str) -> str:
 
 
 # Input stock investments and update the total money invested in each rating category
-def input_stocks() -> None:
+def input_stocks():
     while True:
         data = input().strip()
         # Stop when the input is "END"
@@ -66,7 +66,7 @@ def input_stocks() -> None:
 
 # Output the total money invested in each rating category
 # along with the percentage of the total investment
-def print_results() -> None:
+def print_results():
     # Calculate the total money invested across all ratings
     total_money = sum(ratings_money.values())
     for rating, money in ratings_money.items():
@@ -77,7 +77,7 @@ def print_results() -> None:
 
 
 # Main function
-def main() -> None:
+def main():
     input_ratings()
     input_stocks()
     print_results()

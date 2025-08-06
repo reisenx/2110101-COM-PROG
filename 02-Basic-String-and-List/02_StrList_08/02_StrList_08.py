@@ -8,14 +8,14 @@
 import math
 
 # Input a decimal number in the format A,B,C
-# where A is the integer part,
-#       B is the non-repeating decimal part,
-#   and C is the repeating decimal part.
-A, B, C = input().strip().split(",")
+# where 'a' is the integer part,
+#       'b' is the non-repeating decimal part,
+#   and 'c' is the repeating decimal part.
+a, b, c = input().strip().split(",")
 
 # Convert repeating decimal to fraction
-numerator = int(A + B + C) - int(A + B)
-denominator = 10 ** (len(B) + len(C)) - 10 ** len(B)
+numerator = int(a + b + c) - int(a + b)
+denominator = 10 ** (len(b) + len(c)) - 10 ** len(b)
 
 # Output the fraction in its simplest form
 gcd = math.gcd(numerator, denominator)

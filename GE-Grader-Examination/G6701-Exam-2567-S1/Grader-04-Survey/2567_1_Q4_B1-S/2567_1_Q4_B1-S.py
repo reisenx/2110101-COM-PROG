@@ -12,7 +12,7 @@ A_LEVEL_CONST = 5.21299
 
 
 # Function to calculate the mean of a list of scores
-def get_mean(scores: list[int]) -> float:
+def get_mean(scores):
     # Check if the list is empty
     if len(scores) == 0:
         return 0.0
@@ -21,7 +21,7 @@ def get_mean(scores: list[int]) -> float:
 
 
 # Function to calculate the standard deviation of a list of scores
-def get_std_dev(scores: list[int], mean: float) -> float:
+def get_std_dev(scores, mean):
     # Check if the list is empty
     if len(scores) == 0:
         return 0.0

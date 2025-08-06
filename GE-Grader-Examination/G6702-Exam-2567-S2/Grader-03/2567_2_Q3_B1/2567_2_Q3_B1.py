@@ -23,7 +23,7 @@ general_students = []
 
 
 # Function to process each student's information
-def process_student_info(line: str) -> None:
+def process_student_info(line):
     # Extract student data from the input line
     data = line.strip().split()
     student_id = data[0].strip()
@@ -54,7 +54,7 @@ def process_student_info(line: str) -> None:
         second_honor_students.append([-gpax, student_id])
 
 
-def display_students() -> None:
+def display_students():
     # Check if there are any first honor students
     if len(first_honor_students) > 0:
         print(1)
@@ -78,7 +78,7 @@ def display_students() -> None:
 
 
 # Main function
-def main() -> None:
+def main():
     # Input student information until "-1" is encountered
     while True:
         line = input().strip()

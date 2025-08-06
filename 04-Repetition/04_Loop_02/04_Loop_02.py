@@ -6,20 +6,20 @@
 # --------------------------------------------------
 
 # Input a number
-a = float(input())
+num = float(input())
 
 # Initialize variables
-L = 0
-U = a
-x = (L + U) / 2
+lower = 0
+upper = num
+x = (lower + upper) / 2
 
 # Bisection method
-while abs(a - 10**x) > (10**-10) * max(a, 10**x):
-    if 10**x > a:
-        U = x
+while abs(num - 10**x) > (10**-10) * max(num, 10**x):
+    if 10**x > num:
+        upper = x
     else:
-        L = x
-    x = (L + U) / 2
+        lower = x
+    x = (lower + upper) / 2
 
 # Output the result
 print(round(x, 6))

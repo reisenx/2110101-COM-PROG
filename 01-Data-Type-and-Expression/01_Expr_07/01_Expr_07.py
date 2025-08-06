@@ -9,30 +9,30 @@ import math
 
 
 # Calculate the body surface area using the Mosteller formula
-def mosteller(W: float, H: float) -> float:
-    return math.sqrt((W * H) / 3600)
+def mosteller(w, h):
+    return math.sqrt((w * h) / 3600)
 
 
 # Calculate the body surface area using the Du Bois formula
-def du_bois(W: float, H: float) -> float:
-    return 0.007184 * (W**0.425) * (H**0.725)
+def du_bois(w, h):
+    return 0.007184 * (w**0.425) * (h**0.725)
 
 
 # Calculate the body surface area using the Fujimoto formula
-def fujimoto(W: float, H: float) -> float:
-    return 0.008883 * (W**0.444) * (H**0.663)
+def fujimoto(w, h):
+    return 0.008883 * (w**0.444) * (h**0.663)
 
 
 # Main function to read input and display results
-def main() -> None:
+def main():
     # Read weight and height from input
-    W = float(input())
-    H = float(input())
+    w = float(input())
+    h = float(input())
 
     # Calculate body surface areas using different formulas
-    mosteller_area = mosteller(W, H)
-    du_bois_area = du_bois(W, H)
-    fujimoto_area = fujimoto(W, H)
+    mosteller_area = mosteller(w, h)
+    du_bois_area = du_bois(w, h)
+    fujimoto_area = fujimoto(w, h)
 
     # Print the results formatted to 2 decimal places
     print("Mosteller =", round(mosteller_area, 5))

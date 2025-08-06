@@ -14,12 +14,12 @@ PATTERNS = ["!@#$%^&*()_+", "QWERTYUIOP", "ASDFGHJKL", "ZXCVBNM"]
 
 
 # Check if the password has less than 8 letters
-def less_than_eight_letter(password: str) -> bool:
+def less_than_eight_letter(password):
     return len(password) < 8
 
 
 # Check if the password has no lowercase letters
-def no_lowercase(password: str) -> bool:
+def no_lowercase(password):
     for char in password:
         if char in LOWERCASE:
             return False
@@ -27,7 +27,7 @@ def no_lowercase(password: str) -> bool:
 
 
 # Check if the password has no uppercase letters
-def no_uppercase(password: str) -> bool:
+def no_uppercase(password):
     for char in password:
         if char in UPPERCASE:
             return False
@@ -35,7 +35,7 @@ def no_uppercase(password: str) -> bool:
 
 
 # Check if the password has no numbers
-def no_number(password: str) -> bool:
+def no_number(password):
     for char in password:
         if char in NUMBER:
             return False
@@ -43,7 +43,7 @@ def no_number(password: str) -> bool:
 
 
 # Check if the password has no symbols
-def no_symbol(password: str) -> bool:
+def no_symbol(password):
     for char in password:
         if char in SYMBOL:
             return False
@@ -51,7 +51,7 @@ def no_symbol(password: str) -> bool:
 
 
 # Check if the password has 4 continuous same characters
-def character_repetition(password: str) -> bool:
+def character_repetition(password):
     for i in range(len(password) - 3):
         substring = password[i : i + 4].lower()
         if substring == substring[0] * 4:
@@ -60,7 +60,7 @@ def character_repetition(password: str) -> bool:
 
 
 # Check if there are 4 continuous numbers in password that are in order
-def number_sequence(password: str) -> bool:
+def number_sequence(password):
     for i in range(len(password) - 3):
         substring = password[i : i + 4]
         if substring in NUMBER or substring[::-1] in NUMBER:
@@ -69,7 +69,7 @@ def number_sequence(password: str) -> bool:
 
 
 # Check if there are 4 continuous characters in password that are in order
-def letter_sequence(password: str) -> bool:
+def letter_sequence(password):
     for i in range(len(password) - 3):
         substring = password[i : i + 4].lower()
         if substring in LOWERCASE or substring[::-1] in LOWERCASE:
@@ -78,7 +78,7 @@ def letter_sequence(password: str) -> bool:
 
 
 # Check if there are 4 continuous characters in password that are in keyboard row order
-def keyboard_pattern(password: str) -> bool:
+def keyboard_pattern(password):
     for pattern in PATTERNS:
         for i in range(len(password) - 3):
             substring = password[i : i + 4].upper()

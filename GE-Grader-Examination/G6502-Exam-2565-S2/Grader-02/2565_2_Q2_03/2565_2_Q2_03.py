@@ -7,13 +7,13 @@
 
 
 # Find the leftmost replaceable pattern in the text
-def find_leftmost_replace(text: str, patterns: list[str], replaces: list[str]) -> list:
+def find_leftmost_replace(text, patterns, replacements):
     # Find all patterns that are replaceable in the text
     all_replaceable = []
     for i in range(len(patterns)):
         # Extract the pattern and replacement
         pattern = patterns[i]
-        replacement = replaces[i]
+        replacement = replacements[i]
         # Find the index of the first occurrence of the pattern
         idx = text.find(pattern)
         # If the pattern is found, add it to the list of replaceable patterns
@@ -29,9 +29,9 @@ def find_leftmost_replace(text: str, patterns: list[str], replaces: list[str]) -
 
 
 # Replace the leftmost pattern in the text with its replacement
-def complex_replace(text: str, patterns: list[str], replaces: list[str]) -> str:
+def complex_replace(text, patterns, replacements):
     # Find the leftmost replaceable pattern
-    idx, pattern, replacement = find_leftmost_replace(text, patterns, replaces)
+    idx, pattern, replacement = find_leftmost_replace(text, patterns, replacements)
     # If no pattern is found, return the original text
     if idx == -1:
         return text

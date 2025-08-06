@@ -7,7 +7,7 @@
 
 
 # Replace vowels in offensive words with '*'
-def hide_vowels(word: str) -> str:
+def hide_vowels(word):
     result = ""
     for char in word:
         if char.lower() in "aeiou":
@@ -17,7 +17,7 @@ def hide_vowels(word: str) -> str:
 
 
 # Censor the text by replacing offensive word with their vowel-hidden versions
-def censor_text(text: str, target: str) -> str:
+def censor_text(text, target):
     # Initialize the result with the original text and search index
     result = text
     search_idx = 0

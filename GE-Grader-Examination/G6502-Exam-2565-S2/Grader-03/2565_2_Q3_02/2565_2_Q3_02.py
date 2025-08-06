@@ -7,7 +7,7 @@
 
 
 # Print the seating assignments in a formatted way
-def print_seats(assignments: list, n_rows: int, n_cols: int) -> None:
+def print_seats(assignments, n_rows, n_cols):
     # Create a 2D list to represent the seating map
     seats = [["| -- "] * n_cols for _ in range(n_rows)]
     # Fill the seating map with the names from the assignments

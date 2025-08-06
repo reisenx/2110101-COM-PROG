@@ -7,16 +7,16 @@
 
 
 # Return the prime factorization of N as a list.
-def factor(N: int) -> list:
+def factor(number):
     factors = []
     # Find divisors starting from 2
     k = 2
-    while k <= N:
+    while k <= number:
         n = 0
         # Find how many times N divisible by k
-        while N % k == 0:
+        while number % k == 0:
             n += 1
-            N //= k
+            number //= k
         # If k is a factor, append it to the list
         if n > 0:
             factors.append([k, n])

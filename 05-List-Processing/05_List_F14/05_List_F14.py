@@ -7,7 +7,7 @@
 
 
 # Create a function to find index of peaks in a list of numbers
-def peaks(numbers: list) -> list:
+def peaks(numbers):
     peak_indices = []
     for i in range(1, len(numbers) - 1):
         if numbers[i] > numbers[i - 1] and numbers[i] > numbers[i + 1]:

@@ -7,15 +7,16 @@
 
 
 # Check if a person 'a' knows another person 'b'
-def knows(relation: dict, a: str, b: str) -> bool:
+def knows(relation, a, b):
     return b in relation[a]
 
 
 # Check if a candidate is a celebrity
-def is_celeb(relation: dict, candidate: str) -> bool:
+def is_celeb(relation, candidate):
     # Return false if candidate knows anyone other than themselves
     if len(relation[candidate]) > 1:
         return False
+
     # Check if everyone knows the candidate
     for person, known_people in relation.items():
         if person != candidate and candidate not in known_people:
@@ -24,7 +25,7 @@ def is_celeb(relation: dict, candidate: str) -> bool:
 
 
 # Find the celebrity in the relations
-def find_celeb(relation: dict) -> None | str:
+def find_celeb(relation):
     for candidate in relation:
         if is_celeb(relation, candidate):
             return candidate
@@ -32,14 +33,16 @@ def find_celeb(relation: dict) -> None | str:
 
 
 # Function to read relations from input until 'q' is entered
-def read_relations() -> dict:
+def read_relations():
     relations = {}
     while True:
         # Read a line of input
         line = input().strip()
+
         # If the line is 'q', break the loop
         if line == "q":
             break
+
         # Update the relations dictionary
         a, b = line.split()
         if a not in relations:
@@ -47,12 +50,13 @@ def read_relations() -> dict:
         if b not in relations:
             relations[b] = set()
         relations[a].add(b)
+
     # Return the relations dictionary
     return relations
 
 
 # Main function
-def main() -> None:
+def main():
     relations = read_relations()
     celebrity = find_celeb(relations)
     if celebrity is not None:

@@ -11,7 +11,7 @@ enemies = {}
 
 
 # Initialize the allies and enemies dictionaries for each country
-def init_countries(countries: list[str]) -> None:
+def init_countries(countries):
     for country in countries:
         if country not in allies:
             allies[country] = set()
@@ -20,19 +20,19 @@ def init_countries(countries: list[str]) -> None:
 
 
 # Add allies of each country based on the list of countries
-def add_allies(countries: list[str]) -> None:
+def add_allies(countries):
     for country in countries:
         allies[country] |= set(countries) - {country}
 
 
 # Add enemies of each country based on the list of countries
-def add_enemies(countries: list[str]) -> None:
+def add_enemies(countries):
     for country in countries:
         enemies[country] |= set(countries) - {country}
 
 
 # Add more enemies based on the allies and enemies relationships
-def add_more_enemies() -> None:
+def add_more_enemies():
     # Add allies of enemies to the enemies of each country
     for country, enemy_countries in enemies.items():
         # Collect all allies of enemies
@@ -53,12 +53,12 @@ def add_more_enemies() -> None:
 
 
 # Check if two countries are enemies
-def is_enemy_pair(country01: str, country02: str) -> bool:
+def is_enemy_pair(country01, country02):
     return country02 in enemies[country01] or country01 in enemies[country02]
 
 
 # Check if the circular table of countries can be a valid arrangement
-def is_table_valid(countries: list[str]) -> bool:
+def is_table_valid(countries):
     # Ensure the list is circular by appending the first country to the end
     circular_countries = countries + [countries[0]]
     # Check each pair of adjacent countries if they are enemies
@@ -71,7 +71,7 @@ def is_table_valid(countries: list[str]) -> bool:
 
 
 # Main function
-def main() -> None:
+def main():
     while True:
         # Read input data
         data = input().strip().split()

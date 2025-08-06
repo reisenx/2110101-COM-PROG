@@ -7,7 +7,7 @@
 
 
 # Calculate the median of a list of sorted numbers
-def get_median(numbers: list[int]) -> float:
+def get_median(numbers):
     n = len(numbers)
     if n % 2 == 1:
         return float(numbers[n // 2])

@@ -7,7 +7,7 @@
 
 
 # Returns the minimum positive integer from a, b, c
-def f1(a: int, b: int, c: int) -> int:
+def f1(a, b, c):
     positives = []
     if a > 0:
         positives += [a]
@@ -19,7 +19,7 @@ def f1(a: int, b: int, c: int) -> int:
 
 
 # Returns the maximum negative integer from a, b, c
-def f2(a: int, b: int, c: int) -> int:
+def f2(a, b, c):
     negatives = []
     if a < 0:
         negatives += [a]
@@ -31,19 +31,19 @@ def f2(a: int, b: int, c: int) -> int:
 
 
 # Returns the first digit of the absolute sum of a, b, c
-def f3(a: int, b: int, c: int) -> str:
+def f3(a, b, c):
     sums = abs(a + b + c)
     return str(sums)[0]
 
 
 # Returns the last digit of the absolute sum of a, b, c
-def f4(a: int, b: int, c: int) -> str:
+def f4(a, b, c):
     sums = abs(a + b + c)
     return str(sums)[-1]
 
 
 # Main function to read input and call the appropriate function based on s1 and s2
-def main() -> None:
+def main():
     s1, s2, a, b, c = [int(e) for e in input().split()]
     if [s1, s2] == [0, 0]:
         print(f1(a, b, c))

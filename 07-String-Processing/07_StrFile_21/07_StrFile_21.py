@@ -11,20 +11,23 @@ UPPERCASE = "ABCDEFGHIJKLMNOPQRSTUVWXYZ"
 
 
 # Function to encrypt text using ROT13 cipher
-def ROT13(text: str) -> str:
+def rot13(text):
     result = ""
     for char in text:
         # Encrypt lowercase letters
         if char in LOWERCASE:
             idx = LOWERCASE.index(char)
             result += LOWERCASE[(idx + 13) % 26]
+
         # Encrypt uppercase letters
         elif char in UPPERCASE:
             idx = UPPERCASE.index(char)
             result += UPPERCASE[(idx + 13) % 26]
+
         # Keep non-alphabetic characters unchanged
         else:
             result += char
+    # Return the encrypted text
     return result
 
 
@@ -36,4 +39,4 @@ while True:
     if text == "end":
         break
     # Output the encrypted text
-    print(ROT13(text))
+    print(rot13(text))

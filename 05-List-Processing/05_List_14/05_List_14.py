@@ -6,7 +6,7 @@
 # --------------------------------------------------
 
 # Input a list of numbers
-numbers = [float(e) for e in input().split()]
+numbers = [float(num) for num in input().split()]
 
 # Count the number of peaks
 peak_count = 0

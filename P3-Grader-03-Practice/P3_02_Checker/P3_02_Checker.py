@@ -11,7 +11,7 @@ ALPHABET = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ"
 
 # Parse the input string into row and column numbers
 # This pattern supports formats: "A1", "B2", ..., "Z52"
-def pattern01_parser(string: str) -> list[int]:
+def pattern01_parser(string):
     # Initialize row and column to -1 (invalid)
     row, col = -1, -1
     # Extract the first character as row and the rest as column
@@ -30,7 +30,7 @@ def pattern01_parser(string: str) -> list[int]:
 
 # Parse the input string into row and column numbers
 # This pattern supports formats: "row=1, col=2", "col=3, row=A", etc.
-def pattern02_parser(string: str) -> list[int]:
+def pattern02_parser(string):
     # Initialize row and column to -1 (invalid)
     row, col = -1, -1
     # Split the string by commas and equal signs

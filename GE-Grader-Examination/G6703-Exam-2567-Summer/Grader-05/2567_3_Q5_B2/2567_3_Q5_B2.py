@@ -16,12 +16,12 @@ PERCEPTION_CRITERIA = [
 
 
 # Function to convert Fahrenheit to Celsius
-def fahrenheit_to_celsius(fahrenheit: float) -> float:
+def fahrenheit_to_celsius(fahrenheit):
     return (fahrenheit - 32) * 5 / 9
 
 
 # Function to determine the weather perception based on Celsius temperature
-def get_perception(celsius: float) -> str:
+def get_perception(celsius):
     for perception, threshold in PERCEPTION_CRITERIA:
         if celsius > threshold:
             return perception
@@ -29,7 +29,7 @@ def get_perception(celsius: float) -> str:
 
 
 # Function to print countries ranked by their weather perception
-def print_countries_ranked_by_perception(countries_info: list) -> None:
+def print_countries_ranked_by_perception(countries_info):
     # Initialize a dictionary to map perceptions to countries
     perception_to_countries = {}
 

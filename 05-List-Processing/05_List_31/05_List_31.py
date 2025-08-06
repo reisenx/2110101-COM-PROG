@@ -7,7 +7,7 @@
 
 # Input card deck
 deck = input().split()
-half = len(deck) // 2
+half_idx = len(deck) // 2
 
 # Input commands
 commands = input().strip()
@@ -15,8 +15,8 @@ commands = input().strip()
 # Cut & Shuffle the deck
 for cmd in commands:
     # Split the deck into two halves
-    first_half = deck[:half]
-    second_half = deck[half:]
+    first_half = deck[:half_idx]
+    second_half = deck[half_idx:]
 
     # Cut the deck
     if cmd == "C":
@@ -24,7 +24,7 @@ for cmd in commands:
     # Shuffle the deck
     elif cmd == "S":
         deck = []
-        for i in range(half):
+        for i in range(half_idx):
             deck.append(first_half[i])
             deck.append(second_half[i])
 

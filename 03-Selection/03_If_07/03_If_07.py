@@ -5,11 +5,11 @@
 # Date      : 2025-06-10
 # --------------------------------------------------
 
-# Input a number
-num = int(input())
-
 # List of symbols for abbreviations
 SYMBOLS = ["", "K", "M", "B"]
+
+# Input a number
+num = float(input())
 
 # Calculate the abbreviated number
 n = 0

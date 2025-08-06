@@ -11,7 +11,7 @@ LOSING = ["SR", "PS", "RP"]
 
 
 # Get moves of each turn from the playing order string.
-def get_moves(playing_order: str) -> list[str]:
+def get_moves(playing_order):
     moves = []
     for i in range(0, len(playing_order), 2):
         move = playing_order[i : i + 2]
@@ -20,7 +20,7 @@ def get_moves(playing_order: str) -> list[str]:
 
 
 # Get the match status of each turn based on the moves.
-def get_match_status(playing_order: str) -> list[str]:
+def get_match_status(playing_order):
     # Initialize match status score for both teams.
     match_status = []
     score = [0, 0]
@@ -52,15 +52,13 @@ def get_match_status(playing_order: str) -> list[str]:
 
 
 # Get the next player in the team based on the current player.
-def get_next_player(current_player: str, team: list[str]) -> str:
+def get_next_player(current_player, team):
     idx = team.index(current_player)
     return team[(idx + 1) % len(team)]
 
 
 # Get the moves made by each player in the teams based on the playing order.
-def player_moves(
-    playing_order: str, team_a: list[str], team_b: list[str]
-) -> tuple[list[str], list[str]]:
+def player_moves(playing_order, team_a, team_b):
     # Initialize lists to store moves for each team.
     team_a_moves = []
     team_b_moves = []

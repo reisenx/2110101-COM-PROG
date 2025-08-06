@@ -9,17 +9,17 @@
 # Define the Node class to represent each node in the tree
 class Node:
     # Initialize the node with a name and its children
-    def __init__(self, name: str) -> None:
+    def __init__(self, name):
         self.name = name
         self.children = set()
 
     # Add a child node to the current node
-    def add_child(self, child: "Node") -> None:
+    def add_child(self, child):
         child.parent = self
         self.children.add(child)
 
     # Count the number of grandchildren for the current node
-    def count_grandchildren(self) -> int:
+    def count_grandchildren(self):
         total_grandchildren = 0
         for child in self.children:
             total_grandchildren += len(child.children)

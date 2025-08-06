@@ -12,7 +12,7 @@ def RLE(text: str) -> list:
         return []
 
     # Construct RLE list
-    RLE = []
+    rle = []
 
     # Initialize counter
     char = text[0]
@@ -23,14 +23,14 @@ def RLE(text: str) -> list:
         if text[i] == char:
             count += 1
         else:
-            RLE += [[char, count]]
+            rle += [[char, count]]
             char = text[i]
             count = 1
 
     # Append the last character and its count
-    RLE += [[char, count]]
+    rle += [[char, count]]
     # Return the RLE list
-    return RLE
+    return rle
 
 
 # Execute input string as code

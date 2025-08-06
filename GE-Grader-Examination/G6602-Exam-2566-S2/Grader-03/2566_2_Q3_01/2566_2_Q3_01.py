@@ -7,7 +7,7 @@
 
 
 # Read input data and return a list of lists of integers.
-def read_data() -> list[list[int]]:
+def read_data():
     data = []
     rows = int(input())
     for _ in range(rows):
@@ -16,7 +16,7 @@ def read_data() -> list[list[int]]:
 
 
 # Count the number of peak elements in a 2D grid.
-def count_peak(data: list[list[int]]) -> int:
+def count_peak(data):
     # Initialize the peak count to zero.
     ans = 0
     # Get the number of rows in the data.

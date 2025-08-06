@@ -7,7 +7,7 @@
 
 
 # Function to extract license plates from a string
-def get_plates_from_str(raw_data: str) -> list[str]:
+def get_plates_from_str(raw_data):
     # Initialize an empty string to hold modified data
     modified_data = ""
 
@@ -28,7 +28,7 @@ def get_plates_from_str(raw_data: str) -> list[str]:
 
 
 # Function to read a file and extract license plates
-def get_plates_from_file(filename: str) -> list[str]:
+def get_plates_from_file(filename):
     # Initialize an empty list to hold the plates
     plates = []
 

@@ -7,7 +7,7 @@
 
 
 # Function to calculate the median of a unsorted list
-def get_median(unsorted_nums: list[int]) -> float:
+def get_median(unsorted_nums):
     # Sort the list in ascending order
     nums = sorted(unsorted_nums)
 

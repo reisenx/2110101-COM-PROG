@@ -7,7 +7,7 @@
 
 
 # Print a ruler with dashes and numbers
-def print_ruler(limit: int) -> None:
+def print_ruler(limit):
     line = ""
     for i in range(limit // 10):
         line += f"{'-' * 9}{i + 1}"
@@ -16,7 +16,7 @@ def print_ruler(limit: int) -> None:
 
 
 # Extract words from a file and return them as a list
-def extract_words_from_file(filename: str) -> list[str]:
+def extract_words_from_file(filename):
     words = []
     with open(filename) as file:
         for line in file:

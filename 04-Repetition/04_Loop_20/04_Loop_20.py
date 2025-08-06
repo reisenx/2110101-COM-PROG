@@ -7,8 +7,8 @@
 
 # Initialize variables
 line = 0
-min_A, max_A = 0, 0
-min_B, max_B = 0, 0
+min_a, max_a = 0, 0
+min_b, max_b = 0, 0
 
 # Loop to read input values
 while True:
@@ -19,25 +19,25 @@ while True:
     if len(data) == 1:
         cmd = data[0]
         if cmd == "Zig-Zag":
-            print(min_A, max_B)
+            print(min_a, max_b)
         elif cmd == "Zag-Zig":
-            print(min_B, max_A)
+            print(min_b, max_a)
         break
 
     # Get the numbers
-    X, Y = int(data[0]), int(data[1])
+    x, y = int(data[0]), int(data[1])
 
     # Update min and max values based on the line number
     if line == 0:
-        min_A, max_A = X, X
-        min_B, max_B = Y, Y
+        min_a, max_a = x, x
+        min_b, max_b = y, y
     else:
         if line % 2 == 0:
-            min_A, max_A = min(min_A, X), max(max_A, X)
-            min_B, max_B = min(min_B, Y), max(max_B, Y)
+            min_a, max_a = min(min_a, x), max(max_a, x)
+            min_b, max_b = min(min_b, y), max(max_b, y)
         else:
-            min_A, max_A = min(min_A, Y), max(max_A, Y)
-            min_B, max_B = min(min_B, X), max(max_B, X)
+            min_a, max_a = min(min_a, y), max(max_a, y)
+            min_b, max_b = min(min_b, x), max(max_b, x)
 
     # Increment the line number
     line += 1
