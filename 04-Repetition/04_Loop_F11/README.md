@@ -33,11 +33,11 @@
 # File Name : 04_Loop_F11.py
 # Problem   : RLE (Function)
 # Author    : Worralop Srichainont
-# Date      : 2025-06-11
+# Date      : 2025-08-09
 # --------------------------------------------------
 
 
-def RLE(text: str) -> list:
+def RLE(text):
     # Empty string check
     if text == "":
         return []

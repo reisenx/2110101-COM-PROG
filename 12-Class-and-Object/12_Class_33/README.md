@@ -33,7 +33,7 @@
 # File Name : 12_Class_33.py
 # Problem   : Piggy Bank 1
 # Author    : Worralop Srichainont
-# Date      : 2025-06-16
+# Date      : 2025-08-09
 # --------------------------------------------------
 
 
@@ -81,8 +81,10 @@ class PiggyBank:
     # __str__ method
     # This converts the PiggyBank object to a string representation of its coins
     def __str__(self):
-        return str(self.coins)
-
+        result = []
+        for coin_type, coin_count in self.coins.items():
+            result.append(f"{coin_type}:{coin_count}")
+        return "{" + ", ".join(result) + "}"
 
 # Output
 cmd1 = input().split(";")

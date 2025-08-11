@@ -33,14 +33,14 @@
 # File Name : 03_If_07.py
 # Problem   : Abbrev Num
 # Author    : Worralop Srichainont
-# Date      : 2025-06-10
+# Date      : 2025-08-09
 # --------------------------------------------------
 
 # List of symbols for abbreviations
 SYMBOLS = ["", "K", "M", "B"]
 
 # Input a number
-num = float(input())
+num = int(input())
 
 # Calculate the abbreviated number
 n = 0

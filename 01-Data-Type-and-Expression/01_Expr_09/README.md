@@ -33,7 +33,7 @@
 # File Name : 01_Expr_09.py
 # Problem   : Duration (Function)
 # Author    : Worralop Srichainont
-# Date      : 2025-06-10
+# Date      : 2025-08-09
 # --------------------------------------------------
 
 # Constants
@@ -50,10 +50,10 @@ def str2hms(hms_str):
 
 # Convert 3 integers h, m, s to a string in the format HH:MM:SS
 def hms2str(h, m, s):
-    time = f"0{h}"[-2:]  # Add hours with leading zero if needed
-    time += f":0{m}"[-2:]  # Add minutes with leading zero if needed
-    time += f":0{s}"[-2:]  # Add seconds with leading zero if needed
-    return time
+    h_str = f"0{h}"[-2:]  # Add hours with leading zero if needed
+    m_str = f"0{m}"[-2:]  # Add minutes with leading zero if needed
+    s_str = f"0{s}"[-2:]  # Add seconds with leading zero if needed
+    return f"{h_str}:{m_str}:{s_str}"
 
 
 # Calculate total seconds from hours, minutes, and seconds

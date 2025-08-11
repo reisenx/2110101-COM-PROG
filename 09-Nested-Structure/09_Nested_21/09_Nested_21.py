@@ -2,11 +2,11 @@
 # File Name : 09_Nested_21.py
 # Problem   : Factorization
 # Author    : Worralop Srichainont
-# Date      : 2025-06-12
+# Date      : 2025-08-09
 # --------------------------------------------------
 
 
-# Return the prime factorization of N as a list.
+# Return the prime factorization of a number as a list.
 def factor(number):
     factors = []
     # Find divisors starting from 2
