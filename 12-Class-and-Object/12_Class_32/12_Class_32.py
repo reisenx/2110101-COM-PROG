@@ -2,7 +2,7 @@
 # File Name : 12_Class_32.py
 # Problem   : Rectangle Sorted by Area
 # Author    : Worralop Srichainont
-# Date      : 2025-06-16
+# Date      : 2025-08-09
 # --------------------------------------------------
 
 
@@ -16,7 +16,7 @@ class Point:
     # __str__ method
     # Convert the 'Point' object to a string representation
     def __str__(self):
-        return str((self.x, self.y))
+        return f"({self.x},{self.y})"
 
 
 class Rect:

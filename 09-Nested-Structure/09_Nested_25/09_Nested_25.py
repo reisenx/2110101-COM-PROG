@@ -2,7 +2,7 @@
 # File Name : 09_Nested_25.py
 # Problem   : Tiling Puzzle
 # Author    : Worralop Srichainont
-# Date      : 2025-06-12
+# Date      : 2025-08-09
 # --------------------------------------------------
 
 
@@ -19,6 +19,7 @@ def flatten(tiles):
     flatten_tiles = []
     for row in tiles:
         flatten_tiles += row
+    flatten_tiles.remove(0)
     return flatten_tiles
 
 

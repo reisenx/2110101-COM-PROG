@@ -2,7 +2,7 @@
 # File Name : P3_09_BNK48.py
 # Problem   : Part-III BNK48
 # Author    : Worralop Srichainont
-# Date      : 2025-06-17
+# Date      : 2025-08-09
 # --------------------------------------------------
 
 # Initialize dictionaries to store otaku and idol data
@@ -14,11 +14,14 @@ idols = {}
 def vote(otaku, idol, score):
     # If the otaku or idol does not exist, initialize them
     if otaku not in otakus:
-        otakus[otaku] = {"vote": [], "kamioshi": ""}
+        otakus[otaku] = {"vote": {}, "kamioshi": ""}
     if idol not in idols:
         idols[idol] = {"total_score": 0, "otakus": set(), "kamioshi_count": 0}
+
     # Update the otaku's vote for the idol and idol's total score
-    otakus[otaku]["vote"].append([idol, score])
+    if idol not in otakus[otaku]["vote"]:
+        otakus[otaku]["vote"][idol] = 0
+    otakus[otaku]["vote"][idol] += score
     idols[idol]["total_score"] += score
     idols[idol]["otakus"].add(otaku)
 
@@ -27,9 +30,10 @@ def vote(otaku, idol, score):
 def get_kamioshi(otaku):
     # Sort the votes of the otaku by score (descending) and idol name (ascending)
     idol_ranks = []
-    for idol, score in otakus[otaku]["vote"]:
+    for idol, score in otakus[otaku]["vote"].items():
         idol_ranks.append([-score, idol])
     idol_ranks.sort()
+
     # Return the idol with the highest score (kamioshi)
     return idol_ranks[0][1]
 
@@ -40,6 +44,7 @@ def update_all_kamioshi():
     for otaku, details in otakus.items():
         # Get the kamioshi for the otaku
         kamioshi = get_kamioshi(otaku)
+
         # Update the otaku's kamioshi
         details["kamioshi"] = kamioshi
         idols[kamioshi]["kamioshi_count"] += 1
@@ -52,6 +57,7 @@ def get_top_total_votes():
     for idol, details in idols.items():
         idol_ranks.append([-details["total_score"], idol])
     idol_ranks.sort()
+
     # Return the top 3 idols
     results = []
     for _, idol in idol_ranks[:3]:
@@ -66,6 +72,7 @@ def get_top_otaku_count():
     for idol, details in idols.items():
         idol_ranks.append([-len(details["otakus"]), idol])
     idol_ranks.sort()
+
     # Return the top 3 idols
     results = []
     for _, idol in idol_ranks[:3]:
@@ -80,6 +87,7 @@ def get_top_kamioshi_count():
     for idol, details in idols.items():
         idol_ranks.append([-details["kamioshi_count"], idol])
     idol_ranks.sort()
+
     # Return the top 3 idols
     results = []
     for _, idol in idol_ranks[:3]:
@@ -99,8 +107,10 @@ def main():
         # Update the vote for the idol by the otaku
         otaku, idol, score = data[0], data[1], int(data[2])
         vote(otaku, idol, score)
+
     # Update kamioshi for all otakus and kamioshi counts for idols
     update_all_kamioshi()
+
     # Output the results based on the command
     results = [get_top_total_votes(), get_top_otaku_count(), get_top_kamioshi_count()]
     print(", ".join(results[cmd]))

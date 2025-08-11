@@ -33,7 +33,7 @@
 # File Name : 12_Class_34.py
 # Problem   : Piggy Bank 2
 # Author    : Worralop Srichainont
-# Date      : 2025-06-16
+# Date      : 2025-08-09
 # --------------------------------------------------
 
 
@@ -69,10 +69,10 @@ class PiggyBank:
 
     # __str__ method
     def __str__(self):
-        ordered_coins = {}
+        ordered_coins = []
         for value, quantity in sorted(self.coins.items()):
-            ordered_coins[value] = quantity
-        return str(ordered_coins)
+            ordered_coins.append(f"{value}:{quantity}")
+        return "{" + ", ".join(ordered_coins) + "}"
 
 
 # Output

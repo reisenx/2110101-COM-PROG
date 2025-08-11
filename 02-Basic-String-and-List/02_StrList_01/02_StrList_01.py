@@ -2,28 +2,28 @@
 # File Name : 02_StrList_01.py
 # Problem   : Citizen ID
 # Author    : Worralop Srichainont
-# Date      : 2025-06-10
+# Date      : 2025-08-09
 # --------------------------------------------------
 
 # Input citizen ID
-id = input()
+citizen_id = input().strip()
 
 # Calculate the last digit based on the first 12 digits
-val = (
-    13 * int(id[0])
-    + 12 * int(id[1])
-    + 11 * int(id[2])
-    + 10 * int(id[3])
-    + 9 * int(id[4])
-    + 8 * int(id[5])
-    + 7 * int(id[6])
-    + 6 * int(id[7])
-    + 5 * int(id[8])
-    + 4 * int(id[9])
-    + 3 * int(id[10])
-    + 2 * int(id[11])
+last_digit = (
+    13 * int(citizen_id[0])
+    + 12 * int(citizen_id[1])
+    + 11 * int(citizen_id[2])
+    + 10 * int(citizen_id[3])
+    + 9 * int(citizen_id[4])
+    + 8 * int(citizen_id[5])
+    + 7 * int(citizen_id[6])
+    + 6 * int(citizen_id[7])
+    + 5 * int(citizen_id[8])
+    + 4 * int(citizen_id[9])
+    + 3 * int(citizen_id[10])
+    + 2 * int(citizen_id[11])
 )
-last_digit = (11 - (val % 11)) % 10
+last_digit = (11 - (last_digit % 11)) % 10
 
 # Output the formatted ID
-print(f"{id[0]} {id[1:5]} {id[5:10]} {id[10:12]} {last_digit}")
+print(citizen_id[0], citizen_id[1:5], citizen_id[5:10], citizen_id[10:12], last_digit)

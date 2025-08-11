@@ -33,15 +33,18 @@
 # File Name : 02_StrList_04.py
 # Problem   : N Digits
 # Author    : Worralop Srichainont
-# Date      : 2025-06-10
+# Date      : 2025-08-09
 # --------------------------------------------------
 
 # Input a number
-num = input().strip()
+number = input().strip()
 
-# Input number of digits
+# Input number of digits to display
 display_digits = int(input())
 
-# Output the number with leading zeros if display digits > digits in num
-print("0" * max(display_digits - len(num), 0) + num)
+# Calculate leading zeros if the number of digits to display is greater
+leading_zeros = max(0, display_digits - len(number))
+
+# Output the number with leading zeros
+print(f"{'0' * leading_zeros}{number}")
 ```

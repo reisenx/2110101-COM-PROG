@@ -33,7 +33,7 @@
 # File Name : P3_10_Numpy1.py
 # Problem   : Part-III NumPy Functions
 # Author    : Worralop Srichainont
-# Date      : 2025-06-17
+# Date      : 2025-08-09
 # --------------------------------------------------
 
 import numpy as np
@@ -49,12 +49,14 @@ def eq(a, b, target):
 # Get indexes of the closest points in a 2D array to a target point
 def closest_point_indexes(points, target):
     # Calculate the distance from each point to the target
-    distance_x = points[:, 0] - target[0]
-    distance_y = points[:, 1] - target[1]
-    distances = ((distance_x**2) + (distance_y**2)) ** 0.5
-    # Find the indices of the points with the minimum distance
-    indices = np.arange(len(distances))[distances == np.min(distances)]
-    return indices
+    distances_x = (points[:, 0] - target[0]) ** 2
+    distances_y = (points[:, 1] - target[1]) ** 2
+    squared_distances = distances_x + distances_y
+
+    # Return the indices of the points with the minimum distance
+    return np.arange(len(squared_distances))[
+        squared_distances == np.min(squared_distances)
+    ]
 
 
 # Count the number of inversions in an array

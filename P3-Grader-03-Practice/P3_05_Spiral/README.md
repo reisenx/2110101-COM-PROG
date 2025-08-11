@@ -33,7 +33,7 @@
 # File Name : P3_05_Spiral.py
 # Problem   : Part-III Spiral Square
 # Author    : Worralop Srichainont
-# Date      : 2025-06-17
+# Date      : 2025-08-09
 # --------------------------------------------------
 
 # List of directions to move in the spiral
@@ -89,7 +89,7 @@ def spiral_square(n):
 
 
 # Prints the matrix with formatted spacing.
-def print_square(matrix: list[list[int]]) -> None:
+def print_square(matrix):
     for row in matrix:
         print(" ".join([f"  {num}"[-3:] for num in row]))
 

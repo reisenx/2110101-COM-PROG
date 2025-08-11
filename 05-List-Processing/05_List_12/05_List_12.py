@@ -2,7 +2,7 @@
 # File Name : 05_List_12.py
 # Problem   : Nicknames
 # Author    : Worralop Srichainont
-# Date      : 2025-06-11
+# Date      : 2025-08-09
 # --------------------------------------------------
 
 # List of real names and their corresponding nicknames
@@ -19,7 +19,7 @@ REAL_NAMES = [
     "Deborah",
 ]
 NICKNAMES = [
-    "Dick",
+    "Bob",
     "Bill",
     "Jim",
     "Jack",
@@ -39,12 +39,12 @@ for _ in range(n):
     name = input().strip()
     # Output the nickname if found
     if name in REAL_NAMES:
-        index = REAL_NAMES.index(name)
-        print(NICKNAMES[index])
+        idx = REAL_NAMES.index(name)
+        print(NICKNAMES[idx])
     # Output the real name if found
     elif name in NICKNAMES:
-        index = NICKNAMES.index(name)
-        print(REAL_NAMES[index])
+        idx = NICKNAMES.index(name)
+        print(REAL_NAMES[idx])
     # Output "Not found" if neither is found
     else:
         print("Not found")

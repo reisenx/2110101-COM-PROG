@@ -33,16 +33,16 @@
 # File Name : 03_If_02.py
 # Problem   : Change of Major
 # Author    : Worralop Srichainont
-# Date      : 2025-06-10
+# Date      : 2025-08-09
 # --------------------------------------------------
 
 # Input two students' information
 data = input().strip().split()
-id_01, com_01, calculus1_01, calculus2_01 = data[0], data[2], data[3], data[1]
+id_01, com_01, calculus1_01, calculus2_01 = data[0], data[2], data[3], data[4]
 gpax_01 = float(data[1])
 
 data = input().strip().split()
-id_02, com_02, calculus1_02, calculus2_02 = data[0], data[2], data[3], data[1]
+id_02, com_02, calculus1_02, calculus2_02 = data[0], data[2], data[3], data[4]
 gpax_02 = float(data[1])
 
 # Set initial values for success of change of major
