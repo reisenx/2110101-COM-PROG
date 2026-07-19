@@ -2,7 +2,7 @@
 # File Name : 12_Class_JTP.py
 # Problem   : Big Wallet
 # Author    : Worralop Srichainont
-# Date      : 2025-08-27
+# Date      : 2025-11-22
 # --------------------------------------------------
 
 
@@ -24,7 +24,10 @@ class BigWallet:
 
     # Calculate the total amount in the wallet
     def total(self):
-        return sum(self.wallet.values())
+        total_money = 0
+        for bank_note, amount in self.wallet.items():
+            total_money += bank_note * amount
+        return total_money
 
     # Compare two wallets, return True if the current wallet is less than the rhs wallet
     def __lt__(self, rhs):
