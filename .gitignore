@@ -9,7 +9,169 @@
 *test.cpp
 *.exe
 
-# Python Library Cache
-*__pycache__
-*.ruff_cache
-*.mypy_cache
+# Python bytecode and native extensions
+__pycache__/
+*.py[codz]
+*$py.class
+*.so
+
+# Python distribution and packaging
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+share/python-wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+*.manifest
+*.spec
+
+# Python installer logs
+pip-log.txt
+pip-delete-this-directory.txt
+
+# Python tests and coverage
+htmlcov/
+.tox/
+.nox/
+.coverage
+.coverage.*
+.cache/
+nosetests.xml
+coverage.xml
+*.cover
+*.py.cover
+*.lcov
+.hypothesis/
+.pytest_cache/
+cover/
+
+# Python frameworks and documentation
+*.mo
+*.pot
+*.log
+local_settings.py
+db.sqlite3
+db.sqlite3-journal
+instance/
+.webassets-cache/
+.scrapy/
+docs/_build/
+.pybuilder/
+target/
+/site/
+
+# Python notebooks and interactive shells
+.ipynb_checkpoints/
+profile_default/
+ipython_config.py
+
+# Python environments and package managers
+.env
+.envrc
+.venv/
+env/
+venv/
+ENV/
+env.bak/
+venv.bak/
+.pdm-python
+.pdm-build/
+.pixi/*
+!.pixi/config.toml
+__pypackages__/
+
+# Python services and generated data
+celerybeat-schedule*
+celerybeat.pid
+*.rdb
+*.aof
+*.pid
+mnesia/
+rabbitmq/
+rabbitmq-data/
+activemq-data/
+*.sage.py
+
+# Python IDE and type-checker state
+.spyderproject
+.spyproject
+.ropeproject
+.mypy_cache/
+.dmypy.json
+dmypy.json
+.pyre/
+.pytype/
+cython_debug/
+tempCodeRunnerFile.py
+.ruff_cache/
+
+# Python tool and application state
+.pypirc
+.abstra/
+marimo/_static/
+marimo/_lsp/
+__marimo__/
+.streamlit/secrets.toml
+
+# Git local metadata and generated files
+/.worktrees/
+.git-rewrite/
+.git-credential-cache/
+.gitconfig.local
+.git-credentials
+*.orig
+*.rej
+
+# macOS metadata
+.DS_Store
+.AppleDouble
+.LSOverride
+._*
+Icon?
+.DocumentRevisions-V100
+.fseventsd
+.Spotlight-V100
+.TemporaryItems
+.Trashes
+.VolumeIcon.icns
+.com.apple.timemachine.donotpresent
+.AppleDB
+.AppleDesktop
+Network Trash Folder
+Temporary Items
+.apdisk
+
+# Windows metadata and generated files
+Thumbs.db
+Thumbs.db:encryptable
+ehthumbs.db
+ehthumbs_vista.db
+*.stackdump
+[Dd]esktop.ini
+$RECYCLE.BIN/
+*.cab
+*.msi
+*.msix
+*.msm
+*.msp
+*.lnk
+
+# Linux metadata and generated files
+*~
+.fuse_hidden*
+.directory
+.Trash-*
+.nfs*
+nohup.out
