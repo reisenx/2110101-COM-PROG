@@ -1,0 +1,9 @@
+node_modules/
+.generated/
+.react-router/
+build/
+coverage/
+playwright-report/
+test-results/
+.preview/
+*.log

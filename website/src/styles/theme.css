@@ -1,0 +1,56 @@
+:root {
+  color-scheme: light;
+  --font-sans: "Noto Sans Thai", "IBM Plex Sans Thai", "Leelawadee UI", Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  --font-mono: "JetBrains Mono", "SFMono-Regular", Consolas, "Liberation Mono", monospace;
+
+  --navy-950: #04122f;
+  --navy-900: #061a43;
+  --navy-800: #0a285d;
+  --navy-700: #123b78;
+  --blue-700: #1749ce;
+  --blue-600: #2563eb;
+  --blue-500: #3977f6;
+  --blue-100: #dce8ff;
+  --blue-50: #f2f6ff;
+  --yellow-500: #ffd43b;
+  --yellow-400: #ffe168;
+  --yellow-100: #fff4bf;
+  --ink-900: #0b1733;
+  --ink-700: #33415f;
+  --ink-600: #4b5873;
+  --ink-500: #69748c;
+  --ink-300: #a9b2c4;
+  --line: #dfe5ef;
+  --line-strong: #cbd4e3;
+  --surface: #ffffff;
+  --surface-soft: #f7f9fd;
+  --surface-blue: #f2f6ff;
+  --success: #117653;
+  --success-soft: #eaf8f2;
+  --danger: #b4233b;
+
+  --shadow-xs: 0 1px 2px rgb(6 26 67 / 5%);
+  --shadow-sm: 0 8px 22px rgb(6 26 67 / 7%);
+  --shadow-md: 0 18px 50px rgb(6 26 67 / 12%);
+  --shadow-lg: 0 30px 80px rgb(6 26 67 / 17%);
+
+  --radius-sm: 8px;
+  --radius-md: 13px;
+  --radius-lg: 20px;
+  --radius-xl: 28px;
+
+  --container: 1240px;
+  --header-height: 72px;
+  --transition: 180ms ease;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    scroll-behavior: auto !important;
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}
