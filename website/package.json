@@ -10,7 +10,7 @@
     "dev": "npm run content && react-router dev --host 127.0.0.1",
     "build": "npm run content && react-router build && tsx scripts/normalize-build.ts && pagefind --site build/client && tsx scripts/finalize-build.ts",
     "preview:pages": "tsx scripts/preview-pages.ts",
-    "typecheck": "react-router typegen && tsc --noEmit",
+    "typecheck": "npm run content && react-router typegen && tsc --noEmit",
     "test": "vitest run",
     "test:watch": "vitest",
     "test:e2e": "playwright test",
